@@ -1,0 +1,23 @@
+{
+  "resultCode": "000000",
+  "resultMesg": "成功",
+  "data": {
+    "tmrName": "大大",
+    "onboardAge": 3,
+    "tmrType": "ib",
+    "positionName": "A类坐席",
+    "isActive": 1,
+    "todayTotalCiPreminm": 234,
+    "securityThroughCustCnt": 124,
+    "todayTotalNciPremium": 234,
+    "refaltimeEffecTalkTime": 22.23,
+    "todayTotalTalkTime": 23.34,
+    "refaltimeEffecTalkNum": 23,
+    "todayTotalTalkNum": 23,
+    "refaltimeAvgTalkTime": 22.23,
+    "todayTotalAvgTalkTime": 23.34,
+    "lastSumAvg": 34.22,
+    "lastSumTime": 333.12,
+    "lastSumCount": 23
+  }
+}

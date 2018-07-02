@@ -1,0 +1,91 @@
+.
+├── README.md // 项目简介
+├── assets // 静态资源文件
+│   ├── fonts // 字体文件
+│   └── images // 图片文件
+├── components // Dbox UI
+├── dbox.html // build 部署时导出的html模板
+├── doc // 给后端使用的文档及相关约定规范
+│   └── readme.md
+│   ├── interface
+│   │   └── readme.md
+│   │   ├── example
+│   │   │   ├── login.jsx
+│   │   │   ├── logout.jsx
+│   │   │   ├── queryUserInfo.jsx // 与前端mock数据字段保持一致，不同的是JSX文件方便注释，方便团队合作
+├── favicon.ico // ico 图标
+├── index.html // 开发模式下热加载时的html模版
+├── mock // 前端mock后端的API数据，前期先前后端分离开发，后期进行联调
+│   ├── login.json
+│   ├── logout.json
+│   ├── router // POST 配置
+│   │   └── peopleManage
+│   │       └── index.js
+│   └── user
+│       └── queryUserInfo.json
+├── package-lock.json // 锁定版本
+├── package.json // 基本的npm配置及依赖配置
+├── src // 项目根目录
+│   ├── App.jsx
+│   ├── App.less
+│   ├── App.test.js
+│   ├── api // 后端API配置
+│   │   ├── readme.md
+│   │   ├── index.jsx
+│   │   ├── routers // 后端路由API配置
+│   │   │   ├── peopleManagement.jsx
+│   │   │   └── user.jsx
+│   │   ├── services.jsx // 封装Axios中的请求方法
+│   │   └── urls.jsx
+│   ├── component // 项目的木偶组件
+│   ├── container // 项目的容器组件
+│   │   ├── login // 登陆页面
+│   │   │   ├── LoginPage.jsx
+│   │   │   ├── index.jsx
+│   │   │   └── index.less
+│   │   ├── dashboard // 首页
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── getMenuData.jsx
+│   │   │   ├── index.jsx
+│   │   │   └── index.less
+│   │   ├── Content.jsx // 空白页面，可以用作404 | 403 。。。
+│   │   └── user // 个人中心页面
+│   │       ├── User.jsx
+│   │       ├── index.jsx
+│   │       └── index.less
+│   ├── data.js // 项目静态数据配置
+│   ├── index.js // 项目入口文件
+│   ├── index.less
+│   ├── readme.md // 项目详细使用说明
+│   ├── reduxes
+│   │   ├── reducer.jsx
+│   │   └── user.redux.jsx
+│   ├── registerServiceWorker.js
+│   ├── router
+│   │   ├── router.jsx // 配置路由信息
+│   ├── templates // Dbox UI Demo 文件
+│   └── utils // 项目工具函数
+├── style // 样式
+│   ├── core
+│   │   ├── Readme.md
+│   │   ├── base.less
+│   │   ├── iconfont.less // 字体文件样式
+│   │   ├── index.less
+│   │   ├── motion
+│   │   ├── motion.less
+│   │   └── normalize.less
+│   ├── index.js
+│   ├── index.less
+│   ├── mixins
+│   ├── reset.less // 覆盖Dbox UI 的样式，可以统一写入到这个文件下面
+│   └── theme
+│       ├── colors // 色彩配置函数及模板生成
+│       └── default
+│           ├── compoments // 组件相关样式
+│           ├── default.less // 全局样式
+│           └── index.less
+├── webpack.common.js // 开发环境和生产环境webpack通用配置
+├── webpack.dev.js // webpack 开发环境配置
+├── webpack.dll.config.js // 生产环境打包时，将项目依赖包从build.js中分离的配置
+├── webpack.prod.js // webpack 生产环境配置
+└── yarn.lock // yarn配置文件

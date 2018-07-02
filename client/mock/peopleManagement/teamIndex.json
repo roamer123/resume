@@ -1,0 +1,21 @@
+{
+  "resultCode": "000000",
+  "resultMesg": "操作成功",
+  "data": {
+    "currentCallCnt": "18",
+    "currentIdleCnt": "10",
+    "todayTotalCiPremium": "300000",
+    "todayTotalCiCustCnt": "20",
+    "todayTotalCiAvgPremium": "20",
+    "todayTotalNciPremium": "30000",
+    "realtimeEffecTalktime": "0.57",
+    "todayTotalTalktime": "0.47",
+    "realtimeEffecTalknum": "10",
+    "todayTotalTalknum": "8",
+    "realtimeAvgTalktime": "0.39",
+    "todayTotalAvgTalktime": "0.59",
+    "perLastSumAvg": "1.23",
+    "perLastSumTime": "1.23",
+    "perLastSumCount": "30"
+  }
+}
