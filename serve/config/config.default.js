@@ -9,10 +9,6 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
-  exports.security = {
-    csrf: false,
-  };
-
   config.mysql = {
     // 单数据库信息配置
     client: {
@@ -32,6 +28,21 @@ module.exports = appInfo => {
     // 是否加载到 agent 上，默认关闭
     agent: false,
   };
+
+  config.security = {
+    csrf: {
+      enable: false,
+      ignoreJSON: true
+    },
+    methodnoallow: {
+      enable: false,
+    },
+    domainWhiteList: ['']
+  }
+
+  config.cors = {
+    allowMethod: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
+  }
 
   return config;
 };

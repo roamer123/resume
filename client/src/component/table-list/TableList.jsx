@@ -26,7 +26,7 @@ export default class TableList extends React.Component {
     // services.get(urls.queryUserInfo, {}, this.getData);
     //     // const url = 'http://10.43.40.18:7001'
     // url, params, resolve, reject
-    services.post('http://10.43.62.147:7001/resumeInfo/query', null, this.getData)
+    services.post('http://127.0.0.1:7001/resumeInfo/query', null, this.getData)
   }
 
   getData(data) {
