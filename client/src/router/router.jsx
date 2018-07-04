@@ -4,9 +4,9 @@
  * @Last Modified by: mikey.zhaopeng
  * @Last Modified time: 2018-05-10 17:48:14
 */
-import { getMenuData } from 'container/dashboard/getMenuData';
+import { getMenuData } from 'container/basic-layout/getMenuData';
 import React from 'react';
-import Dashboard from 'container/dashboard';
+import BasicLayout from 'container/basic-layout';
 
 function getFlatMenuData(menus) {
 	let keys = {};
@@ -22,8 +22,8 @@ function getFlatMenuData(menus) {
 }
 export const getRouterData = () => {
 	const routerConfig = {
-		'/': { component: {Dashboard} },
-		'/dashboard': { component: {Dashboard} },
+		'/': { component: {BasicLayout} },
+		'/dashboard': { component: {BasicLayout} },
 		'/user': { component: () => <h1>business-tree</h1> },
 		'/business': { component: () => <h1>user-list</h1> },
 		'/report': { component: () => <h1>scenario-chart</h1> },
