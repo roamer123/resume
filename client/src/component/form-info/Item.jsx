@@ -2,12 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Form from 'components/form';
-
-import map from './map.js';
+import { classNames } from 'classnames';
 
 const FormItem = Form.Item;
 
-function generator({ defaultProps, defaultRules, type }) {
+export function generator({ defaultProps, defaultRules, type, title, itemClass }) {
 	return (WrappedComponent) => {
 		return class BasicComponent extends React.Component {
 			static contextTypes = {
@@ -33,24 +32,15 @@ function generator({ defaultProps, defaultRules, type }) {
 				otherProps = restProps || otherProps;
 
 				return (
-  <FormItem>
+  <FormItem label={title || ''} className={itemClass}>
     {
-			getFieldDecorator(name, options)(
-  <WrappedComponent {...defaultProps} {...otherProps} />
-			)
-		}
+              getFieldDecorator(name, options)(
+                <WrappedComponent {...defaultProps} {...otherProps} />
+              )
+    }
   </FormItem>
 				);
 			}
 		}
 	}
 }
-const LoginItem = {};
-Object.keys(map).forEach((item) => {
-	LoginItem[item] = generator({
-		defaultProps: map[item].props,
-		defaultRules: map[item].rules,
-		type: item,
-	})(map[item].component)
-})
-export default LoginItem;

@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Form from 'components/form';
-import Item from './Item';
-import Submit from './Submit';
 
 import styles from './index.less';
 
@@ -43,7 +41,7 @@ class FormInfo extends React.Component {
     );
   }
 	render() {
-		const { className, children } = this.props;
+    const { className, children } = this.props;
     return (
       <div className={classNames(className, styles.main)}>
         <Form onSubmit={this.handleSubmit}>
@@ -55,8 +53,4 @@ class FormInfo extends React.Component {
     );
 	}
 }
-Login.Submit = Submit;
-Object.keys(Item).forEach((item) => {
-  Login[item] = Item[item];
-});
-export default Login;
+export default FormInfo;

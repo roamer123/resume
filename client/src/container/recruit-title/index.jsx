@@ -1,13 +1,16 @@
 import React from 'react'
 import {Table, Button} from 'components'
-import styles from './index.less'
 import FilterStep from 'component/filter-step';
+import styles from './index.less'
 export default class RecruitTitle extends React.Component {
   handleStep = (e, step, li) => {
     e.target.style = {
       color: 'red'
     }
     console.log(e.target, step, li)
+  }
+  handleAdd = () => {
+    window.location.href = `${window.location.href}/add`
   }
   render () {
     const filters = {
@@ -101,7 +104,7 @@ export default class RecruitTitle extends React.Component {
       <div className={styles.recruit_title}>
         <FilterStep filters={filters} stepsMap={stepsMap} handleStep={this.handleStep} />
         <div className={styles.switch_tab}>
-          <Button>添加招聘职位</Button>
+          <Button onClick={this.handleAdd}>添加招聘职位</Button>
         </div>
         <Table className={styles.table} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
       </div>

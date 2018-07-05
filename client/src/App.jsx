@@ -9,7 +9,9 @@ import Content from 'container/Content';
 import Dashboard from 'container/dashboard';
 import PersonInfo from 'container/person-info';
 import RecruitTitle from 'container/recruit-title';
+import AddPosition from 'container/add-position';
 import Candidate from 'container/candidate';
+// import AddCandidate from 'container/add-candidate';
 import Calendar from 'container/calendar';
 import '../style/reset.less';
 
@@ -22,11 +24,14 @@ const App = () => (
         <Route exact path='/' component={BasicLayout} />
         <Route exact path='/login' component={Login} />
         <BasicLayout>
-          <Route path='/dashboard' component={Dashboard} />
-          <Route path='/user-group' component={PersonInfo} />
-          <Route path='/recruit-title' component={RecruitTitle} />
-          <Route path='/candidate' component={Candidate} />
-          <Route path='/calendar' component={Calendar} />
+          <Route exact path='/dashboard' component={Dashboard} />
+          <Route exact path='/user-group' component={PersonInfo} />
+          <Route exact path='/user-group' component={PersonInfo} />
+          <Route exact path='/recruit-title' component={RecruitTitle} />
+          <Route exact path='/recruit-title/add' component={AddPosition} />
+          <Route exact path='/candidate' component={Candidate} />
+          {/* <Route exact path='/candidate/add' component={AddCandidate} /> */}
+          <Route exact path='/calendar' component={Calendar} />
         </BasicLayout>
         <Route component={NotFound} />
       </Switch>
