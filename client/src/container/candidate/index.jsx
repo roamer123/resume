@@ -18,6 +18,9 @@ export default class CandidateHeader extends React.Component {
     e.target.style = {color: 'red'}
     console.log(e.target, step, li)
   }
+  handleAdd = () => {
+    window.location.href = `${window.location.href}/add`
+  }
   render () {
     const jobs = ['all', 'web', 'java', 'test']
     const jobsMap = {
@@ -167,7 +170,7 @@ export default class CandidateHeader extends React.Component {
               optionsCreate(jobs, jobsMap)
             }
           </Select>
-          <Select defaultValue='addOne' style={{ width: 120 }}>
+          <Select defaultValue='addOne' style={{ width: 120 }} onSelect={this.handleAdd}>
             {
               optionsCreate(actions, actionsMap)
             }
