@@ -4,6 +4,18 @@ import { Button, Table } from 'components';
 import styles from './index.less'
 
 export default class Calendar extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      selectedRowKeys: [], // Check here to configure the default column
+    };
+  }
+  onSelectChange = (selectedRowKeys) => {
+    console.log('selectedRowKeys changed: ', selectedRowKeys);
+    this.setState({
+      selectedRowKeys
+    });
+  }
   render () {
     const filterDetail = {}
     const columns = [{
@@ -85,16 +97,26 @@ export default class Calendar extends React.Component {
         address: `London Park no. ${i}`,
       });
     }
+    const { selectedRowKeys } = this.state;
+    // const hasSelected = selectedRowKeys.length > 0;
+    const rowSelection = {
+      selectedRowKeys,
+      onChange: this.onSelectChange,
+    };
     return (
       <div className={styles.calendar_list}>
         <div className={styles.action_area}>
           <SearchFilter columns={filterDetail} className={styles.search_filter} />
           <div>
             <Button>安排面试</Button>
-            <Button className={styles.sign_button}>批量签到</Button>
+            <Button className={styles.sign_button}>安排机考</Button>
+            <Button className={styles.sign_button}>安排入场</Button>
           </div>
         </div>
-        <Table className={styles.table} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
+        {/* <span style={{ marginLeft: 8 }}>
+          {hasSelected ? `Selected ${selectedRowKeys.length} items` : ''}
+        </span> */}
+        <Table rowSelection={rowSelection} className={styles.table} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
       </div>
     )
   }

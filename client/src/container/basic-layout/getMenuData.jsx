@@ -15,7 +15,7 @@ const menuData = [{
   icon: 'user-group',
   path: 'candidate',
   }, {
-  name: '面试日程',
+  name: '日程安排',
   icon: 'pro-table',
   path: 'calendar',
   }, {
