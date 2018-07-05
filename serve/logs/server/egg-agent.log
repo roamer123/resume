@@ -1,0 +1,8 @@
+2018-07-02 21:29:11,098 INFO 5420 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2018-07-02 21:29:11,189 INFO 5420 [egg:core] dump config after load, 6ms
+2018-07-02 21:29:11,232 INFO 5420 [egg-watcher:agent] watcher start success
+2018-07-02 21:29:11,264 INFO 5420 [egg:core] dump config after ready, 3ms
+2018-07-03 09:03:01,850 INFO 3319 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2018-07-03 09:03:01,945 INFO 3319 [egg:core] dump config after load, 6ms
+2018-07-03 09:03:01,987 INFO 3319 [egg-watcher:agent] watcher start success
+2018-07-03 09:03:02,010 INFO 3319 [egg:core] dump config after ready, 2ms

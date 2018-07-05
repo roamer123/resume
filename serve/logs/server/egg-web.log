@@ -1,0 +1,39 @@
+2018-07-02 21:29:12,255 INFO 5421 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-02 21:29:12,309 INFO 5421 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-02 21:29:12,309 INFO 5421 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-02 21:29:12,324 INFO 5421 [egg-mysql] connecting root@127.0.0.1:3306/itcast
+2018-07-02 21:29:12,474 INFO 5421 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-02 21:29:12,478 INFO 5421 [egg-security] use noopen middleware
+2018-07-02 21:29:12,483 INFO 5421 [egg-security] use nosniff middleware
+2018-07-02 21:29:12,487 INFO 5421 [egg-security] use xssProtection middleware
+2018-07-02 21:29:12,488 INFO 5421 [egg-security] use xframe middleware
+2018-07-02 21:29:12,488 INFO 5421 [egg-security] use dta middleware
+2018-07-02 21:29:12,489 INFO 5421 [egg-security] compose 5 middlewares into one security middleware
+2018-07-02 21:29:12,508 INFO 5421 [egg:core] dump config after load, 10ms
+2018-07-02 21:29:12,553 INFO 5421 [egg-watcher:app] watcher start success
+2018-07-02 21:29:12,558 INFO 5421 [egg-mysql] instance[0] status OK, rds currentTime: Mon Jul 02 2018 21:29:12 GMT+0800 (CST)
+2018-07-02 21:29:12,564 INFO 5421 [egg:core] dump config after ready, 4ms
+2018-07-03 09:03:02,490 INFO 3320 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-03 09:03:02,529 INFO 3320 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-03 09:03:02,529 INFO 3320 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-03 09:03:02,542 INFO 3320 [egg-mysql] connecting root@127.0.0.1:3306/itcast
+2018-07-03 09:03:02,694 INFO 3320 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-03 09:03:02,696 INFO 3320 [egg-security] use noopen middleware
+2018-07-03 09:03:02,697 INFO 3320 [egg-security] use nosniff middleware
+2018-07-03 09:03:02,698 INFO 3320 [egg-security] use xssProtection middleware
+2018-07-03 09:03:02,699 INFO 3320 [egg-security] use xframe middleware
+2018-07-03 09:03:02,700 INFO 3320 [egg-security] use dta middleware
+2018-07-03 09:03:02,700 INFO 3320 [egg-security] compose 5 middlewares into one security middleware
+2018-07-03 09:03:02,711 INFO 3320 [egg:core] dump config after load, 4ms
+2018-07-03 09:03:02,732 INFO 3320 [egg-watcher:app] watcher start success
+2018-07-03 09:03:02,734 INFO 3320 [egg-mysql] instance[0] status OK, rds currentTime: Tue Jul 03 2018 09:03:02 GMT+0800 (CST)
+2018-07-03 09:03:02,739 INFO 3320 [egg:core] dump config after ready, 3ms
+2018-07-03 11:30:38,010 WARN 3320 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-03 11:36:12,539 WARN 3320 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-03 11:41:45,054 WARN 3320 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-03 11:44:35,547 WARN 3320 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-03 11:44:35,547 WARN 3320 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-03 11:48:30,027 WARN 3320 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-03 11:54:08,510 WARN 3320 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-03 13:35:59,006 WARN 3320 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-03 13:35:59,006 WARN 3320 [ClusterClient:Watcher] follower closed, and try to init it again

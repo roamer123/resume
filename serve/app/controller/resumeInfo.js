@@ -5,6 +5,7 @@ class ResumeInfoController extends Controller {
   async query() {
     const { ctx } = this;
     const params = ctx.request.body;
+    console.log('enter into server....');
     console.log(params);
     const resumeInfo = await ctx.service.resumeInfoService.query(params);
     ctx.body = resumeInfo;
