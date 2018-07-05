@@ -21,7 +21,7 @@ export default class SearchFilter extends React.Component {
     return (
       <div className={className}>
         <Button onClick={this.handleClick}>
-          <Icon type='left-circle-o' />
+          <Icon type='filter' />
           {this.state.filterVisible ? '收起' : '筛选'}
         </Button>
       </div>
