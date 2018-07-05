@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchFilter from 'component/search-filter';
+import AlertInfo from 'component/alert-info';
 import { Button, Table } from 'components';
 import styles from './index.less'
 
@@ -104,6 +105,7 @@ export default class Calendar extends React.Component {
     };
     return (
       <div className={styles.calendar_list}>
+        <AlertInfo>此列表的候选人均已通过客户简历筛选，且在正常流程中，未被淘汰</AlertInfo>
         <div className={styles.action_area}>
           <SearchFilter columns={filterDetail} className={styles.search_filter} />
           <div>

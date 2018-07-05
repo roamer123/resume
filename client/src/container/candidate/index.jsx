@@ -189,7 +189,7 @@ export default class CandidateHeader extends React.Component {
           <div className={styles.filter_detail}>
             <SearchFilter columns={filterDetail} className={styles.search_filter} />
             <Select
-              defaultValue='供应商'
+              defaultValue='全部供应商'
               className={styles.suppliers_filter}
               >
               {
