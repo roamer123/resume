@@ -12,6 +12,7 @@ export default class CandidateHeader extends React.Component {
     super(props)
     this.state = {
       step: 'all',
+      selectedRowKeys: [], // Check here to configure the default column
     }
   }
   handleStep = (e, step, li) => {
@@ -162,6 +163,11 @@ export default class CandidateHeader extends React.Component {
         address: `London Park no. ${i}`,
       });
     }
+    const { selectedRowKeys } = this.state;
+    const rowSelection = {
+      selectedRowKeys,
+      onChange: this.onSelectChange,
+    };
     return (
       <div className={styles.candidate_list}>
         <div className={styles.switch_tab}>
@@ -203,7 +209,7 @@ export default class CandidateHeader extends React.Component {
             </Select>
           </div>
         </div>
-        <Table className={styles.table} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
+        <Table className={styles.table} rowSelection={rowSelection} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
       </div>
     )
   }

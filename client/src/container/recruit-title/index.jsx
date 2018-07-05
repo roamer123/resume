@@ -1,8 +1,15 @@
 import React from 'react'
-import {Table, Button} from 'components'
+import {Select, Table, Button} from 'components'
 import FilterStep from 'component/filter-step';
+import {optionsCreate, liCreate} from 'utils/creator';
 import styles from './index.less'
 export default class RecruitTitle extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      selectedRowKeys: [], // Check here to configure the default column
+    };
+  }
   handleStep = (e, step, li) => {
     e.target.style = {
       color: 'red'
@@ -11,6 +18,9 @@ export default class RecruitTitle extends React.Component {
   }
   handleAdd = () => {
     window.location.href = `${window.location.href}/add`
+  }
+  handleDelete = () => {
+    console.log('handleDelete')
   }
   render () {
     const filters = {
@@ -21,7 +31,14 @@ export default class RecruitTitle extends React.Component {
       recruiting: '招聘中',
       stopRecruit: '停止招聘',
     }
-     const columns = [{
+    const jobs = ['all', 'web', 'java', 'test']
+    const jobsMap = {
+      all: '全部职位',
+      web: '前端工程师',
+      java: 'JAVA工程师',
+      test: '测试工程师',
+    }
+    const columns = [{
          title: 'Full Name',
          width: 100,
          dataIndex: 'name',
@@ -91,7 +108,7 @@ export default class RecruitTitle extends React.Component {
        },
      ];
 
-     const data = [];
+    const data = [];
      for (let i = 0; i < 100; i++) {
        data.push({
          key: i,
@@ -100,13 +117,28 @@ export default class RecruitTitle extends React.Component {
          address: `London Park no. ${i}`,
        });
      }
+    const {
+       selectedRowKeys
+     } = this.state;
+    const rowSelection = {
+       selectedRowKeys,
+       onChange: this.onSelectChange,
+     };
     return (
       <div className={styles.recruit_title}>
         <FilterStep filters={filters} stepsMap={stepsMap} handleStep={this.handleStep} />
         <div className={styles.switch_tab}>
-          <Button onClick={this.handleAdd}>添加招聘职位</Button>
+          <Select defaultValue='all' style={{ width: 120 }}>
+            {
+                optionsCreate(jobs, jobsMap)
+            }
+          </Select>
+          <div>
+            <Button onClick={this.handleAdd}>添加招聘职位</Button>
+            <Button onClick={this.handleDelete} style={{marginLeft: '16px'}}>停止招聘</Button>
+          </div>
         </div>
-        <Table className={styles.table} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
+        <Table className={styles.table} rowSelection={rowSelection} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
       </div>
     )
   }

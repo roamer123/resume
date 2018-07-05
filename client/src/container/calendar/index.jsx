@@ -98,7 +98,6 @@ export default class Calendar extends React.Component {
       });
     }
     const { selectedRowKeys } = this.state;
-    // const hasSelected = selectedRowKeys.length > 0;
     const rowSelection = {
       selectedRowKeys,
       onChange: this.onSelectChange,
@@ -113,9 +112,6 @@ export default class Calendar extends React.Component {
             <Button className={styles.sign_button}>安排入场</Button>
           </div>
         </div>
-        {/* <span style={{ marginLeft: 8 }}>
-          {hasSelected ? `Selected ${selectedRowKeys.length} items` : ''}
-        </span> */}
         <Table rowSelection={rowSelection} className={styles.table} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
       </div>
     )
