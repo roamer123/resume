@@ -1,6 +1,8 @@
 import React from 'react'
 import {Select, Table, Input} from 'components'
 import SearchFilter from 'component/search-filter';
+import FilterStep from 'component/filter-step';
+import {optionsCreate, liCreate} from 'utils/creator';
 import styles from './index.less'
 
 const Option = Select.Option;
@@ -77,18 +79,7 @@ export default class CandidateHeader extends React.Component {
       addOne: '添加候选人',
       addMore: '批量添加',
     }
-    const optionsCreate = (options, optMap, addonBefore, addonAfter) => (
-      options.map((option, i) =>
-        <Option key={i} value={option}>{optMap ? `${addonBefore || ''}${optMap[option]}` : `${addonBefore || ''}${option}`}</Option>
-      )
-    )
-    const liCreate = (lis, liMap, handleClick, addonBefore, addonAfter) => (
-      Object.keys(lis).map((li, i) => {
-          const step = liMap[li]
-          return <li onClick={(e) => handleClick(e, step, li)} key={i}><p>{`${addonBefore} ${step} ${lis[li]} ${addonAfter}`}</p></li>
-        }
-      )
-    )
+
     const columns = [{
         title: 'Full Name',
         width: 100,
@@ -182,13 +173,9 @@ export default class CandidateHeader extends React.Component {
             }
           </Select>
         </div>
-        <div className={styles.filter_step}>
-          <ul className={styles.filter_group}>
-            {
-              liCreate(filters, stepsMap, this.handleStep, '', '人')
-            }
-          </ul>
-        </div>
+        {
+          <FilterStep filters={filters} stepsMap={stepsMap} handleStep={this.handleStep} />
+        }
         <div className={styles.detail}>
           <div className={styles.filter_detail}>
             <SearchFilter columns={filterDetail} className={styles.search_filter} />
