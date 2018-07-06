@@ -112,9 +112,16 @@ const interviewerProcess = [
   '入场',
   '已淘汰',
 ]
+// 招聘流程
 const positionProcess = [
   '招聘中',
   '停止招聘',
+]
+// 日程流程
+const calendarProcess = [
+  '安排面试',
+  '安排机考',
+  '安排入场',
 ]
 // 状态
 const interviewerStatus = [
@@ -125,14 +132,12 @@ const interviewerStatus = [
   '进行中',
   '成功入场',
 ]
-
 // 工作性质
 const jobCategory = [
   '全职',
   '兼职',
   '实习'
 ]
-
 // 工作经验要求
 const workingYears = [
   '不限',
@@ -142,14 +147,12 @@ const workingYears = [
   '5-10年',
   '10年以上',
 ]
-
 // 级别 | 职级
 const rankLevel = [
   '初级',
   '中级',
   '高级',
 ]
-
 // 最高学历 | 学历要求
 const maxEducation = [
   '硕士及以上',
@@ -157,7 +160,6 @@ const maxEducation = [
   '大专',
   '大专以下',
 ]
-
 // 面试官
 const interviewer = [
   '张三',
