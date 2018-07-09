@@ -61,3 +61,1082 @@ name: 'ClusterClientNoResponseError'
 pid: 3319
 hostname: macdeMacBook-Pro-3.local
 
+2018-07-06 17:01:14,854 ERROR 10881 [-/::1/-/26ms POST /oauth2/access_token] nodejs.server_error: Server error: missing client `grants`
+    at new ServerError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/server-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:142:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:136:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 503
+status: 503
+code: 503
+message: 'Server error: missing client `grants`'
+name: 'server_error'
+pid: 10881
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:02:30,304 ERROR 10890 [-/::1/-/35ms POST /oauth2/access_token] nodejs.server_error: Server error: missing client `grants`
+    at new ServerError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/server-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:142:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:136:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 503
+status: 503
+code: 503
+message: 'Server error: missing client `grants`'
+name: 'server_error'
+pid: 10890
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:03:35,438 ERROR 10890 [-/::1/-/4ms POST /oauth2/access_token] nodejs.server_error: Server error: missing client `grants`
+    at new ServerError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/server-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:142:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:136:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 503
+status: 503
+code: 503
+message: 'Server error: missing client `grants`'
+name: 'server_error'
+pid: 10890
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:03:45,350 ERROR 10912 [-/::1/-/46ms POST /oauth2/access_token] nodejs.server_error: Server error: missing client `grants`
+    at new ServerError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/server-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:142:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:136:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 503
+status: 503
+code: 503
+message: 'Server error: missing client `grants`'
+name: 'server_error'
+pid: 10912
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:09:36,176 ERROR 10937 [-/::1/-/44ms POST /oauth2/access_token] nodejs.server_error: Server error: missing client `grants`
+    at new ServerError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/server-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:142:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:136:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 503
+status: 503
+code: 503
+message: 'Server error: missing client `grants`'
+name: 'server_error'
+pid: 10937
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:11:50,326 ERROR 10989 [-/::1/-/29ms POST /oauth2/access_token] nodejs.server_error: Server error: missing client `grants`
+    at new ServerError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/server-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:142:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:136:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 503
+status: 503
+code: 503
+message: 'Server error: missing client `grants`'
+name: 'server_error'
+pid: 10989
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:23:34,204 ERROR 11077 [-/::1/-/26ms POST /oauth2/access_token] nodejs.server_error: Server error: missing client `grants`
+    at new ServerError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/server-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:142:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:136:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 503
+status: 503
+code: 503
+message: 'Server error: missing client `grants`'
+name: 'server_error'
+pid: 11077
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:24:08,695 ERROR 11114 [-/::1/-/40ms POST /oauth2/access_token] nodejs.server_error: Server error: missing client `grants`
+    at new ServerError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/server-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:142:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:136:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 503
+status: 503
+code: 503
+message: 'Server error: missing client `grants`'
+name: 'server_error'
+pid: 11114
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:28:27,759 ERROR 11179 [-/::1/-/31ms POST /oauth2/access_token] nodejs.invalid_argument: Invalid argument: model does not implement `saveToken()`
+    at new InvalidArgumentError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-argument-error.js:21:14)
+    at new PasswordGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:32:11)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:230:10)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 500
+status: 500
+code: 500
+message: 'Invalid argument: model does not implement `saveToken()`'
+name: 'invalid_argument'
+pid: 11179
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 18:06:40,493 ERROR 11455 [-/::1/-/58ms POST /oauth2/access_token] nodejs.invalid_argument: Missing parameter: `accessToken`
+    at new InvalidArgumentError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-argument-error.js:21:14)
+    at new TokenModel (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/models/token-model.js:19:11)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:96:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:95:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+statusCode: 500
+status: 500
+code: 500
+message: 'Missing parameter: `accessToken`'
+name: 'invalid_argument'
+pid: 11455
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 18:33:50,235 ERROR 11672 [-/::1/-/23ms POST /resumeInfo/query] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'resumedata.resume_info' doesn't exist
+    at Query.Sequence._packetToError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Pool.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/client.js:37:20)
+    at RDSClient.proto.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at RDSClient.proto.select (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:100:21)
+    at proto.select.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as select] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at ResumeInfoService.query (/Users/wjq/Public/workspace/project/resume/serve/app/service/resumeInfoService.js:6:45)
+    at ResumeInfoController.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/resumeInfo.js:10:60)
+    sql: SELECT * FROM `resume_info`
+code: 'ER_NO_SUCH_TABLE'
+errno: 1146
+sqlMessage: 'Table \'resumedata.resume_info\' doesn\'t exist'
+sqlState: '42S02'
+index: 0
+sql: 'SELECT * FROM `resume_info`'
+name: 'ER_NO_SUCH_TABLEError'
+pid: 11672
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:46:31,324 ERROR 11867 [-/::1/-/7ms POST /oauth2/access_token] nodejs.invalid_argument: Missing parameter: `accessToken`
+    at new InvalidArgumentError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-argument-error.js:21:14)
+    at new TokenModel (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/models/token-model.js:19:11)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:96:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:95:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+statusCode: 500
+status: 500
+code: 500
+message: 'Missing parameter: `accessToken`'
+name: 'invalid_argument'
+pid: 11867
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:47:12,676 ERROR 11886 [-/::1/-/44ms POST /oauth2/access_token] nodejs.invalid_argument: Missing parameter: `accessToken`
+    at new InvalidArgumentError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-argument-error.js:21:14)
+    at new TokenModel (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/models/token-model.js:19:11)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:96:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:95:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+statusCode: 500
+status: 500
+code: 500
+message: 'Missing parameter: `accessToken`'
+name: 'invalid_argument'
+pid: 11886
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:50:36,825 ERROR 11926 [-/::1/-/39ms POST /oauth2/access_token] nodejs.invalid_argument: Missing parameter: `accessToken`
+    at new InvalidArgumentError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-argument-error.js:21:14)
+    at new TokenModel (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/models/token-model.js:19:11)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:96:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:95:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+statusCode: 500
+status: 500
+code: 500
+message: 'Missing parameter: `accessToken`'
+name: 'invalid_argument'
+pid: 11926
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:53:28,258 ERROR 11957 [-/::1/-/37ms POST /oauth2/access_token] nodejs.invalid_argument: Missing parameter: `accessToken`
+    at new InvalidArgumentError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-argument-error.js:21:14)
+    at new TokenModel (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/models/token-model.js:19:11)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:96:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:95:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+statusCode: 500
+status: 500
+code: 500
+message: 'Missing parameter: `accessToken`'
+name: 'invalid_argument'
+pid: 11957
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:54:30,710 ERROR 11971 [-/::1/-/41ms POST /oauth2/access_token] nodejs.invalid_argument: Missing parameter: `accessToken`
+    at new InvalidArgumentError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-argument-error.js:21:14)
+    at new TokenModel (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/models/token-model.js:19:11)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:96:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:95:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+statusCode: 500
+status: 500
+code: 500
+message: 'Missing parameter: `accessToken`'
+name: 'invalid_argument'
+pid: 11971
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:55:02,158 ERROR 11999 [-/::1/-/35ms POST /oauth2/access_token] nodejs.invalid_argument: Missing parameter: `client`
+    at new InvalidArgumentError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-argument-error.js:21:14)
+    at new TokenModel (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/models/token-model.js:23:11)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:96:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:95:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+statusCode: 500
+status: 500
+code: 500
+message: 'Missing parameter: `client`'
+name: 'invalid_argument'
+pid: 11999
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:55:02,167 ERROR 11999 nodejs.unhandledRejectionError: ER_BAD_FIELD_ERROR: Unknown column 'EXPIRES' in 'field list'
+    at Query.Sequence._packetToError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Pool.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at RDSClient.proto.update (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:174:21)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as update] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at Model.saveToken (/Users/wjq/Public/workspace/project/resume/serve/app/extend/oauth.js:53:19)
+    at Model.tryCatcher (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/node_modules/bluebird/js/release/util.js:16:23)
+    sql: UPDATE `USER` SET `ACCESS_TOKEN` = 'd1cf005006613ed7881647fcf54c35ba4fc5a123', `EXPIRES` = '2018-07-06 22:55:02.150', `CLIENTID` = `clientId` = 'my_app', `clientSecret` = 'my_secret', `grants` = 'password' WHERE `ID` = NULL
+code: 'ER_BAD_FIELD_ERROR'
+errno: 1054
+sqlMessage: 'Unknown column \'EXPIRES\' in \'field list\''
+sqlState: '42S22'
+index: 0
+sql: 'UPDATE `USER` SET `ACCESS_TOKEN` = \'d1cf005006613ed7881647fcf54c35ba4fc5a123\', `EXPIRES` = \'2018-07-06 22:55:02.150\', `CLIENTID` = `clientId` = \'my_app\', `clientSecret` = \'my_secret\', `grants` = \'password\' WHERE `ID` = NULL'
+name: 'unhandledRejectionError'
+pid: 11999
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:57:16,639 ERROR 12016 nodejs.unhandledRejectionError: ER_BAD_FIELD_ERROR: Unknown column 'EXPIRES' in 'field list'
+    at Query.Sequence._packetToError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Pool.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at RDSClient.proto.update (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:174:21)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as update] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at Model.saveToken (/Users/wjq/Public/workspace/project/resume/serve/app/extend/oauth.js:53:19)
+    at Model.tryCatcher (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/node_modules/bluebird/js/release/util.js:16:23)
+    sql: UPDATE `USER` SET `ACCESS_TOKEN` = '788ca5d613aa64012cd2ca0b3902fb1f3b2f9a0c', `EXPIRES` = '2018-07-06 22:57:16.631', `CLIENTID` = `clientId` = 'my_app', `clientSecret` = 'my_secret', `grants` = 'password' WHERE `ID` = 3
+code: 'ER_BAD_FIELD_ERROR'
+errno: 1054
+sqlMessage: 'Unknown column \'EXPIRES\' in \'field list\''
+sqlState: '42S22'
+index: 0
+sql: 'UPDATE `USER` SET `ACCESS_TOKEN` = \'788ca5d613aa64012cd2ca0b3902fb1f3b2f9a0c\', `EXPIRES` = \'2018-07-06 22:57:16.631\', `CLIENTID` = `clientId` = \'my_app\', `clientSecret` = \'my_secret\', `grants` = \'password\' WHERE `ID` = 3'
+name: 'unhandledRejectionError'
+pid: 12016
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 22:05:55,401 ERROR 12079 nodejs.unhandledRejectionError: ER_BAD_FIELD_ERROR: Unknown column 'EXPIRES' in 'field list'
+    at Query.Sequence._packetToError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Pool.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at RDSClient.proto.update (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:174:21)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as update] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at Model.saveToken (/Users/wjq/Public/workspace/project/resume/serve/app/extend/oauth.js:54:19)
+    at Model.tryCatcher (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/node_modules/bluebird/js/release/util.js:16:23)
+    sql: UPDATE `USER` SET `ACCESS_TOKEN` = '11fb91b54dce0fe2db3fdb23b9cddf7ada020fb0', `EXPIRES` = '2018-07-06 23:05:55', `CLIENTID` = `clientId` = 'my_app', `clientSecret` = 'my_secret', `grants` = 'password' WHERE `ID` = 3
+code: 'ER_BAD_FIELD_ERROR'
+errno: 1054
+sqlMessage: 'Unknown column \'EXPIRES\' in \'field list\''
+sqlState: '42S22'
+index: 0
+sql: 'UPDATE `USER` SET `ACCESS_TOKEN` = \'11fb91b54dce0fe2db3fdb23b9cddf7ada020fb0\', `EXPIRES` = \'2018-07-06 23:05:55\', `CLIENTID` = `clientId` = \'my_app\', `clientSecret` = \'my_secret\', `grants` = \'password\' WHERE `ID` = 3'
+name: 'unhandledRejectionError'
+pid: 12079
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 22:09:52,337 ERROR 12079 nodejs.unhandledRejectionError: ER_BAD_FIELD_ERROR: Unknown column 'EXPIRES' in 'field list'
+    at Query.Sequence._packetToError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Pool.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at RDSClient.proto.update (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:174:21)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as update] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at Model.saveToken (/Users/wjq/Public/workspace/project/resume/serve/app/extend/oauth.js:54:19)
+    at Model.tryCatcher (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/node_modules/bluebird/js/release/util.js:16:23)
+    sql: UPDATE `USER` SET `ACCESS_TOKEN` = '623c74f9f79aafc9850b619422db0dc438055ab1', `EXPIRES` = '2018-07-06 23:09:52', `CLIENTID` = `clientId` = 'my_app', `clientSecret` = 'my_secret', `grants` = 'password' WHERE `ID` = 3
+code: 'ER_BAD_FIELD_ERROR'
+errno: 1054
+sqlMessage: 'Unknown column \'EXPIRES\' in \'field list\''
+sqlState: '42S22'
+index: 0
+sql: 'UPDATE `USER` SET `ACCESS_TOKEN` = \'623c74f9f79aafc9850b619422db0dc438055ab1\', `EXPIRES` = \'2018-07-06 23:09:52\', `CLIENTID` = `clientId` = \'my_app\', `clientSecret` = \'my_secret\', `grants` = \'password\' WHERE `ID` = 3'
+name: 'unhandledRejectionError'
+pid: 12079
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 22:11:35,687 ERROR 12122 nodejs.unhandledRejectionError: ER_BAD_FIELD_ERROR: Unknown column 'EXPIRES' in 'field list'
+    at Query.Sequence._packetToError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Pool.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/client.js:37:20)
+    at RDSClient.proto.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at RDSClient.proto.update (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:174:21)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as update] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at Model.saveToken (/Users/wjq/Public/workspace/project/resume/serve/app/extend/oauth.js:54:19)
+    at Model.tryCatcher (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/node_modules/bluebird/js/release/util.js:16:23)
+    sql: UPDATE `USER` SET `ACCESS_TOKEN` = '24ca87805c0aa882ae6b2ccff90c967abab3b73c', `EXPIRES` = '2018-07-06 23:11:35', `CLIENTID` = `clientId` = 'my_app', `clientSecret` = 'my_secret', `grants` = 'password' WHERE `ID` = 3
+code: 'ER_BAD_FIELD_ERROR'
+errno: 1054
+sqlMessage: 'Unknown column \'EXPIRES\' in \'field list\''
+sqlState: '42S22'
+index: 0
+sql: 'UPDATE `USER` SET `ACCESS_TOKEN` = \'24ca87805c0aa882ae6b2ccff90c967abab3b73c\', `EXPIRES` = \'2018-07-06 23:11:35\', `CLIENTID` = `clientId` = \'my_app\', `clientSecret` = \'my_secret\', `grants` = \'password\' WHERE `ID` = 3'
+name: 'unhandledRejectionError'
+pid: 12122
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 22:18:56,415 ERROR 12184 nodejs.unhandledRejectionError: ER_BAD_FIELD_ERROR: Unknown column 'EXPIRES' in 'field list'
+    at Query.Sequence._packetToError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Pool.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/client.js:37:20)
+    at RDSClient.proto.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at RDSClient.proto.update (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:174:21)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as update] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at Model.saveToken (/Users/wjq/Public/workspace/project/resume/serve/app/extend/oauth.js:54:19)
+    at Model.tryCatcher (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/node_modules/bluebird/js/release/util.js:16:23)
+    sql: UPDATE `USER` SET `ACCESS_TOKEN` = '46e8b65fe3aa2cba869d2ab49d867f0e455bf54e', `EXPIRES` = '2018-07-06 23:18:56' WHERE `ID` = 3
+code: 'ER_BAD_FIELD_ERROR'
+errno: 1054
+sqlMessage: 'Unknown column \'EXPIRES\' in \'field list\''
+sqlState: '42S22'
+index: 0
+sql: 'UPDATE `USER` SET `ACCESS_TOKEN` = \'46e8b65fe3aa2cba869d2ab49d867f0e455bf54e\', `EXPIRES` = \'2018-07-06 23:18:56\' WHERE `ID` = 3'
+name: 'unhandledRejectionError'
+pid: 12184
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 22:53:51,018 ERROR 12121 nodejs.ClusterClientNoResponseError: client no response in 795419ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:466:11)
+    at tryOnTimeout (timers.js:304:5)
+    at Timer.listOnTimeout (timers.js:267:5)
+name: 'ClusterClientNoResponseError'
+pid: 12121
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:04:13,648 ERROR 12584 nodejs.ClusterClientNoResponseError: client no response in 1398714ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:466:11)
+    at tryOnTimeout (timers.js:304:5)
+    at Timer.listOnTimeout (timers.js:267:5)
+name: 'ClusterClientNoResponseError'
+pid: 12584
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:15:30,841 ERROR 12584 nodejs.ClusterClientNoResponseError: client no response in 577147ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:466:11)
+    at tryOnTimeout (timers.js:304:5)
+    at Timer.listOnTimeout (timers.js:267:5)
+name: 'ClusterClientNoResponseError'
+pid: 12584
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:36:16,007 ERROR 12633 nodejs.ClusterClientNoResponseError: client no response in 475549ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:466:11)
+    at tryOnTimeout (timers.js:304:5)
+    at Timer.listOnTimeout (timers.js:267:5)
+name: 'ClusterClientNoResponseError'
+pid: 12633
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 15:00:18,597 ERROR 12841 [-/::1/-/44ms POST /resumeInfo/query] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'resumedata.resume_info' doesn't exist
+    at Query.Sequence._packetToError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Pool.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/client.js:37:20)
+    at RDSClient.proto.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as query] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at RDSClient.proto.select (/Users/wjq/Public/workspace/project/resume/serve/node_modules/ali-rds/lib/operator.js:100:21)
+    at proto.select.next (<anonymous>)
+    at onFulfilled (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:65:19)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as select] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/co/index.js:30:15)
+    at ResumeInfoService.query (/Users/wjq/Public/workspace/project/resume/serve/app/service/resumeInfoService.js:6:45)
+    at ResumeInfoController.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/resumeInfo.js:10:60)
+    sql: SELECT * FROM `resume_info`
+code: 'ER_NO_SUCH_TABLE'
+errno: 1146
+sqlMessage: 'Table \'resumedata.resume_info\' doesn\'t exist'
+sqlState: '42S02'
+index: 0
+sql: 'SELECT * FROM `resume_info`'
+name: 'ER_NO_SUCH_TABLEError'
+pid: 12841
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 19:41:34,459 ERROR 12801 nodejs.ClusterClientNoResponseError: client no response in 4486077ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:466:11)
+    at tryOnTimeout (timers.js:304:5)
+    at Timer.listOnTimeout (timers.js:267:5)
+name: 'ClusterClientNoResponseError'
+pid: 12801
+hostname: macdeMacBook-Pro-3.local
+

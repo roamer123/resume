@@ -21,7 +21,7 @@ module.exports = appInfo => {
       // 密码
       password: 'admin123',
       // 数据库名
-      database: 'itcast',
+      database: 'RESUMEDATA',
     },
     // 是否加载到 app 上，默认开启
     app: true,
@@ -32,17 +32,23 @@ module.exports = appInfo => {
   config.security = {
     csrf: {
       enable: false,
-      ignoreJSON: true
+      ignoreJSON: true,
     },
     methodnoallow: {
       enable: false,
     },
-    domainWhiteList: ['http://127.0.0.1:8080']
-  }
+    domainWhiteList: [ 'http://127.0.0.1:8080' ],
+  };
 
   config.cors = {
-    allowMethod: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
-  }
+    allowMethod: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
+  };
+
+  // oauth2Serve开启password和client_credentials模式
+  config.oAuth2Server = {
+    debug: config.env === 'local',
+    grants: [ 'password' ],
+  };
 
   return config;
 };

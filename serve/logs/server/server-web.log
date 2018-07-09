@@ -1,0 +1,1066 @@
+2018-07-06 16:07:07,292 WARN 10817 [-/::1/-/28ms POST /oauth2/access_token] nodejs.invalid_client: Invalid client: client is invalid
+    at new InvalidClientError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-client-error.js:26:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:159:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:151:11)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid client: client is invalid'
+name: 'invalid_client'
+inner: { invalid_client: Invalid client: client is invalid
+    at new InvalidClientError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-client-error.js:26:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:138:15
+From previous event:
+    at TokenHandler.getClient (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:136:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:90:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:89:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11) statusCode: 400, status: 400, code: 400, message: 'Invalid client: client is invalid', name: 'invalid_client' }
+pid: 10817
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:49:56,405 WARN 11262 [-/::1/-/27ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11262
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:56:06,864 WARN 11299 [-/::1/-/23ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11299
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:57:25,182 WARN 11325 [-/::1/-/33ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11325
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 17:58:31,061 WARN 11362 [-/::1/-/39ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11362
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 18:00:54,963 WARN 11415 [-/::1/-/27ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11415
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 18:08:14,339 WARN 11521 [-/::1/-/25ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11521
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 18:32:36,661 WARN 11666 [-/::1/-/60ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11666
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 18:35:31,903 WARN 11713 [-/::1/-/38ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11713
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 18:37:30,792 WARN 11750 [-/::1/-/34ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11750
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:44:22,470 WARN 11836 [-/::1/-/48ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11836
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-06 21:45:59,047 WARN 11867 [-/::1/-/32ms POST /oauth2/access_token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-grant-error.js:27:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/grant-types/password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:231:6)
+    at TokenHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:93:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at TokenHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/token-handler.js:92:6)
+    at OAuth2Server.token (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:75:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at Object.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:96:32)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11867
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 13:35:53,004 WARN 12585 [-/::1/-/4ms POST /resumeInfo/query] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-token-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:71:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 12585
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:23:14,332 WARN 12619 [-/::1/-/24ms POST /resumeInfo/query] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-token-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:71:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 12619
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:24:12,856 WARN 12634 [-/::1/-/24ms POST /resumeInfo/query] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-token-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:71:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 12634
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:41:49,579 WARN 12724 [-/::1/-/28ms POST /resumeInfo/query] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-token-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:71:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 12724
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:43:45,481 WARN 12751 [-/::1/-/26ms POST /resumeInfo/query] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-token-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:71:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 12751
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:51:55,829 WARN 12751 [-/::1/-/1ms POST /resumeInfo/query] nodejs.invalid_request: Invalid request: malformed authorization header
+    at new InvalidRequest (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-request-error.js:26:14)
+    at AuthenticateHandler.getTokenFromRequestHeader (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:146:11)
+    at AuthenticateHandler.getTokenFromRequest (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:121:17)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:68:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:67:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid request: malformed authorization header'
+name: 'invalid_request'
+pid: 12751
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:52:58,227 WARN 12751 [-/::1/-/1ms POST /resumeInfo/query] nodejs.invalid_request: Invalid request: malformed authorization header
+    at new InvalidRequest (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-request-error.js:26:14)
+    at AuthenticateHandler.getTokenFromRequestHeader (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:146:11)
+    at AuthenticateHandler.getTokenFromRequest (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:121:17)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:68:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:67:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid request: malformed authorization header'
+name: 'invalid_request'
+pid: 12751
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:53:34,456 WARN 12751 [-/::1/-/5ms POST /resumeInfo/query] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-token-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:71:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 12751
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:56:59,939 WARN 12778 [-/::1/-/28ms POST /resumeInfo/query] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-token-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:71:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 12778
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:57:59,285 WARN 12802 [-/::1/-/29ms POST /resumeInfo/query] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-token-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:71:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 12802
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-08 14:58:48,824 WARN 12820 [-/::1/-/34ms POST /resumeInfo/query] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/errors/invalid-token-error.js:25:14)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:71:19)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at AuthenticateHandler.handle (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/handlers/authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (/Users/wjq/Public/workspace/project/resume/serve/node_modules/oauth2-server/lib/server.js:43:6)
+    at OAuth2.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:86:41)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-oauth2-server/lib/server.js:108:32
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 12820
+hostname: macdeMacBook-Pro-3.local
+

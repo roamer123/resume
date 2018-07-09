@@ -14,8 +14,10 @@ module.exports = app => {
   router.post('/loginUserInfo/delete', controller.loginUserInfo.delete);
 
   // 简历相关操作
-  router.post('/resumeInfo/query', controller.resumeInfo.query);
+  router.all('/resumeInfo/query', app.oAuth2Server.authenticate(), 'resumeInfo.query');
   router.post('/resumeInfo/insert', controller.resumeInfo.insert);
   router.post('/resumeInfo/update', controller.resumeInfo.update);
   router.post('/resumeInfo/delete', controller.resumeInfo.delete);
+
+  router.all('/oauth2/access_token', app.oAuth2Server.token());
 };
