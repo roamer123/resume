@@ -8,13 +8,13 @@ module.exports = app => {
   const User = app.model.define('USER', {
     USER_NAME: { type: STRING(20), unique: true },
     PASSWORD: STRING,
-    ROLE_TYPE: STRING,
-    ORGAZATION_TYPE: STRING,
-    ORGAZATION_CODE: STRING,
+    ROLE_TYPE: STRING, // 用户角色code
+    ORGAZATION_TYPE: STRING, // 组织类型供应商，需求方
+    ORGAZATION_CODE: STRING, // 组织类型code
     EMAIL: STRING,
     PHONE: STRING,
-    ACCESS_TOKEN: STRING,
-    EXPIRES: DATE,
+    ACCESS_TOKEN: STRING, // token
+    EXPIRES: DATE, // 过期时间
   }, {
     createdAt: 'DATE_CREATED',
     updatedAt: 'DATE_UPDATED',
