@@ -4,7 +4,7 @@
   "description": "react components",
   "main": "index.js",
   "scripts": {
-    "dev": "node --harmony devServer.js",
+    "mock": "node --harmony devServer.js",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "NODE_ENV=production webpack --config webpack.dll.config.js && webpack --config webpack.prod.js"
   },

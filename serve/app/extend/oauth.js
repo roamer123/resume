@@ -1,7 +1,7 @@
 'use strict';
 const moment = require('moment');
 
-module.exports = app => {
+module.exports = () => {
   class Model {
     constructor(ctx) {
       this.ctx = ctx;
@@ -27,18 +27,11 @@ module.exports = app => {
     async getUser(username, password) {
       try {
         console.log('getUser invoked.....');
-        const user = await app.mysql.select('USER', {
-          where: {
-            USER_NAME: username,
-          },
-        });
-
-        console.log('user.PASSWORD', user[0].PASSWORD);
-        if (password === user[0].PASSWORD) {
-          return user[0];
-        }
-        return;
+        const user = await this.ctx.model.User.getUser(username, password);
+        if (!user) throw new Error('user is not found');
+        return user;
       } catch (err) {
+        console.log('error', err);
         return;
       }
     }
@@ -46,16 +39,13 @@ module.exports = app => {
     async saveToken(token, client, user) {
       try {
         console.log('saveToken invoked...');
-        app.mysql.update(
-          'USER',
+        await this.ctx.model.User.updateUser(
           {
             ACCESS_TOKEN: token.accessToken,
             EXPIRES: moment(token.accessTokenExpiresAt).format('YYYY-MM-DD HH:mm:ss'),
           },
           {
-            where: {
-              ID: user.ID,
-            },
+            ID: user.ID,
           }
         );
         return {
@@ -89,23 +79,19 @@ module.exports = app => {
     async getAccessToken(bearerToken) {
       try {
         console.log('getAccessToken invoked.....');
-        const data = await app.mysql.select('USER', {
-          where: {
-            ACCESS_TOKEN: bearerToken,
-          },
+        const user = this.ctx.model.User.queryUser({
+          ACCESS_TOKEN: bearerToken,
         });
-        console.log('user', data[0]);
-        if (!data) return;
+        if (!user) return;
         const token = {};
-        const user = { name: data[0].USER_NAME, id: data[0].ID };
         token.user = user;
         token.client = {
           clientId: 'my-app',
           clientSecret: 'my-secret',
           grants: [ 'password' ],
         };
-        token.accessTokenExpiresAt = new Date(data[0].EXPIRES);
-        token.refreshTokenExpiresAt = new Date(data[0].EXPIRES);
+        token.accessTokenExpiresAt = new Date(user.EXPIRES);
+        token.refreshTokenExpiresAt = new Date(user.EXPIRES);
         console.log('token', token);
         return token;
       } catch (err) {

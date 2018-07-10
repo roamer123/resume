@@ -1,16 +1,28 @@
 const menuData = [{
-  name: '首页',
-  icon: 'appstore-o',
+  name: '我的工作台',
+  icon: 'home',
   path: 'dashboard',
-  children: [{
-    name: '人员信息',
-    path: 'user-group',
-  }],
+  // children: [{
+  //   name: '人员信息',
+  //   path: 'user-group',
+  // }],
+  }, {
+  name: '招聘职位',
+  icon: 'contacts',
+  path: 'recruit-title',
+  }, {
+  name: '候选人信息',
+  icon: 'user-group',
+  path: 'candidate',
+  }, {
+  name: '日程安排',
+  icon: 'pro-table',
+  path: 'calendar',
   }, {
   name: 'NotFound',
   icon: 'warning-circle',
   path: 'notfound',
-}
+  }
 ];
 function formatter(data, parentPath = '', parentAuthority) {
   return data.map((item) => {
