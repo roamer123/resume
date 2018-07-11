@@ -1887,3 +1887,1354 @@
 2018-07-10 14:33:19,068 INFO 17163 [egg:core] dump config after load, 5ms
 2018-07-10 14:33:19,097 INFO 17163 [egg-watcher:app] watcher start success
 2018-07-10 14:33:19,118 INFO 17163 [egg:core] dump config after ready, 4ms
+2018-07-10 21:57:51,918 INFO 24203 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-10 21:57:51,957 INFO 24203 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-10 21:57:51,957 INFO 24203 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-10 21:57:52,100 INFO 24203 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-10 21:57:52,101 INFO 24203 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-10 21:57:52,348 INFO 24203 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-10 21:57:52,349 INFO 24203 [egg-security] use noopen middleware
+2018-07-10 21:57:52,350 INFO 24203 [egg-security] use nosniff middleware
+2018-07-10 21:57:52,350 INFO 24203 [egg-security] use xssProtection middleware
+2018-07-10 21:57:52,350 INFO 24203 [egg-security] use xframe middleware
+2018-07-10 21:57:52,351 INFO 24203 [egg-security] use dta middleware
+2018-07-10 21:57:52,351 INFO 24203 [egg-security] compose 5 middlewares into one security middleware
+2018-07-10 21:57:52,359 INFO 24203 [egg:core] dump config after load, 5ms
+2018-07-10 21:57:52,383 INFO 24203 [egg-watcher:app] watcher start success
+2018-07-10 21:57:52,405 INFO 24203 [egg:core] dump config after ready, 4ms
+2018-07-10 23:52:10,403 WARN 24203 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 01:09:16,172 WARN 24203 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 01:42:31,430 WARN 24203 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 01:42:31,431 WARN 24203 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 02:36:36,612 WARN 24203 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 02:36:36,617 WARN 24203 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 03:30:42,390 WARN 24203 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 04:24:47,382 WARN 24203 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 14:49:23,804 INFO 24403 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:49:23,842 INFO 24403 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:49:23,842 INFO 24403 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:49:24,084 INFO 24403 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:49:24,085 INFO 24403 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:49:24,355 INFO 24403 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 14:49:24,357 INFO 24403 [egg-security] use noopen middleware
+2018-07-11 14:49:24,358 INFO 24403 [egg-security] use nosniff middleware
+2018-07-11 14:49:24,359 INFO 24403 [egg-security] use xssProtection middleware
+2018-07-11 14:49:24,360 INFO 24403 [egg-security] use xframe middleware
+2018-07-11 14:49:24,360 INFO 24403 [egg-security] use dta middleware
+2018-07-11 14:49:24,360 INFO 24403 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:49:24,369 INFO 24403 [egg:core] dump config after load, 5ms
+2018-07-11 14:49:24,392 INFO 24403 [egg-watcher:app] watcher start success
+2018-07-11 14:49:24,411 INFO 24403 [egg:core] dump config after ready, 4ms
+2018-07-11 14:53:30,304 INFO 25065 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:53:30,334 INFO 25065 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:53:30,334 INFO 25065 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:53:30,450 INFO 25065 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:53:30,451 INFO 25065 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:53:30,663 INFO 25065 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 14:53:30,665 INFO 25065 [egg-security] use noopen middleware
+2018-07-11 14:53:30,665 INFO 25065 [egg-security] use nosniff middleware
+2018-07-11 14:53:30,665 INFO 25065 [egg-security] use xssProtection middleware
+2018-07-11 14:53:30,665 INFO 25065 [egg-security] use xframe middleware
+2018-07-11 14:53:30,666 INFO 25065 [egg-security] use dta middleware
+2018-07-11 14:53:30,666 INFO 25065 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:53:30,673 INFO 25065 [egg:core] dump config after load, 4ms
+2018-07-11 14:53:30,696 INFO 25065 [egg-watcher:app] watcher start success
+2018-07-11 14:53:30,714 INFO 25065 [egg:core] dump config after ready, 4ms
+2018-07-11 15:00:46,413 INFO 25931 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:00:46,454 INFO 25931 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:00:46,454 INFO 25931 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:00:46,605 INFO 25931 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:00:46,605 INFO 25931 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:00:46,864 INFO 25931 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:00:46,866 INFO 25931 [egg-security] use noopen middleware
+2018-07-11 15:00:46,866 INFO 25931 [egg-security] use nosniff middleware
+2018-07-11 15:00:46,867 INFO 25931 [egg-security] use xssProtection middleware
+2018-07-11 15:00:46,867 INFO 25931 [egg-security] use xframe middleware
+2018-07-11 15:00:46,867 INFO 25931 [egg-security] use dta middleware
+2018-07-11 15:00:46,867 INFO 25931 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:00:46,876 INFO 25931 [egg:core] dump config after load, 5ms
+2018-07-11 15:00:46,895 INFO 25931 [egg-watcher:app] watcher start success
+2018-07-11 15:00:46,922 INFO 25931 [egg:core] dump config after ready, 4ms
+2018-07-11 15:01:09,477 INFO 25988 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:01:09,527 INFO 25988 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:01:09,527 INFO 25988 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:01:09,674 INFO 25988 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:01:09,675 INFO 25988 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:01:09,929 INFO 25988 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:01:09,931 INFO 25988 [egg-security] use noopen middleware
+2018-07-11 15:01:09,931 INFO 25988 [egg-security] use nosniff middleware
+2018-07-11 15:01:09,931 INFO 25988 [egg-security] use xssProtection middleware
+2018-07-11 15:01:09,931 INFO 25988 [egg-security] use xframe middleware
+2018-07-11 15:01:09,932 INFO 25988 [egg-security] use dta middleware
+2018-07-11 15:01:09,932 INFO 25988 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:01:09,941 INFO 25988 [egg:core] dump config after load, 4ms
+2018-07-11 15:01:09,966 INFO 25988 [egg-watcher:app] watcher start success
+2018-07-11 15:01:09,984 INFO 25988 [egg:core] dump config after ready, 4ms
+2018-07-11 15:01:24,107 INFO 26036 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:01:24,143 INFO 26036 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:01:24,143 INFO 26036 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:01:24,290 INFO 26036 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:01:24,291 INFO 26036 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:01:24,547 INFO 26036 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:01:24,549 INFO 26036 [egg-security] use noopen middleware
+2018-07-11 15:01:24,549 INFO 26036 [egg-security] use nosniff middleware
+2018-07-11 15:01:24,550 INFO 26036 [egg-security] use xssProtection middleware
+2018-07-11 15:01:24,550 INFO 26036 [egg-security] use xframe middleware
+2018-07-11 15:01:24,550 INFO 26036 [egg-security] use dta middleware
+2018-07-11 15:01:24,550 INFO 26036 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:01:24,560 INFO 26036 [egg:core] dump config after load, 5ms
+2018-07-11 15:01:24,577 INFO 26036 [egg-watcher:app] watcher start success
+2018-07-11 15:01:24,607 INFO 26036 [egg:core] dump config after ready, 5ms
+2018-07-11 15:01:29,047 INFO 26047 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:01:29,083 INFO 26047 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:01:29,083 INFO 26047 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:01:29,225 INFO 26047 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:01:29,226 INFO 26047 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:01:29,489 INFO 26047 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:01:29,491 INFO 26047 [egg-security] use noopen middleware
+2018-07-11 15:01:29,492 INFO 26047 [egg-security] use nosniff middleware
+2018-07-11 15:01:29,492 INFO 26047 [egg-security] use xssProtection middleware
+2018-07-11 15:01:29,493 INFO 26047 [egg-security] use xframe middleware
+2018-07-11 15:01:29,493 INFO 26047 [egg-security] use dta middleware
+2018-07-11 15:01:29,493 INFO 26047 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:01:29,502 INFO 26047 [egg:core] dump config after load, 5ms
+2018-07-11 15:01:29,529 INFO 26047 [egg-watcher:app] watcher start success
+2018-07-11 15:01:29,550 INFO 26047 [egg:core] dump config after ready, 4ms
+2018-07-11 15:01:37,792 INFO 26083 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:01:37,828 INFO 26083 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:01:37,828 INFO 26083 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:01:37,967 INFO 26083 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:01:37,968 INFO 26083 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:01:38,218 INFO 26083 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:01:38,220 INFO 26083 [egg-security] use noopen middleware
+2018-07-11 15:01:38,221 INFO 26083 [egg-security] use nosniff middleware
+2018-07-11 15:01:38,221 INFO 26083 [egg-security] use xssProtection middleware
+2018-07-11 15:01:38,221 INFO 26083 [egg-security] use xframe middleware
+2018-07-11 15:01:38,221 INFO 26083 [egg-security] use dta middleware
+2018-07-11 15:01:38,221 INFO 26083 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:01:38,232 INFO 26083 [egg:core] dump config after load, 6ms
+2018-07-11 15:01:38,250 INFO 26083 [egg-watcher:app] watcher start success
+2018-07-11 15:01:38,279 INFO 26083 [egg:core] dump config after ready, 4ms
+2018-07-11 15:05:39,492 INFO 26567 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:05:39,522 INFO 26567 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:05:39,522 INFO 26567 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:05:39,635 INFO 26567 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:05:39,636 INFO 26567 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:05:39,852 INFO 26567 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:05:39,854 INFO 26567 [egg-security] use noopen middleware
+2018-07-11 15:05:39,854 INFO 26567 [egg-security] use nosniff middleware
+2018-07-11 15:05:39,854 INFO 26567 [egg-security] use xssProtection middleware
+2018-07-11 15:05:39,854 INFO 26567 [egg-security] use xframe middleware
+2018-07-11 15:05:39,855 INFO 26567 [egg-security] use dta middleware
+2018-07-11 15:05:39,855 INFO 26567 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:05:39,862 INFO 26567 [egg:core] dump config after load, 4ms
+2018-07-11 15:05:39,883 INFO 26567 [egg-watcher:app] watcher start success
+2018-07-11 15:05:39,901 INFO 26567 [egg:core] dump config after ready, 3ms
+2018-07-11 15:05:46,982 INFO 26584 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:05:47,021 INFO 26584 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:05:47,021 INFO 26584 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:05:47,175 INFO 26584 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:05:47,175 INFO 26584 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:05:47,492 INFO 26584 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:05:47,494 INFO 26584 [egg-security] use noopen middleware
+2018-07-11 15:05:47,494 INFO 26584 [egg-security] use nosniff middleware
+2018-07-11 15:05:47,495 INFO 26584 [egg-security] use xssProtection middleware
+2018-07-11 15:05:47,495 INFO 26584 [egg-security] use xframe middleware
+2018-07-11 15:05:47,495 INFO 26584 [egg-security] use dta middleware
+2018-07-11 15:05:47,495 INFO 26584 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:05:47,507 INFO 26584 [egg:core] dump config after load, 6ms
+2018-07-11 15:05:47,534 INFO 26584 [egg-watcher:app] watcher start success
+2018-07-11 15:05:47,556 INFO 26584 [egg:core] dump config after ready, 4ms
+2018-07-11 15:06:21,051 INFO 26682 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:06:21,084 INFO 26682 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:06:21,084 INFO 26682 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:06:21,212 INFO 26682 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:06:21,213 INFO 26682 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:06:21,449 INFO 26682 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:06:21,451 INFO 26682 [egg-security] use noopen middleware
+2018-07-11 15:06:21,451 INFO 26682 [egg-security] use nosniff middleware
+2018-07-11 15:06:21,451 INFO 26682 [egg-security] use xssProtection middleware
+2018-07-11 15:06:21,451 INFO 26682 [egg-security] use xframe middleware
+2018-07-11 15:06:21,452 INFO 26682 [egg-security] use dta middleware
+2018-07-11 15:06:21,452 INFO 26682 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:06:21,462 INFO 26682 [egg:core] dump config after load, 4ms
+2018-07-11 15:06:21,486 INFO 26682 [egg-watcher:app] watcher start success
+2018-07-11 15:06:21,507 INFO 26682 [egg:core] dump config after ready, 5ms
+2018-07-11 15:09:08,052 INFO 27062 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:09:08,083 INFO 27062 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:09:08,083 INFO 27062 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:09:08,199 INFO 27062 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:09:08,200 INFO 27062 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:09:08,419 INFO 27062 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:09:08,421 INFO 27062 [egg-security] use noopen middleware
+2018-07-11 15:09:08,421 INFO 27062 [egg-security] use nosniff middleware
+2018-07-11 15:09:08,421 INFO 27062 [egg-security] use xssProtection middleware
+2018-07-11 15:09:08,421 INFO 27062 [egg-security] use xframe middleware
+2018-07-11 15:09:08,422 INFO 27062 [egg-security] use dta middleware
+2018-07-11 15:09:08,422 INFO 27062 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:09:08,429 INFO 27062 [egg:core] dump config after load, 4ms
+2018-07-11 15:09:08,452 INFO 27062 [egg-watcher:app] watcher start success
+2018-07-11 15:09:08,470 INFO 27062 [egg:core] dump config after ready, 4ms
+2018-07-11 15:09:08,853 INFO 27065 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:09:08,888 INFO 27065 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:09:08,889 INFO 27065 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:09:09,035 INFO 27065 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:09:09,036 INFO 27065 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:09:09,286 INFO 27065 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:09:09,288 INFO 27065 [egg-security] use noopen middleware
+2018-07-11 15:09:09,288 INFO 27065 [egg-security] use nosniff middleware
+2018-07-11 15:09:09,289 INFO 27065 [egg-security] use xssProtection middleware
+2018-07-11 15:09:09,289 INFO 27065 [egg-security] use xframe middleware
+2018-07-11 15:09:09,289 INFO 27065 [egg-security] use dta middleware
+2018-07-11 15:09:09,289 INFO 27065 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:09:09,299 INFO 27065 [egg:core] dump config after load, 6ms
+2018-07-11 15:09:09,318 INFO 27065 [egg-watcher:app] watcher start success
+2018-07-11 15:09:09,348 INFO 27065 [egg:core] dump config after ready, 5ms
+2018-07-11 15:14:51,544 INFO 27831 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:14:51,575 INFO 27831 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:14:51,575 INFO 27831 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:14:51,692 INFO 27831 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:14:51,692 INFO 27831 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:14:51,934 INFO 27831 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:14:51,936 INFO 27831 [egg-security] use noopen middleware
+2018-07-11 15:14:51,936 INFO 27831 [egg-security] use nosniff middleware
+2018-07-11 15:14:51,936 INFO 27831 [egg-security] use xssProtection middleware
+2018-07-11 15:14:51,936 INFO 27831 [egg-security] use xframe middleware
+2018-07-11 15:14:51,937 INFO 27831 [egg-security] use dta middleware
+2018-07-11 15:14:51,937 INFO 27831 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:14:51,947 INFO 27831 [egg:core] dump config after load, 4ms
+2018-07-11 15:14:51,971 INFO 27831 [egg-watcher:app] watcher start success
+2018-07-11 15:14:51,991 INFO 27831 [egg:core] dump config after ready, 4ms
+2018-07-11 15:27:28,961 INFO 29430 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:27:28,994 INFO 29430 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:27:28,994 INFO 29430 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:27:29,112 INFO 29430 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:27:29,113 INFO 29430 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:27:29,326 INFO 29430 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:27:29,328 INFO 29430 [egg-security] use noopen middleware
+2018-07-11 15:27:29,328 INFO 29430 [egg-security] use nosniff middleware
+2018-07-11 15:27:29,329 INFO 29430 [egg-security] use xssProtection middleware
+2018-07-11 15:27:29,329 INFO 29430 [egg-security] use xframe middleware
+2018-07-11 15:27:29,329 INFO 29430 [egg-security] use dta middleware
+2018-07-11 15:27:29,329 INFO 29430 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:27:29,340 INFO 29430 [egg:core] dump config after load, 5ms
+2018-07-11 15:27:29,367 INFO 29430 [egg-watcher:app] watcher start success
+2018-07-11 15:27:29,386 INFO 29430 [egg:core] dump config after ready, 3ms
+2018-07-11 15:27:51,811 INFO 29484 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:27:51,845 INFO 29484 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:27:51,845 INFO 29484 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:27:51,985 INFO 29484 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:27:51,985 INFO 29484 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:27:52,194 INFO 29484 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:27:52,196 INFO 29484 [egg-security] use noopen middleware
+2018-07-11 15:27:52,197 INFO 29484 [egg-security] use nosniff middleware
+2018-07-11 15:27:52,197 INFO 29484 [egg-security] use xssProtection middleware
+2018-07-11 15:27:52,197 INFO 29484 [egg-security] use xframe middleware
+2018-07-11 15:27:52,197 INFO 29484 [egg-security] use dta middleware
+2018-07-11 15:27:52,197 INFO 29484 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:27:52,205 INFO 29484 [egg:core] dump config after load, 4ms
+2018-07-11 15:27:52,227 INFO 29484 [egg-watcher:app] watcher start success
+2018-07-11 15:27:52,245 INFO 29484 [egg:core] dump config after ready, 3ms
+2018-07-11 15:27:52,638 INFO 29488 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:27:52,668 INFO 29488 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:27:52,668 INFO 29488 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:27:52,792 INFO 29488 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:27:52,793 INFO 29488 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:27:53,032 INFO 29488 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:27:53,034 INFO 29488 [egg-security] use noopen middleware
+2018-07-11 15:27:53,034 INFO 29488 [egg-security] use nosniff middleware
+2018-07-11 15:27:53,034 INFO 29488 [egg-security] use xssProtection middleware
+2018-07-11 15:27:53,034 INFO 29488 [egg-security] use xframe middleware
+2018-07-11 15:27:53,034 INFO 29488 [egg-security] use dta middleware
+2018-07-11 15:27:53,034 INFO 29488 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:27:53,042 INFO 29488 [egg:core] dump config after load, 3ms
+2018-07-11 15:27:53,064 INFO 29488 [egg-watcher:app] watcher start success
+2018-07-11 15:27:53,083 INFO 29488 [egg:core] dump config after ready, 4ms
+2018-07-11 15:27:53,537 INFO 29491 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:27:53,573 INFO 29491 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:27:53,573 INFO 29491 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:27:53,720 INFO 29491 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:27:53,720 INFO 29491 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:27:53,962 INFO 29491 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:27:53,964 INFO 29491 [egg-security] use noopen middleware
+2018-07-11 15:27:53,964 INFO 29491 [egg-security] use nosniff middleware
+2018-07-11 15:27:53,964 INFO 29491 [egg-security] use xssProtection middleware
+2018-07-11 15:27:53,964 INFO 29491 [egg-security] use xframe middleware
+2018-07-11 15:27:53,965 INFO 29491 [egg-security] use dta middleware
+2018-07-11 15:27:53,965 INFO 29491 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:27:53,973 INFO 29491 [egg:core] dump config after load, 4ms
+2018-07-11 15:27:53,991 INFO 29491 [egg-watcher:app] watcher start success
+2018-07-11 15:27:54,020 INFO 29491 [egg:core] dump config after ready, 5ms
+2018-07-11 15:27:58,697 INFO 29514 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:27:58,728 INFO 29514 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:27:58,728 INFO 29514 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:27:58,855 INFO 29514 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:27:58,856 INFO 29514 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:27:59,075 INFO 29514 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:27:59,077 INFO 29514 [egg-security] use noopen middleware
+2018-07-11 15:27:59,078 INFO 29514 [egg-security] use nosniff middleware
+2018-07-11 15:27:59,078 INFO 29514 [egg-security] use xssProtection middleware
+2018-07-11 15:27:59,079 INFO 29514 [egg-security] use xframe middleware
+2018-07-11 15:27:59,079 INFO 29514 [egg-security] use dta middleware
+2018-07-11 15:27:59,079 INFO 29514 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:27:59,089 INFO 29514 [egg:core] dump config after load, 6ms
+2018-07-11 15:27:59,114 INFO 29514 [egg-watcher:app] watcher start success
+2018-07-11 15:27:59,133 INFO 29514 [egg:core] dump config after ready, 4ms
+2018-07-11 15:30:12,294 INFO 29777 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:30:12,324 INFO 29777 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:30:12,324 INFO 29777 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:30:12,448 INFO 29777 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:30:12,449 INFO 29777 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:30:12,688 INFO 29777 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:30:12,690 INFO 29777 [egg-security] use noopen middleware
+2018-07-11 15:30:12,690 INFO 29777 [egg-security] use nosniff middleware
+2018-07-11 15:30:12,690 INFO 29777 [egg-security] use xssProtection middleware
+2018-07-11 15:30:12,690 INFO 29777 [egg-security] use xframe middleware
+2018-07-11 15:30:12,690 INFO 29777 [egg-security] use dta middleware
+2018-07-11 15:30:12,690 INFO 29777 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:30:12,697 INFO 29777 [egg:core] dump config after load, 3ms
+2018-07-11 15:30:12,712 INFO 29777 [egg-watcher:app] watcher start success
+2018-07-11 15:30:12,737 INFO 29777 [egg:core] dump config after ready, 3ms
+2018-07-11 15:30:39,533 INFO 29831 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:30:39,567 INFO 29831 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:30:39,567 INFO 29831 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:30:39,704 INFO 29831 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:30:39,704 INFO 29831 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:30:39,952 INFO 29831 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:30:39,953 INFO 29831 [egg-security] use noopen middleware
+2018-07-11 15:30:39,954 INFO 29831 [egg-security] use nosniff middleware
+2018-07-11 15:30:39,954 INFO 29831 [egg-security] use xssProtection middleware
+2018-07-11 15:30:39,954 INFO 29831 [egg-security] use xframe middleware
+2018-07-11 15:30:39,954 INFO 29831 [egg-security] use dta middleware
+2018-07-11 15:30:39,954 INFO 29831 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:30:39,964 INFO 29831 [egg:core] dump config after load, 5ms
+2018-07-11 15:30:39,991 INFO 29831 [egg-watcher:app] watcher start success
+2018-07-11 15:30:40,028 INFO 29831 [egg:core] dump config after ready, 6ms
+2018-07-11 15:30:49,912 INFO 29858 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:30:49,947 INFO 29858 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:30:49,947 INFO 29858 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:30:50,076 INFO 29858 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:30:50,077 INFO 29858 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:30:50,310 INFO 29858 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:30:50,312 INFO 29858 [egg-security] use noopen middleware
+2018-07-11 15:30:50,312 INFO 29858 [egg-security] use nosniff middleware
+2018-07-11 15:30:50,313 INFO 29858 [egg-security] use xssProtection middleware
+2018-07-11 15:30:50,313 INFO 29858 [egg-security] use xframe middleware
+2018-07-11 15:30:50,314 INFO 29858 [egg-security] use dta middleware
+2018-07-11 15:30:50,314 INFO 29858 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:30:50,324 INFO 29858 [egg:core] dump config after load, 4ms
+2018-07-11 15:30:50,348 INFO 29858 [egg-watcher:app] watcher start success
+2018-07-11 15:30:50,368 INFO 29858 [egg:core] dump config after ready, 4ms
+2018-07-11 15:31:29,857 INFO 29956 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:31:29,887 INFO 29956 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:31:29,887 INFO 29956 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:31:30,003 INFO 29956 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:31:30,004 INFO 29956 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:31:30,243 INFO 29956 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:31:30,245 INFO 29956 [egg-security] use noopen middleware
+2018-07-11 15:31:30,245 INFO 29956 [egg-security] use nosniff middleware
+2018-07-11 15:31:30,245 INFO 29956 [egg-security] use xssProtection middleware
+2018-07-11 15:31:30,245 INFO 29956 [egg-security] use xframe middleware
+2018-07-11 15:31:30,246 INFO 29956 [egg-security] use dta middleware
+2018-07-11 15:31:30,246 INFO 29956 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:31:30,255 INFO 29956 [egg:core] dump config after load, 5ms
+2018-07-11 15:31:30,278 INFO 29956 [egg-watcher:app] watcher start success
+2018-07-11 15:31:30,299 INFO 29956 [egg:core] dump config after ready, 5ms
+2018-07-11 15:33:07,324 INFO 30180 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:33:07,357 INFO 30180 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:33:07,357 INFO 30180 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:33:07,493 INFO 30180 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:33:07,502 INFO 30180 [egg-oauth2-server] egg-oauth2-server started use 8 ms
+2018-07-11 15:33:07,762 INFO 30180 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:33:07,764 INFO 30180 [egg-security] use noopen middleware
+2018-07-11 15:33:07,764 INFO 30180 [egg-security] use nosniff middleware
+2018-07-11 15:33:07,764 INFO 30180 [egg-security] use xssProtection middleware
+2018-07-11 15:33:07,764 INFO 30180 [egg-security] use xframe middleware
+2018-07-11 15:33:07,765 INFO 30180 [egg-security] use dta middleware
+2018-07-11 15:33:07,765 INFO 30180 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:33:07,775 INFO 30180 [egg:core] dump config after load, 5ms
+2018-07-11 15:33:07,798 INFO 30180 [egg-watcher:app] watcher start success
+2018-07-11 15:33:07,817 INFO 30180 [egg:core] dump config after ready, 3ms
+2018-07-11 15:33:16,144 INFO 30188 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:33:16,178 INFO 30188 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:33:16,178 INFO 30188 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:33:16,304 INFO 30188 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:33:16,305 INFO 30188 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:33:16,534 INFO 30188 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:33:16,537 INFO 30188 [egg-security] use noopen middleware
+2018-07-11 15:33:16,537 INFO 30188 [egg-security] use nosniff middleware
+2018-07-11 15:33:16,538 INFO 30188 [egg-security] use xssProtection middleware
+2018-07-11 15:33:16,538 INFO 30188 [egg-security] use xframe middleware
+2018-07-11 15:33:16,538 INFO 30188 [egg-security] use dta middleware
+2018-07-11 15:33:16,538 INFO 30188 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:33:16,546 INFO 30188 [egg:core] dump config after load, 4ms
+2018-07-11 15:33:16,570 INFO 30188 [egg-watcher:app] watcher start success
+2018-07-11 15:33:16,588 INFO 30188 [egg:core] dump config after ready, 3ms
+2018-07-11 15:34:23,026 INFO 30358 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:34:23,070 INFO 30358 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:34:23,071 INFO 30358 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:34:23,206 INFO 30358 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:34:23,207 INFO 30358 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:34:23,437 INFO 30358 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:34:23,438 INFO 30358 [egg-security] use noopen middleware
+2018-07-11 15:34:23,439 INFO 30358 [egg-security] use nosniff middleware
+2018-07-11 15:34:23,439 INFO 30358 [egg-security] use xssProtection middleware
+2018-07-11 15:34:23,439 INFO 30358 [egg-security] use xframe middleware
+2018-07-11 15:34:23,439 INFO 30358 [egg-security] use dta middleware
+2018-07-11 15:34:23,439 INFO 30358 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:34:23,446 INFO 30358 [egg:core] dump config after load, 4ms
+2018-07-11 15:34:23,463 INFO 30358 [egg-watcher:app] watcher start success
+2018-07-11 15:34:23,489 INFO 30358 [egg:core] dump config after ready, 3ms
+2018-07-11 15:34:23,948 INFO 30363 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:34:23,984 INFO 30363 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:34:23,984 INFO 30363 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:34:24,133 INFO 30363 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:34:24,133 INFO 30363 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:34:24,386 INFO 30363 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:34:24,388 INFO 30363 [egg-security] use noopen middleware
+2018-07-11 15:34:24,388 INFO 30363 [egg-security] use nosniff middleware
+2018-07-11 15:34:24,388 INFO 30363 [egg-security] use xssProtection middleware
+2018-07-11 15:34:24,389 INFO 30363 [egg-security] use xframe middleware
+2018-07-11 15:34:24,389 INFO 30363 [egg-security] use dta middleware
+2018-07-11 15:34:24,389 INFO 30363 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:34:24,398 INFO 30363 [egg:core] dump config after load, 4ms
+2018-07-11 15:34:24,424 INFO 30363 [egg-watcher:app] watcher start success
+2018-07-11 15:34:24,445 INFO 30363 [egg:core] dump config after ready, 4ms
+2018-07-11 15:34:31,705 INFO 30387 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:34:31,736 INFO 30387 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:34:31,736 INFO 30387 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:34:31,864 INFO 30387 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:34:31,865 INFO 30387 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:34:32,089 INFO 30387 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:34:32,090 INFO 30387 [egg-security] use noopen middleware
+2018-07-11 15:34:32,091 INFO 30387 [egg-security] use nosniff middleware
+2018-07-11 15:34:32,091 INFO 30387 [egg-security] use xssProtection middleware
+2018-07-11 15:34:32,091 INFO 30387 [egg-security] use xframe middleware
+2018-07-11 15:34:32,092 INFO 30387 [egg-security] use dta middleware
+2018-07-11 15:34:32,092 INFO 30387 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:34:32,102 INFO 30387 [egg:core] dump config after load, 5ms
+2018-07-11 15:34:32,125 INFO 30387 [egg-watcher:app] watcher start success
+2018-07-11 15:34:32,145 INFO 30387 [egg:core] dump config after ready, 4ms
+2018-07-11 15:38:08,406 INFO 30882 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:38:08,442 INFO 30882 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:38:08,442 INFO 30882 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:38:08,585 INFO 30882 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:38:08,586 INFO 30882 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:38:08,843 INFO 30882 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:38:08,845 INFO 30882 [egg-security] use noopen middleware
+2018-07-11 15:38:08,845 INFO 30882 [egg-security] use nosniff middleware
+2018-07-11 15:38:08,846 INFO 30882 [egg-security] use xssProtection middleware
+2018-07-11 15:38:08,846 INFO 30882 [egg-security] use xframe middleware
+2018-07-11 15:38:08,846 INFO 30882 [egg-security] use dta middleware
+2018-07-11 15:38:08,846 INFO 30882 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:38:08,857 INFO 30882 [egg:core] dump config after load, 6ms
+2018-07-11 15:38:08,874 INFO 30882 [egg-watcher:app] watcher start success
+2018-07-11 15:38:08,904 INFO 30882 [egg:core] dump config after ready, 4ms
+2018-07-11 15:38:16,508 INFO 30907 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:38:16,542 INFO 30907 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:38:16,542 INFO 30907 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:38:16,661 INFO 30907 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:38:16,662 INFO 30907 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:38:16,887 INFO 30907 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:38:16,889 INFO 30907 [egg-security] use noopen middleware
+2018-07-11 15:38:16,889 INFO 30907 [egg-security] use nosniff middleware
+2018-07-11 15:38:16,889 INFO 30907 [egg-security] use xssProtection middleware
+2018-07-11 15:38:16,890 INFO 30907 [egg-security] use xframe middleware
+2018-07-11 15:38:16,890 INFO 30907 [egg-security] use dta middleware
+2018-07-11 15:38:16,890 INFO 30907 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:38:16,899 INFO 30907 [egg:core] dump config after load, 5ms
+2018-07-11 15:38:16,923 INFO 30907 [egg-watcher:app] watcher start success
+2018-07-11 15:38:16,941 INFO 30907 [egg:core] dump config after ready, 3ms
+2018-07-11 15:40:51,907 INFO 31233 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:40:51,936 INFO 31233 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:40:51,936 INFO 31233 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:40:52,069 INFO 31233 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:40:52,070 INFO 31233 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:40:52,326 INFO 31233 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:40:52,329 INFO 31233 [egg-security] use noopen middleware
+2018-07-11 15:40:52,329 INFO 31233 [egg-security] use nosniff middleware
+2018-07-11 15:40:52,329 INFO 31233 [egg-security] use xssProtection middleware
+2018-07-11 15:40:52,330 INFO 31233 [egg-security] use xframe middleware
+2018-07-11 15:40:52,330 INFO 31233 [egg-security] use dta middleware
+2018-07-11 15:40:52,330 INFO 31233 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:40:52,339 INFO 31233 [egg:core] dump config after load, 4ms
+2018-07-11 15:40:52,367 INFO 31233 [egg-watcher:app] watcher start success
+2018-07-11 15:40:52,389 INFO 31233 [egg:core] dump config after ready, 4ms
+2018-07-11 15:40:52,855 INFO 31237 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:40:52,892 INFO 31237 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:40:52,892 INFO 31237 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:40:53,037 INFO 31237 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:40:53,038 INFO 31237 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:40:53,291 INFO 31237 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:40:53,293 INFO 31237 [egg-security] use noopen middleware
+2018-07-11 15:40:53,294 INFO 31237 [egg-security] use nosniff middleware
+2018-07-11 15:40:53,294 INFO 31237 [egg-security] use xssProtection middleware
+2018-07-11 15:40:53,295 INFO 31237 [egg-security] use xframe middleware
+2018-07-11 15:40:53,295 INFO 31237 [egg-security] use dta middleware
+2018-07-11 15:40:53,295 INFO 31237 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:40:53,303 INFO 31237 [egg:core] dump config after load, 4ms
+2018-07-11 15:40:53,328 INFO 31237 [egg-watcher:app] watcher start success
+2018-07-11 15:40:53,347 INFO 31237 [egg:core] dump config after ready, 4ms
+2018-07-11 15:41:44,879 INFO 31346 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:41:44,917 INFO 31346 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:41:44,917 INFO 31346 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:41:45,054 INFO 31346 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:41:45,055 INFO 31346 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:41:45,322 INFO 31346 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:41:45,325 INFO 31346 [egg-security] use noopen middleware
+2018-07-11 15:41:45,325 INFO 31346 [egg-security] use nosniff middleware
+2018-07-11 15:41:45,325 INFO 31346 [egg-security] use xssProtection middleware
+2018-07-11 15:41:45,326 INFO 31346 [egg-security] use xframe middleware
+2018-07-11 15:41:45,327 INFO 31346 [egg-security] use dta middleware
+2018-07-11 15:41:45,327 INFO 31346 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:41:45,337 INFO 31346 [egg:core] dump config after load, 5ms
+2018-07-11 15:41:45,356 INFO 31346 [egg-watcher:app] watcher start success
+2018-07-11 15:41:45,389 INFO 31346 [egg:core] dump config after ready, 4ms
+2018-07-11 15:42:03,798 INFO 31399 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:42:03,833 INFO 31399 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:42:03,833 INFO 31399 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:42:03,967 INFO 31399 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:42:03,972 INFO 31399 [egg-oauth2-server] egg-oauth2-server started use 5 ms
+2018-07-11 15:42:04,206 INFO 31399 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:42:04,207 INFO 31399 [egg-security] use noopen middleware
+2018-07-11 15:42:04,208 INFO 31399 [egg-security] use nosniff middleware
+2018-07-11 15:42:04,208 INFO 31399 [egg-security] use xssProtection middleware
+2018-07-11 15:42:04,208 INFO 31399 [egg-security] use xframe middleware
+2018-07-11 15:42:04,208 INFO 31399 [egg-security] use dta middleware
+2018-07-11 15:42:04,208 INFO 31399 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:42:04,217 INFO 31399 [egg:core] dump config after load, 4ms
+2018-07-11 15:42:04,234 INFO 31399 [egg-watcher:app] watcher start success
+2018-07-11 15:42:04,261 INFO 31399 [egg:core] dump config after ready, 3ms
+2018-07-11 15:47:07,839 INFO 31987 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:47:07,869 INFO 31987 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:47:07,869 INFO 31987 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:47:07,981 INFO 31987 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:47:07,982 INFO 31987 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:47:08,234 INFO 31987 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:47:08,236 INFO 31987 [egg-security] use noopen middleware
+2018-07-11 15:47:08,237 INFO 31987 [egg-security] use nosniff middleware
+2018-07-11 15:47:08,237 INFO 31987 [egg-security] use xssProtection middleware
+2018-07-11 15:47:08,237 INFO 31987 [egg-security] use xframe middleware
+2018-07-11 15:47:08,237 INFO 31987 [egg-security] use dta middleware
+2018-07-11 15:47:08,237 INFO 31987 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:47:08,245 INFO 31987 [egg:core] dump config after load, 3ms
+2018-07-11 15:47:08,261 INFO 31987 [egg-watcher:app] watcher start success
+2018-07-11 15:47:08,288 INFO 31987 [egg:core] dump config after ready, 4ms
+2018-07-11 15:48:13,511 INFO 32159 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:48:13,540 INFO 32159 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:48:13,540 INFO 32159 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:48:13,653 INFO 32159 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:48:13,653 INFO 32159 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:48:13,872 INFO 32159 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:48:13,874 INFO 32159 [egg-security] use noopen middleware
+2018-07-11 15:48:13,874 INFO 32159 [egg-security] use nosniff middleware
+2018-07-11 15:48:13,874 INFO 32159 [egg-security] use xssProtection middleware
+2018-07-11 15:48:13,875 INFO 32159 [egg-security] use xframe middleware
+2018-07-11 15:48:13,875 INFO 32159 [egg-security] use dta middleware
+2018-07-11 15:48:13,875 INFO 32159 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:48:13,882 INFO 32159 [egg:core] dump config after load, 4ms
+2018-07-11 15:48:13,904 INFO 32159 [egg-watcher:app] watcher start success
+2018-07-11 15:48:13,922 INFO 32159 [egg:core] dump config after ready, 4ms
+2018-07-11 15:48:17,994 INFO 32168 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:48:18,030 INFO 32168 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:48:18,030 INFO 32168 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:48:18,170 INFO 32168 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:48:18,170 INFO 32168 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:48:18,419 INFO 32168 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:48:18,421 INFO 32168 [egg-security] use noopen middleware
+2018-07-11 15:48:18,422 INFO 32168 [egg-security] use nosniff middleware
+2018-07-11 15:48:18,422 INFO 32168 [egg-security] use xssProtection middleware
+2018-07-11 15:48:18,422 INFO 32168 [egg-security] use xframe middleware
+2018-07-11 15:48:18,422 INFO 32168 [egg-security] use dta middleware
+2018-07-11 15:48:18,422 INFO 32168 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:48:18,432 INFO 32168 [egg:core] dump config after load, 4ms
+2018-07-11 15:48:18,462 INFO 32168 [egg-watcher:app] watcher start success
+2018-07-11 15:48:18,490 INFO 32168 [egg:core] dump config after ready, 4ms
+2018-07-11 15:55:21,846 WARN 32168 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 15:56:50,342 INFO 33121 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:56:50,379 INFO 33121 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:56:50,379 INFO 33121 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:56:50,526 INFO 33121 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:56:50,527 INFO 33121 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:56:50,781 INFO 33121 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:56:50,783 INFO 33121 [egg-security] use noopen middleware
+2018-07-11 15:56:50,783 INFO 33121 [egg-security] use nosniff middleware
+2018-07-11 15:56:50,784 INFO 33121 [egg-security] use xssProtection middleware
+2018-07-11 15:56:50,784 INFO 33121 [egg-security] use xframe middleware
+2018-07-11 15:56:50,784 INFO 33121 [egg-security] use dta middleware
+2018-07-11 15:56:50,784 INFO 33121 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:56:50,798 INFO 33121 [egg:core] dump config after load, 6ms
+2018-07-11 15:56:50,822 INFO 33121 [egg-watcher:app] watcher start success
+2018-07-11 15:56:50,842 INFO 33121 [egg:core] dump config after ready, 4ms
+2018-07-11 15:58:50,110 INFO 33382 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:58:50,147 INFO 33382 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:58:50,147 INFO 33382 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:58:50,299 INFO 33382 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:58:50,300 INFO 33382 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:58:50,549 INFO 33382 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:58:50,552 INFO 33382 [egg-security] use noopen middleware
+2018-07-11 15:58:50,552 INFO 33382 [egg-security] use nosniff middleware
+2018-07-11 15:58:50,553 INFO 33382 [egg-security] use xssProtection middleware
+2018-07-11 15:58:50,553 INFO 33382 [egg-security] use xframe middleware
+2018-07-11 15:58:50,553 INFO 33382 [egg-security] use dta middleware
+2018-07-11 15:58:50,553 INFO 33382 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:58:50,562 INFO 33382 [egg:core] dump config after load, 5ms
+2018-07-11 15:58:50,579 INFO 33382 [egg-watcher:app] watcher start success
+2018-07-11 15:58:50,607 INFO 33382 [egg:core] dump config after ready, 3ms
+2018-07-11 15:59:00,647 INFO 33411 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:59:00,683 INFO 33411 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:59:00,683 INFO 33411 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:59:00,813 INFO 33411 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:59:00,813 INFO 33411 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 15:59:01,023 INFO 33411 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 15:59:01,025 INFO 33411 [egg-security] use noopen middleware
+2018-07-11 15:59:01,025 INFO 33411 [egg-security] use nosniff middleware
+2018-07-11 15:59:01,026 INFO 33411 [egg-security] use xssProtection middleware
+2018-07-11 15:59:01,026 INFO 33411 [egg-security] use xframe middleware
+2018-07-11 15:59:01,026 INFO 33411 [egg-security] use dta middleware
+2018-07-11 15:59:01,026 INFO 33411 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:59:01,034 INFO 33411 [egg:core] dump config after load, 4ms
+2018-07-11 15:59:01,060 INFO 33411 [egg-watcher:app] watcher start success
+2018-07-11 15:59:01,078 INFO 33411 [egg:core] dump config after ready, 4ms
+2018-07-11 16:09:24,150 WARN 33411 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 16:31:21,127 WARN 33411 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 16:32:07,806 INFO 36368 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:32:07,835 INFO 36368 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:32:07,835 INFO 36368 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:32:07,948 INFO 36368 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:32:07,948 INFO 36368 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 16:32:08,171 INFO 36368 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:32:08,172 INFO 36368 [egg-security] use noopen middleware
+2018-07-11 16:32:08,172 INFO 36368 [egg-security] use nosniff middleware
+2018-07-11 16:32:08,173 INFO 36368 [egg-security] use xssProtection middleware
+2018-07-11 16:32:08,173 INFO 36368 [egg-security] use xframe middleware
+2018-07-11 16:32:08,173 INFO 36368 [egg-security] use dta middleware
+2018-07-11 16:32:08,173 INFO 36368 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:32:08,181 INFO 36368 [egg:core] dump config after load, 4ms
+2018-07-11 16:32:08,197 INFO 36368 [egg-watcher:app] watcher start success
+2018-07-11 16:32:08,228 INFO 36368 [egg:core] dump config after ready, 5ms
+2018-07-11 16:33:08,826 INFO 36486 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:33:08,859 INFO 36486 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:33:08,859 INFO 36486 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:33:08,986 INFO 36486 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:33:08,987 INFO 36486 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 16:33:09,207 INFO 36486 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:33:09,209 INFO 36486 [egg-security] use noopen middleware
+2018-07-11 16:33:09,209 INFO 36486 [egg-security] use nosniff middleware
+2018-07-11 16:33:09,209 INFO 36486 [egg-security] use xssProtection middleware
+2018-07-11 16:33:09,210 INFO 36486 [egg-security] use xframe middleware
+2018-07-11 16:33:09,210 INFO 36486 [egg-security] use dta middleware
+2018-07-11 16:33:09,210 INFO 36486 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:33:09,218 INFO 36486 [egg:core] dump config after load, 4ms
+2018-07-11 16:33:09,242 INFO 36486 [egg-watcher:app] watcher start success
+2018-07-11 16:33:09,260 INFO 36486 [egg:core] dump config after ready, 4ms
+2018-07-11 16:33:09,706 INFO 36505 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:33:09,747 INFO 36505 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:33:09,747 INFO 36505 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:33:09,900 INFO 36505 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:33:09,900 INFO 36505 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 16:33:10,143 INFO 36505 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:33:10,144 INFO 36505 [egg-security] use noopen middleware
+2018-07-11 16:33:10,145 INFO 36505 [egg-security] use nosniff middleware
+2018-07-11 16:33:10,145 INFO 36505 [egg-security] use xssProtection middleware
+2018-07-11 16:33:10,145 INFO 36505 [egg-security] use xframe middleware
+2018-07-11 16:33:10,145 INFO 36505 [egg-security] use dta middleware
+2018-07-11 16:33:10,145 INFO 36505 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:33:10,153 INFO 36505 [egg:core] dump config after load, 4ms
+2018-07-11 16:33:10,171 INFO 36505 [egg-watcher:app] watcher start success
+2018-07-11 16:33:10,199 INFO 36505 [egg:core] dump config after ready, 3ms
+2018-07-11 16:33:42,119 INFO 36577 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:33:42,148 INFO 36577 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:33:42,148 INFO 36577 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:33:42,264 INFO 36577 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:33:42,265 INFO 36577 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 16:33:42,481 INFO 36577 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:33:42,483 INFO 36577 [egg-security] use noopen middleware
+2018-07-11 16:33:42,483 INFO 36577 [egg-security] use nosniff middleware
+2018-07-11 16:33:42,483 INFO 36577 [egg-security] use xssProtection middleware
+2018-07-11 16:33:42,483 INFO 36577 [egg-security] use xframe middleware
+2018-07-11 16:33:42,484 INFO 36577 [egg-security] use dta middleware
+2018-07-11 16:33:42,484 INFO 36577 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:33:42,491 INFO 36577 [egg:core] dump config after load, 4ms
+2018-07-11 16:33:42,506 INFO 36577 [egg-watcher:app] watcher start success
+2018-07-11 16:33:42,531 INFO 36577 [egg:core] dump config after ready, 3ms
+2018-07-11 16:35:39,876 INFO 36810 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:35:39,906 INFO 36810 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:35:39,906 INFO 36810 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:35:40,020 INFO 36810 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:35:40,021 INFO 36810 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 16:35:40,263 INFO 36810 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:35:40,265 INFO 36810 [egg-security] use noopen middleware
+2018-07-11 16:35:40,265 INFO 36810 [egg-security] use nosniff middleware
+2018-07-11 16:35:40,265 INFO 36810 [egg-security] use xssProtection middleware
+2018-07-11 16:35:40,265 INFO 36810 [egg-security] use xframe middleware
+2018-07-11 16:35:40,266 INFO 36810 [egg-security] use dta middleware
+2018-07-11 16:35:40,266 INFO 36810 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:35:40,275 INFO 36810 [egg:core] dump config after load, 5ms
+2018-07-11 16:35:40,300 INFO 36810 [egg-watcher:app] watcher start success
+2018-07-11 16:35:40,320 INFO 36810 [egg:core] dump config after ready, 4ms
+2018-07-11 16:35:40,757 INFO 36814 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:35:40,791 INFO 36814 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:35:40,791 INFO 36814 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:35:40,919 INFO 36814 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:35:40,920 INFO 36814 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 16:35:41,158 INFO 36814 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:35:41,160 INFO 36814 [egg-security] use noopen middleware
+2018-07-11 16:35:41,160 INFO 36814 [egg-security] use nosniff middleware
+2018-07-11 16:35:41,161 INFO 36814 [egg-security] use xssProtection middleware
+2018-07-11 16:35:41,161 INFO 36814 [egg-security] use xframe middleware
+2018-07-11 16:35:41,161 INFO 36814 [egg-security] use dta middleware
+2018-07-11 16:35:41,161 INFO 36814 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:35:41,171 INFO 36814 [egg:core] dump config after load, 5ms
+2018-07-11 16:35:41,189 INFO 36814 [egg-watcher:app] watcher start success
+2018-07-11 16:35:41,219 INFO 36814 [egg:core] dump config after ready, 4ms
+2018-07-11 16:35:51,754 INFO 36846 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:35:51,789 INFO 36846 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:35:51,789 INFO 36846 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:35:51,918 INFO 36846 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:35:51,923 INFO 36846 [egg-oauth2-server] egg-oauth2-server started use 5 ms
+2018-07-11 16:35:52,144 INFO 36846 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:35:52,147 INFO 36846 [egg-security] use noopen middleware
+2018-07-11 16:35:52,147 INFO 36846 [egg-security] use nosniff middleware
+2018-07-11 16:35:52,148 INFO 36846 [egg-security] use xssProtection middleware
+2018-07-11 16:35:52,148 INFO 36846 [egg-security] use xframe middleware
+2018-07-11 16:35:52,148 INFO 36846 [egg-security] use dta middleware
+2018-07-11 16:35:52,149 INFO 36846 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:35:52,159 INFO 36846 [egg:core] dump config after load, 5ms
+2018-07-11 16:35:52,184 INFO 36846 [egg-watcher:app] watcher start success
+2018-07-11 16:35:52,203 INFO 36846 [egg:core] dump config after ready, 3ms
+2018-07-11 16:39:31,862 INFO 37303 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:39:31,891 INFO 37303 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:39:31,891 INFO 37303 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:39:32,007 INFO 37303 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:39:32,007 INFO 37303 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 16:39:32,226 INFO 37303 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:39:32,228 INFO 37303 [egg-security] use noopen middleware
+2018-07-11 16:39:32,228 INFO 37303 [egg-security] use nosniff middleware
+2018-07-11 16:39:32,228 INFO 37303 [egg-security] use xssProtection middleware
+2018-07-11 16:39:32,228 INFO 37303 [egg-security] use xframe middleware
+2018-07-11 16:39:32,229 INFO 37303 [egg-security] use dta middleware
+2018-07-11 16:39:32,229 INFO 37303 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:39:32,235 INFO 37303 [egg:core] dump config after load, 3ms
+2018-07-11 16:39:32,257 INFO 37303 [egg-watcher:app] watcher start success
+2018-07-11 16:39:32,275 INFO 37303 [egg:core] dump config after ready, 4ms
+2018-07-11 16:51:47,566 INFO 38500 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:51:47,601 INFO 38500 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:51:47,601 INFO 38500 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:51:47,734 INFO 38500 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:51:47,734 INFO 38500 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 16:51:47,962 INFO 38500 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:51:47,964 INFO 38500 [egg-security] use noopen middleware
+2018-07-11 16:51:47,964 INFO 38500 [egg-security] use nosniff middleware
+2018-07-11 16:51:47,965 INFO 38500 [egg-security] use xssProtection middleware
+2018-07-11 16:51:47,965 INFO 38500 [egg-security] use xframe middleware
+2018-07-11 16:51:47,965 INFO 38500 [egg-security] use dta middleware
+2018-07-11 16:51:47,965 INFO 38500 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:51:47,973 INFO 38500 [egg:core] dump config after load, 4ms
+2018-07-11 16:51:47,997 INFO 38500 [egg-watcher:app] watcher start success
+2018-07-11 16:51:48,016 INFO 38500 [egg:core] dump config after ready, 3ms
+2018-07-11 16:52:29,686 INFO 38599 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:52:29,721 INFO 38599 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:52:29,721 INFO 38599 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:52:29,861 INFO 38599 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:52:29,862 INFO 38599 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 16:52:30,116 INFO 38599 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:52:30,118 INFO 38599 [egg-security] use noopen middleware
+2018-07-11 16:52:30,119 INFO 38599 [egg-security] use nosniff middleware
+2018-07-11 16:52:30,119 INFO 38599 [egg-security] use xssProtection middleware
+2018-07-11 16:52:30,120 INFO 38599 [egg-security] use xframe middleware
+2018-07-11 16:52:30,120 INFO 38599 [egg-security] use dta middleware
+2018-07-11 16:52:30,120 INFO 38599 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:52:30,131 INFO 38599 [egg:core] dump config after load, 6ms
+2018-07-11 16:52:30,174 INFO 38599 [egg-watcher:app] watcher start success
+2018-07-11 16:52:30,203 INFO 38599 [egg:core] dump config after ready, 7ms
+2018-07-11 16:52:33,090 INFO 38629 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 16:52:33,125 INFO 38629 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 16:52:33,125 INFO 38629 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 16:52:33,263 INFO 38629 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 16:52:33,264 INFO 38629 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 16:52:33,505 INFO 38629 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 16:52:33,508 INFO 38629 [egg-security] use noopen middleware
+2018-07-11 16:52:33,508 INFO 38629 [egg-security] use nosniff middleware
+2018-07-11 16:52:33,509 INFO 38629 [egg-security] use xssProtection middleware
+2018-07-11 16:52:33,509 INFO 38629 [egg-security] use xframe middleware
+2018-07-11 16:52:33,510 INFO 38629 [egg-security] use dta middleware
+2018-07-11 16:52:33,510 INFO 38629 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 16:52:33,519 INFO 38629 [egg:core] dump config after load, 5ms
+2018-07-11 16:52:33,536 INFO 38629 [egg-watcher:app] watcher start success
+2018-07-11 16:52:33,566 INFO 38629 [egg:core] dump config after ready, 4ms
+2018-07-11 17:38:05,038 WARN 38629 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 17:47:25,166 WARN 38629 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 17:47:25,166 WARN 38629 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 17:48:56,010 INFO 41632 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 17:48:56,042 INFO 41632 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 17:48:56,042 INFO 41632 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 17:48:56,168 INFO 41632 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 17:48:56,169 INFO 41632 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 17:48:56,401 INFO 41632 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 17:48:56,403 INFO 41632 [egg-security] use noopen middleware
+2018-07-11 17:48:56,403 INFO 41632 [egg-security] use nosniff middleware
+2018-07-11 17:48:56,403 INFO 41632 [egg-security] use xssProtection middleware
+2018-07-11 17:48:56,404 INFO 41632 [egg-security] use xframe middleware
+2018-07-11 17:48:56,404 INFO 41632 [egg-security] use dta middleware
+2018-07-11 17:48:56,404 INFO 41632 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 17:48:56,413 INFO 41632 [egg:core] dump config after load, 5ms
+2018-07-11 17:48:56,430 INFO 41632 [egg-watcher:app] watcher start success
+2018-07-11 17:48:56,460 INFO 41632 [egg:core] dump config after ready, 4ms
+2018-07-11 17:56:13,751 INFO 42527 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 17:56:13,790 INFO 42527 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 17:56:13,790 INFO 42527 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 17:56:13,906 INFO 42527 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 17:56:13,907 INFO 42527 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 17:56:14,132 INFO 42527 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 17:56:14,133 INFO 42527 [egg-security] use noopen middleware
+2018-07-11 17:56:14,134 INFO 42527 [egg-security] use nosniff middleware
+2018-07-11 17:56:14,134 INFO 42527 [egg-security] use xssProtection middleware
+2018-07-11 17:56:14,134 INFO 42527 [egg-security] use xframe middleware
+2018-07-11 17:56:14,134 INFO 42527 [egg-security] use dta middleware
+2018-07-11 17:56:14,134 INFO 42527 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 17:56:14,143 INFO 42527 [egg:core] dump config after load, 4ms
+2018-07-11 17:56:14,167 INFO 42527 [egg-watcher:app] watcher start success
+2018-07-11 17:56:14,187 INFO 42527 [egg:core] dump config after ready, 4ms
+2018-07-11 17:57:15,889 INFO 42689 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 17:57:15,918 INFO 42689 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 17:57:15,918 INFO 42689 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 17:57:16,038 INFO 42689 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 17:57:16,039 INFO 42689 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 17:57:16,250 INFO 42689 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 17:57:16,251 INFO 42689 [egg-security] use noopen middleware
+2018-07-11 17:57:16,252 INFO 42689 [egg-security] use nosniff middleware
+2018-07-11 17:57:16,252 INFO 42689 [egg-security] use xssProtection middleware
+2018-07-11 17:57:16,252 INFO 42689 [egg-security] use xframe middleware
+2018-07-11 17:57:16,252 INFO 42689 [egg-security] use dta middleware
+2018-07-11 17:57:16,252 INFO 42689 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 17:57:16,260 INFO 42689 [egg:core] dump config after load, 4ms
+2018-07-11 17:57:16,275 INFO 42689 [egg-watcher:app] watcher start success
+2018-07-11 17:57:16,299 INFO 42689 [egg:core] dump config after ready, 3ms
+2018-07-11 18:01:56,028 INFO 43266 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:01:56,061 INFO 43266 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:01:56,061 INFO 43266 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:01:56,189 INFO 43266 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:01:56,190 INFO 43266 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:01:56,427 INFO 43266 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:01:56,428 INFO 43266 [egg-security] use noopen middleware
+2018-07-11 18:01:56,429 INFO 43266 [egg-security] use nosniff middleware
+2018-07-11 18:01:56,429 INFO 43266 [egg-security] use xssProtection middleware
+2018-07-11 18:01:56,429 INFO 43266 [egg-security] use xframe middleware
+2018-07-11 18:01:56,429 INFO 43266 [egg-security] use dta middleware
+2018-07-11 18:01:56,429 INFO 43266 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:01:56,438 INFO 43266 [egg:core] dump config after load, 4ms
+2018-07-11 18:01:56,463 INFO 43266 [egg-watcher:app] watcher start success
+2018-07-11 18:01:56,481 INFO 43266 [egg:core] dump config after ready, 3ms
+2018-07-11 18:14:07,513 INFO 44796 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:14:07,548 INFO 44796 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:14:07,548 INFO 44796 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:14:07,683 INFO 44796 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:14:07,684 INFO 44796 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:14:07,923 INFO 44796 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:14:07,925 INFO 44796 [egg-security] use noopen middleware
+2018-07-11 18:14:07,926 INFO 44796 [egg-security] use nosniff middleware
+2018-07-11 18:14:07,926 INFO 44796 [egg-security] use xssProtection middleware
+2018-07-11 18:14:07,926 INFO 44796 [egg-security] use xframe middleware
+2018-07-11 18:14:07,926 INFO 44796 [egg-security] use dta middleware
+2018-07-11 18:14:07,926 INFO 44796 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:14:07,935 INFO 44796 [egg:core] dump config after load, 4ms
+2018-07-11 18:14:07,961 INFO 44796 [egg-watcher:app] watcher start success
+2018-07-11 18:14:07,981 INFO 44796 [egg:core] dump config after ready, 4ms
+2018-07-11 18:14:09,623 INFO 44817 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:14:09,652 INFO 44817 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:14:09,652 INFO 44817 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:14:09,775 INFO 44817 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:14:09,776 INFO 44817 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:14:09,997 INFO 44817 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:14:09,999 INFO 44817 [egg-security] use noopen middleware
+2018-07-11 18:14:09,999 INFO 44817 [egg-security] use nosniff middleware
+2018-07-11 18:14:09,999 INFO 44817 [egg-security] use xssProtection middleware
+2018-07-11 18:14:09,999 INFO 44817 [egg-security] use xframe middleware
+2018-07-11 18:14:10,000 INFO 44817 [egg-security] use dta middleware
+2018-07-11 18:14:10,000 INFO 44817 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:14:10,008 INFO 44817 [egg:core] dump config after load, 4ms
+2018-07-11 18:14:10,024 INFO 44817 [egg-watcher:app] watcher start success
+2018-07-11 18:14:10,052 INFO 44817 [egg:core] dump config after ready, 4ms
+2018-07-11 18:14:21,965 INFO 44846 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:14:21,998 INFO 44846 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:14:21,998 INFO 44846 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:14:22,136 INFO 44846 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:14:22,137 INFO 44846 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:14:22,378 INFO 44846 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:14:22,380 INFO 44846 [egg-security] use noopen middleware
+2018-07-11 18:14:22,380 INFO 44846 [egg-security] use nosniff middleware
+2018-07-11 18:14:22,380 INFO 44846 [egg-security] use xssProtection middleware
+2018-07-11 18:14:22,381 INFO 44846 [egg-security] use xframe middleware
+2018-07-11 18:14:22,381 INFO 44846 [egg-security] use dta middleware
+2018-07-11 18:14:22,381 INFO 44846 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:14:22,390 INFO 44846 [egg:core] dump config after load, 5ms
+2018-07-11 18:14:22,415 INFO 44846 [egg-watcher:app] watcher start success
+2018-07-11 18:14:22,435 INFO 44846 [egg:core] dump config after ready, 4ms
+2018-07-11 18:14:25,249 INFO 44855 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:14:25,282 INFO 44855 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:14:25,282 INFO 44855 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:14:25,470 INFO 44855 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:14:25,471 INFO 44855 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:14:25,733 INFO 44855 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:14:25,735 INFO 44855 [egg-security] use noopen middleware
+2018-07-11 18:14:25,735 INFO 44855 [egg-security] use nosniff middleware
+2018-07-11 18:14:25,735 INFO 44855 [egg-security] use xssProtection middleware
+2018-07-11 18:14:25,736 INFO 44855 [egg-security] use xframe middleware
+2018-07-11 18:14:25,736 INFO 44855 [egg-security] use dta middleware
+2018-07-11 18:14:25,736 INFO 44855 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:14:25,747 INFO 44855 [egg:core] dump config after load, 5ms
+2018-07-11 18:14:25,766 INFO 44855 [egg-watcher:app] watcher start success
+2018-07-11 18:14:25,797 INFO 44855 [egg:core] dump config after ready, 5ms
+2018-07-11 18:14:37,438 INFO 44881 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:14:37,470 INFO 44881 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:14:37,470 INFO 44881 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:14:37,588 INFO 44881 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:14:37,588 INFO 44881 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:14:37,826 INFO 44881 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:14:37,828 INFO 44881 [egg-security] use noopen middleware
+2018-07-11 18:14:37,828 INFO 44881 [egg-security] use nosniff middleware
+2018-07-11 18:14:37,828 INFO 44881 [egg-security] use xssProtection middleware
+2018-07-11 18:14:37,829 INFO 44881 [egg-security] use xframe middleware
+2018-07-11 18:14:37,830 INFO 44881 [egg-security] use dta middleware
+2018-07-11 18:14:37,830 INFO 44881 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:14:37,840 INFO 44881 [egg:core] dump config after load, 5ms
+2018-07-11 18:14:37,864 INFO 44881 [egg-watcher:app] watcher start success
+2018-07-11 18:14:37,884 INFO 44881 [egg:core] dump config after ready, 4ms
+2018-07-11 18:19:12,553 INFO 45470 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:19:12,590 INFO 45470 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:19:12,590 INFO 45470 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:19:12,770 INFO 45470 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:19:12,771 INFO 45470 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:19:13,006 INFO 45470 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:19:13,008 INFO 45470 [egg-security] use noopen middleware
+2018-07-11 18:19:13,008 INFO 45470 [egg-security] use nosniff middleware
+2018-07-11 18:19:13,009 INFO 45470 [egg-security] use xssProtection middleware
+2018-07-11 18:19:13,009 INFO 45470 [egg-security] use xframe middleware
+2018-07-11 18:19:13,009 INFO 45470 [egg-security] use dta middleware
+2018-07-11 18:19:13,009 INFO 45470 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:19:13,018 INFO 45470 [egg:core] dump config after load, 5ms
+2018-07-11 18:19:13,035 INFO 45470 [egg-watcher:app] watcher start success
+2018-07-11 18:19:13,062 INFO 45470 [egg:core] dump config after ready, 4ms
+2018-07-11 18:19:24,913 INFO 45502 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:19:24,947 INFO 45502 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:19:24,947 INFO 45502 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:19:25,086 INFO 45502 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:19:25,087 INFO 45502 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:19:25,308 INFO 45502 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:19:25,310 INFO 45502 [egg-security] use noopen middleware
+2018-07-11 18:19:25,310 INFO 45502 [egg-security] use nosniff middleware
+2018-07-11 18:19:25,310 INFO 45502 [egg-security] use xssProtection middleware
+2018-07-11 18:19:25,311 INFO 45502 [egg-security] use xframe middleware
+2018-07-11 18:19:25,311 INFO 45502 [egg-security] use dta middleware
+2018-07-11 18:19:25,311 INFO 45502 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:19:25,321 INFO 45502 [egg:core] dump config after load, 5ms
+2018-07-11 18:19:25,344 INFO 45502 [egg-watcher:app] watcher start success
+2018-07-11 18:19:25,363 INFO 45502 [egg:core] dump config after ready, 4ms
+2018-07-11 18:20:05,195 INFO 45593 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:20:05,231 INFO 45593 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:20:05,231 INFO 45593 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:20:05,381 INFO 45593 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:20:05,382 INFO 45593 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:20:05,669 INFO 45593 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:20:05,671 INFO 45593 [egg-security] use noopen middleware
+2018-07-11 18:20:05,672 INFO 45593 [egg-security] use nosniff middleware
+2018-07-11 18:20:05,672 INFO 45593 [egg-security] use xssProtection middleware
+2018-07-11 18:20:05,672 INFO 45593 [egg-security] use xframe middleware
+2018-07-11 18:20:05,672 INFO 45593 [egg-security] use dta middleware
+2018-07-11 18:20:05,672 INFO 45593 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:20:05,680 INFO 45593 [egg:core] dump config after load, 4ms
+2018-07-11 18:20:05,705 INFO 45593 [egg-watcher:app] watcher start success
+2018-07-11 18:20:05,724 INFO 45593 [egg:core] dump config after ready, 4ms
+2018-07-11 18:20:13,424 INFO 45617 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:20:13,459 INFO 45617 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:20:13,459 INFO 45617 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:20:13,586 INFO 45617 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:20:13,587 INFO 45617 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:20:13,809 INFO 45617 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:20:13,810 INFO 45617 [egg-security] use noopen middleware
+2018-07-11 18:20:13,810 INFO 45617 [egg-security] use nosniff middleware
+2018-07-11 18:20:13,811 INFO 45617 [egg-security] use xssProtection middleware
+2018-07-11 18:20:13,812 INFO 45617 [egg-security] use xframe middleware
+2018-07-11 18:20:13,812 INFO 45617 [egg-security] use dta middleware
+2018-07-11 18:20:13,812 INFO 45617 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:20:13,822 INFO 45617 [egg:core] dump config after load, 6ms
+2018-07-11 18:20:13,845 INFO 45617 [egg-watcher:app] watcher start success
+2018-07-11 18:20:13,863 INFO 45617 [egg:core] dump config after ready, 4ms
+2018-07-11 18:26:10,481 INFO 46276 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:26:10,519 INFO 46276 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:26:10,519 INFO 46276 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:26:10,670 INFO 46276 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:26:10,670 INFO 46276 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:26:10,914 INFO 46276 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:26:10,915 INFO 46276 [egg-security] use noopen middleware
+2018-07-11 18:26:10,916 INFO 46276 [egg-security] use nosniff middleware
+2018-07-11 18:26:10,916 INFO 46276 [egg-security] use xssProtection middleware
+2018-07-11 18:26:10,916 INFO 46276 [egg-security] use xframe middleware
+2018-07-11 18:26:10,916 INFO 46276 [egg-security] use dta middleware
+2018-07-11 18:26:10,916 INFO 46276 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:26:10,926 INFO 46276 [egg:core] dump config after load, 5ms
+2018-07-11 18:26:10,952 INFO 46276 [egg-watcher:app] watcher start success
+2018-07-11 18:26:10,974 INFO 46276 [egg:core] dump config after ready, 5ms
+2018-07-11 18:27:38,373 INFO 46481 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:27:38,410 INFO 46481 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:27:38,410 INFO 46481 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:27:38,554 INFO 46481 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:27:38,555 INFO 46481 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:27:38,814 INFO 46481 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:27:38,816 INFO 46481 [egg-security] use noopen middleware
+2018-07-11 18:27:38,816 INFO 46481 [egg-security] use nosniff middleware
+2018-07-11 18:27:38,816 INFO 46481 [egg-security] use xssProtection middleware
+2018-07-11 18:27:38,816 INFO 46481 [egg-security] use xframe middleware
+2018-07-11 18:27:38,817 INFO 46481 [egg-security] use dta middleware
+2018-07-11 18:27:38,817 INFO 46481 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:27:38,825 INFO 46481 [egg:core] dump config after load, 4ms
+2018-07-11 18:27:38,842 INFO 46481 [egg-watcher:app] watcher start success
+2018-07-11 18:27:38,870 INFO 46481 [egg:core] dump config after ready, 4ms
+2018-07-11 18:28:42,889 INFO 46616 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:28:42,924 INFO 46616 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:28:42,924 INFO 46616 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:28:43,058 INFO 46616 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:28:43,059 INFO 46616 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:28:43,301 INFO 46616 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:28:43,302 INFO 46616 [egg-security] use noopen middleware
+2018-07-11 18:28:43,303 INFO 46616 [egg-security] use nosniff middleware
+2018-07-11 18:28:43,303 INFO 46616 [egg-security] use xssProtection middleware
+2018-07-11 18:28:43,303 INFO 46616 [egg-security] use xframe middleware
+2018-07-11 18:28:43,303 INFO 46616 [egg-security] use dta middleware
+2018-07-11 18:28:43,303 INFO 46616 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:28:43,312 INFO 46616 [egg:core] dump config after load, 4ms
+2018-07-11 18:28:43,337 INFO 46616 [egg-watcher:app] watcher start success
+2018-07-11 18:28:43,358 INFO 46616 [egg:core] dump config after ready, 5ms
+2018-07-11 18:29:27,968 INFO 46729 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:29:28,002 INFO 46729 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:29:28,002 INFO 46729 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:29:28,125 INFO 46729 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:29:28,126 INFO 46729 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:29:28,388 INFO 46729 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:29:28,390 INFO 46729 [egg-security] use noopen middleware
+2018-07-11 18:29:28,390 INFO 46729 [egg-security] use nosniff middleware
+2018-07-11 18:29:28,391 INFO 46729 [egg-security] use xssProtection middleware
+2018-07-11 18:29:28,391 INFO 46729 [egg-security] use xframe middleware
+2018-07-11 18:29:28,391 INFO 46729 [egg-security] use dta middleware
+2018-07-11 18:29:28,391 INFO 46729 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:29:28,400 INFO 46729 [egg:core] dump config after load, 5ms
+2018-07-11 18:29:28,425 INFO 46729 [egg-watcher:app] watcher start success
+2018-07-11 18:29:28,446 INFO 46729 [egg:core] dump config after ready, 5ms
+2018-07-11 18:29:47,961 INFO 46778 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:29:48,011 INFO 46778 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:29:48,011 INFO 46778 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:29:48,170 INFO 46778 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:29:48,171 INFO 46778 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:29:48,399 INFO 46778 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:29:48,400 INFO 46778 [egg-security] use noopen middleware
+2018-07-11 18:29:48,400 INFO 46778 [egg-security] use nosniff middleware
+2018-07-11 18:29:48,401 INFO 46778 [egg-security] use xssProtection middleware
+2018-07-11 18:29:48,401 INFO 46778 [egg-security] use xframe middleware
+2018-07-11 18:29:48,401 INFO 46778 [egg-security] use dta middleware
+2018-07-11 18:29:48,401 INFO 46778 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:29:48,410 INFO 46778 [egg:core] dump config after load, 5ms
+2018-07-11 18:29:48,426 INFO 46778 [egg-watcher:app] watcher start success
+2018-07-11 18:29:48,453 INFO 46778 [egg:core] dump config after ready, 4ms
+2018-07-11 18:29:48,905 INFO 46782 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:29:48,940 INFO 46782 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:29:48,941 INFO 46782 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:29:49,074 INFO 46782 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:29:49,076 INFO 46782 [egg-oauth2-server] egg-oauth2-server started use 2 ms
+2018-07-11 18:29:49,331 INFO 46782 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:29:49,332 INFO 46782 [egg-security] use noopen middleware
+2018-07-11 18:29:49,333 INFO 46782 [egg-security] use nosniff middleware
+2018-07-11 18:29:49,333 INFO 46782 [egg-security] use xssProtection middleware
+2018-07-11 18:29:49,333 INFO 46782 [egg-security] use xframe middleware
+2018-07-11 18:29:49,333 INFO 46782 [egg-security] use dta middleware
+2018-07-11 18:29:49,333 INFO 46782 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:29:49,342 INFO 46782 [egg:core] dump config after load, 5ms
+2018-07-11 18:29:49,384 INFO 46782 [egg-watcher:app] watcher start success
+2018-07-11 18:29:49,412 INFO 46782 [egg:core] dump config after ready, 4ms
+2018-07-11 18:30:42,397 INFO 46894 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:30:42,432 INFO 46894 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:30:42,432 INFO 46894 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:30:42,573 INFO 46894 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:30:42,574 INFO 46894 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:30:42,824 INFO 46894 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:30:42,825 INFO 46894 [egg-security] use noopen middleware
+2018-07-11 18:30:42,826 INFO 46894 [egg-security] use nosniff middleware
+2018-07-11 18:30:42,826 INFO 46894 [egg-security] use xssProtection middleware
+2018-07-11 18:30:42,827 INFO 46894 [egg-security] use xframe middleware
+2018-07-11 18:30:42,827 INFO 46894 [egg-security] use dta middleware
+2018-07-11 18:30:42,827 INFO 46894 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:30:42,836 INFO 46894 [egg:core] dump config after load, 5ms
+2018-07-11 18:30:42,872 INFO 46894 [egg-watcher:app] watcher start success
+2018-07-11 18:30:42,896 INFO 46894 [egg:core] dump config after ready, 4ms
+2018-07-11 18:33:42,820 INFO 47343 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:33:42,853 INFO 47343 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:33:42,853 INFO 47343 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:33:42,992 INFO 47343 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:33:42,992 INFO 47343 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:33:43,260 INFO 47343 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:33:43,262 INFO 47343 [egg-security] use noopen middleware
+2018-07-11 18:33:43,264 INFO 47343 [egg-security] use nosniff middleware
+2018-07-11 18:33:43,264 INFO 47343 [egg-security] use xssProtection middleware
+2018-07-11 18:33:43,264 INFO 47343 [egg-security] use xframe middleware
+2018-07-11 18:33:43,265 INFO 47343 [egg-security] use dta middleware
+2018-07-11 18:33:43,265 INFO 47343 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:33:43,277 INFO 47343 [egg:core] dump config after load, 6ms
+2018-07-11 18:33:43,313 INFO 47343 [egg-watcher:app] watcher start success
+2018-07-11 18:33:43,333 INFO 47343 [egg:core] dump config after ready, 4ms
+2018-07-11 18:34:36,156 INFO 47476 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:34:36,191 INFO 47476 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:34:36,191 INFO 47476 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:34:36,335 INFO 47476 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:34:36,335 INFO 47476 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:34:36,595 INFO 47476 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:34:36,596 INFO 47476 [egg-security] use noopen middleware
+2018-07-11 18:34:36,597 INFO 47476 [egg-security] use nosniff middleware
+2018-07-11 18:34:36,597 INFO 47476 [egg-security] use xssProtection middleware
+2018-07-11 18:34:36,598 INFO 47476 [egg-security] use xframe middleware
+2018-07-11 18:34:36,598 INFO 47476 [egg-security] use dta middleware
+2018-07-11 18:34:36,598 INFO 47476 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:34:36,606 INFO 47476 [egg:core] dump config after load, 4ms
+2018-07-11 18:34:36,631 INFO 47476 [egg-watcher:app] watcher start success
+2018-07-11 18:34:36,650 INFO 47476 [egg:core] dump config after ready, 4ms
+2018-07-11 18:37:03,224 INFO 47790 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:37:03,265 INFO 47790 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:37:03,265 INFO 47790 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:37:03,390 INFO 47790 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:37:03,392 INFO 47790 [egg-oauth2-server] egg-oauth2-server started use 2 ms
+2018-07-11 18:37:03,644 INFO 47790 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:37:03,645 INFO 47790 [egg-security] use noopen middleware
+2018-07-11 18:37:03,646 INFO 47790 [egg-security] use nosniff middleware
+2018-07-11 18:37:03,646 INFO 47790 [egg-security] use xssProtection middleware
+2018-07-11 18:37:03,646 INFO 47790 [egg-security] use xframe middleware
+2018-07-11 18:37:03,646 INFO 47790 [egg-security] use dta middleware
+2018-07-11 18:37:03,646 INFO 47790 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:37:03,655 INFO 47790 [egg:core] dump config after load, 4ms
+2018-07-11 18:37:03,679 INFO 47790 [egg-watcher:app] watcher start success
+2018-07-11 18:37:03,699 INFO 47790 [egg:core] dump config after ready, 4ms
+2018-07-11 18:37:04,128 INFO 47796 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:37:04,158 INFO 47796 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:37:04,158 INFO 47796 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:37:04,274 INFO 47796 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:37:04,275 INFO 47796 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:37:04,492 INFO 47796 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:37:04,493 INFO 47796 [egg-security] use noopen middleware
+2018-07-11 18:37:04,493 INFO 47796 [egg-security] use nosniff middleware
+2018-07-11 18:37:04,494 INFO 47796 [egg-security] use xssProtection middleware
+2018-07-11 18:37:04,494 INFO 47796 [egg-security] use xframe middleware
+2018-07-11 18:37:04,494 INFO 47796 [egg-security] use dta middleware
+2018-07-11 18:37:04,494 INFO 47796 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:37:04,503 INFO 47796 [egg:core] dump config after load, 4ms
+2018-07-11 18:37:04,526 INFO 47796 [egg-watcher:app] watcher start success
+2018-07-11 18:37:04,544 INFO 47796 [egg:core] dump config after ready, 4ms
+2018-07-11 18:38:21,946 INFO 47940 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:38:21,983 INFO 47940 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:38:21,983 INFO 47940 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:38:22,128 INFO 47940 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:38:22,129 INFO 47940 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:38:22,396 INFO 47940 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:38:22,398 INFO 47940 [egg-security] use noopen middleware
+2018-07-11 18:38:22,398 INFO 47940 [egg-security] use nosniff middleware
+2018-07-11 18:38:22,398 INFO 47940 [egg-security] use xssProtection middleware
+2018-07-11 18:38:22,399 INFO 47940 [egg-security] use xframe middleware
+2018-07-11 18:38:22,399 INFO 47940 [egg-security] use dta middleware
+2018-07-11 18:38:22,399 INFO 47940 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:38:22,409 INFO 47940 [egg:core] dump config after load, 6ms
+2018-07-11 18:38:22,434 INFO 47940 [egg-watcher:app] watcher start success
+2018-07-11 18:38:22,457 INFO 47940 [egg:core] dump config after ready, 6ms
+2018-07-11 18:39:49,141 INFO 48124 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:39:49,179 INFO 48124 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:39:49,179 INFO 48124 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:39:49,316 INFO 48124 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:39:49,316 INFO 48124 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:39:49,566 INFO 48124 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:39:49,568 INFO 48124 [egg-security] use noopen middleware
+2018-07-11 18:39:49,569 INFO 48124 [egg-security] use nosniff middleware
+2018-07-11 18:39:49,569 INFO 48124 [egg-security] use xssProtection middleware
+2018-07-11 18:39:49,569 INFO 48124 [egg-security] use xframe middleware
+2018-07-11 18:39:49,570 INFO 48124 [egg-security] use dta middleware
+2018-07-11 18:39:49,570 INFO 48124 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:39:49,582 INFO 48124 [egg:core] dump config after load, 6ms
+2018-07-11 18:39:49,611 INFO 48124 [egg-watcher:app] watcher start success
+2018-07-11 18:39:49,634 INFO 48124 [egg:core] dump config after ready, 4ms
+2018-07-11 18:42:11,245 INFO 48426 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:42:11,283 INFO 48426 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:42:11,283 INFO 48426 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:42:11,407 INFO 48426 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:42:11,408 INFO 48426 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:42:11,636 INFO 48426 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:42:11,638 INFO 48426 [egg-security] use noopen middleware
+2018-07-11 18:42:11,638 INFO 48426 [egg-security] use nosniff middleware
+2018-07-11 18:42:11,639 INFO 48426 [egg-security] use xssProtection middleware
+2018-07-11 18:42:11,639 INFO 48426 [egg-security] use xframe middleware
+2018-07-11 18:42:11,639 INFO 48426 [egg-security] use dta middleware
+2018-07-11 18:42:11,639 INFO 48426 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:42:11,647 INFO 48426 [egg:core] dump config after load, 4ms
+2018-07-11 18:42:11,663 INFO 48426 [egg-watcher:app] watcher start success
+2018-07-11 18:42:11,690 INFO 48426 [egg:core] dump config after ready, 4ms
+2018-07-11 18:42:40,713 INFO 48502 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:42:40,747 INFO 48502 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:42:40,747 INFO 48502 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:42:40,881 INFO 48502 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:42:40,882 INFO 48502 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:42:41,123 INFO 48502 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:42:41,125 INFO 48502 [egg-security] use noopen middleware
+2018-07-11 18:42:41,125 INFO 48502 [egg-security] use nosniff middleware
+2018-07-11 18:42:41,126 INFO 48502 [egg-security] use xssProtection middleware
+2018-07-11 18:42:41,126 INFO 48502 [egg-security] use xframe middleware
+2018-07-11 18:42:41,126 INFO 48502 [egg-security] use dta middleware
+2018-07-11 18:42:41,126 INFO 48502 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:42:41,135 INFO 48502 [egg:core] dump config after load, 4ms
+2018-07-11 18:42:41,164 INFO 48502 [egg-watcher:app] watcher start success
+2018-07-11 18:42:41,194 INFO 48502 [egg:core] dump config after ready, 4ms
+2018-07-11 18:43:55,176 INFO 48658 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:43:55,212 INFO 48658 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:43:55,212 INFO 48658 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:43:55,345 INFO 48658 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:43:55,345 INFO 48658 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:43:55,593 INFO 48658 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:43:55,595 INFO 48658 [egg-security] use noopen middleware
+2018-07-11 18:43:55,595 INFO 48658 [egg-security] use nosniff middleware
+2018-07-11 18:43:55,595 INFO 48658 [egg-security] use xssProtection middleware
+2018-07-11 18:43:55,595 INFO 48658 [egg-security] use xframe middleware
+2018-07-11 18:43:55,596 INFO 48658 [egg-security] use dta middleware
+2018-07-11 18:43:55,596 INFO 48658 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:43:55,604 INFO 48658 [egg:core] dump config after load, 5ms
+2018-07-11 18:43:55,627 INFO 48658 [egg-watcher:app] watcher start success
+2018-07-11 18:43:55,645 INFO 48658 [egg:core] dump config after ready, 4ms
+2018-07-11 18:44:53,006 INFO 48783 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:44:53,040 INFO 48783 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:44:53,040 INFO 48783 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:44:53,210 INFO 48783 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:44:53,212 INFO 48783 [egg-oauth2-server] egg-oauth2-server started use 2 ms
+2018-07-11 18:44:53,518 INFO 48783 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:44:53,520 INFO 48783 [egg-security] use noopen middleware
+2018-07-11 18:44:53,521 INFO 48783 [egg-security] use nosniff middleware
+2018-07-11 18:44:53,521 INFO 48783 [egg-security] use xssProtection middleware
+2018-07-11 18:44:53,521 INFO 48783 [egg-security] use xframe middleware
+2018-07-11 18:44:53,521 INFO 48783 [egg-security] use dta middleware
+2018-07-11 18:44:53,521 INFO 48783 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:44:53,529 INFO 48783 [egg:core] dump config after load, 4ms
+2018-07-11 18:44:53,555 INFO 48783 [egg-watcher:app] watcher start success
+2018-07-11 18:44:53,574 INFO 48783 [egg:core] dump config after ready, 4ms
+2018-07-11 18:45:14,581 INFO 48849 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:45:14,616 INFO 48849 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:45:14,616 INFO 48849 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:45:14,745 INFO 48849 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:45:14,746 INFO 48849 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:45:14,956 INFO 48849 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:45:14,957 INFO 48849 [egg-security] use noopen middleware
+2018-07-11 18:45:14,957 INFO 48849 [egg-security] use nosniff middleware
+2018-07-11 18:45:14,958 INFO 48849 [egg-security] use xssProtection middleware
+2018-07-11 18:45:14,958 INFO 48849 [egg-security] use xframe middleware
+2018-07-11 18:45:14,958 INFO 48849 [egg-security] use dta middleware
+2018-07-11 18:45:14,958 INFO 48849 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:45:14,965 INFO 48849 [egg:core] dump config after load, 4ms
+2018-07-11 18:45:14,981 INFO 48849 [egg-watcher:app] watcher start success
+2018-07-11 18:45:15,006 INFO 48849 [egg:core] dump config after ready, 3ms
+2018-07-11 18:45:24,948 INFO 48876 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:45:24,979 INFO 48876 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:45:24,979 INFO 48876 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:45:25,107 INFO 48876 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:45:25,108 INFO 48876 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:45:25,329 INFO 48876 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:45:25,330 INFO 48876 [egg-security] use noopen middleware
+2018-07-11 18:45:25,331 INFO 48876 [egg-security] use nosniff middleware
+2018-07-11 18:45:25,331 INFO 48876 [egg-security] use xssProtection middleware
+2018-07-11 18:45:25,332 INFO 48876 [egg-security] use xframe middleware
+2018-07-11 18:45:25,332 INFO 48876 [egg-security] use dta middleware
+2018-07-11 18:45:25,332 INFO 48876 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:45:25,340 INFO 48876 [egg:core] dump config after load, 4ms
+2018-07-11 18:45:25,355 INFO 48876 [egg-watcher:app] watcher start success
+2018-07-11 18:45:25,381 INFO 48876 [egg:core] dump config after ready, 4ms
+2018-07-11 18:45:25,772 INFO 48879 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:45:25,805 INFO 48879 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:45:25,805 INFO 48879 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:45:25,979 INFO 48879 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:45:25,980 INFO 48879 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:45:26,211 INFO 48879 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:45:26,214 INFO 48879 [egg-security] use noopen middleware
+2018-07-11 18:45:26,214 INFO 48879 [egg-security] use nosniff middleware
+2018-07-11 18:45:26,215 INFO 48879 [egg-security] use xssProtection middleware
+2018-07-11 18:45:26,215 INFO 48879 [egg-security] use xframe middleware
+2018-07-11 18:45:26,215 INFO 48879 [egg-security] use dta middleware
+2018-07-11 18:45:26,215 INFO 48879 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:45:26,225 INFO 48879 [egg:core] dump config after load, 6ms
+2018-07-11 18:45:26,252 INFO 48879 [egg-watcher:app] watcher start success
+2018-07-11 18:45:26,275 INFO 48879 [egg:core] dump config after ready, 4ms
+2018-07-11 18:45:49,471 INFO 48925 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:45:49,506 INFO 48925 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:45:49,506 INFO 48925 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:45:49,645 INFO 48925 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:45:49,645 INFO 48925 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 18:45:49,882 INFO 48925 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:45:49,883 INFO 48925 [egg-security] use noopen middleware
+2018-07-11 18:45:49,884 INFO 48925 [egg-security] use nosniff middleware
+2018-07-11 18:45:49,884 INFO 48925 [egg-security] use xssProtection middleware
+2018-07-11 18:45:49,884 INFO 48925 [egg-security] use xframe middleware
+2018-07-11 18:45:49,885 INFO 48925 [egg-security] use dta middleware
+2018-07-11 18:45:49,885 INFO 48925 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:45:49,894 INFO 48925 [egg:core] dump config after load, 5ms
+2018-07-11 18:45:49,911 INFO 48925 [egg-watcher:app] watcher start success
+2018-07-11 18:45:49,942 INFO 48925 [egg:core] dump config after ready, 5ms
+2018-07-11 18:46:07,005 INFO 48971 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:46:07,039 INFO 48971 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:46:07,039 INFO 48971 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:46:07,171 INFO 48971 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:46:07,172 INFO 48971 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:46:07,402 INFO 48971 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:46:07,404 INFO 48971 [egg-security] use noopen middleware
+2018-07-11 18:46:07,404 INFO 48971 [egg-security] use nosniff middleware
+2018-07-11 18:46:07,404 INFO 48971 [egg-security] use xssProtection middleware
+2018-07-11 18:46:07,405 INFO 48971 [egg-security] use xframe middleware
+2018-07-11 18:46:07,405 INFO 48971 [egg-security] use dta middleware
+2018-07-11 18:46:07,405 INFO 48971 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:46:07,414 INFO 48971 [egg:core] dump config after load, 5ms
+2018-07-11 18:46:07,437 INFO 48971 [egg-watcher:app] watcher start success
+2018-07-11 18:46:07,456 INFO 48971 [egg:core] dump config after ready, 4ms
+2018-07-11 18:46:08,507 INFO 48980 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:46:08,540 INFO 48980 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:46:08,540 INFO 48980 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:46:08,666 INFO 48980 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:46:08,667 INFO 48980 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:46:08,896 INFO 48980 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:46:08,898 INFO 48980 [egg-security] use noopen middleware
+2018-07-11 18:46:08,898 INFO 48980 [egg-security] use nosniff middleware
+2018-07-11 18:46:08,898 INFO 48980 [egg-security] use xssProtection middleware
+2018-07-11 18:46:08,898 INFO 48980 [egg-security] use xframe middleware
+2018-07-11 18:46:08,899 INFO 48980 [egg-security] use dta middleware
+2018-07-11 18:46:08,899 INFO 48980 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:46:08,907 INFO 48980 [egg:core] dump config after load, 4ms
+2018-07-11 18:46:08,930 INFO 48980 [egg-watcher:app] watcher start success
+2018-07-11 18:46:08,948 INFO 48980 [egg:core] dump config after ready, 4ms
+2018-07-11 18:46:31,688 INFO 49034 [egg:logger] init all loggers with options: {"dir":"/Users/chenxumin529/Desktop/resume_pro/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:46:31,719 INFO 49034 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:46:31,719 INFO 49034 [egg-schedule]: register schedule /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:46:31,840 INFO 49034 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:46:31,841 INFO 49034 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:46:32,059 INFO 49034 [egg-static] starting static serve /public/ -> /Users/chenxumin529/Desktop/resume_pro/resume/serve/app/public
+2018-07-11 18:46:32,061 INFO 49034 [egg-security] use noopen middleware
+2018-07-11 18:46:32,061 INFO 49034 [egg-security] use nosniff middleware
+2018-07-11 18:46:32,061 INFO 49034 [egg-security] use xssProtection middleware
+2018-07-11 18:46:32,062 INFO 49034 [egg-security] use xframe middleware
+2018-07-11 18:46:32,062 INFO 49034 [egg-security] use dta middleware
+2018-07-11 18:46:32,062 INFO 49034 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:46:32,071 INFO 49034 [egg:core] dump config after load, 4ms
+2018-07-11 18:46:32,094 INFO 49034 [egg-watcher:app] watcher start success
+2018-07-11 18:46:32,112 INFO 49034 [egg:core] dump config after ready, 4ms
+2018-07-11 19:57:32,435 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 20:10:04,555 WARN 49034 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 20:10:04,555 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 20:31:04,685 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 20:46:59,802 WARN 49034 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 20:46:59,802 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 20:59:31,929 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 21:09:50,562 WARN 49034 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 21:09:50,562 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 21:19:30,002 WARN 49034 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 21:19:30,002 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 21:39:27,282 WARN 49034 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 21:39:27,282 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 21:49:14,402 WARN 49034 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 21:49:14,402 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-07-11 22:18:58,571 WARN 49034 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-07-11 22:18:58,575 WARN 49034 [ClusterClient:Watcher] follower closed, and try to init it again

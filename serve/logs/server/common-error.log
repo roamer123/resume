@@ -1784,3 +1784,1604 @@ hostname: macdeMacBook-Pro-3.local
 pid: 17054
 hostname: macdeMacBook-Pro-3.local
 
+2018-07-10 23:52:10,404 ERROR 24202 nodejs.ClusterClientNoResponseError: client no response in 6177927ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 24202
+hostname: C02W217DHTD7
+
+2018-07-11 01:09:16,172 ERROR 24202 nodejs.ClusterClientNoResponseError: client no response in 4625763ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 24202
+hostname: C02W217DHTD7
+
+2018-07-11 01:42:31,202 ERROR 24202 nodejs.ClusterClientNoResponseError: client no response in 1994950ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 24202
+hostname: C02W217DHTD7
+
+2018-07-11 02:36:36,598 ERROR 24202 nodejs.ClusterClientNoResponseError: client no response in 3244757ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 24202
+hostname: C02W217DHTD7
+
+2018-07-11 03:30:42,399 ERROR 24202 nodejs.ClusterClientNoResponseError: client no response in 3245756ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 24202
+hostname: C02W217DHTD7
+
+2018-07-11 04:24:47,397 ERROR 24202 nodejs.ClusterClientNoResponseError: client no response in 3244795ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 24202
+hostname: C02W217DHTD7
+
+2018-07-11 15:05:52,617 ERROR 26584 [-/::1/-/6ms POST /log/query] nodejs.TypeError: ctx.model.log.queryLog is not a function
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+
+pid: 26584
+hostname: C02W217DHTD7
+
+2018-07-11 15:06:31,718 ERROR 26682 [-/::1/-/7ms POST /log/query] nodejs.TypeError: ctx.model.log.queryLog is not a function
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 26682
+hostname: C02W217DHTD7
+
+2018-07-11 15:09:16,380 ERROR 27065 [-/::1/-/15ms POST /log/query] nodejs.Error: Invalid value { ID: '1' }
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sql-string.js:66:11)
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:934:22)
+    at Object._whereParseSingleValueObject (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2429:41)
+    at Object.whereItemQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2133:21)
+    at Utils.getComplexKeys.forEach.prop (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1994:25)
+    at Array.forEach (<anonymous>)
+    at Object.whereItemsQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1992:35)
+    at Object.getWhereConditions (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2456:19)
+    at Object.selectQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1140:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1105:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:24:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 27065
+hostname: C02W217DHTD7
+
+2018-07-11 15:14:56,263 ERROR 27831 [-/::1/-/14ms POST /log/query] nodejs.Error: Invalid value { ID: '1' }
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sql-string.js:66:11)
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:934:22)
+    at Object._whereParseSingleValueObject (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2429:41)
+    at Object.whereItemQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2133:21)
+    at Utils.getComplexKeys.forEach.prop (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1994:25)
+    at Array.forEach (<anonymous>)
+    at Object.whereItemsQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1992:35)
+    at Object.getWhereConditions (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2456:19)
+    at Object.selectQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1140:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1105:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:24:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 27831
+hostname: C02W217DHTD7
+
+2018-07-11 15:27:35,083 ERROR 29430 [-/::1/-/15ms POST /log/query] nodejs.Error: Invalid value { ID: '1' }
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sql-string.js:66:11)
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:934:22)
+    at Object._whereParseSingleValueObject (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2429:41)
+    at Object.whereItemQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2133:21)
+    at Utils.getComplexKeys.forEach.prop (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1994:25)
+    at Array.forEach (<anonymous>)
+    at Object.whereItemsQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1992:35)
+    at Object.getWhereConditions (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2456:19)
+    at Object.selectQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1140:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1105:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:24:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 29430
+hostname: C02W217DHTD7
+
+2018-07-11 15:28:02,364 ERROR 29514 [-/::1/-/16ms POST /log/query] nodejs.Error: Invalid value { ID: '1' }
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sql-string.js:66:11)
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:934:22)
+    at Object._whereParseSingleValueObject (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2429:41)
+    at Object.whereItemQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2133:21)
+    at Utils.getComplexKeys.forEach.prop (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1994:25)
+    at Array.forEach (<anonymous>)
+    at Object.whereItemsQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1992:35)
+    at Object.getWhereConditions (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2456:19)
+    at Object.selectQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1140:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1105:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:24:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 29514
+hostname: C02W217DHTD7
+
+2018-07-11 15:30:52,785 ERROR 29858 [-/::1/-/17ms POST /log/query] nodejs.Error: Invalid value { ID: '1' }
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sql-string.js:66:11)
+    at Object.escape (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:934:22)
+    at Object._whereParseSingleValueObject (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2429:41)
+    at Object.whereItemQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2133:21)
+    at Utils.getComplexKeys.forEach.prop (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1994:25)
+    at Array.forEach (<anonymous>)
+    at Object.whereItemsQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1992:35)
+    at Object.getWhereConditions (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2456:19)
+    at Object.selectQuery (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1140:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1105:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:24:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 29858
+hostname: C02W217DHTD7
+
+2018-07-11 15:33:19,307 ERROR 30188 [-/::1/-/19ms POST /log/query] nodejs.SequelizeDatabaseError: Unknown column 'PASSWORD' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:25:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'PASSWORD' in 'field list'","sql":"SELECT `ID`, `OPERATION_CODE`, `PASSWORD` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'PASSWORD' in 'field list'","sql":"SELECT `ID`, `OPERATION_CODE`, `PASSWORD` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `ID`, `OPERATION_CODE`, `PASSWORD` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"
+pid: 30188
+hostname: C02W217DHTD7
+
+2018-07-11 15:34:34,705 ERROR 30387 [-/::1/-/18ms POST /log/query] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:25:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION__NAME`, `OPERATION__TYPE`, `OPERATION__DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `created_at`, `updated_at` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION__NAME`, `OPERATION__TYPE`, `OPERATION__DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `created_at`, `updated_at` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION__NAME`, `OPERATION__TYPE`, `OPERATION__DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `created_at`, `updated_at` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"
+pid: 30387
+hostname: C02W217DHTD7
+
+2018-07-11 15:38:19,756 ERROR 30907 [-/::1/-/18ms POST /log/query] nodejs.SequelizeDatabaseError: Unknown column 'OPERATION_NAME' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:25:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `created_at`, `updated_at` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `created_at`, `updated_at` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `created_at`, `updated_at` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"
+pid: 30907
+hostname: C02W217DHTD7
+
+2018-07-11 15:40:56,278 ERROR 31237 [-/::1/-/18ms POST /log/query] nodejs.SequelizeDatabaseError: Unknown column 'OPERATION_NAME' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:23:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"
+pid: 31237
+hostname: C02W217DHTD7
+
+2018-07-11 15:41:49,588 ERROR 31346 [-/::1/-/17ms POST /log/query] nodejs.SequelizeDatabaseError: Unknown column 'OPERATION_NAME' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:23:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `id`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `id`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `id`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"
+pid: 31346
+hostname: C02W217DHTD7
+
+2018-07-11 15:43:05,491 ERROR 31399 [-/::1/-/33ms POST /log/query] nodejs.SequelizeDatabaseError: Unknown column 'OPERATION_NAME' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:23:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"
+pid: 31399
+hostname: C02W217DHTD7
+
+2018-07-11 15:47:15,030 ERROR 31987 [-/::1/-/21ms POST /log/query] nodejs.SequelizeDatabaseError: Unknown column 'OPERATION_NAME' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:23:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `ID`, `OPERATION_CODE`, `OPERATION_NAME` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION_NAME' in 'field list'","sql":"SELECT `ID`, `OPERATION_CODE`, `OPERATION_NAME` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `ID`, `OPERATION_CODE`, `OPERATION_NAME` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"
+pid: 31987
+hostname: C02W217DHTD7
+
+2018-07-11 15:55:21,847 ERROR 30890 nodejs.ClusterClientNoResponseError: client no response in 63312ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 30890
+hostname: C02W217DHTD7
+
+2018-07-11 15:58:28,500 ERROR 33121 [-/::1/-/24ms POST /log/query] nodejs.SequelizeDatabaseError: Unknown column 'OPERATION__NAME' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:23:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION__NAME' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION__NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'OPERATION__NAME' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION__NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION__NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `DATE_CREATED`, `DATE_UPDATED` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"
+pid: 33121
+hostname: C02W217DHTD7
+
+2018-07-11 16:09:24,150 ERROR 33410 nodejs.ClusterClientNoResponseError: client no response in 303025ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 33410
+hostname: C02W217DHTD7
+
+2018-07-11 16:31:21,127 ERROR 33410 nodejs.ClusterClientNoResponseError: client no response in 296766ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 33410
+hostname: C02W217DHTD7
+
+2018-07-11 16:33:12,161 ERROR 36505 [-/::1/-/18ms POST /log/query] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Log.queryLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:25:23)
+    at LogService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:10:44)
+    at LogController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:10:53)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `CREATED_BY`, `UPDATED_BY`, `DATE_CREATED`, `DATE_UPDATED`, `created_at`, `updated_at` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `CREATED_BY`, `UPDATED_BY`, `DATE_CREATED`, `DATE_UPDATED`, `created_at`, `updated_at` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `id`, `ID`, `OPERATION_CODE`, `OPERATION_NAME`, `OPERATION_TYPE`, `OPERATION_DATE`, `OPERATION_LOG`, `REMARK1`, `REMARK2`, `CREATED_BY`, `UPDATED_BY`, `DATE_CREATED`, `DATE_UPDATED`, `created_at`, `updated_at` FROM `LOG` AS `LOG` WHERE `LOG`.`ID` = '1' LIMIT 1;"
+pid: 36505
+hostname: C02W217DHTD7
+
+2018-07-11 17:38:05,037 ERROR 33410 nodejs.ClusterClientNoResponseError: client no response in 909376ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 33410
+hostname: C02W217DHTD7
+
+2018-07-11 17:47:25,165 ERROR 33410 nodejs.ClusterClientNoResponseError: client no response in 540118ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 33410
+hostname: C02W217DHTD7
+
+2018-07-11 17:48:28,236 ERROR 38629 [-/::1/-/19ms POST /log/insert] nodejs.SequelizeDatabaseError: Field 'ID' doesn't have a default value
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at model.save (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Log.insertLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:33:23)
+    at LogService.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:20:40)
+    at LogController.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:18:52)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_DEFAULT_FOR_FIELD","errno":1364,"sqlState":"HY000","sqlMessage":"Field 'ID' doesn't have a default value","sql":"INSERT INTO `LOG` (`id`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,'2018-07-11 09:48:28','2018-07-11 09:48:28');"}
+original: {"code":"ER_NO_DEFAULT_FOR_FIELD","errno":1364,"sqlState":"HY000","sqlMessage":"Field 'ID' doesn't have a default value","sql":"INSERT INTO `LOG` (`id`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,'2018-07-11 09:48:28','2018-07-11 09:48:28');"}
+sql: "INSERT INTO `LOG` (`id`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,'2018-07-11 09:48:28','2018-07-11 09:48:28');"
+pid: 38629
+hostname: C02W217DHTD7
+
+2018-07-11 17:58:49,039 ERROR 42689 [-/::1/-/8ms POST /log/update] nodejs.AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Function._optionsMustContainWhere (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3055:5)
+    at Function.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2677:10)
+    at LogService.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:40:40)
+    at LogController.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:26:52)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 42689
+hostname: C02W217DHTD7
+
+2018-07-11 18:02:05,046 ERROR 43266 [-/::1/-/8ms POST /log/update] nodejs.AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Function._optionsMustContainWhere (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3055:5)
+    at Function.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2677:10)
+    at LogService.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:40:40)
+    at LogController.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:26:52)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 43266
+hostname: C02W217DHTD7
+
+2018-07-11 18:14:41,612 ERROR 44881 [-/::1/-/8ms POST /log/update] nodejs.AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Function._optionsMustContainWhere (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3055:5)
+    at Function.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2677:10)
+    at LogService.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:40:40)
+    at LogController.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:26:52)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 44881
+hostname: C02W217DHTD7
+
+2018-07-11 18:19:28,379 ERROR 45502 [-/::1/-/9ms POST /log/update] nodejs.AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Function._optionsMustContainWhere (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3055:5)
+    at Function.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2677:10)
+    at LogService.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:40:40)
+    at LogController.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:26:52)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 45502
+hostname: C02W217DHTD7
+
+2018-07-11 18:30:14,868 ERROR 46782 [-/::1/-/8ms POST /log/delete] nodejs.TypeError: this.destory is not a function
+    at Function.Log.deleteLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:42:23)
+    at LogService.delete (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:52:44)
+    at LogController.delete (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:35:59)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 46782
+hostname: C02W217DHTD7
+
+2018-07-11 18:30:48,683 ERROR 46894 [-/::1/-/9ms POST /log/delete] nodejs.Error: Missing where or truncate attribute in the options parameter of model.destroy.
+    at Function.destroy (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2518:13)
+    at Function.Log.deleteLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:42:23)
+    at LogService.delete (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:52:44)
+    at LogController.delete (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:35:59)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 46894
+hostname: C02W217DHTD7
+
+2018-07-11 18:33:50,016 ERROR 47343 [-/::1/-/8ms POST /log/delete] nodejs.Error: Missing where or truncate attribute in the options parameter of model.destroy.
+    at Function.destroy (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2518:13)
+    at Function.Log.deleteLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:43:23)
+    at LogService.delete (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:52:44)
+    at LogController.delete (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/log.js:35:59)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 47343
+hostname: C02W217DHTD7
+
+2018-07-11 19:57:32,436 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 3844437ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
+2018-07-11 20:10:04,554 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 712100ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
+2018-07-11 20:31:04,685 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 1220113ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
+2018-07-11 20:46:59,802 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 915102ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
+2018-07-11 20:59:31,929 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 712120ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
+2018-07-11 21:09:50,562 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 578613ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
+2018-07-11 21:19:30,001 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 579436ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
+2018-07-11 21:39:27,282 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 579140ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
+2018-07-11 21:49:14,402 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 567109ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
+2018-07-11 22:18:58,573 ERROR 45616 nodejs.ClusterClientNoResponseError: client no response in 1764144ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 45616
+hostname: C02W217DHTD7
+
