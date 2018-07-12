@@ -17,9 +17,9 @@ module.exports = app => {
   router.get('/dropdown', controller.dropdownController.query);
 
   // candidate
-  router.post('/candidate/process_count', controller.candidateController.countProcess);
-  router.post('/candidate/search', controller.candidateController.seach);
-  router.post('/candidate/process_change', controller.candidateController.changeProcess);
+  router.post('/candidate/process_count', controller.candidateController.count);
+  router.post('/candidate/search', controller.candidateController.search);
+  router.post('/candidate/process_change', controller.candidateController.change);
   router.post('/candidate/add', controller.candidateController.add);
   router.post('/candidate/add_remark', controller.candidateController.addRemark);
   router.post('/candidate/delete', controller.candidateController.delete);

@@ -60,3 +60,17 @@
 2018-07-11 14:36:23,918 INFO 6158 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-12 00:00:01.000
 2018-07-11 14:46:35,228 INFO 6599 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-12 00:00:00.000
 2018-07-11 14:46:35,229 INFO 6599 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-12 00:00:01.000
+2018-07-12 14:53:19,636 INFO 19904 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-13 00:00:00.000
+2018-07-12 14:53:19,637 INFO 19904 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-13 00:00:01.000
+2018-07-12 15:22:59,688 INFO 20711 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-13 00:00:00.000
+2018-07-12 15:22:59,689 INFO 20711 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-13 00:00:01.000
+2018-07-12 15:25:51,536 INFO 20828 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-13 00:00:00.000
+2018-07-12 15:25:51,536 INFO 20828 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-13 00:00:01.000
+2018-07-12 15:30:31,285 INFO 21069 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-13 00:00:00.000
+2018-07-12 15:30:31,285 INFO 21069 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-13 00:00:01.000
+2018-07-12 17:26:12,921 INFO 24018 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-13 00:00:00.000
+2018-07-12 17:26:12,921 INFO 24018 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-13 00:00:01.000
+2018-07-12 17:57:40,075 INFO 24803 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-13 00:00:00.000
+2018-07-12 17:57:40,075 INFO 24803 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-13 00:00:01.000
+2018-07-12 19:48:54,629 INFO 27064 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-13 00:00:00.000
+2018-07-12 19:48:54,630 INFO 27064 [Timer] /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-13 00:00:01.000

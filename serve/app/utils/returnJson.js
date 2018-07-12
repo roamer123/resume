@@ -6,7 +6,7 @@ const errorMsg = {
 
 class ReturnJson {
 
-  static success(data) {
+  static success(data = null) {
     return {
       resultCode: '000000',
       resultMsg: '请求成功',

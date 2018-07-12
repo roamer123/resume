@@ -1,9 +1,10 @@
 'use strict';
 
 module.exports = app => {
-  const { STRING, DATE } = app.Sequelize;
+  const { STRING, INTEGER, DATE } = app.Sequelize;
 
   const Candidate = app.model.define('CANDIDATE', {
+    ID: { type: INTEGER, unique: true },
     NAME: { type: STRING(20) }, // 姓名
     TECHNOLOGY_DIRECTION_CODE: { type: STRING(50) }, // 技术方向code
     WORK_AGE: { type: STRING(10) }, // 工作年限
@@ -40,30 +41,27 @@ module.exports = app => {
 
   // static method
   Candidate.add = async function(field) {
-    this.ctx.create(field);
+    return await this.create(field);
   };
 
   Candidate.queryCandidate = async function(params) {
-    return await this.findOne({
+    return await this.findAll(Object.assign({
       where: params,
+      limit: 100,
       attributes: [ 'ID', 'NAME', 'TECHNOLOGY_DIRECTION_CODE', 'WORK_AGE', 'OFFICIAL_ACADEMIC_CODE', 'RANK_LEVEL_CODE', 'TELEPHONE', 'EMAIL', 'CURRENT_SALARY', 'EXPECT_SALARY', 'IS_ON_JOB', 'ADDRESS', 'INTERVIEWER_PROCESS_CODE', 'INTERVIEWER_STATUS', 'ORGANIZATION_CODE', 'INTERVIEWER', 'INNER_INTERVIEWER_TIME', 'APPOINTMENT_INTERVIEWER_TIME', 'ACTUAL_INTERVIEWER_TIME', 'COMPUTER_EXAME_TIME', 'APPINT_ENTRANCE_TIME', 'ACTUAL_ENTRANCE_TIME', 'CHECK_RANK_LEVEL_CODE', 'RECOMMEND_TIME', 'RECRUIT_TRACKER', 'RECOMMEND_PROGRAME', 'INTERVIEW_ADDRESS', 'CUSTOMER_MANAGER', 'REMARK' ],
-    });
+    }, params));
   };
 
   Candidate.updateCandidate = async function(params, options) {
-    return await this.update(params, {
-      where: {
-        options,
-      },
-    });
+    return await this.update(params, options);
   };
 
   Candidate.destory = async function(options) {
     return await this.destroy(options);
   };
 
-  Candidate.query = async function(sql) {
-    return await this.query(sql);
+  Candidate.countCandidate = async function(options) {
+    return await this.count(options);
   };
 
   return Candidate;

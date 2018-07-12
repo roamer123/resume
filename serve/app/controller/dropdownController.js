@@ -2,7 +2,7 @@
 const Controller = require('egg').Controller;
 const ReturnJson = require('../utils/returnJson');
 
-class Dropdown extends Controller {
+class DropdownController extends Controller {
   /**
    * 下拉框查询
    */
@@ -14,4 +14,4 @@ class Dropdown extends Controller {
   }
 }
 
-module.exports = Dropdown;
+module.exports = DropdownController;

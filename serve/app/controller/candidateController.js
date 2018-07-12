@@ -1,48 +1,49 @@
 'use strict';
-
 const Controller = require('egg').Controller;
 const ReturnJson = require('../utils/returnJson');
 
 class CandidateController extends Controller {
-  constructor(ctx) {
-    super();
-    this.ctx = ctx;
-  }
-
-  async processCount() {
-    const params = this.ctx.request.body;
-    const countList = this.ctx.service.candidateService.processCount(params);
-    return ReturnJson.success(countList);
+  async count() {
+    const { ctx } = this;
+    const params = ctx.request.body;
+    const DropdownList = await ctx.service.candidateService.count(params);
+    ctx.body = ReturnJson.success(DropdownList);
   }
 
   async search() {
-    const params = this.ctx.request.body;
-    const countList = this.ctx.service.candidateService.search(params);
-    return ReturnJson.success(countList);
+    const { ctx } = this;
+    const params = ctx.request.body;
+    const list = await ctx.service.candidateService.search(params);
+    ctx.body = ReturnJson.success(list);
   }
 
-  async changeProcess() {
-    const params = this.ctx.request.body;
-    const countList = this.ctx.service.candidateService.changeProcess(params);
-    return ReturnJson.success(countList);
+  async change() {
+    const { ctx } = this;
+    const params = ctx.request.body;
+    const result = await ctx.service.candidateService.change(params);
+    ctx.body = ReturnJson.success(result);
   }
 
   async add() {
-    const params = this.ctx.request.body;
-    const countList = this.ctx.service.candidateService.add(params);
-    return ReturnJson.success(countList);
+    const { ctx } = this;
+    const params = ctx.request.body;
+    console.log('params', params);
+    const result = await ctx.service.candidateService.add(params);
+    ctx.body = ReturnJson.success(result);
   }
 
   async addRemark() {
-    const params = this.ctx.request.body;
-    const countList = this.ctx.service.candidateService.addRemark(params);
-    return ReturnJson.success(countList);
+    const { ctx } = this;
+    const params = ctx.request.body;
+    const result = await ctx.service.candidateService.addRemark(params);
+    ctx.body = ReturnJson.success(result);
   }
 
   async delete() {
-    const params = this.ctx.request.body;
-    const countList = this.ctx.service.candidateService.delete(params);
-    return ReturnJson.success(countList);
+    const { ctx } = this;
+    const params = ctx.request.body;
+    const result = await ctx.service.candidateService.delete(params);
+    ctx.body = ReturnJson.success(result);
   }
 }
 
