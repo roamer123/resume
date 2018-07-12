@@ -1,5 +1,4 @@
 'use strict';
-
 const Service = require('egg').Service;
 
 class CandidateService extends Service {
@@ -53,11 +52,12 @@ class CandidateService extends Service {
   }
 
   async addRemark(params = {}) {
+    const { REMARK, ID } = params;
     const result = await this.ctx.model.Candidate.update({
-      REMARK: params.REMARK,
+      REMARK,
     }, {
       where: {
-        ID: params.ID,
+        ID,
       },
     });
     return {
@@ -66,9 +66,10 @@ class CandidateService extends Service {
   }
 
   async delete(params = {}) {
-    const result = params.ID && await this.ctx.model.Candidate.destory({
+    const { ID } = params;
+    const result = ID && await this.ctx.model.Candidate.destory({
       where: {
-        ID: params.ID,
+        ID,
       },
     });
     console.log('result', result);

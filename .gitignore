@@ -19,6 +19,7 @@ coverage
 .env.production.local
 .idea
 serve/run
+serve/logs
 
 
 npm-debug.log*

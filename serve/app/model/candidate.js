@@ -5,6 +5,7 @@ module.exports = app => {
 
   const Candidate = app.model.define('CANDIDATE', {
     ID: { type: INTEGER, unique: true },
+    AGE: { type: INTEGER }, // 年龄
     NAME: { type: STRING(20) }, // 姓名
     TECHNOLOGY_DIRECTION_CODE: { type: STRING(50) }, // 技术方向code
     WORK_AGE: { type: STRING(10) }, // 工作年限
@@ -18,7 +19,8 @@ module.exports = app => {
     ADDRESS: { type: STRING(100) }, // 地点
     INTERVIEWER_PROCESS_CODE: { type: STRING(20) }, // 目前进度code
     INTERVIEWER_STATUS: { type: STRING(20) }, // 状态
-    ORGANIZATION_CODE: { type: STRING(50) }, // 供应商／需求方code
+    ORGANIZATION_CODE: { type: STRING(50) }, // 供应商code
+    NEED_ORGANIZATION: { type: STRING(50) }, // 需求方code
     INTERVIEWER: { type: STRING(20) }, // 面试官／助理
     INNER_INTERVIEWER_TIME: DATE, // 内面时间
     APPOINTMENT_INTERVIEWER_TIME: DATE, // 预约面试时间
@@ -62,6 +64,10 @@ module.exports = app => {
 
   Candidate.countCandidate = async function(options) {
     return await this.count(options);
+  };
+
+  Candidate.insertCandidate = async function(params) {
+    return await this.create(params);
   };
 
   return Candidate;
