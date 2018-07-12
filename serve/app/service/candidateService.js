@@ -3,18 +3,7 @@ const Service = require('egg').Service;
 
 class CandidateService extends Service {
 
-  async count(params = {}) {
-    const options = Object.keys(params).length === 0 ? {
-      group: 'INTERVIEWER_PROCESS_CODE',
-      attributes: [ 'INTERVIEWER_PROCESS_CODE' ],
-    } : {
-      group: 'INTERVIEWER_PROCESS_CODE',
-      attributes: [ 'INTERVIEWER_PROCESS_CODE' ],
-      where: {
-        params,
-      },
-    };
-    // const countList = await this.ctx.model.query('select INTERVIEWER_PROCESS_CODE, sum(ID) as sum from CANDIDATE group by INTERVIEWER_PROCESS_CODE');
+  async count(options = {}) {
     const countList = await this.ctx.model.Candidate.countCandidate(options);
     return countList;
   }
@@ -46,36 +35,17 @@ class CandidateService extends Service {
   async add(params) {
     const result = await this.ctx.model.Candidate.add(params);
     console.log('result', result);
-    return {
-      code: result ? 'success' : 'fail',
-    };
+    return result;
   }
 
-  async addRemark(params = {}) {
-    const { REMARK, ID } = params;
-    const result = await this.ctx.model.Candidate.update({
-      REMARK,
-    }, {
-      where: {
-        ID,
-      },
-    });
-    return {
-      code: result ? 'success' : 'fail',
-    };
+  async update(attributes = {}, options = {}) {
+    const result = await this.ctx.model.Candidate.update(attributes, options);
+    return result;
   }
 
-  async delete(params = {}) {
-    const { ID } = params;
-    const result = ID && await this.ctx.model.Candidate.destory({
-      where: {
-        ID,
-      },
-    });
-    console.log('result', result);
-    return {
-      code: result ? 'success' : 'fail',
-    };
+  async delete(options = {}) {
+    const result = await this.ctx.model.Candidate.destory(options);
+    return result;
   }
 }
 
