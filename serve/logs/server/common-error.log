@@ -3385,3 +3385,1319 @@ name: "ClusterClientNoResponseError"
 pid: 45616
 hostname: C02W217DHTD7
 
+2018-07-12 11:17:19,606 ERROR 78959 [-/::1/-/7ms POST /position/query] nodejs.TypeError: Cannot read property 'query' of undefined
+    at PositionController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/positionController.js:10:62)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 78959
+hostname: C02W217DHTD7
+
+2018-07-12 11:17:57,121 ERROR 79206 [-/::1/-/7ms POST /position/query] nodejs.TypeError: Cannot read property 'query' of undefined
+    at PositionController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/positionController.js:10:62)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 79206
+hostname: C02W217DHTD7
+
+2018-07-12 11:18:12,025 ERROR 79262 [-/::1/-/7ms POST /position/query] nodejs.TypeError: Cannot read property 'query' of undefined
+    at PositionController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/positionController.js:10:62)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 79262
+hostname: C02W217DHTD7
+
+2018-07-12 11:25:02,407 ERROR 79262 [-/::1/-/0ms POST /position/query] nodejs.TypeError: Cannot read property 'query' of undefined
+    at PositionController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/positionController.js:10:62)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 79262
+hostname: C02W217DHTD7
+
+2018-07-12 11:36:06,430 ERROR 79261 nodejs.ClusterClientNoResponseError: client no response in 315843ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 79261
+hostname: C02W217DHTD7
+
+2018-07-12 11:41:46,389 ERROR 79261 nodejs.ClusterClientNoResponseError: client no response in 319951ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 79261
+hostname: C02W217DHTD7
+
+2018-07-12 11:44:05,736 ERROR 81819 [-/::1/-/8ms POST /position/query] nodejs.TypeError: Cannot read property 'query' of undefined
+    at PositionController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/positionController.js:10:62)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 81819
+hostname: C02W217DHTD7
+
+2018-07-12 11:44:50,411 ERROR 81977 [-/::1/-/26ms POST /position/query] nodejs.SequelizeDatabaseError: Unknown column 'UPDATED_BY' in 'field list'
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at Function.findAll (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:1760:17)
+    at Function.Position.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:34:23)
+    at PositionService.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/positionService.js:7:50)
+    at PositionController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/positionController.js:10:62)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'UPDATED_BY' in 'field list'","sql":"SELECT `id`, `ID`, `TECHNOLOGY_DIRECTION_CODE`, `NEED_ORGANIZATION_CODE`, `JOB_CATEGORY_CODE`, `JOB_CATEGORY_CODE_NAME`, `JOB_EXPERIENCE_DEMAND_CODE`, `EDUCATION_LEVEL_CODE`, `SALARY_DEMAND`, `LATEST_COME_TIME`, `PRINCIPAL`, `COOPERATOR`, `STARTOR`, `JOB_DESC`, `REMARK`, `NUMBER`, `RANK_LEVEL_CODE`, `POSITION_PROCESS_CODE`, `CREATED_BY`, `UPDATED_BY`, `DATE_CREATED`, `DATE_UPDATED` FROM `POSITION` AS `POSITION` WHERE `POSITION`.`ID` = '1' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'UPDATED_BY' in 'field list'","sql":"SELECT `id`, `ID`, `TECHNOLOGY_DIRECTION_CODE`, `NEED_ORGANIZATION_CODE`, `JOB_CATEGORY_CODE`, `JOB_CATEGORY_CODE_NAME`, `JOB_EXPERIENCE_DEMAND_CODE`, `EDUCATION_LEVEL_CODE`, `SALARY_DEMAND`, `LATEST_COME_TIME`, `PRINCIPAL`, `COOPERATOR`, `STARTOR`, `JOB_DESC`, `REMARK`, `NUMBER`, `RANK_LEVEL_CODE`, `POSITION_PROCESS_CODE`, `CREATED_BY`, `UPDATED_BY`, `DATE_CREATED`, `DATE_UPDATED` FROM `POSITION` AS `POSITION` WHERE `POSITION`.`ID` = '1' LIMIT 1;"}
+sql: "SELECT `id`, `ID`, `TECHNOLOGY_DIRECTION_CODE`, `NEED_ORGANIZATION_CODE`, `JOB_CATEGORY_CODE`, `JOB_CATEGORY_CODE_NAME`, `JOB_EXPERIENCE_DEMAND_CODE`, `EDUCATION_LEVEL_CODE`, `SALARY_DEMAND`, `LATEST_COME_TIME`, `PRINCIPAL`, `COOPERATOR`, `STARTOR`, `JOB_DESC`, `REMARK`, `NUMBER`, `RANK_LEVEL_CODE`, `POSITION_PROCESS_CODE`, `CREATED_BY`, `UPDATED_BY`, `DATE_CREATED`, `DATE_UPDATED` FROM `POSITION` AS `POSITION` WHERE `POSITION`.`ID` = '1' LIMIT 1;"
+pid: 81977
+hostname: C02W217DHTD7
+
+2018-07-12 11:48:51,471 ERROR 81977 nodejs.RangeError: Maximum call stack size exceeded
+    at Console.log (console.js:128:3)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:46:13)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+
+pid: 81977
+hostname: C02W217DHTD7
+
+2018-07-12 11:48:51,472 ERROR 81977 nodejs.RangeError: Maximum call stack size exceeded
+    at Position.update.<anonymous> (<anonymous>)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+
+pid: 81977
+hostname: C02W217DHTD7
+
+2018-07-12 11:51:45,121 ERROR 83164 nodejs.RangeError: Maximum call stack size exceeded
+    at Console.log (console.js:128:3)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:46:13)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+
+pid: 83164
+hostname: C02W217DHTD7
+
+2018-07-12 11:51:45,122 ERROR 83164 nodejs.RangeError: Maximum call stack size exceeded
+    at Position.update.<anonymous> (<anonymous>)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+    at Function.Position.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:47:23)
+
+pid: 83164
+hostname: C02W217DHTD7
+
+2018-07-12 11:57:16,827 ERROR 83163 nodejs.ClusterClientNoResponseError: client no response in 314662ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 83163
+hostname: C02W217DHTD7
+
+2018-07-12 12:02:51,789 ERROR 83163 nodejs.ClusterClientNoResponseError: client no response in 314947ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 83163
+hostname: C02W217DHTD7
+
+2018-07-12 12:27:25,730 ERROR 83163 nodejs.ClusterClientNoResponseError: client no response in 1453929ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 83163
+hostname: C02W217DHTD7
+
+2018-07-12 12:28:02,191 ERROR 83540 nodejs.RangeError: Maximum call stack size exceeded
+    at Console.log (console.js:128:3)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:37:13)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+
+pid: 83540
+hostname: C02W217DHTD7
+
+2018-07-12 12:28:02,192 ERROR 83540 nodejs.RangeError: Maximum call stack size exceeded
+    at Log.update.<anonymous> (<anonymous>)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+
+pid: 83540
+hostname: C02W217DHTD7
+
+2018-07-12 12:30:29,100 ERROR 84005 nodejs.RangeError: Maximum call stack size exceeded
+    at Console.log (console.js:128:3)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:37:13)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+
+pid: 84005
+hostname: C02W217DHTD7
+
+2018-07-12 12:30:29,101 ERROR 84005 nodejs.RangeError: Maximum call stack size exceeded
+    at Log.update.<anonymous> (<anonymous>)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+
+pid: 84005
+hostname: C02W217DHTD7
+
+2018-07-12 13:41:44,004 ERROR 85065 nodejs.ClusterClientNoResponseError: client no response in 3858795ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 85065
+hostname: C02W217DHTD7
+
+2018-07-12 13:43:45,160 ERROR 85650 nodejs.RangeError: Maximum call stack size exceeded
+    at Console.log (console.js:128:3)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:37:13)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+
+pid: 85650
+hostname: C02W217DHTD7
+
+2018-07-12 13:43:45,161 ERROR 85650 nodejs.RangeError: Maximum call stack size exceeded
+    at Log.update.<anonymous> (<anonymous>)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+    at Function.Log.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:38:23)
+
+pid: 85650
+hostname: C02W217DHTD7
+
+2018-07-12 13:49:52,118 ERROR 86681 [-/::1/-/10ms POST /log/update] nodejs.TypeError: ctx.model.Log.updateLog is not a function
+    at LogService.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:30:46)
+    at LogController.update (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/logController.js:26:52)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 86681
+hostname: C02W217DHTD7
+
+2018-07-12 14:29:05,083 ERROR 92847 [-/::1/-/7ms POST /position/query] nodejs.TypeError: ctx.service.positionService.queryPosition is not a function
+    at PositionController.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/positionController.js:8:62)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 92847
+hostname: C02W217DHTD7
+
+2018-07-12 14:34:09,595 ERROR 93493 [-/::1/-/13ms POST /position/insert] nodejs.SequelizeDatabaseError: Column 'ID' specified twice
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at model.save (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Position.insertPosition (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:40:23)
+    at PositionService.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/positionService.js:13:51)
+    at PositionController.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/positionController.js:21:62)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_FIELD_SPECIFIED_TWICE","errno":1110,"sqlState":"42000","sqlMessage":"Column 'ID' specified twice","sql":"INSERT INTO `POSITION` (`id`,`ID`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,'2','web','need','2018-07-12 06:34:09','2018-07-12 06:34:09');"}
+original: {"code":"ER_FIELD_SPECIFIED_TWICE","errno":1110,"sqlState":"42000","sqlMessage":"Column 'ID' specified twice","sql":"INSERT INTO `POSITION` (`id`,`ID`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,'2','web','need','2018-07-12 06:34:09','2018-07-12 06:34:09');"}
+sql: "INSERT INTO `POSITION` (`id`,`ID`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,'2','web','need','2018-07-12 06:34:09','2018-07-12 06:34:09');"
+pid: 93493
+hostname: C02W217DHTD7
+
+2018-07-12 17:15:39,019 ERROR 20266 [-/::1/-/21ms POST /generatedata] nodejs.SequelizeDatabaseError: Column 'ID' specified twice
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at model.save (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Log.insertLog (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/log.js:33:23)
+    at LogService.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/logService.js:13:46)
+    at generateDataController.insertCandidate (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/generateData.js:19:48)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_FIELD_SPECIFIED_TWICE","errno":1110,"sqlState":"42000","sqlMessage":"Column 'ID' specified twice","sql":"INSERT INTO `LOG` (`id`,`ID`,`OPERATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,114,'NODEJS','2018-07-12 09:15:39','2018-07-12 09:15:39');"}
+original: {"code":"ER_FIELD_SPECIFIED_TWICE","errno":1110,"sqlState":"42000","sqlMessage":"Column 'ID' specified twice","sql":"INSERT INTO `LOG` (`id`,`ID`,`OPERATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,114,'NODEJS','2018-07-12 09:15:39','2018-07-12 09:15:39');"}
+sql: "INSERT INTO `LOG` (`id`,`ID`,`OPERATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,114,'NODEJS','2018-07-12 09:15:39','2018-07-12 09:15:39');"
+pid: 20266
+hostname: C02W217DHTD7
+
+2018-07-12 17:40:52,294 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 204223ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-12 18:18:27,654 ERROR 30598 [-/::1/-/24ms POST /generatedata] nodejs.SequelizeDatabaseError: Data too long for column 'RANK_LEVEL_CODE' at row 1
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at model.save (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Candidate.insertCandidate (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/candidate.js:42:23)
+    at CandidateService.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/candidateService.js:8:52)
+    at generateDataController.insertCandidate (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/generateData.js:55:57)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'RANK_LEVEL_CODE' at row 1","sql":"INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','NODEJS',3,'BACHELOR','LEVEL_MIDDLE','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_SELF','STATUS_HIGHPAY','SUPPLIER_WSHH','lulu',NULL,NULL,'Invalid date',NULL,NULL,NULL,NULL,NULL,'xinge','dbox','2018-07-12 10:18:27','2018-07-12 10:18:27');"}
+original: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'RANK_LEVEL_CODE' at row 1","sql":"INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','NODEJS',3,'BACHELOR','LEVEL_MIDDLE','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_SELF','STATUS_HIGHPAY','SUPPLIER_WSHH','lulu',NULL,NULL,'Invalid date',NULL,NULL,NULL,NULL,NULL,'xinge','dbox','2018-07-12 10:18:27','2018-07-12 10:18:27');"}
+sql: "INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','NODEJS',3,'BACHELOR','LEVEL_MIDDLE','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_SELF','STATUS_HIGHPAY','SUPPLIER_WSHH','lulu',NULL,NULL,'Invalid date',NULL,NULL,NULL,NULL,NULL,'xinge','dbox','2018-07-12 10:18:27','2018-07-12 10:18:27');"
+pid: 30598
+hostname: C02W217DHTD7
+
+2018-07-12 18:19:40,022 ERROR 30598 [-/::1/-/8ms POST /generatedata] nodejs.SequelizeDatabaseError: Incorrect datetime value: 'Invalid date' for column 'ACTUAL_INTERVIEWER_TIME' at row 1
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at model.save (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Candidate.insertCandidate (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/candidate.js:42:23)
+    at CandidateService.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/candidateService.js:8:52)
+    at generateDataController.insertCandidate (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/generateData.js:55:57)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'ACTUAL_INTERVIEWER_TIME' at row 1","sql":"INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','JAVASCRIPT',3,'MASTER','LEVEL_HIGH','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_CUSTOME','STATUS_GIVEUP','SUPPLIER_ZR','lulu',NULL,NULL,'Invalid date',NULL,NULL,NULL,NULL,NULL,'xinge','dbox','2018-07-12 10:19:40','2018-07-12 10:19:40');"}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'ACTUAL_INTERVIEWER_TIME' at row 1","sql":"INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','JAVASCRIPT',3,'MASTER','LEVEL_HIGH','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_CUSTOME','STATUS_GIVEUP','SUPPLIER_ZR','lulu',NULL,NULL,'Invalid date',NULL,NULL,NULL,NULL,NULL,'xinge','dbox','2018-07-12 10:19:40','2018-07-12 10:19:40');"}
+sql: "INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','JAVASCRIPT',3,'MASTER','LEVEL_HIGH','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_CUSTOME','STATUS_GIVEUP','SUPPLIER_ZR','lulu',NULL,NULL,'Invalid date',NULL,NULL,NULL,NULL,NULL,'xinge','dbox','2018-07-12 10:19:40','2018-07-12 10:19:40');"
+pid: 30598
+hostname: C02W217DHTD7
+
+2018-07-12 18:20:56,721 ERROR 31094 [-/::1/-/22ms POST /generatedata] nodejs.SequelizeDatabaseError: Data too long for column 'OFFICIAL_ACADEMIC_CODE' at row 1
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at model.save (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Candidate.insertCandidate (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/candidate.js:42:23)
+    at CandidateService.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/candidateService.js:8:52)
+    at generateDataController.insertCandidate (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/generateData.js:55:57)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'OFFICIAL_ACADEMIC_CODE' at row 1","sql":"INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','WEBFRONT',3,'LESS_JUNIOR','LEVEL_ASSISTANT','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_NEW','STATUS_NO_NEED','SUPPLIER_WSHH','lulu',NULL,NULL,NULL,NULL,NULL,NULL,'LEVEL_ASSISTANT',NULL,'xinge','dbox','2018-07-12 10:20:56','2018-07-12 10:20:56');"}
+original: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'OFFICIAL_ACADEMIC_CODE' at row 1","sql":"INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','WEBFRONT',3,'LESS_JUNIOR','LEVEL_ASSISTANT','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_NEW','STATUS_NO_NEED','SUPPLIER_WSHH','lulu',NULL,NULL,NULL,NULL,NULL,NULL,'LEVEL_ASSISTANT',NULL,'xinge','dbox','2018-07-12 10:20:56','2018-07-12 10:20:56');"}
+sql: "INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','WEBFRONT',3,'LESS_JUNIOR','LEVEL_ASSISTANT','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_NEW','STATUS_NO_NEED','SUPPLIER_WSHH','lulu',NULL,NULL,NULL,NULL,NULL,NULL,'LEVEL_ASSISTANT',NULL,'xinge','dbox','2018-07-12 10:20:56','2018-07-12 10:20:56');"
+pid: 31094
+hostname: C02W217DHTD7
+
+2018-07-12 18:21:35,791 ERROR 31094 [-/::1/-/8ms POST /generatedata] nodejs.SequelizeDatabaseError: Data too long for column 'CHECK_RANK_LEVEL_CODE' at row 1
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at model.save (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Candidate.insertCandidate (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/candidate.js:42:23)
+    at CandidateService.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/candidateService.js:8:52)
+    at generateDataController.insertCandidate (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/generateData.js:55:57)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'CHECK_RANK_LEVEL_CODE' at row 1","sql":"INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','WEBFRONT',3,'LESS_JUNIOR','LEVEL_ASSISTANT','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_NEW','STATUS_NO_NEED','SUPPLIER_WSHH','lulu',NULL,NULL,NULL,NULL,NULL,NULL,'LEVEL_ASSISTANT',NULL,'xinge','dbox','2018-07-12 10:21:35','2018-07-12 10:21:35');"}
+original: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'CHECK_RANK_LEVEL_CODE' at row 1","sql":"INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','WEBFRONT',3,'LESS_JUNIOR','LEVEL_ASSISTANT','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_NEW','STATUS_NO_NEED','SUPPLIER_WSHH','lulu',NULL,NULL,NULL,NULL,NULL,NULL,'LEVEL_ASSISTANT',NULL,'xinge','dbox','2018-07-12 10:21:35','2018-07-12 10:21:35');"}
+sql: "INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'WJQ','WEBFRONT',3,'LESS_JUNIOR','LEVEL_ASSISTANT','18812345678','188123456789@163.cpm','10000000','2000000000','0','上海市唐镇','PROCESS_NEW','STATUS_NO_NEED','SUPPLIER_WSHH','lulu',NULL,NULL,NULL,NULL,NULL,NULL,'LEVEL_ASSISTANT',NULL,'xinge','dbox','2018-07-12 10:21:35','2018-07-12 10:21:35');"
+pid: 31094
+hostname: C02W217DHTD7
+
+2018-07-12 18:47:13,127 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 1440115ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-12 19:36:32,024 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 2938894ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+

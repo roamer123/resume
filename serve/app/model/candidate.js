@@ -38,5 +38,9 @@ module.exports = app => {
     freezeTableName: true,
   });
 
+  Candidate.insertCandidate = async function(params) {
+    return await this.create(params);
+  };
+
   return Candidate;
 };

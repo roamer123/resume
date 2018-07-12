@@ -1,16 +1,16 @@
 'use strict';
 const Service = require('egg').Service;
 
-class LogService extends Service {
+class ResumeService extends Service {
   async query(params) {
     const { ctx } = this;
-    const queryResult = await ctx.model.Log.queryLog(params);
+    const queryResult = await ctx.model.Resume.queryResume(params);
     return queryResult;
   }
 
   async insert(params) {
     const { ctx } = this;
-    const insertResult = await ctx.model.Log.insertLog(params);
+    const insertResult = await ctx.model.Resume.insertResume(params);
     return insertResult;
   }
 
@@ -19,17 +19,17 @@ class LogService extends Service {
     // 需要在此处加where
     const options = {
       where: {
-        OPERATION_CODE: params.OPERATION_CODE,
+        ID: params.ID,
       },
     };
-    const updateResult = await ctx.model.Log.updateLog(params, options);
+    const updateResult = await ctx.model.Resume.updateResume(params, options);
     return updateResult;
   }
 
   async delete(params) {
     const { ctx } = this;
-    const deleteResult = await ctx.model.Log.deleteLog(params);
+    const deleteResult = await ctx.model.Resume.deleteResume(params);
     return deleteResult;
   }
 }
-module.exports = LogService;
+module.exports = ResumeService;
