@@ -1784,3 +1784,563 @@ hostname: macdeMacBook-Pro-3.local
 pid: 17054
 hostname: macdeMacBook-Pro-3.local
 
+2018-07-11 14:36:29,170 ERROR 6160 [-/::1/-/5ms GET /dropdown] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:10:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6160
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:37:51,605 ERROR 6194 [-/::1/-/6ms GET /dropdown] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:11:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6194
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:38:32,077 ERROR 6194 [-/::1/-/1ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:11:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6194
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:39:02,644 ERROR 6227 [-/::1/-/4ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:12:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6227
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:39:30,412 ERROR 6260 [-/::1/-/7ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6260
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:39:59,020 ERROR 6282 [-/::1/-/6ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6282
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:40:42,856 ERROR 6337 [-/::1/-/8ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6337
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:41:51,996 ERROR 6376 [-/::1/-/8ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6376
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:42:56,403 ERROR 6409 [-/::1/-/6ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6409
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:43:59,380 ERROR 6454 [-/::1/-/8ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: ctx.service.dropdown.query is not a function
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:53)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6454
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:45:51,357 ERROR 6563 [-/::1/-/8ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: ctx.service.dropdownService.query is not a function
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6563
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:58:32,821 ERROR 6600 [-/::1/-/6ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: ctx.service.dropdownService.query is not a function
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6600
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 14:59:29,579 ERROR 6854 [-/::1/-/7ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: Cannot read property 'query' of undefined
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6854
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 15:01:14,661 ERROR 6922 [-/::1/-/9ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: ctx.service.dropdownService.query is not a function
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdown.js:13:60)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6922
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 18:04:31,553 ERROR 10425 [-/::1/-/22ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: retrunJson.success is not a function
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdownController.js:15:27)
+    at <anonymous>
+
+pid: 10425
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-11 18:05:32,601 ERROR 10463 [-/::1/-/18ms GET /dropdown?TYPE=SUPPLIER_ORGANIZATION] nodejs.TypeError: returnJson.success is not a function
+    at Dropdown.query (/Users/wjq/Public/workspace/project/resume/serve/app/controller/dropdownController.js:16:27)
+    at <anonymous>
+
+pid: 10463
+hostname: macdeMacBook-Pro-3.local
+

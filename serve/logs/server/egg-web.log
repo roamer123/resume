@@ -1887,3 +1887,423 @@
 2018-07-10 14:33:19,068 INFO 17163 [egg:core] dump config after load, 5ms
 2018-07-10 14:33:19,097 INFO 17163 [egg-watcher:app] watcher start success
 2018-07-10 14:33:19,118 INFO 17163 [egg:core] dump config after ready, 4ms
+2018-07-11 14:36:23,386 INFO 6160 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:36:23,427 INFO 6160 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:36:23,427 INFO 6160 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:36:23,558 INFO 6160 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:36:23,558 INFO 6160 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 14:36:23,850 INFO 6160 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:36:23,853 INFO 6160 [egg-security] use noopen middleware
+2018-07-11 14:36:23,853 INFO 6160 [egg-security] use nosniff middleware
+2018-07-11 14:36:23,854 INFO 6160 [egg-security] use xssProtection middleware
+2018-07-11 14:36:23,854 INFO 6160 [egg-security] use xframe middleware
+2018-07-11 14:36:23,854 INFO 6160 [egg-security] use dta middleware
+2018-07-11 14:36:23,854 INFO 6160 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:36:23,864 INFO 6160 [egg:core] dump config after load, 4ms
+2018-07-11 14:36:23,890 INFO 6160 [egg-watcher:app] watcher start success
+2018-07-11 14:36:23,910 INFO 6160 [egg:core] dump config after ready, 5ms
+2018-07-11 14:37:43,589 INFO 6194 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:37:43,628 INFO 6194 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:37:43,628 INFO 6194 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:37:43,765 INFO 6194 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:37:43,769 INFO 6194 [egg-oauth2-server] egg-oauth2-server started use 3 ms
+2018-07-11 14:37:44,044 INFO 6194 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:37:44,046 INFO 6194 [egg-security] use noopen middleware
+2018-07-11 14:37:44,046 INFO 6194 [egg-security] use nosniff middleware
+2018-07-11 14:37:44,046 INFO 6194 [egg-security] use xssProtection middleware
+2018-07-11 14:37:44,047 INFO 6194 [egg-security] use xframe middleware
+2018-07-11 14:37:44,047 INFO 6194 [egg-security] use dta middleware
+2018-07-11 14:37:44,047 INFO 6194 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:37:44,059 INFO 6194 [egg:core] dump config after load, 6ms
+2018-07-11 14:37:44,090 INFO 6194 [egg-watcher:app] watcher start success
+2018-07-11 14:37:44,114 INFO 6194 [egg:core] dump config after ready, 5ms
+2018-07-11 14:38:58,655 INFO 6227 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:38:58,697 INFO 6227 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:38:58,697 INFO 6227 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:38:58,840 INFO 6227 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:38:58,840 INFO 6227 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 14:38:59,126 INFO 6227 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:38:59,128 INFO 6227 [egg-security] use noopen middleware
+2018-07-11 14:38:59,129 INFO 6227 [egg-security] use nosniff middleware
+2018-07-11 14:38:59,130 INFO 6227 [egg-security] use xssProtection middleware
+2018-07-11 14:38:59,130 INFO 6227 [egg-security] use xframe middleware
+2018-07-11 14:38:59,130 INFO 6227 [egg-security] use dta middleware
+2018-07-11 14:38:59,130 INFO 6227 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:38:59,143 INFO 6227 [egg:core] dump config after load, 7ms
+2018-07-11 14:38:59,173 INFO 6227 [egg-watcher:app] watcher start success
+2018-07-11 14:38:59,194 INFO 6227 [egg:core] dump config after ready, 4ms
+2018-07-11 14:39:15,952 INFO 6249 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:39:15,998 INFO 6249 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:39:15,998 INFO 6249 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:39:16,198 INFO 6249 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:39:16,199 INFO 6249 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:39:16,616 INFO 6249 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:39:16,617 INFO 6249 [egg-security] use noopen middleware
+2018-07-11 14:39:16,618 INFO 6249 [egg-security] use nosniff middleware
+2018-07-11 14:39:16,618 INFO 6249 [egg-security] use xssProtection middleware
+2018-07-11 14:39:16,618 INFO 6249 [egg-security] use xframe middleware
+2018-07-11 14:39:16,618 INFO 6249 [egg-security] use dta middleware
+2018-07-11 14:39:16,618 INFO 6249 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:39:16,627 INFO 6249 [egg:core] dump config after load, 4ms
+2018-07-11 14:39:16,677 INFO 6249 [egg-watcher:app] watcher start success
+2018-07-11 14:39:16,694 INFO 6249 [egg:core] dump config after ready, 3ms
+2018-07-11 14:39:27,444 INFO 6260 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:39:27,483 INFO 6260 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:39:27,483 INFO 6260 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:39:27,621 INFO 6260 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:39:27,621 INFO 6260 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 14:39:27,870 INFO 6260 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:39:27,871 INFO 6260 [egg-security] use noopen middleware
+2018-07-11 14:39:27,872 INFO 6260 [egg-security] use nosniff middleware
+2018-07-11 14:39:27,872 INFO 6260 [egg-security] use xssProtection middleware
+2018-07-11 14:39:27,872 INFO 6260 [egg-security] use xframe middleware
+2018-07-11 14:39:27,872 INFO 6260 [egg-security] use dta middleware
+2018-07-11 14:39:27,872 INFO 6260 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:39:27,881 INFO 6260 [egg:core] dump config after load, 4ms
+2018-07-11 14:39:27,912 INFO 6260 [egg-watcher:app] watcher start success
+2018-07-11 14:39:27,934 INFO 6260 [egg:core] dump config after ready, 4ms
+2018-07-11 14:39:51,998 INFO 6282 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:39:52,036 INFO 6282 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:39:52,036 INFO 6282 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:39:52,191 INFO 6282 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:39:52,192 INFO 6282 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:39:52,445 INFO 6282 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:39:52,447 INFO 6282 [egg-security] use noopen middleware
+2018-07-11 14:39:52,447 INFO 6282 [egg-security] use nosniff middleware
+2018-07-11 14:39:52,448 INFO 6282 [egg-security] use xssProtection middleware
+2018-07-11 14:39:52,448 INFO 6282 [egg-security] use xframe middleware
+2018-07-11 14:39:52,448 INFO 6282 [egg-security] use dta middleware
+2018-07-11 14:39:52,448 INFO 6282 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:39:52,458 INFO 6282 [egg:core] dump config after load, 5ms
+2018-07-11 14:39:52,487 INFO 6282 [egg-watcher:app] watcher start success
+2018-07-11 14:39:52,506 INFO 6282 [egg:core] dump config after ready, 4ms
+2018-07-11 14:40:21,280 INFO 6310 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:40:21,319 INFO 6310 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:40:21,319 INFO 6310 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:40:21,446 INFO 6310 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:40:21,447 INFO 6310 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:40:21,715 INFO 6310 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:40:21,717 INFO 6310 [egg-security] use noopen middleware
+2018-07-11 14:40:21,717 INFO 6310 [egg-security] use nosniff middleware
+2018-07-11 14:40:21,717 INFO 6310 [egg-security] use xssProtection middleware
+2018-07-11 14:40:21,717 INFO 6310 [egg-security] use xframe middleware
+2018-07-11 14:40:21,718 INFO 6310 [egg-security] use dta middleware
+2018-07-11 14:40:21,718 INFO 6310 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:40:21,726 INFO 6310 [egg:core] dump config after load, 4ms
+2018-07-11 14:40:21,752 INFO 6310 [egg-watcher:app] watcher start success
+2018-07-11 14:40:21,775 INFO 6310 [egg:core] dump config after ready, 5ms
+2018-07-11 14:40:38,525 INFO 6337 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:40:38,574 INFO 6337 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:40:38,574 INFO 6337 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:40:38,791 INFO 6337 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:40:38,792 INFO 6337 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:40:39,186 INFO 6337 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:40:39,188 INFO 6337 [egg-security] use noopen middleware
+2018-07-11 14:40:39,189 INFO 6337 [egg-security] use nosniff middleware
+2018-07-11 14:40:39,189 INFO 6337 [egg-security] use xssProtection middleware
+2018-07-11 14:40:39,190 INFO 6337 [egg-security] use xframe middleware
+2018-07-11 14:40:39,190 INFO 6337 [egg-security] use dta middleware
+2018-07-11 14:40:39,190 INFO 6337 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:40:39,200 INFO 6337 [egg:core] dump config after load, 4ms
+2018-07-11 14:40:39,230 INFO 6337 [egg-watcher:app] watcher start success
+2018-07-11 14:40:39,252 INFO 6337 [egg:core] dump config after ready, 5ms
+2018-07-11 14:41:45,641 INFO 6376 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:41:45,679 INFO 6376 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:41:45,679 INFO 6376 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:41:45,814 INFO 6376 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:41:45,814 INFO 6376 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 14:41:46,065 INFO 6376 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:41:46,067 INFO 6376 [egg-security] use noopen middleware
+2018-07-11 14:41:46,067 INFO 6376 [egg-security] use nosniff middleware
+2018-07-11 14:41:46,067 INFO 6376 [egg-security] use xssProtection middleware
+2018-07-11 14:41:46,068 INFO 6376 [egg-security] use xframe middleware
+2018-07-11 14:41:46,068 INFO 6376 [egg-security] use dta middleware
+2018-07-11 14:41:46,068 INFO 6376 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:41:46,076 INFO 6376 [egg:core] dump config after load, 4ms
+2018-07-11 14:41:46,100 INFO 6376 [egg-watcher:app] watcher start success
+2018-07-11 14:41:46,118 INFO 6376 [egg:core] dump config after ready, 3ms
+2018-07-11 14:42:50,800 INFO 6409 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:42:50,836 INFO 6409 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:42:50,836 INFO 6409 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:42:50,970 INFO 6409 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:42:50,971 INFO 6409 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:42:51,208 INFO 6409 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:42:51,210 INFO 6409 [egg-security] use noopen middleware
+2018-07-11 14:42:51,211 INFO 6409 [egg-security] use nosniff middleware
+2018-07-11 14:42:51,211 INFO 6409 [egg-security] use xssProtection middleware
+2018-07-11 14:42:51,211 INFO 6409 [egg-security] use xframe middleware
+2018-07-11 14:42:51,212 INFO 6409 [egg-security] use dta middleware
+2018-07-11 14:42:51,212 INFO 6409 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:42:51,220 INFO 6409 [egg:core] dump config after load, 5ms
+2018-07-11 14:42:51,236 INFO 6409 [egg-watcher:app] watcher start success
+2018-07-11 14:42:51,268 INFO 6409 [egg:core] dump config after ready, 4ms
+2018-07-11 14:43:29,657 INFO 6437 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:43:29,696 INFO 6437 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:43:29,696 INFO 6437 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:43:29,844 INFO 6437 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:43:29,845 INFO 6437 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:43:30,115 INFO 6437 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:43:30,118 INFO 6437 [egg-security] use noopen middleware
+2018-07-11 14:43:30,118 INFO 6437 [egg-security] use nosniff middleware
+2018-07-11 14:43:30,118 INFO 6437 [egg-security] use xssProtection middleware
+2018-07-11 14:43:30,119 INFO 6437 [egg-security] use xframe middleware
+2018-07-11 14:43:30,119 INFO 6437 [egg-security] use dta middleware
+2018-07-11 14:43:30,119 INFO 6437 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:43:30,128 INFO 6437 [egg:core] dump config after load, 5ms
+2018-07-11 14:43:30,156 INFO 6437 [egg-watcher:app] watcher start success
+2018-07-11 14:43:30,177 INFO 6437 [egg:core] dump config after ready, 4ms
+2018-07-11 14:43:54,580 INFO 6454 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:43:54,619 INFO 6454 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:43:54,619 INFO 6454 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:43:54,742 INFO 6454 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:43:54,743 INFO 6454 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:43:54,997 INFO 6454 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:43:54,999 INFO 6454 [egg-security] use noopen middleware
+2018-07-11 14:43:54,999 INFO 6454 [egg-security] use nosniff middleware
+2018-07-11 14:43:55,000 INFO 6454 [egg-security] use xssProtection middleware
+2018-07-11 14:43:55,000 INFO 6454 [egg-security] use xframe middleware
+2018-07-11 14:43:55,001 INFO 6454 [egg-security] use dta middleware
+2018-07-11 14:43:55,001 INFO 6454 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:43:55,009 INFO 6454 [egg:core] dump config after load, 4ms
+2018-07-11 14:43:55,032 INFO 6454 [egg-watcher:app] watcher start success
+2018-07-11 14:43:55,052 INFO 6454 [egg:core] dump config after ready, 4ms
+2018-07-11 14:44:31,897 INFO 6478 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:44:31,936 INFO 6478 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:44:31,936 INFO 6478 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:44:32,076 INFO 6478 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:44:32,076 INFO 6478 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-11 14:44:32,322 INFO 6478 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:44:32,324 INFO 6478 [egg-security] use noopen middleware
+2018-07-11 14:44:32,325 INFO 6478 [egg-security] use nosniff middleware
+2018-07-11 14:44:32,325 INFO 6478 [egg-security] use xssProtection middleware
+2018-07-11 14:44:32,325 INFO 6478 [egg-security] use xframe middleware
+2018-07-11 14:44:32,326 INFO 6478 [egg-security] use dta middleware
+2018-07-11 14:44:32,326 INFO 6478 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:44:32,333 INFO 6478 [egg:core] dump config after load, 4ms
+2018-07-11 14:44:32,358 INFO 6478 [egg-watcher:app] watcher start success
+2018-07-11 14:44:32,377 INFO 6478 [egg:core] dump config after ready, 3ms
+2018-07-11 14:44:57,507 INFO 6506 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:44:57,546 INFO 6506 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:44:57,546 INFO 6506 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:44:57,684 INFO 6506 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:44:57,685 INFO 6506 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:44:57,945 INFO 6506 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:44:57,947 INFO 6506 [egg-security] use noopen middleware
+2018-07-11 14:44:57,948 INFO 6506 [egg-security] use nosniff middleware
+2018-07-11 14:44:57,948 INFO 6506 [egg-security] use xssProtection middleware
+2018-07-11 14:44:57,949 INFO 6506 [egg-security] use xframe middleware
+2018-07-11 14:44:57,949 INFO 6506 [egg-security] use dta middleware
+2018-07-11 14:44:57,949 INFO 6506 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:44:57,958 INFO 6506 [egg:core] dump config after load, 5ms
+2018-07-11 14:44:57,983 INFO 6506 [egg-watcher:app] watcher start success
+2018-07-11 14:44:58,003 INFO 6506 [egg:core] dump config after ready, 3ms
+2018-07-11 14:45:06,810 INFO 6518 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:45:06,849 INFO 6518 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:45:06,849 INFO 6518 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:45:06,993 INFO 6518 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:45:06,994 INFO 6518 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:45:07,241 INFO 6518 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:45:07,243 INFO 6518 [egg-security] use noopen middleware
+2018-07-11 14:45:07,243 INFO 6518 [egg-security] use nosniff middleware
+2018-07-11 14:45:07,243 INFO 6518 [egg-security] use xssProtection middleware
+2018-07-11 14:45:07,244 INFO 6518 [egg-security] use xframe middleware
+2018-07-11 14:45:07,244 INFO 6518 [egg-security] use dta middleware
+2018-07-11 14:45:07,244 INFO 6518 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:45:07,254 INFO 6518 [egg:core] dump config after load, 6ms
+2018-07-11 14:45:07,293 INFO 6518 [egg-watcher:app] watcher start success
+2018-07-11 14:45:07,322 INFO 6518 [egg:core] dump config after ready, 6ms
+2018-07-11 14:45:17,183 INFO 6536 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:45:17,224 INFO 6536 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:45:17,224 INFO 6536 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:45:17,357 INFO 6536 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:45:17,358 INFO 6536 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:45:17,616 INFO 6536 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:45:17,618 INFO 6536 [egg-security] use noopen middleware
+2018-07-11 14:45:17,618 INFO 6536 [egg-security] use nosniff middleware
+2018-07-11 14:45:17,618 INFO 6536 [egg-security] use xssProtection middleware
+2018-07-11 14:45:17,619 INFO 6536 [egg-security] use xframe middleware
+2018-07-11 14:45:17,619 INFO 6536 [egg-security] use dta middleware
+2018-07-11 14:45:17,619 INFO 6536 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:45:17,628 INFO 6536 [egg:core] dump config after load, 5ms
+2018-07-11 14:45:17,654 INFO 6536 [egg-watcher:app] watcher start success
+2018-07-11 14:45:17,672 INFO 6536 [egg:core] dump config after ready, 4ms
+2018-07-11 14:45:44,670 INFO 6563 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:45:44,716 INFO 6563 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:45:44,716 INFO 6563 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:45:44,917 INFO 6563 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:45:44,918 INFO 6563 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:45:45,239 INFO 6563 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:45:45,241 INFO 6563 [egg-security] use noopen middleware
+2018-07-11 14:45:45,242 INFO 6563 [egg-security] use nosniff middleware
+2018-07-11 14:45:45,242 INFO 6563 [egg-security] use xssProtection middleware
+2018-07-11 14:45:45,242 INFO 6563 [egg-security] use xframe middleware
+2018-07-11 14:45:45,242 INFO 6563 [egg-security] use dta middleware
+2018-07-11 14:45:45,242 INFO 6563 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:45:45,254 INFO 6563 [egg:core] dump config after load, 7ms
+2018-07-11 14:45:45,284 INFO 6563 [egg-watcher:app] watcher start success
+2018-07-11 14:45:45,303 INFO 6563 [egg:core] dump config after ready, 3ms
+2018-07-11 14:46:34,702 INFO 6600 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:46:34,748 INFO 6600 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:46:34,748 INFO 6600 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:46:34,929 INFO 6600 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:46:34,930 INFO 6600 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:46:35,160 INFO 6600 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:46:35,163 INFO 6600 [egg-security] use noopen middleware
+2018-07-11 14:46:35,163 INFO 6600 [egg-security] use nosniff middleware
+2018-07-11 14:46:35,164 INFO 6600 [egg-security] use xssProtection middleware
+2018-07-11 14:46:35,164 INFO 6600 [egg-security] use xframe middleware
+2018-07-11 14:46:35,164 INFO 6600 [egg-security] use dta middleware
+2018-07-11 14:46:35,164 INFO 6600 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:46:35,177 INFO 6600 [egg:core] dump config after load, 7ms
+2018-07-11 14:46:35,203 INFO 6600 [egg-watcher:app] watcher start success
+2018-07-11 14:46:35,221 INFO 6600 [egg:core] dump config after ready, 3ms
+2018-07-11 14:59:18,810 INFO 6854 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 14:59:18,856 INFO 6854 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 14:59:18,856 INFO 6854 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 14:59:19,076 INFO 6854 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 14:59:19,077 INFO 6854 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 14:59:19,428 INFO 6854 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 14:59:19,430 INFO 6854 [egg-security] use noopen middleware
+2018-07-11 14:59:19,430 INFO 6854 [egg-security] use nosniff middleware
+2018-07-11 14:59:19,431 INFO 6854 [egg-security] use xssProtection middleware
+2018-07-11 14:59:19,431 INFO 6854 [egg-security] use xframe middleware
+2018-07-11 14:59:19,431 INFO 6854 [egg-security] use dta middleware
+2018-07-11 14:59:19,431 INFO 6854 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 14:59:19,443 INFO 6854 [egg:core] dump config after load, 5ms
+2018-07-11 14:59:19,475 INFO 6854 [egg-watcher:app] watcher start success
+2018-07-11 14:59:19,499 INFO 6854 [egg:core] dump config after ready, 5ms
+2018-07-11 15:00:13,446 INFO 6885 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:00:13,487 INFO 6885 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:00:13,487 INFO 6885 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:00:13,698 INFO 6885 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:00:13,699 INFO 6885 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:00:14,040 INFO 6885 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 15:00:14,042 INFO 6885 [egg-security] use noopen middleware
+2018-07-11 15:00:14,042 INFO 6885 [egg-security] use nosniff middleware
+2018-07-11 15:00:14,043 INFO 6885 [egg-security] use xssProtection middleware
+2018-07-11 15:00:14,043 INFO 6885 [egg-security] use xframe middleware
+2018-07-11 15:00:14,043 INFO 6885 [egg-security] use dta middleware
+2018-07-11 15:00:14,043 INFO 6885 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:00:14,053 INFO 6885 [egg:core] dump config after load, 6ms
+2018-07-11 15:00:14,082 INFO 6885 [egg-watcher:app] watcher start success
+2018-07-11 15:00:14,099 INFO 6885 [egg:core] dump config after ready, 3ms
+2018-07-11 15:01:10,465 INFO 6922 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:01:10,501 INFO 6922 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:01:10,501 INFO 6922 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:01:10,627 INFO 6922 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:01:10,631 INFO 6922 [egg-oauth2-server] egg-oauth2-server started use 4 ms
+2018-07-11 15:01:10,890 INFO 6922 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 15:01:10,893 INFO 6922 [egg-security] use noopen middleware
+2018-07-11 15:01:10,893 INFO 6922 [egg-security] use nosniff middleware
+2018-07-11 15:01:10,893 INFO 6922 [egg-security] use xssProtection middleware
+2018-07-11 15:01:10,894 INFO 6922 [egg-security] use xframe middleware
+2018-07-11 15:01:10,897 INFO 6922 [egg-security] use dta middleware
+2018-07-11 15:01:10,897 INFO 6922 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:01:10,914 INFO 6922 [egg:core] dump config after load, 8ms
+2018-07-11 15:01:10,953 INFO 6922 [egg-watcher:app] watcher start success
+2018-07-11 15:01:10,977 INFO 6922 [egg:core] dump config after ready, 5ms
+2018-07-11 15:02:21,758 INFO 6963 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:02:21,794 INFO 6963 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:02:21,794 INFO 6963 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:02:21,927 INFO 6963 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:02:21,928 INFO 6963 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:02:22,169 INFO 6963 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 15:02:22,170 INFO 6963 [egg-security] use noopen middleware
+2018-07-11 15:02:22,171 INFO 6963 [egg-security] use nosniff middleware
+2018-07-11 15:02:22,171 INFO 6963 [egg-security] use xssProtection middleware
+2018-07-11 15:02:22,171 INFO 6963 [egg-security] use xframe middleware
+2018-07-11 15:02:22,171 INFO 6963 [egg-security] use dta middleware
+2018-07-11 15:02:22,171 INFO 6963 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:02:22,181 INFO 6963 [egg:core] dump config after load, 5ms
+2018-07-11 15:02:22,209 INFO 6963 [egg-watcher:app] watcher start success
+2018-07-11 15:02:22,229 INFO 6963 [egg:core] dump config after ready, 4ms
+2018-07-11 15:09:01,898 INFO 7101 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 15:09:01,933 INFO 7101 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 15:09:01,933 INFO 7101 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 15:09:02,053 INFO 7101 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 15:09:02,054 INFO 7101 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 15:09:02,303 INFO 7101 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 15:09:02,305 INFO 7101 [egg-security] use noopen middleware
+2018-07-11 15:09:02,305 INFO 7101 [egg-security] use nosniff middleware
+2018-07-11 15:09:02,305 INFO 7101 [egg-security] use xssProtection middleware
+2018-07-11 15:09:02,306 INFO 7101 [egg-security] use xframe middleware
+2018-07-11 15:09:02,306 INFO 7101 [egg-security] use dta middleware
+2018-07-11 15:09:02,306 INFO 7101 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 15:09:02,316 INFO 7101 [egg:core] dump config after load, 6ms
+2018-07-11 15:09:02,347 INFO 7101 [egg-watcher:app] watcher start success
+2018-07-11 15:09:02,368 INFO 7101 [egg:core] dump config after ready, 3ms
+2018-07-11 18:02:54,751 INFO 10361 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:02:54,802 INFO 10361 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:02:54,802 INFO 10361 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:02:55,020 INFO 10361 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:02:55,021 INFO 10361 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:02:55,416 INFO 10361 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 18:02:55,418 INFO 10361 [egg-security] use noopen middleware
+2018-07-11 18:02:55,418 INFO 10361 [egg-security] use nosniff middleware
+2018-07-11 18:02:55,419 INFO 10361 [egg-security] use xssProtection middleware
+2018-07-11 18:02:55,419 INFO 10361 [egg-security] use xframe middleware
+2018-07-11 18:02:55,420 INFO 10361 [egg-security] use dta middleware
+2018-07-11 18:02:55,420 INFO 10361 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:02:55,437 INFO 10361 [egg:core] dump config after load, 7ms
+2018-07-11 18:02:55,469 INFO 10361 [egg-watcher:app] watcher start success
+2018-07-11 18:02:55,496 INFO 10361 [egg:core] dump config after ready, 5ms
+2018-07-11 18:04:01,138 INFO 10399 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:04:01,190 INFO 10399 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:04:01,190 INFO 10399 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:04:01,425 INFO 10399 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:04:01,428 INFO 10399 [egg-oauth2-server] egg-oauth2-server started use 3 ms
+2018-07-11 18:04:01,864 INFO 10399 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 18:04:01,867 INFO 10399 [egg-security] use noopen middleware
+2018-07-11 18:04:01,867 INFO 10399 [egg-security] use nosniff middleware
+2018-07-11 18:04:01,868 INFO 10399 [egg-security] use xssProtection middleware
+2018-07-11 18:04:01,869 INFO 10399 [egg-security] use xframe middleware
+2018-07-11 18:04:01,869 INFO 10399 [egg-security] use dta middleware
+2018-07-11 18:04:01,869 INFO 10399 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:04:01,878 INFO 10399 [egg:core] dump config after load, 5ms
+2018-07-11 18:04:01,912 INFO 10399 [egg-watcher:app] watcher start success
+2018-07-11 18:04:01,935 INFO 10399 [egg:core] dump config after ready, 4ms
+2018-07-11 18:04:23,232 INFO 10425 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:04:23,278 INFO 10425 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:04:23,278 INFO 10425 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:04:23,415 INFO 10425 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:04:23,416 INFO 10425 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:04:23,831 INFO 10425 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 18:04:23,833 INFO 10425 [egg-security] use noopen middleware
+2018-07-11 18:04:23,833 INFO 10425 [egg-security] use nosniff middleware
+2018-07-11 18:04:23,833 INFO 10425 [egg-security] use xssProtection middleware
+2018-07-11 18:04:23,834 INFO 10425 [egg-security] use xframe middleware
+2018-07-11 18:04:23,834 INFO 10425 [egg-security] use dta middleware
+2018-07-11 18:04:23,834 INFO 10425 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:04:23,847 INFO 10425 [egg:core] dump config after load, 5ms
+2018-07-11 18:04:23,876 INFO 10425 [egg-watcher:app] watcher start success
+2018-07-11 18:04:23,898 INFO 10425 [egg:core] dump config after ready, 4ms
+2018-07-11 18:05:28,835 INFO 10463 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:05:28,884 INFO 10463 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:05:28,884 INFO 10463 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:05:29,092 INFO 10463 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:05:29,093 INFO 10463 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:05:29,573 INFO 10463 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 18:05:29,575 INFO 10463 [egg-security] use noopen middleware
+2018-07-11 18:05:29,577 INFO 10463 [egg-security] use nosniff middleware
+2018-07-11 18:05:29,577 INFO 10463 [egg-security] use xssProtection middleware
+2018-07-11 18:05:29,578 INFO 10463 [egg-security] use xframe middleware
+2018-07-11 18:05:29,578 INFO 10463 [egg-security] use dta middleware
+2018-07-11 18:05:29,578 INFO 10463 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:05:29,591 INFO 10463 [egg:core] dump config after load, 5ms
+2018-07-11 18:05:29,631 INFO 10463 [egg-watcher:app] watcher start success
+2018-07-11 18:05:29,655 INFO 10463 [egg:core] dump config after ready, 5ms
+2018-07-11 18:06:08,634 INFO 10494 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-11 18:06:08,683 INFO 10494 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-11 18:06:08,683 INFO 10494 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-11 18:06:08,877 INFO 10494 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-11 18:06:08,878 INFO 10494 [egg-oauth2-server] egg-oauth2-server started use 1 ms
+2018-07-11 18:06:09,293 INFO 10494 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-11 18:06:09,295 INFO 10494 [egg-security] use noopen middleware
+2018-07-11 18:06:09,296 INFO 10494 [egg-security] use nosniff middleware
+2018-07-11 18:06:09,297 INFO 10494 [egg-security] use xssProtection middleware
+2018-07-11 18:06:09,297 INFO 10494 [egg-security] use xframe middleware
+2018-07-11 18:06:09,298 INFO 10494 [egg-security] use dta middleware
+2018-07-11 18:06:09,298 INFO 10494 [egg-security] compose 5 middlewares into one security middleware
+2018-07-11 18:06:09,308 INFO 10494 [egg:core] dump config after load, 4ms
+2018-07-11 18:06:09,342 INFO 10494 [egg-watcher:app] watcher start success
+2018-07-11 18:06:09,371 INFO 10494 [egg:core] dump config after ready, 5ms
