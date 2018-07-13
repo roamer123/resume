@@ -4701,3 +4701,252 @@ name: "ClusterClientNoResponseError"
 pid: 20265
 hostname: C02W217DHTD7
 
+<<<<<<< Updated upstream
+=======
+2018-07-12 20:08:08,348 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 302552ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-12 20:13:41,853 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 313495ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-12 20:15:20,375 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 78511ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-12 20:23:14,742 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 314345ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-12 20:27:31,230 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 256485ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-12 20:47:00,002 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 188642ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-12 20:55:23,603 ERROR 41168 [-/::1/-/24ms POST /generatedata/position] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:226:16)
+    at Query.handler [as onResult] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+From previous event:
+    at Query.run (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at model.save (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Position.insertPosition (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/model/position.js:40:23)
+    at PositionService.insert (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/service/positionService.js:13:51)
+    at generateDataController.insertPosition (/Users/chenxumin529/Desktop/resume_pro/resume/serve/app/controller/generateData.js:94:56)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"1","origin":"DB","instance":{"id":1,"TECHNOLOGY_DIRECTION_CODE":"HTML5","NEED_ORGANIZATION_CODE":"NEED_ALBB","JOB_CATEGORY_CODE":"JOB_PART_TIME","JOB_CATEGORY_CODE_NAME":"兼职","JOB_EXPERIENCE_DEMAND_CODE":"LESS_1","EDUCATION_LEVEL_CODE":"JUNIOR","SALARY_DEMAND":"10k","LATEST_COME_TIME":null,"PRINCIPAL":"cxm","COOPERATOR":"lulu","STARTOR":"wjq","JOB_DESC":"熟悉React","REMARK":"无","NUMBER":2,"RANK_LEVEL_CODE":"LEVEL_MIDDLE","POSITION_PROCESS_CODE":"0","DATE_UPDATED":"2018-07-12T12:55:23.586Z","DATE_CREATED":"2018-07-12T12:55:23.586Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"1"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `POSITION` (`id`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`JOB_CATEGORY_CODE`,`JOB_CATEGORY_CODE_NAME`,`JOB_EXPERIENCE_DEMAND_CODE`,`EDUCATION_LEVEL_CODE`,`SALARY_DEMAND`,`LATEST_COME_TIME`,`PRINCIPAL`,`COOPERATOR`,`STARTOR`,`JOB_DESC`,`REMARK`,`NUMBER`,`RANK_LEVEL_CODE`,`POSITION_PROCESS_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'HTML5','NEED_ALBB','JOB_PART_TIME','兼职','LESS_1','JUNIOR','10k',NULL,'cxm','lulu','wjq','熟悉React','无',2,'LEVEL_MIDDLE','0','2018-07-12 12:55:23','2018-07-12 12:55:23');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `POSITION` (`id`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`JOB_CATEGORY_CODE`,`JOB_CATEGORY_CODE_NAME`,`JOB_EXPERIENCE_DEMAND_CODE`,`EDUCATION_LEVEL_CODE`,`SALARY_DEMAND`,`LATEST_COME_TIME`,`PRINCIPAL`,`COOPERATOR`,`STARTOR`,`JOB_DESC`,`REMARK`,`NUMBER`,`RANK_LEVEL_CODE`,`POSITION_PROCESS_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'HTML5','NEED_ALBB','JOB_PART_TIME','兼职','LESS_1','JUNIOR','10k',NULL,'cxm','lulu','wjq','熟悉React','无',2,'LEVEL_MIDDLE','0','2018-07-12 12:55:23','2018-07-12 12:55:23');"}
+sql: "INSERT INTO `POSITION` (`id`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`JOB_CATEGORY_CODE`,`JOB_CATEGORY_CODE_NAME`,`JOB_EXPERIENCE_DEMAND_CODE`,`EDUCATION_LEVEL_CODE`,`SALARY_DEMAND`,`LATEST_COME_TIME`,`PRINCIPAL`,`COOPERATOR`,`STARTOR`,`JOB_DESC`,`REMARK`,`NUMBER`,`RANK_LEVEL_CODE`,`POSITION_PROCESS_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,'HTML5','NEED_ALBB','JOB_PART_TIME','兼职','LESS_1','JUNIOR','10k',NULL,'cxm','lulu','wjq','熟悉React','无',2,'LEVEL_MIDDLE','0','2018-07-12 12:55:23','2018-07-12 12:55:23');"
+pid: 41168
+hostname: C02W217DHTD7
+
+2018-07-13 00:59:59,002 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 579048ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 01:09:57,494 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 578484ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 01:19:56,005 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 578501ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 01:29:54,525 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 578509ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 01:39:53,016 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 578483ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 01:49:51,532 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 578503ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 01:59:49,057 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 577514ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 02:09:47,546 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 578485ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 02:19:46,034 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 578474ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 02:26:31,557 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 385512ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 04:26:56,414 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 7204802ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 06:27:33,304 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 7216815ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+2018-07-13 08:03:42,392 ERROR 20265 nodejs.ClusterClientNoResponseError: client no response in 5749003ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/chenxumin529/Desktop/resume_pro/resume/serve/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 20265
+hostname: C02W217DHTD7
+
+>>>>>>> Stashed changes

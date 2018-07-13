@@ -16,10 +16,14 @@ module.exports = app => {
   router.all('/log/delete', controller.logController.delete);
 
   // position表相关操作
-  router.all('/position/query', controller.positionController.query);
-  router.all('/position/insert', controller.positionController.insert);
+
+  router.all('/position/search', controller.positionController.query);
+  router.all('/position/add', controller.positionController.insert);
   router.all('/position/update', controller.positionController.update);
   router.all('/position/delete', controller.positionController.delete);
+
+  router.all('/position/query_list', controller.positionController.queryList);
+
 
   // resume表相关操作
   router.all('/resume/query', controller.resumeController.query);
@@ -28,5 +32,6 @@ module.exports = app => {
   router.all('/resume/delete', controller.resumeController.delete);
 
   // 批量生成数据
-  router.all('/generatedata', controller.generateData.insertCandidate);
+  router.all('/generatedata/candidate', controller.generateData.insertCandidate);
+  router.all('/generatedata/position', controller.generateData.insertPosition);
 };

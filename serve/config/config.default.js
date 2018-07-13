@@ -21,7 +21,7 @@ module.exports = appInfo => {
     // 用户名
     username: 'root',
     // 密码
-    password: 'admin123',
+    password: '123456',
   };
 
   config.security = {

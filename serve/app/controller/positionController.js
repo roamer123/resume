@@ -14,6 +14,23 @@ class PositionController extends Controller {
     ctx.body = positionResult;
   }
 
+  async queryList() {
+    const { ctx } = this;
+    const params = ctx.request.body;
+    const { POSITION_PROCESS_CODE, TECHNOLOGY_DIRECTION_CODE } = params;
+    const queryParams = {
+      POSITION_PROCESS_CODE,
+      TECHNOLOGY_DIRECTION_CODE,
+    };
+    const positionResult = await ctx.service.positionService.queryPositionList(queryParams);
+
+    const resultJson = {};
+    resultJson.resultCode = '000000';
+    resultJson.resultMesg = '查询成功';
+    resultJson.data = positionResult;
+    ctx.body = positionResult;
+  }
+
   async insert() {
     const { ctx } = this;
     const params = ctx.request.body;
@@ -45,9 +62,11 @@ class PositionController extends Controller {
   async delete() {
     const { ctx } = this;
     const params = ctx.request.body;
-    console.log('enter into server....');
-    console.log(params);
-    const positionResult = await ctx.service.positionService.delete(params);
+    const { ID } = params;
+    const deleteParams = {
+      ID,
+    };
+    const positionResult = await ctx.service.positionService.delete(deleteParams);
 
     const resultJson = {};
     if (positionResult === 1) {
