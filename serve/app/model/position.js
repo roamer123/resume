@@ -29,8 +29,13 @@ module.exports = app => {
     freezeTableName: true, // 表示模型对应当表名与模型名称相同
   });
 
-  Position.queryPosition = async function(params) {
-    return await this.findOne({
+  // 查所有记录
+  Position.queryPosition = async function() {
+    return await this.findAll();
+  };
+
+  Position.queryPositionList = async function(params) {
+    return await this.findAll({
       where: params,
     //   attributes: [ 'ID', 'OPERATION_CODE', 'OPERATION__NAME' ],
     });

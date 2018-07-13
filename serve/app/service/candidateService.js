@@ -47,6 +47,12 @@ class CandidateService extends Service {
     const result = await this.ctx.model.Candidate.destory(options);
     return result;
   }
+
+  async insert(params) {
+    const { ctx } = this;
+    const insertResult = await ctx.model.Candidate.insertCandidate(params);
+    return insertResult;
+  }
 }
 
 module.exports = CandidateService;
