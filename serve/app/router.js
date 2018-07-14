@@ -24,7 +24,6 @@ module.exports = app => {
 
   router.all('/position/query_list', controller.positionController.queryList);
 
-
   // resume表相关操作
   router.all('/resume/query', controller.resumeController.query);
   router.all('/resume/insert', controller.resumeController.insert);
