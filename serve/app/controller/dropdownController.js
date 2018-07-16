@@ -10,6 +10,8 @@ class DropdownController extends Controller {
     const { ctx } = this;
     const params = ctx.request.query;
     const DropdownList = await ctx.service.dropdownService.query(params);
+    console.log('enter into query...');
+    // ctx.set({'Access-Control-Allow-Origin':'*'});
     ctx.body = ReturnJson.success(DropdownList);
   }
 }

@@ -23,7 +23,6 @@ class PositionController extends Controller {
       TECHNOLOGY_DIRECTION_CODE,
     };
     const positionResult = await ctx.service.positionService.queryPositionList(queryParams);
-
     const resultJson = {};
     resultJson.resultCode = '000000';
     resultJson.resultMesg = '查询成功';

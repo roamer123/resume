@@ -18,6 +18,7 @@ module.exports = app => {
   router.post('/candidate/add_remark', controller.candidateController.addRemark);
   router.post('/candidate/delete', controller.candidateController.delete);
   router.all('/oauth2/access_token', app.oAuth2Server.token());
+  router.all('/login', app.oAuth2Server.token());
 
   // log表相关操作
   router.all('/log/query', controller.logController.query);
