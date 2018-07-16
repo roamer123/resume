@@ -1243,3 +1243,15 @@
 2018-07-13 10:38:40,560 INFO 87972 [egg:core] dump config after load, 7ms
 2018-07-13 10:38:40,594 INFO 87972 [egg-watcher:agent] watcher start success
 2018-07-13 10:38:40,653 INFO 87972 [egg:core] dump config after ready, 5ms
+2018-07-13 11:12:33,051 INFO 33559 [model] [35mSELECT VERSION() as `version`[39m (8ms)
+2018-07-13 11:12:33,060 INFO 33559 [model] [35mSELECT 1+1 AS result[39m (3ms)
+2018-07-13 11:12:32,490 INFO 33559 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2018-07-13 11:12:32,963 INFO 33559 [egg:core] dump config after load, 3ms
+2018-07-13 11:12:32,990 INFO 33559 [egg-watcher:agent] watcher start success
+2018-07-13 11:12:33,065 INFO 33559 [egg:core] dump config after ready, 3ms
+2018-07-13 11:13:00,914 INFO 33597 [model] [35mSELECT VERSION() as `version`[39m (6ms)
+2018-07-13 11:13:00,926 INFO 33597 [model] [35mSELECT 1+1 AS result[39m (2ms)
+2018-07-13 11:13:00,429 INFO 33597 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2018-07-13 11:13:00,837 INFO 33597 [egg:core] dump config after load, 5ms
+2018-07-13 11:13:00,866 INFO 33597 [egg-watcher:agent] watcher start success
+2018-07-13 11:13:00,932 INFO 33597 [egg:core] dump config after ready, 5ms

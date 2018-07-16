@@ -5733,3 +5733,18 @@
 2018-07-13 10:38:41,691 INFO 87980 [egg:core] dump config after load, 6ms
 2018-07-13 10:38:41,717 INFO 87980 [egg-watcher:app] watcher start success
 2018-07-13 10:38:41,737 INFO 87980 [egg:core] dump config after ready, 5ms
+2018-07-13 11:13:01,444 INFO 33598 [egg:logger] init all loggers with options: {"dir":"/Users/wjq/Public/workspace/project/resume/serve/logs/server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-07-13 11:13:01,495 INFO 33598 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-07-13 11:13:01,495 INFO 33598 [egg-schedule]: register schedule /Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-07-13 11:13:01,696 INFO 33598 [egg-oauth2-server] egg-oauth2-server begin start
+2018-07-13 11:13:01,696 INFO 33598 [egg-oauth2-server] egg-oauth2-server started use 0 ms
+2018-07-13 11:13:02,021 INFO 33598 [egg-static] starting static serve /public/ -> /Users/wjq/Public/workspace/project/resume/serve/app/public
+2018-07-13 11:13:02,024 INFO 33598 [egg-security] use noopen middleware
+2018-07-13 11:13:02,025 INFO 33598 [egg-security] use nosniff middleware
+2018-07-13 11:13:02,025 INFO 33598 [egg-security] use xssProtection middleware
+2018-07-13 11:13:02,026 INFO 33598 [egg-security] use xframe middleware
+2018-07-13 11:13:02,026 INFO 33598 [egg-security] use dta middleware
+2018-07-13 11:13:02,026 INFO 33598 [egg-security] compose 5 middlewares into one security middleware
+2018-07-13 11:13:02,041 INFO 33598 [egg:core] dump config after load, 5ms
+2018-07-13 11:13:02,071 INFO 33598 [egg-watcher:app] watcher start success
+2018-07-13 11:13:02,093 INFO 33598 [egg:core] dump config after ready, 4ms

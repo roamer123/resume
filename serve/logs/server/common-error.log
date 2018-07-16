@@ -4950,3 +4950,379 @@ pid: 20265
 hostname: C02W217DHTD7
 
 >>>>>>> Stashed changes
+2018-07-13 11:14:08,393 ERROR 33598 [-/::1/-/40ms GET /generatedata/candidate] nodejs.SequelizeDatabaseError: Data too long for column 'CHECK_RANK_LEVEL_CODE' at row 1
+    at Query.formatError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+From previous event:
+    at Query.run (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/wjq/Public/workspace/project/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at model.save (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Candidate.insertCandidate (/Users/wjq/Public/workspace/project/resume/serve/app/model/candidate.js:70:23)
+    at CandidateService.insert (/Users/wjq/Public/workspace/project/resume/serve/app/service/candidateService.js:53:52)
+    at generateDataController.insertCandidate (/Users/wjq/Public/workspace/project/resume/serve/app/controller/generateData.js:53:57)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+name: 'SequelizeDatabaseError'
+parent: { Error: Data too long for column 'CHECK_RANK_LEVEL_CODE' at row 1
+    at Packet.asError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20) code: 'ER_DATA_TOO_LONG', errno: 1406, sqlState: '22001', sqlMessage: 'Data too long for column \'CHECK_RANK_LEVEL_CODE\' at row 1', sql: 'INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,\'WJQ\',\'NODEJS\',3,\'BACHELOR\',\'LEVEL_MIDDLE\',\'18812345678\',\'188123456789@163.cpm\',\'10000000\',\'2000000000\',\'0\',\'上海市唐镇\',\'PROCESS_SELF\',\'STATUS_HIGHPAY\',\'SUPPLIER_WSHH\',\'lulu\',NULL,NULL,NULL,NULL,NULL,NULL,\'LEVEL_MIDDLE\',NULL,\'xinge\',\'dbox\',\'2018-07-13 03:14:08\',\'2018-07-13 03:14:08\');' }
+original: { Error: Data too long for column 'CHECK_RANK_LEVEL_CODE' at row 1
+    at Packet.asError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20) code: 'ER_DATA_TOO_LONG', errno: 1406, sqlState: '22001', sqlMessage: 'Data too long for column \'CHECK_RANK_LEVEL_CODE\' at row 1', sql: 'INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,\'WJQ\',\'NODEJS\',3,\'BACHELOR\',\'LEVEL_MIDDLE\',\'18812345678\',\'188123456789@163.cpm\',\'10000000\',\'2000000000\',\'0\',\'上海市唐镇\',\'PROCESS_SELF\',\'STATUS_HIGHPAY\',\'SUPPLIER_WSHH\',\'lulu\',NULL,NULL,NULL,NULL,NULL,NULL,\'LEVEL_MIDDLE\',NULL,\'xinge\',\'dbox\',\'2018-07-13 03:14:08\',\'2018-07-13 03:14:08\');' }
+sql: 'INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,\'WJQ\',\'NODEJS\',3,\'BACHELOR\',\'LEVEL_MIDDLE\',\'18812345678\',\'188123456789@163.cpm\',\'10000000\',\'2000000000\',\'0\',\'上海市唐镇\',\'PROCESS_SELF\',\'STATUS_HIGHPAY\',\'SUPPLIER_WSHH\',\'lulu\',NULL,NULL,NULL,NULL,NULL,NULL,\'LEVEL_MIDDLE\',NULL,\'xinge\',\'dbox\',\'2018-07-13 03:14:08\',\'2018-07-13 03:14:08\');'
+pid: 33598
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-13 11:14:59,454 ERROR 33598 [-/::1/-/7ms GET /generatedata/candidate] nodejs.SequelizeDatabaseError: Data too long for column 'OFFICIAL_ACADEMIC_CODE' at row 1
+    at Query.formatError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+From previous event:
+    at Query.run (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/wjq/Public/workspace/project/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at model.save (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Candidate.insertCandidate (/Users/wjq/Public/workspace/project/resume/serve/app/model/candidate.js:70:23)
+    at CandidateService.insert (/Users/wjq/Public/workspace/project/resume/serve/app/service/candidateService.js:53:52)
+    at generateDataController.insertCandidate (/Users/wjq/Public/workspace/project/resume/serve/app/controller/generateData.js:53:57)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+name: 'SequelizeDatabaseError'
+parent: { Error: Data too long for column 'OFFICIAL_ACADEMIC_CODE' at row 1
+    at Packet.asError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20) code: 'ER_DATA_TOO_LONG', errno: 1406, sqlState: '22001', sqlMessage: 'Data too long for column \'OFFICIAL_ACADEMIC_CODE\' at row 1', sql: 'INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,\'WJQ\',\'WEBFRONT\',3,\'LESS_JUNIOR\',\'LEVEL_ASSISTANT\',\'18812345678\',\'188123456789@163.cpm\',\'10000000\',\'2000000000\',\'0\',\'上海市唐镇\',\'PROCESS_NEW\',\'STATUS_NO_NEED\',\'SUPPLIER_WSHH\',\'lulu\',NULL,NULL,NULL,NULL,NULL,NULL,\'LEVEL_ASSISTANT\',NULL,\'xinge\',\'dbox\',\'2018-07-13 03:14:59\',\'2018-07-13 03:14:59\');' }
+original: { Error: Data too long for column 'OFFICIAL_ACADEMIC_CODE' at row 1
+    at Packet.asError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20) code: 'ER_DATA_TOO_LONG', errno: 1406, sqlState: '22001', sqlMessage: 'Data too long for column \'OFFICIAL_ACADEMIC_CODE\' at row 1', sql: 'INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,\'WJQ\',\'WEBFRONT\',3,\'LESS_JUNIOR\',\'LEVEL_ASSISTANT\',\'18812345678\',\'188123456789@163.cpm\',\'10000000\',\'2000000000\',\'0\',\'上海市唐镇\',\'PROCESS_NEW\',\'STATUS_NO_NEED\',\'SUPPLIER_WSHH\',\'lulu\',NULL,NULL,NULL,NULL,NULL,NULL,\'LEVEL_ASSISTANT\',NULL,\'xinge\',\'dbox\',\'2018-07-13 03:14:59\',\'2018-07-13 03:14:59\');' }
+sql: 'INSERT INTO `CANDIDATE` (`id`,`NAME`,`TECHNOLOGY_DIRECTION_CODE`,`WORK_AGE`,`OFFICIAL_ACADEMIC_CODE`,`RANK_LEVEL_CODE`,`TELEPHONE`,`EMAIL`,`CURRENT_SALARY`,`EXPECT_SALARY`,`IS_ON_JOB`,`ADDRESS`,`INTERVIEWER_PROCESS_CODE`,`INTERVIEWER_STATUS`,`ORGANIZATION_CODE`,`INTERVIEWER`,`INNER_INTERVIEWER_TIME`,`APPOINTMENT_INTERVIEWER_TIME`,`ACTUAL_INTERVIEWER_TIME`,`COMPUTER_EXAME_TIME`,`APPINT_ENTRANCE_TIME`,`ACTUAL_ENTRANCE_TIME`,`CHECK_RANK_LEVEL_CODE`,`RECOMMEND_TIME`,`RECRUIT_TRACKER`,`RECOMMEND_PROGRAME`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (1,\'WJQ\',\'WEBFRONT\',3,\'LESS_JUNIOR\',\'LEVEL_ASSISTANT\',\'18812345678\',\'188123456789@163.cpm\',\'10000000\',\'2000000000\',\'0\',\'上海市唐镇\',\'PROCESS_NEW\',\'STATUS_NO_NEED\',\'SUPPLIER_WSHH\',\'lulu\',NULL,NULL,NULL,NULL,NULL,NULL,\'LEVEL_ASSISTANT\',NULL,\'xinge\',\'dbox\',\'2018-07-13 03:14:59\',\'2018-07-13 03:14:59\');'
+pid: 33598
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-13 11:31:23,882 ERROR 33598 [-/::1/-/12ms POST /position/add] nodejs.SequelizeDatabaseError: Field 'ID' doesn't have a default value
+    at Query.formatError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+From previous event:
+    at Query.run (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/wjq/Public/workspace/project/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at model.save (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Position.insertPosition (/Users/wjq/Public/workspace/project/resume/serve/app/model/position.js:45:23)
+    at PositionService.insert (/Users/wjq/Public/workspace/project/resume/serve/app/service/positionService.js:19:51)
+    at PositionController.insert (/Users/wjq/Public/workspace/project/resume/serve/app/controller/positionController.js:38:62)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+name: 'SequelizeDatabaseError'
+parent: { Error: Field 'ID' doesn't have a default value
+    at Packet.asError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20) code: 'ER_NO_DEFAULT_FOR_FIELD', errno: 1364, sqlState: 'HY000', sqlMessage: 'Field \'ID\' doesn\'t have a default value', sql: 'INSERT INTO `POSITION` (`id`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,\'WEBFRONT\',\'NEED_ZGPA\',\'2018-07-13 03:31:23\',\'2018-07-13 03:31:23\');' }
+original: { Error: Field 'ID' doesn't have a default value
+    at Packet.asError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20) code: 'ER_NO_DEFAULT_FOR_FIELD', errno: 1364, sqlState: 'HY000', sqlMessage: 'Field \'ID\' doesn\'t have a default value', sql: 'INSERT INTO `POSITION` (`id`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,\'WEBFRONT\',\'NEED_ZGPA\',\'2018-07-13 03:31:23\',\'2018-07-13 03:31:23\');' }
+sql: 'INSERT INTO `POSITION` (`id`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,\'WEBFRONT\',\'NEED_ZGPA\',\'2018-07-13 03:31:23\',\'2018-07-13 03:31:23\');'
+pid: 33598
+hostname: macdeMacBook-Pro-3.local
+
+2018-07-13 11:31:33,478 ERROR 33598 [-/::1/-/6ms POST /position/add] nodejs.SequelizeDatabaseError: Column 'ID' specified twice
+    at Query.formatError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20)
+From previous event:
+    at Query.run (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/wjq/Public/workspace/project/resume/serve/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+From previous event:
+    at model.save (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/wjq/Public/workspace/project/resume/serve/node_modules/sequelize/lib/model.js:2035:8)
+    at Function.Position.insertPosition (/Users/wjq/Public/workspace/project/resume/serve/app/model/position.js:45:23)
+    at PositionService.insert (/Users/wjq/Public/workspace/project/resume/serve/app/service/positionService.js:19:51)
+    at PositionController.insert (/Users/wjq/Public/workspace/project/resume/serve/app/controller/positionController.js:38:62)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/nosniff.js:7:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/wjq/Public/workspace/project/resume/serve/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at /Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/wjq/Public/workspace/project/resume/serve/node_modules/koa-bodyparser/index.js:86:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+name: 'SequelizeDatabaseError'
+parent: { Error: Column 'ID' specified twice
+    at Packet.asError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20) code: 'ER_FIELD_SPECIFIED_TWICE', errno: 1110, sqlState: '42000', sqlMessage: 'Column \'ID\' specified twice', sql: 'INSERT INTO `POSITION` (`id`,`ID`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,\'1\',\'WEBFRONT\',\'NEED_ZGPA\',\'2018-07-13 03:31:33\',\'2018-07-13 03:31:33\');' }
+original: { Error: Column 'ID' specified twice
+    at Packet.asError (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packets/packet.js:716:13)
+    at Query.Command.execute (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/commands/command.js:28:22)
+    at Connection.handlePacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:502:28)
+    at PacketParser.onPacket (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/wjq/Public/workspace/project/resume/serve/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:581:20) code: 'ER_FIELD_SPECIFIED_TWICE', errno: 1110, sqlState: '42000', sqlMessage: 'Column \'ID\' specified twice', sql: 'INSERT INTO `POSITION` (`id`,`ID`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,\'1\',\'WEBFRONT\',\'NEED_ZGPA\',\'2018-07-13 03:31:33\',\'2018-07-13 03:31:33\');' }
+sql: 'INSERT INTO `POSITION` (`id`,`ID`,`TECHNOLOGY_DIRECTION_CODE`,`NEED_ORGANIZATION_CODE`,`DATE_CREATED`,`DATE_UPDATED`) VALUES (DEFAULT,\'1\',\'WEBFRONT\',\'NEED_ZGPA\',\'2018-07-13 03:31:33\',\'2018-07-13 03:31:33\');'
+pid: 33598
+hostname: macdeMacBook-Pro-3.local
+
