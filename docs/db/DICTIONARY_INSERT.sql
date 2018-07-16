@@ -84,9 +84,9 @@ INSERT INTO `DICTIONARY` VALUES
     -- ('70', 'POSITION_PROCESS', 'PROCESS_ON', '招聘中', '0', '招聘流程-招聘中', '0', 'system', NOW(), 'system', NOW()),
     -- ('71', 'POSITION_PROCESS', 'PROCESS_END', '停止招聘', '0', '招聘流程-停止招聘', '0', 'system', NOW(), 'system', NOW()),
     
-    ('72', 'CALANDAR_PROCESS', 'CALANDAR_INTERVIEW', '安排面试', '0', '日程流程-安排面试', '0', 'system', NOW(), 'system', NOW()),
-    ('73', 'CALANDAR_PROCESS', 'CALANDAR_EXAM', '安排机考', '0', '日程流程-安排机考', '0', 'system', NOW(), 'system', NOW()),
-    ('74', 'CALANDAR_PROCESS', 'CALANDAR_IN', '安排入场', '0', '日程流程-安排入场', '0', 'system', NOW(), 'system', NOW()),
+    ('72', 'CALANDAR_PROCESS', 'CALANDAR_INTERVIEW', '面试', '0', '日程流程-安排面试', '0', 'system', NOW(), 'system', NOW()),
+    ('73', 'CALANDAR_PROCESS', 'CALANDAR_EXAM', '机考', '0', '日程流程-安排机考', '0', 'system', NOW(), 'system', NOW()),
+    ('74', 'CALANDAR_PROCESS', 'CALANDAR_IN', '入场', '0', '日程流程-安排入场', '0', 'system', NOW(), 'system', NOW()),
     
     ('75', 'INTERVIEWER_PROCESS', 'PROCESS_NEW', '新增候选人', '1', '当前候选人进度新增候选人', '0', 'system', NOW(), 'system', NOW()),
     ('76', 'INTERVIEWER_PROCESS', 'PROCESS_FIRST', '初选通过', '2', '当前候选人进度初选通过', '0', 'system', NOW(), 'system', NOW()),
