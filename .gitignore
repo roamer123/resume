@@ -32,3 +32,7 @@ yarn.lock
 # .DS_Store
 # *.sw*
 # *.un~
+
+#logs
+serve/logs
+logs
