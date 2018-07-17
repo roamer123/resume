@@ -1,28 +1,45 @@
 'use strict';
-
 const Service = require('egg').Service;
 
 class CandidateService extends Service {
 
-  async processCount(params) {
-    const countList = this.ctx.model.candidate.query(params);
+  async count(options = {}) {
+    const countList = await this.ctx.model.Candidate.countCandidate(options);
     return countList;
   }
 
-  async search() {
+  async search(params = {}) {
+    const list = await this.ctx.model.Candidate.queryCandidate(params);
+    return list;
   }
 
-  async changeProcess() {
+  async change(params = []) {
+    const result = await this.ctx.model.Candidate.changeList(params);
+    return {
+      code: result ? 'success' : 'fail',
+    };
   }
 
-  async add() {
+  async add(params) {
+    const result = await this.ctx.model.Candidate.add(params);
+    console.log('result', result);
+    return result;
   }
 
-  async addRemark() {
+  async update(attributes = {}, options = {}) {
+    const result = await this.ctx.model.Candidate.update(attributes, options);
+    return result;
   }
 
-  async delete() {
+  async delete(options = {}) {
+    const result = await this.ctx.model.Candidate.destory(options);
+    return result;
+  }
+
+  async insert(params) {
+    const { ctx } = this;
+    const insertResult = await ctx.model.Candidate.insertCandidate(params);
+    return insertResult;
   }
 }
-
 module.exports = CandidateService;

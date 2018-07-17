@@ -9,8 +9,7 @@ import Login from 'component/login';
 import Image from 'assets/images/logo.png';
 import { setAuthority, getAuthority } from 'utils/localStorageAuthority';
 
-import services from 'api/services';
-import urls from 'api/urls';
+import {services, urls} from 'api';
 
 // import data from '../../data';
 import styles from './index.less';
@@ -59,7 +58,12 @@ export default class LoginPage extends React.Component {
 	}
 	onSubmit = (err, values) => {
 		if (!err) {
-			services.get(urls.login, {um: values.username, pwd: values.password, autoLogin: this.state.autoLogin}, this.authSuccess)
+			services.post(urls.login, {
+        grant_type: 'password',
+        username: values.username,
+			  password: values.password,
+			  // autoLogin: this.state.autoLogin
+			}, this.authSuccess)
 		}
 	}
 	changeAutoLogin = (e) => {

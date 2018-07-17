@@ -11,7 +11,7 @@
  Target Server Version : 50721
  File Encoding         : utf-8
 
- Date: 07/12/2018 10:07:42 AM
+ Date: 07/12/2018 21:17:09 PM
 */
 
 SET NAMES utf8;
@@ -22,11 +22,12 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `CANDIDATE`;
 CREATE TABLE `CANDIDATE` (
-  `ID` int(11) NOT NULL COMMENT '主键',
+  `ID` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `NAME` varchar(20) CHARACTER SET utf8 DEFAULT NULL COMMENT '姓名',
+  `AGE` int(11) DEFAULT NULL COMMENT '年龄',
   `TECHNOLOGY_DIRECTION_CODE` varchar(50) CHARACTER SET utf8 DEFAULT NULL COMMENT '技术方向code',
   `WORK_AGE` varchar(10) DEFAULT NULL COMMENT '工作年限',
-  `OFFICIAL_ACADEMIC_CODE` varchar(10) CHARACTER SET utf8 DEFAULT NULL COMMENT '最高学历',
+  `OFFICIAL_ACADEMIC_CODE` varchar(20) CHARACTER SET utf8 DEFAULT NULL COMMENT '最高学历',
   `RANK_LEVEL_CODE` varchar(20) CHARACTER SET utf8 DEFAULT NULL COMMENT '级别code',
   `TELEPHONE` varchar(20) DEFAULT NULL COMMENT '电话',
   `EMAIL` varchar(20) DEFAULT NULL COMMENT '邮箱',
@@ -44,7 +45,7 @@ CREATE TABLE `CANDIDATE` (
   `COMPUTER_EXAME_TIME` datetime(6) DEFAULT NULL COMMENT '机考时间',
   `APPINT_ENTRANCE_TIME` datetime(6) DEFAULT NULL COMMENT '约定入场时间',
   `ACTUAL_ENTRANCE_TIME` datetime(6) DEFAULT NULL COMMENT '实际入场时间',
-  `CHECK_RANK_LEVEL_CODE` varchar(10) CHARACTER SET utf8 DEFAULT NULL COMMENT '核定级别CODE',
+  `CHECK_RANK_LEVEL_CODE` varchar(20) CHARACTER SET utf8 DEFAULT NULL COMMENT '核定级别CODE',
   `RECOMMEND_TIME` datetime(6) DEFAULT NULL COMMENT '推荐时间',
   `RECRUIT_TRACKER` varchar(20) CHARACTER SET utf8 DEFAULT NULL COMMENT '招聘跟踪人',
   `RECOMMEND_PROGRAME` varchar(50) CHARACTER SET utf8 DEFAULT NULL COMMENT '推荐项目',
@@ -55,14 +56,15 @@ CREATE TABLE `CANDIDATE` (
   `INTERVIEW_ADDRESS` varchar(100) CHARACTER SET utf8 DEFAULT NULL COMMENT '面试地址',
   `CUSTOMER_MANAGER` varchar(20) CHARACTER SET utf8 DEFAULT NULL COMMENT '客户经理',
   `REMARK` varchar(200) CHARACTER SET utf8 DEFAULT NULL COMMENT '备注',
+  `NEED_ORGANIZATION` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 --  Records of `CANDIDATE`
 -- ----------------------------
 BEGIN;
-INSERT INTO `CANDIDATE` VALUES ('1', '李楠', 'WEBFRONT', '3', 'JUNIOR', 'LEVEL_MIDDLE', '13628636554', 'sdds@163.com', '12000', '15000', '0', '宇宙', 'PROCESS_NEW', 'STATUS_DOING', 'SUPPLIER_WSHH', null, '2018-07-12 10:05:22.000000', '2018-07-13 10:05:29.000000', '2018-07-12 10:05:35.000000', '2018-07-12 10:05:40.000000', '2018-07-12 10:05:45.000000', '2018-07-12 10:05:47.000000', null, '2018-07-19 10:05:58.000000', null, null, null, '2018-07-12 10:06:14.000000', null, '2018-07-12 10:06:18.000000', null, null, null);
+INSERT INTO `CANDIDATE` VALUES ('1', '李楠', null, 'WEBFRONT', '3', 'JUNIOR', 'LEVEL_MIDDLE', '13628636554', 'sdds@163.com', '12000', '15000', '0', '宇宙', 'PROCESS_NEW', 'STATUS_DOING', 'SUPPLIER_WSHH', null, '2018-07-12 10:05:22.000000', '2018-07-13 10:05:29.000000', '2018-07-12 10:05:35.000000', '2018-07-12 10:05:40.000000', '2018-07-12 10:05:45.000000', '2018-07-12 10:05:47.000000', null, '2018-07-19 10:05:58.000000', null, null, null, '2018-07-12 10:06:14.000000', null, '2018-07-12 10:06:18.000000', null, null, null, null), ('2', 'mick\n', null, 'WEBFRONT', '2', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '2018-07-12 11:23:56.000000', null, '2018-07-12 12:59:20.000000', null, null, 'very good', null), ('4', 'mick', null, 'WEBFRONT', '2', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '2018-07-12 11:27:59.000000', null, '2018-07-12 11:27:59.000000', null, null, null, null), ('5', 'mick', null, 'WEBFRONT', '2', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '2018-07-12 11:28:33.000000', null, '2018-07-12 11:28:33.000000', null, null, null, null), ('6', 'mick', null, 'WEBFRONT', '2', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '2018-07-12 12:59:17.000000', null, '2018-07-12 12:59:17.000000', null, null, null, null);
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;

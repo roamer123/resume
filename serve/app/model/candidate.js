@@ -1,9 +1,11 @@
 'use strict';
 
 module.exports = app => {
-  const { STRING, DATE } = app.Sequelize;
+  const { STRING, INTEGER, DATE } = app.Sequelize;
 
   const Candidate = app.model.define('CANDIDATE', {
+    ID: { type: INTEGER, unique: true },
+    AGE: { type: INTEGER }, // 年龄
     NAME: { type: STRING(20) }, // 姓名
     TECHNOLOGY_DIRECTION_CODE: { type: STRING(50) }, // 技术方向code
     WORK_AGE: { type: STRING(10) }, // 工作年限
@@ -17,7 +19,8 @@ module.exports = app => {
     ADDRESS: { type: STRING(100) }, // 地点
     INTERVIEWER_PROCESS_CODE: { type: STRING(20) }, // 目前进度code
     INTERVIEWER_STATUS: { type: STRING(20) }, // 状态
-    ORGANIZATION_CODE: { type: STRING(50) }, // 供应商／需求方code
+    ORGANIZATION_CODE: { type: STRING(50) }, // 供应商code
+    NEED_ORGANIZATION: { type: STRING(50) }, // 需求方code
     INTERVIEWER: { type: STRING(20) }, // 面试官／助理
     INNER_INTERVIEWER_TIME: DATE, // 内面时间
     APPOINTMENT_INTERVIEWER_TIME: DATE, // 预约面试时间
@@ -40,30 +43,55 @@ module.exports = app => {
 
   // static method
   Candidate.add = async function(field) {
-    this.ctx.create(field);
+    return await this.create(field);
   };
 
   Candidate.queryCandidate = async function(params) {
-    return await this.findOne({
+    return await this.findAll(Object.assign({
       where: params,
+      limit: 100,
       attributes: [ 'ID', 'NAME', 'TECHNOLOGY_DIRECTION_CODE', 'WORK_AGE', 'OFFICIAL_ACADEMIC_CODE', 'RANK_LEVEL_CODE', 'TELEPHONE', 'EMAIL', 'CURRENT_SALARY', 'EXPECT_SALARY', 'IS_ON_JOB', 'ADDRESS', 'INTERVIEWER_PROCESS_CODE', 'INTERVIEWER_STATUS', 'ORGANIZATION_CODE', 'INTERVIEWER', 'INNER_INTERVIEWER_TIME', 'APPOINTMENT_INTERVIEWER_TIME', 'ACTUAL_INTERVIEWER_TIME', 'COMPUTER_EXAME_TIME', 'APPINT_ENTRANCE_TIME', 'ACTUAL_ENTRANCE_TIME', 'CHECK_RANK_LEVEL_CODE', 'RECOMMEND_TIME', 'RECRUIT_TRACKER', 'RECOMMEND_PROGRAME', 'INTERVIEW_ADDRESS', 'CUSTOMER_MANAGER', 'REMARK' ],
-    });
+    }, params));
   };
 
   Candidate.updateCandidate = async function(params, options) {
-    return await this.update(params, {
-      where: {
-        options,
-      },
-    });
+    return await this.update(params, options);
   };
 
   Candidate.destory = async function(options) {
     return await this.destroy(options);
   };
 
-  Candidate.query = async function(sql) {
-    return await this.query(sql);
+  Candidate.countCandidate = async function(options) {
+    return await this.count(options);
+  };
+
+  Candidate.insertCandidate = async function(params) {
+    return await this.create(params);
+  };
+
+  Candidate.changeList = function(params) {
+    return app.model.transaction(t => {
+      return params.map(async param => {
+        const { INTERVIEWER_PROCESS_CODE, INTERVIEWER_STATUS, ID } = param;
+        await Candidate.update({
+          INTERVIEWER_PROCESS_CODE,
+          INTERVIEWER_STATUS,
+        }, {
+          where: {
+            ID,
+          },
+        }, {
+          transaction: t,
+        });
+
+      });
+    }).then(() => {
+      return true;
+    }).catch(err => {
+      console.log(err);
+      return false;
+    });
   };
 
   return Candidate;

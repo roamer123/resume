@@ -32,12 +32,14 @@ module.exports = appInfo => {
     methodnoallow: {
       enable: false,
     },
-    domainWhiteList: [ 'http://127.0.0.1:8080' ],
+    domainWhiteList: ['http://172.31.7.167:8080'],
   };
 
   config.cors = {
+    origin: '*',
     allowMethod: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
   };
+
 
   // oauth2Serve开启password和client_credentials模式
   config.oAuth2Server = {

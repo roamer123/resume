@@ -3,13 +3,19 @@ const sysytem_users_roles = [
   '系统管理员',
   'HR',
   '面试官',
-  '用人部门负责人',
+  '客户经理', // 用人部门负责人
 ]
 // 供应商
 const supplier = [
   '全部供应商',
   '文思海辉',
   '中软',
+]
+// 客户经理
+const cutomerLeader = [
+  '王大大',
+  '关大大',
+  '郝大大',
 ]
 // 需求方
 const userOrganization = [
@@ -165,4 +171,12 @@ const interviewer = [
   '张三',
   '李四',
   '小虎',
+]
+
+// 更多操作
+const moreAction = [
+  '更改应聘职位',
+  '更改需求方',
+  '下载EXCEL表格',
+  '删除候选人',
 ]
