@@ -6,7 +6,7 @@ import { classNames } from 'classnames';
 
 const FormItem = Form.Item;
 
-export function generator({ defaultProps, defaultRules, type, title, itemClass }) {
+export function generator({ defaultProps, defaultRules, type, title, width }) {
 	return (WrappedComponent) => {
 		return class BasicComponent extends React.Component {
 			static contextTypes = {
@@ -32,7 +32,7 @@ export function generator({ defaultProps, defaultRules, type, title, itemClass }
 				otherProps = restProps || otherProps;
 
 				return (
-  <FormItem label={title || ''} className={itemClass}>
+  <FormItem label={title || ''} style={{width: width}}>
     {
               getFieldDecorator(name, options)(
                 <WrappedComponent {...defaultProps} {...otherProps} />

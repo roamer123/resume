@@ -27,7 +27,7 @@ const codeMessage = {
   504: '网关超时。'
 };
 
-function checkStatus(response) {
+const checkStatus = (response) => {
   if (response.code >= 200 && response.code < 300) {
     return response;
   }
@@ -40,28 +40,31 @@ function checkStatus(response) {
   throw error;
 }
 
-function request(config, resolve, reject) {
+const request = (config, resolve, reject) => {
   const newConfig = { ...config
   };
   if (newConfig.method === 'POST' || newConfig.method === 'PUT') {
     if (!(newConfig.body instanceof FormData)) {
       newConfig.headers = {
         Accept: 'application/json',
-        'Content-Type': 'application/json; charset=utf-8',
+        // 'Content-Type': 'application/json; charset=utf-8',
+        // 'Authorization': 'Basic bXlfYXBwOm15X3NlY3JldA ==',
+        'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
         ...newConfig.headers,
       };
       newConfig.body = JSON.stringify(newConfig.body);
     } else {
       newConfig.headers = {
+        // 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
         Accept: 'application/json',
         ...newConfig.headers,
       };
     }
   }
-
+  console.dir(newConfig);
   axios.request(newConfig)
     .then(checkStatus)
-    .then(function (response) {
+    .then((response) => {
       const data = response.data
       if (data.resultCode === '000000') {
         typeof resolve === 'function' && resolve(data.data)
@@ -69,10 +72,10 @@ function request(config, resolve, reject) {
         message.success(data.resultMesg);
         typeof reject === 'function' && reject(data.data);
       }
-    }, function (response) {
+    }, (response) => {
       typeof reject === 'function' && reject(response);
     })
-    .catch(function (error) {
+    .catch((error) => {
       typeof reject === 'function' && reject(error);
     })
 }
@@ -85,11 +88,11 @@ export default {
       params
     }, resolve, reject)
   },
-  post: (url, params, resolve, reject) => {
+  post: (url, data, resolve, reject) => {
     request({
       method: 'POST',
       url,
-      params
+      data
     }, resolve, reject)
   },
   request: (config, resolve, reject) => {

@@ -19,7 +19,7 @@ const menuData = [{
   icon: 'pro-table',
   path: 'calendar',
   }, {
-  name: 'NotFound',
+  name: '帮助文档',
   icon: 'warning-circle',
   path: 'notfound',
   }

@@ -15,8 +15,7 @@ import { getMenuData } from './getMenuData';
 import { getAuthority, setAuthority } from 'utils/localStorageAuthority';
 import { getRedirect } from 'utils/getRedirect';
 
-import services from 'api/services';
-import urls from 'api/urls';
+import {services, urls} from 'api';
 
 import styles from './index.less';
 

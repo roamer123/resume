@@ -3,6 +3,7 @@ import {Select, Table, Button} from 'components'
 import FilterStep from 'component/filter-step';
 import {optionsCreate, liCreate} from 'utils/creator';
 import styles from './index.less'
+// pro-drag
 export default class RecruitTitle extends React.Component {
   constructor(props) {
     super(props)
@@ -39,72 +40,72 @@ export default class RecruitTitle extends React.Component {
       test: '测试工程师',
     }
     const columns = [{
-         title: 'Full Name',
+         title: '职位名称',
          width: 100,
-         dataIndex: 'name',
-         key: 'name',
+         dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
+         key: 'TECHNOLOGY_DIRECTION_CODE',
          fixed: 'left'
        },
        {
-         title: 'Age',
+         title: '招聘人数',
          width: 100,
-         dataIndex: 'age',
-         key: 'age',
+         dataIndex: 'NUMBER',
+         key: 'NUMBER',
          fixed: 'left'
        },
        {
-         title: 'Column 1',
-         dataIndex: 'address',
-         key: '1',
+         title: '供应商',
+         dataIndex: 'NEED_ORGANIZATION_CODE',
+         key: 'NEED_ORGANIZATION_CODE',
          width: 150
        },
        {
-         title: 'Column 2',
-         dataIndex: 'address',
-         key: '2',
+         title: '负责人',
+         dataIndex: 'PRINCIPAL',
+         key: 'PRINCIPAL',
          width: 150
        },
        {
-         title: 'Column 3',
-         dataIndex: 'address',
-         key: '3',
+         title: '协作者',
+         dataIndex: 'COOPERATOR',
+         key: 'COOPERATOR',
          width: 150
        },
        {
-         title: 'Column 4',
-         dataIndex: 'address',
-         key: '4',
+         title: '学历要求',
+         dataIndex: 'EDUCATION_LEVEL_CODE',
+         key: 'EDUCATION_LEVEL_CODE',
          width: 150
        },
        {
-         title: 'Column 5',
-         dataIndex: 'address',
-         key: '5',
+         title: '工作经验要求',
+         dataIndex: 'JOB_EXPERIENCE_DEMAND_CODE',
+         key: 'JOB_EXPERIENCE_DEMAND_CODE',
          width: 150
        },
        {
-         title: 'Column 6',
-         dataIndex: 'address',
-         key: '6',
+         title: '薪资要求',
+         dataIndex: 'SALARY_DEMAND',
+         key: 'SALARY_DEMAND',
          width: 150
        },
        {
-         title: 'Column 7',
-         dataIndex: 'address',
+         title: '最迟到岗时间',
+         dataIndex: 'LATEST_COME_TIME',
          key: '7',
          width: 150
        },
        {
-         title: 'Column 8',
-         dataIndex: 'address',
-         key: '8'
+         title: '职位描述',
+         dataIndex: 'JOB_DESC',
+         key: 'JOB_DESC'
        },
        {
-         title: 'Action',
-         key: 'operation',
+         title: '操作',
+         key: 'action',
          fixed: 'right',
          width: 100,
-         render: () => <a href='javascript:;' > action </a>,
+         render: () => <a href='javascript:;' > 删除 </a>,
        },
      ];
 

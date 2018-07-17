@@ -9,6 +9,7 @@ import React from 'react';
 import { Input, Select, DatePicker } from 'components';
 
 import styles from './index.less';
+import { generator } from 'component/form-info';
 
 const { Textarea } = Input;
 const Option = Select.Option;
@@ -53,41 +54,26 @@ const dataMap = {
   job_desc: '职位描述', // jd
 }
 const map = {}
-Object.keys(inputDataMap).forEach(item => {
-  map[item] = {
-		component: Input,
-		props: {
-      size: 'large',
-      placeholder: '请输入',
-      name: item,
-		},
-		rules: [{
-			required: true,
-			message: '请输入必填项！',
-		}],
-	}
-});
-Object.keys(selectDataMap).forEach(item => {
-  map[item] = {
-		component: Select,
-		props: {
-      size: 'large',
-      placeholder: '请选择',
-      name: item,
-      children: <Option value='china' > China </Option>
-		}
-	}
-});
-Object.keys(dateDataMap).forEach(item => {
-  map[item] = {
-    component: DatePicker,
-    props: {
-      size: 'large',
-      placeholder: '请选择',
-      name: item,
+function generatorParams(data, component, required, placeholder) {
+  Object.keys(data).forEach(item => {
+    map[item] = {
+      component: component || Input,
+      props: {
+        size: 'large',
+        placeholder: placeholder || '请输入',
+        name: item,
+      },
+      rules: (!required && '') || [{
+        required: true,
+        message: '请输入必填项！',
+      }],
     }
-  }
-});
+  });
+}
+generatorParams(inputDataMap)
+generatorParams(selectDataMap, Select, false, '请选择')
+generatorParams(DatePicker, DatePicker, false, '请选择')
+
 map['job_desc'] = {
   component: Textarea,
   props: {

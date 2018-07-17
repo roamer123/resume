@@ -2,6 +2,7 @@ import React from 'react'
 import map, { dataMap } from './map.js';
 import { Alert, Divider } from 'components';
 import FormInfo, { generator, Submit } from 'component/form-info';
+import {services, urls} from 'api';
 import styles from './index.less'
 
 export default class AddPosition extends React.Component {
@@ -10,6 +11,9 @@ export default class AddPosition extends React.Component {
     this.state = {
       notice: ''
     }
+  }
+  componentDidMount() {
+    services.post(urls.queryPosition, {}, this.authSuccess)
   }
   handleChange = (key, value) => {
     console.log(key, value)

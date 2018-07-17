@@ -38,12 +38,15 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     inline: true,
-    progress: true
+    progress: true,
+    // proxy: {
+    //   '/': 'http://localhost:7001'
+    // }
   },
   // css 处理
   module: {
     rules: [
-      // exclude 排除，不需要编译的目录
+      // exclude 排除，不需要编译的目录（优先级高于test和include）
       {
         test: /\.(jsx|js)$/,
         use: 'babel-loader',

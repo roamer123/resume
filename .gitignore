@@ -19,7 +19,14 @@ coverage
 .env.production.local
 .idea
 serve/run
+<<<<<<< Updated upstream
+serve/logs
 
+=======
+logs
+serve/logs
+logs
+>>>>>>> Stashed changes
 
 npm-debug.log*
 yarn-debug.log*
@@ -27,8 +34,13 @@ yarn-error.log*
 yarn.lock
 
 
+
 # .idea
 # run/
 # .DS_Store
 # *.sw*
 # *.un~
+
+#logs
+serve/logs
+logs
