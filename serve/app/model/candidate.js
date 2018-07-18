@@ -35,6 +35,7 @@ module.exports = app => {
     INTERVIEW_ADDRESS: { type: STRING(100) }, // 面试地址
     CUSTOMER_MANAGER: { type: STRING(20) }, // 客户经理
     REMARK: { type: STRING(200) }, // 备注
+    NEED_ORGANIZATION_CODE : { type: STRING(20) }, //需求方code
   }, {
     createdAt: 'DATE_CREATED',
     updatedAt: 'DATE_UPDATED',
@@ -50,7 +51,7 @@ module.exports = app => {
     return await this.findAll(Object.assign({
       where: params,
       limit: 100,
-      attributes: [ 'ID', 'NAME', 'TECHNOLOGY_DIRECTION_CODE', 'WORK_AGE', 'OFFICIAL_ACADEMIC_CODE', 'RANK_LEVEL_CODE', 'TELEPHONE', 'EMAIL', 'CURRENT_SALARY', 'EXPECT_SALARY', 'IS_ON_JOB', 'ADDRESS', 'INTERVIEWER_PROCESS_CODE', 'INTERVIEWER_STATUS', 'ORGANIZATION_CODE', 'INTERVIEWER', 'INNER_INTERVIEWER_TIME', 'APPOINTMENT_INTERVIEWER_TIME', 'ACTUAL_INTERVIEWER_TIME', 'COMPUTER_EXAME_TIME', 'APPINT_ENTRANCE_TIME', 'ACTUAL_ENTRANCE_TIME', 'CHECK_RANK_LEVEL_CODE', 'RECOMMEND_TIME', 'RECRUIT_TRACKER', 'RECOMMEND_PROGRAME', 'INTERVIEW_ADDRESS', 'CUSTOMER_MANAGER', 'REMARK' ],
+      attributes: [ 'ID', 'NAME', 'TECHNOLOGY_DIRECTION_CODE', 'WORK_AGE', 'OFFICIAL_ACADEMIC_CODE', 'RANK_LEVEL_CODE', 'TELEPHONE', 'EMAIL', 'CURRENT_SALARY', 'EXPECT_SALARY', 'IS_ON_JOB', 'ADDRESS', 'INTERVIEWER_PROCESS_CODE', 'INTERVIEWER_STATUS', 'ORGANIZATION_CODE', 'INTERVIEWER', 'INNER_INTERVIEWER_TIME', 'APPOINTMENT_INTERVIEWER_TIME', 'ACTUAL_INTERVIEWER_TIME', 'COMPUTER_EXAME_TIME', 'APPINT_ENTRANCE_TIME', 'ACTUAL_ENTRANCE_TIME', 'CHECK_RANK_LEVEL_CODE', 'RECOMMEND_TIME', 'RECRUIT_TRACKER', 'RECOMMEND_PROGRAME', 'INTERVIEW_ADDRESS', 'CUSTOMER_MANAGER', 'REMARK' ,'NEED_ORGANIZATION_CODE'],
     }, params));
   };
 
@@ -69,6 +70,27 @@ module.exports = app => {
   Candidate.insertCandidate = async function(params) {
     return await this.create(params);
   };
+
+  Candidate.deleteCandidate = async function(options) {
+    return await this.destroy({
+      where: options,
+    });
+  };
+
+  Candidate.queryInitInterview = async function({ORGANIZATION_CODE}) {
+    return app.model.query('select NAME,NEED_ORGANIZATION_CODE,CUSTOMER_MANAGER,RECRUIT_TRACKER,APPOINTMENT_INTERVIEWER_TIME,ACTUAL_INTERVIEWER_TIME from  \
+    CANDIDATE where ORGANIZATION_CODE = ? ',{ replacements: [ORGANIZATION_CODE], type:  app.Sequelize.QueryTypes.SELECT });
+  }
+
+  Candidate.queryInitExam = async function({ORGANIZATION_CODE}) {
+    return app.model.query('select NAME,NEED_ORGANIZATION_CODE,CUSTOMER_MANAGER,RECRUIT_TRACKER,COMPUTER_EXAME_TIME,RANK_LEVEL_CODE from  \
+    CANDIDATE where ORGANIZATION_CODE = ? ',{ replacements: [ORGANIZATION_CODE], type:  app.Sequelize.QueryTypes.SELECT });
+  }
+
+  Candidate.queryIn = async function({ORGANIZATION_CODE}) {
+    return app.model.query('select NAME,NEED_ORGANIZATION_CODE,CUSTOMER_MANAGER,RECRUIT_TRACKER,APPINT_ENTRANCE_TIME,ACTUAL_ENTRANCE_TIME,RANK_LEVEL_CODE from  \
+    CANDIDATE where ORGANIZATION_CODE = ? ',{ replacements: [ORGANIZATION_CODE], type:  app.Sequelize.QueryTypes.SELECT });
+  }
 
   Candidate.changeList = function(params) {
     return app.model.transaction(t => {
