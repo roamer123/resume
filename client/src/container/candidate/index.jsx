@@ -1,4 +1,6 @@
 import React from 'react'
+import classNames from 'classnames'
+
 import {Select, Table} from 'components'
 import SearchFilter from 'component/search-filter';
 import FilterStep from 'component/filter-step';
@@ -323,7 +325,14 @@ export default class CandidateHeader extends React.Component {
               })
             }
           </Select>
-          <Select defaultValue='addOne' style={{ width: 120 }} onSelect={this.handleAdd}>
+          <Select
+            defaultValue='addOne'
+            style={{ width: 120 }}
+            onSelect={this.handleAdd}
+            className={
+              classNames('dark')
+            }
+          >
             {
               optionsCreate({
                 options: actions,
@@ -352,8 +361,14 @@ export default class CandidateHeader extends React.Component {
           <div className={styles.action_detail}>
             <Select
               defaultValue='移动到面试'
-              className={styles.suppliers_filter}
-              style={{minWidth: '160px'}}
+              className={
+                classNames(styles.suppliers_filter, 'dark')
+              }
+              style={
+                {
+                  minWidth: '160px',
+                }
+              }
               >
               {
                 optionsCreate({

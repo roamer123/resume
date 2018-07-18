@@ -234,7 +234,7 @@ export default class Calendar extends React.Component {
       tab: ' 入场 ',
     }];
     const contentList = (step) => ([
-      <Button onClick={() => this.handleAction(step)} key={`${step}_button`}>{`安排${steps[step]}`}</Button>,
+      <Button type='primary' onClick={() => this.handleAction(step)} key={`${step}_button`}>{`安排${steps[step]}`}</Button>,
       <Button onClick={() => this.handleAction(3)} style={{marginLeft: '16px'}} key={`${step}_delete`}>删除</Button>,
       <Table
         rowSelection={rowSelection}

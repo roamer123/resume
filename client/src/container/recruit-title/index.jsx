@@ -138,7 +138,7 @@ export default class RecruitTitle extends React.Component {
             }
           </Select>
           <div>
-            <Button onClick={this.handleAdd}>添加招聘职位</Button>
+            <Button onClick={this.handleAdd} type='primary'>添加招聘职位</Button>
             <Button onClick={this.handleDelete} style={{marginLeft: '16px'}}>停止招聘</Button>
           </div>
         </div>
