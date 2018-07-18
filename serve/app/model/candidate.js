@@ -70,5 +70,29 @@ module.exports = app => {
     return await this.create(params);
   };
 
+  Candidate.changeList = function(params) {
+    return app.model.transaction(t => {
+      return params.map(async param => {
+        const { INTERVIEWER_PROCESS_CODE, INTERVIEWER_STATUS, ID } = param;
+        await Candidate.update({
+          INTERVIEWER_PROCESS_CODE,
+          INTERVIEWER_STATUS,
+        }, {
+          where: {
+            ID,
+          },
+        }, {
+          transaction: t,
+        });
+
+      });
+    }).then(() => {
+      return true;
+    }).catch(err => {
+      console.log(err);
+      return false;
+    });
+  };
+
   return Candidate;
 };

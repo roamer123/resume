@@ -99,21 +99,21 @@ module.exports = () => {
       }
     }
 
-    async saveAccessToken(token, client, user) {
-      try {
-        console.log('saveAccessToken invoked.....');
-        return {
-          accessToken: token.accessToken,
-          accessTokenExpiresAt: token.accessTokenExpiresAt,
-          refreshToken: token.refreshToken,
-          refreshTokenExpiresAt: token.refreshTokenExpiresAt,
-          client: { id: client.id },
-          user,
-        };
-      } catch (err) {
-        return;
-      }
-    }
+    // async saveAccessToken(token, client, user) {
+    //   try {
+    //     console.log('saveAccessToken invoked.....');
+    //     return {
+    //       accessToken: token.accessToken,
+    //       accessTokenExpiresAt: token.accessTokenExpiresAt,
+    //       refreshToken: token.refreshToken,
+    //       refreshTokenExpiresAt: token.refreshTokenExpiresAt,
+    //       client: { id: client.id },
+    //       user,
+    //     };
+    //   } catch (err) {
+    //     return;
+    //   }
+    // }
   }
   return Model;
 };

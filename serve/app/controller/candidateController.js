@@ -30,7 +30,8 @@ class CandidateController extends Controller {
   async change() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const result = await ctx.service.candidateService.change(params);
+    const { CHANGELIST } = params;
+    const result = await ctx.service.candidateService.change(CHANGELIST);
     ctx.body = ReturnJson.success(result);
   }
 
