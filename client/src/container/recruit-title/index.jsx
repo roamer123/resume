@@ -1,7 +1,7 @@
 import React from 'react'
 import {Select, Table, Button} from 'components'
 import FilterStep from 'component/filter-step';
-import {optionsCreate, liCreate} from 'utils/creator';
+import {optionsCreate} from 'utils/creator';
 import styles from './index.less'
 // pro-drag
 export default class RecruitTitle extends React.Component {

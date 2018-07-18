@@ -1,13 +1,13 @@
 import React from 'react'
-import {Select, Table, Input} from 'components'
+import {Select, Table} from 'components'
 import SearchFilter from 'component/search-filter';
 import FilterStep from 'component/filter-step';
-import {optionsCreate, liCreate} from 'utils/creator';
+import {optionsCreate} from 'utils/creator';
 import {services, urls} from 'api';
 
 import styles from './index.less'
 
-const Option = Select.Option;
+// const Option = Select.Option;
 
 export default class CandidateHeader extends React.Component {
   constructor (props) {
@@ -188,12 +188,12 @@ export default class CandidateHeader extends React.Component {
       pass: '入场', // 6
       deleted: '已淘汰', // 7
     }
-    const filterCategories = {
-      job: 'all',
-      step: 'interview', // 对应流程
-      state: 'abandon', // 对应状态，放弃 | 不符合 | 无需求 | 薪资过高
-      supplier: '中国平安', // 供应商
-    }
+    // const filterCategories = {
+    //   job: 'all',
+    //   step: 'interview', // 对应流程
+    //   state: 'abandon', // 对应状态，放弃 | 不符合 | 无需求 | 薪资过高
+    //   supplier: '中国平安', // 供应商
+    // }
     const filterDetail = {
       name: '张三',
       minAge: 18,
@@ -205,17 +205,17 @@ export default class CandidateHeader extends React.Component {
       max_education: 0, // 0-硕士，1-本科，2-大专，3-大专以下
       job_rank: 0, // 0-初级，1-中级，2-高级，3-资深
     }
-    const filterRequirement = {...filterCategories, ...filterDetail}
-    const candidate = {
-      job: 'web',
-      name: '张三',
-      age: 24,
-      workAge: 3,
-      supplier: 'pingan',
-      max_education: 0,
-      job_rank: 0,
-      remark: '',
-    }
+    // const filterRequirement = {...filterCategories, ...filterDetail}
+    // const candidate = {
+    //   job: 'web',
+    //   name: '张三',
+    //   age: 24,
+    //   workAge: 3,
+    //   supplier: 'pingan',
+    //   max_education: 0,
+    //   job_rank: 0,
+    //   remark: '',
+    // }
     const suppliers = ['供应商', '中国平安', '金融股份']
     const actions = ['addOne', 'addMore']
     const actionsMap = {
