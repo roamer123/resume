@@ -318,12 +318,17 @@ export default class CandidateHeader extends React.Component {
         <div className={styles.switch_tab}>
           <Select defaultValue='全部职位' style={{ width: 120 }}>
             {
-              optionsCreate(jobs, null)
+              optionsCreate({
+                options: jobs,
+              })
             }
           </Select>
           <Select defaultValue='addOne' style={{ width: 120 }} onSelect={this.handleAdd}>
             {
-              optionsCreate(actions, actionsMap)
+              optionsCreate({
+                options: actions,
+                optMap: actionsMap
+              })
             }
           </Select>
         </div>
@@ -338,7 +343,9 @@ export default class CandidateHeader extends React.Component {
               className={styles.suppliers_filter}
               >
               {
-                optionsCreate(suppliers)
+                optionsCreate({
+                  options: suppliers
+                })
               }
             </Select>
           </div>
@@ -349,7 +356,11 @@ export default class CandidateHeader extends React.Component {
               style={{minWidth: '160px'}}
               >
               {
-                optionsCreate(steps, stepsMap, '移动到')
+                optionsCreate({
+                  options: steps,
+                  optMap: stepsMap,
+                  addonBefore: '移动到'
+                })
               }
             </Select>
           </div>

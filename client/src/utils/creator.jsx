@@ -2,7 +2,7 @@ import React from 'react';
 import {Select} from 'components'
 
 const Option = Select.Option;
-const optionsCreate = (options, optMap, addonBefore, addonAfter) => (
+const optionsCreate = ({options, optMap, addonBefore, addonAfter}) => (
       options.map((option, i) =>
         <Option
           key={i}

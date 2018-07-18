@@ -131,7 +131,10 @@ export default class RecruitTitle extends React.Component {
         <div className={styles.switch_tab}>
           <Select defaultValue='all' style={{ width: 120 }}>
             {
-                optionsCreate(jobs, jobsMap)
+                optionsCreate({
+                  options: jobs,
+                  optMap: jobsMap
+                  })
             }
           </Select>
           <div>
