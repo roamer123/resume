@@ -14,6 +14,12 @@ class CandidateService extends Service {
   }
 
   async change(params = []) {
+    // for (let i = 0; i < 1000; i++) {
+    //   params.push({
+    //     INTERVIEWER_PROCESS_CODE: 'PROCESS_NEW' + i,
+    //     ID: i,
+    //   });
+    // }
     const result = await this.ctx.model.Candidate.changeList(params);
     return {
       code: result ? 'success' : 'fail',

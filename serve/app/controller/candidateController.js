@@ -16,15 +16,29 @@ class CandidateController extends Controller {
         params,
       },
     };
-    const DropdownList = await ctx.service.candidateService.count(options);
-    ctx.body = ReturnJson.success(DropdownList);
+    const dropdownList = await ctx.service.candidateService.count(options);
+    ctx.body = ReturnJson.success(dropdownList.map(item => {
+      return {
+        [item.INTERVIEWER_PROCESS_CODE]: item.count,
+      };
+    }));
   }
 
   async search() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const list = await ctx.service.candidateService.search(params);
-    ctx.body = ReturnJson.success(list);
+    const { ORGANIZATION_CODE, INTERVIEWER_PROCESS_CODE, NEED_ORGANIZATION_CODE, TECHNOLOGY_DIRECTION_CODE } = params;
+    if (!ORGANIZATION_CODE) {
+      ctx.body = ReturnJson.fail('111111', '入参错误，ORGANIZATION_CODE是必须的', {});
+    } else {
+      const newParams = { ORGANIZATION_CODE };
+      if (INTERVIEWER_PROCESS_CODE) newParams[INTERVIEWER_PROCESS_CODE] = INTERVIEWER_PROCESS_CODE;
+      if (NEED_ORGANIZATION_CODE) newParams[NEED_ORGANIZATION_CODE] = NEED_ORGANIZATION_CODE;
+      if (TECHNOLOGY_DIRECTION_CODE) newParams[TECHNOLOGY_DIRECTION_CODE] = TECHNOLOGY_DIRECTION_CODE;
+
+      const list = await ctx.service.candidateService.search(newParams);
+      ctx.body = ReturnJson.success(list);
+    }
   }
 
   async change() {
@@ -66,13 +80,7 @@ class CandidateController extends Controller {
   async delete() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const { ID } = params;
-    const options = {
-      where: {
-        ID,
-      },
-    };
-    const result = ID && await ctx.service.candidateService.delete(options);
+    const result = await ctx.service.candidateService.delete(params);
     ctx.body = ReturnJson.success({
       code: result ? 'success' : 'fail',
     });

@@ -14,9 +14,9 @@ class generateDataController extends Controller {
     const INTERVIEWER_STATUSS = [ 'STATUS_NO_NEED', 'STATUS_NO_PASS', 'STATUS_HIGHPAY', 'STATUS_GIVEUP', 'STATUS_DOING' ];
     const INTERVIEWER_PROCESS_CODES = [ 'PROCESS_NEW', 'PROCESS_FIRST', 'PROCESS_SELF', 'PROCESS_CUSTOME', 'PROCESS_INTERVIEW' ];
     const ORGANIZATION_CODES = [ 'SUPPLIER_WSHH', 'SUPPLIER_WSHH', 'SUPPLIER_WSHH', 'SUPPLIER_ZR', 'SUPPLIER_FB' ];
-    const NEED_ORGANIZATION_CODES = [ 'NEED_ZGPA', 'NEED_ALBB','NEED_SPA', 'NEED_ZGPA', 'NEED_ALBB'];
+    const NEED_ORGANIZATION_CODES = [ 'NEED_ZGPA', 'NEED_ALBB', 'NEED_SPA', 'NEED_ZGPA', 'NEED_ALBB' ];
 
-    for (let i = 1; i <= 50; i++) {
+    for (let i = 1; i <= 2000; i++) {
       const random = Math.floor(Math.random() * 4);
       console.log('random: ' + random);
       insertParams.id = i;

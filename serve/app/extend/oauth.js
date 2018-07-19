@@ -53,6 +53,11 @@ module.exports = () => {
           accessTokenExpiresAt: token.accessTokenExpiresAt,
           client: { id: client.clientId },
           user,
+          resultCode: '000000',
+          resultMesg: '请求成功',
+          data: {
+            ORGANIZATION_CODE: user.ORGANIZATION_CODE,
+          },
         };
 
       } catch (err) {

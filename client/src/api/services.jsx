@@ -44,7 +44,7 @@ const request = (config, resolve, reject) => {
   const newConfig = { ...config
   };
   if (newConfig.method === 'POST' || newConfig.method === 'PUT') {
-    if (!(newConfig.body instanceof FormData)) {
+    if (!(newConfig.data instanceof FormData)) {
       newConfig.headers = {
         Accept: 'application/json',
         // 'Content-Type': 'application/json; charset=utf-8',
@@ -52,7 +52,7 @@ const request = (config, resolve, reject) => {
         'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
         ...newConfig.headers,
       };
-      newConfig.body = JSON.stringify(newConfig.body);
+      newConfig.data = JSON.stringify(newConfig.data);
     } else {
       newConfig.headers = {
         // 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',

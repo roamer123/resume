@@ -36,7 +36,7 @@ module.exports = app => {
   User.authenticate = async function(USER_NAME, PASSWORD) {
     const user = await this.findOne({
       where: { USER_NAME },
-      attributes: [ 'ID', 'USER_NAME', 'PASSWORD' ],
+      attributes: [ 'ID', 'USER_NAME', 'PASSWORD', 'ORGANIZATION_CODE' ],
     });
     if (!user) return null;
     return PASSWORD === user.dataValues.PASSWORD ? (delete user.dataValues.PASSWORD && user.dataValues) : null;
