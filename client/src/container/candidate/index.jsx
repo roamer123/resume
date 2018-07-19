@@ -17,20 +17,70 @@ export default class CandidateHeader extends React.Component {
     this.state = {
       step: 'all',
       selectedRowKeys: [], // Check here to configure the default column
+      jobs: [],
+      suppliers: [],
+      steps: [],
+      stepsData: [],
+      tableData: [],
     }
   }
-  componentDidMount () {
-    services.get(urls.queryDropdown, {}, this.authSuccess)
+  componentDidMount() {
+    services.get(urls.queryDropdown, { TYPE: 'TECHNOLOGY_DIRECTION' }, this.getTechDirection)
+    services.get(urls.queryDropdown, { TYPE: 'NEED_ORGANIZATION' }, this.getNeedOrganization)
+    services.get(urls.queryDropdown, { TYPE: 'INTERVIEWER_PROCESS' }, this.getInterviewerProcess)
+    services.post(urls.candidateProcessCount, {}, this.getCandidateProcessCount)
+    services.post(urls.candidateSearch, {
+      ORGANIZATION_CODE: 'SUPPLIER_WSHH',
+      INTERVIEWER_PROCESS_CODE: '',
+      NEED_ORGANIZATION_CODE: '',
+      TECHNOLOGY_DIRECTION_CODE: '',
+    }, this.getCandidateSearch)
   }
-  authSuccess = (data) => {
-    console.log('dropdowndata', data)
+  getTechDirection = (data) => {
+    this.setState({
+      jobs: data
+    })
+  }
+  getNeedOrganization = (data) => {
+    this.setState({
+      suppliers: data
+    })
+  }
+  getInterviewerProcess = (data) => {
+    this.setState({
+      steps: data
+    })
+  }
+  getCandidateProcessCount = (data) => {
+    this.setState({
+      stepsData: data
+    })
+  }
+  getCandidateSearch = (data) => {
+    this.setState({
+      tableData: data
+    })
   }
   handleStep = (e, step, li) => {
     e.target.style = {color: 'red'}
     console.log(e.target, step, li)
+    services.get(urls.candidateProcessChange, [{
+      INTERVIEWER_PROCESS_CODE: 'PROCESS_NEW',
+      LIST: {},
+      ID: [],
+    }], this.getCandidateProcessChange)
+  }
+  getCandidateProcessChange = (data) => {
+    console.log(data);
   }
   handleAdd = () => {
     window.location.href = `${window.location.href}/add`
+  }
+  handleDelete = () => {
+    services.post(urls.candidateDelete, {IDS: []}, this.deleteCandidateSuccess)
+  }
+  deleteCandidateSuccess = (data) => {
+
   }
   modalLabelGenerator = (step) => {
     let modalLabel = []
@@ -87,88 +137,95 @@ export default class CandidateHeader extends React.Component {
     return modalLabel;
   }
   render () {
-    const jobs =
-    [
-    '全部职位',
-    '前端',
-    'web前端',
-    'HTML5',
-    'Node.js',
-    'JavaScript',
-    'Android',
-    'iOS',
-    'U3D',
-    'COCOS2DX',
-    '前端架构师',
+    const {
+      jobs,
+      suppliers,
+      steps,
+      stepsData,
+      tableData
+    } = this.state
+    // const jobs =
+    // [
+    // '全部职位',
+    // '前端',
+    // 'web前端',
+    // 'HTML5',
+    // 'Node.js',
+    // 'JavaScript',
+    // 'Android',
+    // 'iOS',
+    // 'U3D',
+    // 'COCOS2DX',
+    // '前端架构师',
 
-    '后端',
-    'JAVA工程师',
-    'PHP',
-    'C++',
-    '.NET',
-    'C#',
-    'Python',
-    '架构师',
+    // '后端',
+    // 'JAVA工程师',
+    // 'PHP',
+    // 'C++',
+    // '.NET',
+    // 'C#',
+    // 'Python',
+    // '架构师',
 
-    '数据',
-    '数据挖掘',
-    '算法工程师',
-    '数据分析师',
-    '数据架构师',
-    '算法研究员',
+    // '数据',
+    // '数据挖掘',
+    // '算法工程师',
+    // '数据分析师',
+    // '数据架构师',
+    // '算法研究员',
 
-    '测试',
-    '测试工程师',
-    '自动化测试',
-    '功能测试',
-    '性能测试',
-    '测试开发',
-    '移动端测试',
-    '游戏测试',
-    '硬件测试',
-    '软件测试',
+    // '测试',
+    // '测试工程师',
+    // '自动化测试',
+    // '功能测试',
+    // '性能测试',
+    // '测试开发',
+    // '移动端测试',
+    // '游戏测试',
+    // '硬件测试',
+    // '软件测试',
 
-    '运维/技术支持',
-    '运维工程师',
-    '运维开发工程师',
-    '网络工程师',
-    '系统工程师',
-    'IT技术支持',
-    '系统管理员',
-    '网络安全',
-    '系统安全',
+    // '运维/技术支持',
+    // '运维工程师',
+    // '运维开发工程师',
+    // '网络工程师',
+    // '系统工程师',
+    // 'IT技术支持',
+    // '系统管理员',
+    // '网络安全',
+    // '系统安全',
 
-    '项目管理',
-    '项目经理',
-    '项目助理',
+    // '项目管理',
+    // '项目经理',
+    // '项目助理',
 
-    '产品',
-    '产品经理',
-    '网页产品经理',
-    '移动产品经理',
-    '产品助理',
+    // '产品',
+    // '产品经理',
+    // '网页产品经理',
+    // '移动产品经理',
+    // '产品助理',
 
-    '设计',
-    '视觉设计',
-    '网页设计师',
-    'APP设计师',
-    'UI设计师',
-    '平面设计师',
-    '美工',
-    '设计师助理',
+    // '设计',
+    // '视觉设计',
+    // '网页设计师',
+    // 'APP设计师',
+    // 'UI设计师',
+    // '平面设计师',
+    // '美工',
+    // '设计师助理',
 
-    '交互设计',
-    '交互设计师',
-    '无线交互设计师',
-    '网页交互设计师',
-    '硬件交互设计师',
-    'UX设计师',
-    '用户研究员',
+    // '交互设计',
+    // '交互设计师',
+    // '无线交互设计师',
+    // '网页交互设计师',
+    // '硬件交互设计师',
+    // 'UX设计师',
+    // '用户研究员',
 
-    '其他',
-    '人事助理',
-    '助理专员',
-    ]
+    // '其他',
+    // '人事助理',
+    // '助理专员',
+    // ]
     const filters = {
       newCandidate: 0,
       resumeFirst: 1,
@@ -179,17 +236,17 @@ export default class CandidateHeader extends React.Component {
       pass: 6,
       deleted: 7,
     }
-    const steps = ['newCandidate', 'resumeFirst', 'interviewSelf', 'resume', 'interview', 'computerTest', 'pass', 'deleted']
-    const stepsMap = {
-      newCandidate: '新增候选人', // 0
-      resumeFirst: '初选通过', // 1
-      interviewSelf: '内面', // 2
-      resume: '客户简历筛选', // 3
-      interview: '面试', // 4
-      computerTest: '机考', // 5
-      pass: '入场', // 6
-      deleted: '已淘汰', // 7
-    }
+    // const steps = ['newCandidate', 'resumeFirst', 'interviewSelf', 'resume', 'interview', 'computerTest', 'pass', 'deleted']
+    // const stepsMap = {
+    //   newCandidate: '新增候选人', // 0
+    //   resumeFirst: '初选通过', // 1
+    //   interviewSelf: '内面', // 2
+    //   resume: '客户简历筛选', // 3
+    //   interview: '面试', // 4
+    //   computerTest: '机考', // 5
+    //   pass: '入场', // 6
+    //   deleted: '已淘汰', // 7
+    // }
     // const filterCategories = {
     //   job: 'all',
     //   step: 'interview', // 对应流程
@@ -218,12 +275,14 @@ export default class CandidateHeader extends React.Component {
     //   job_rank: 0,
     //   remark: '',
     // }
-    const suppliers = ['供应商', '中国平安', '金融股份']
-    const actions = ['addOne', 'addMore']
-    const actionsMap = {
-      addOne: '添加候选人',
-      addMore: '批量添加',
-    }
+    // const suppliers = ['供应商', '中国平安', '金融股份']
+    const actions = [{
+      CODE: 'addOne',
+      VALUE: '添加候选人',
+    }, {
+      CODE: 'addMore',
+      VALUE: '批量添加',
+    }]
 
     const columns = [{
         title: '姓名',
@@ -297,7 +356,7 @@ export default class CandidateHeader extends React.Component {
         key: 'operation',
         fixed: 'right',
         width: 100,
-        render: () => <a href='javascript:;' > 删除 </a>,
+        render: () => <a href='javascript:;' onClick={this.handleDelete}> 删除 </a>,
       },
     ];
 
@@ -315,6 +374,7 @@ export default class CandidateHeader extends React.Component {
       selectedRowKeys,
       onChange: this.onSelectChange,
     };
+
     return (
       <div className={styles.candidate_list}>
         <div className={styles.switch_tab}>
@@ -336,13 +396,12 @@ export default class CandidateHeader extends React.Component {
             {
               optionsCreate({
                 options: actions,
-                optMap: actionsMap
               })
             }
           </Select>
         </div>
         {
-          <FilterStep filters={filters} stepsMap={stepsMap} handleStep={this.handleStep} />
+          <FilterStep colums={steps || []} stepsMap={stepsData || []} handleStep={this.handleStep} />
         }
         <div className={styles.detail}>
           <div className={styles.filter_detail}>
@@ -373,7 +432,6 @@ export default class CandidateHeader extends React.Component {
               {
                 optionsCreate({
                   options: steps,
-                  optMap: stepsMap,
                   addonBefore: '移动到'
                 })
               }
@@ -384,7 +442,7 @@ export default class CandidateHeader extends React.Component {
           className={styles.table}
           rowSelection={rowSelection}
           columns={columns}
-          dataSource={data}
+          dataSource={tableData}
           scroll={{ x: 1500, y: 300 }} />
       </div>
     )

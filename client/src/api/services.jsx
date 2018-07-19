@@ -43,29 +43,35 @@ const checkStatus = (response) => {
 const request = (config, resolve, reject) => {
   const newConfig = { ...config
   };
-  if (newConfig.method === 'POST' || newConfig.method === 'PUT') {
-    if (!(newConfig.body instanceof FormData)) {
-      newConfig.headers = {
-        Accept: 'application/json',
-        // 'Content-Type': 'application/json; charset=utf-8',
-        // 'Authorization': 'Basic bXlfYXBwOm15X3NlY3JldA ==',
-        'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-        ...newConfig.headers,
-      };
-      newConfig.body = JSON.stringify(newConfig.body);
-    } else {
-      newConfig.headers = {
-        // 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
-        Accept: 'application/json',
-        ...newConfig.headers,
-      };
-    }
-  }
-  console.dir(newConfig);
+  console.log('url', config.url);
+
+  // if (newConfig.method === 'POST' || newConfig.method === 'PUT') {
+  //   if (!(newConfig.data instanceof FormData)) {
+  //     console.log('FormData', newConfig.data);
+
+  //     newConfig.headers = {
+  //       Accept: 'application/json',
+  //       // 'Content-Type': 'application/json; charset=utf-8',
+  //       // 'Authorization': 'Basic bXlfYXBwOm15X3NlY3JldA ==',
+  //       'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
+  //       ...newConfig.headers,
+  //     };
+  //     // newConfig.data = JSON.stringify(newConfig.data);
+  //   } else {
+  //     console.log('FormDataelse');
+  //     newConfig.headers = {
+  //       'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+  //       Accept: 'application/json',
+  //       ...newConfig.headers,
+  //     };
+  //   }
+  // }
   axios.request(newConfig)
-    .then(checkStatus)
+    // .then(checkStatus)
     .then((response) => {
       const data = response.data
+      // console.log('response', data);
+
       if (data.resultCode === '000000') {
         typeof resolve === 'function' && resolve(data.data)
       } else {

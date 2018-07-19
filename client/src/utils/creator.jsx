@@ -2,25 +2,41 @@ import React from 'react';
 import {Select} from 'components'
 
 const Option = Select.Option;
-const optionsCreate = ({options, optMap, addonBefore, addonAfter}) => (
-      options.map((option, i) =>
+const optionsCreate = ({options, addonBefore, addonAfter}) => {
+      // console.log(options)
+      !options && (options = [])
+      return options.map((option, i) =>
         <Option
           key={i}
-          value={option}
+          value={option['CODE']}
         >
-          {optMap ? `${addonBefore || ''}${optMap[option]} ${addonAfter || ''}` : `${addonBefore || ''}${option} ${addonAfter || ''}`}
+          {
+            `${addonBefore || ''}${option['VALUE']} ${addonAfter || ''}`
+          }
         </Option>
       )
-    )
-const liCreate = ({lis, liMap, handleClick, addonBefore, addonAfter}) => {
-  return Object.keys(lis).map((li, i) => {
-      const step = liMap[li]
+    }
+const liCreate = ({
+    lis,
+    liData,
+    handleClick,
+    addonBefore,
+    addonAfter,
+    active
+  }) => {
+    console.log('lis', lis, liData);
+
+  return lis.map((li, i) => {
+      const step = li['VALUE']
+      const code = li['CODE']
+      console.log('code', code, li, liData[code]);
       return (
         <li
+          className={active}
           onClick={(e) => handleClick(e, step, li)}
           key={i}
        >
-          <p>{`${addonBefore || ''} ${step} ${lis[li]} ${addonAfter || ''}`}</p>
+          <p>{`${addonBefore || ''} ${step} ${addonAfter || ''}`}</p>
         </li>
 
       )
