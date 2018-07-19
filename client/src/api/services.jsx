@@ -28,10 +28,10 @@ const codeMessage = {
 };
 
 const checkStatus = (response) => {
-  if (response.code >= 200 && response.code < 300) {
+  if (response.status >= 200 && response.status < 300) {
     return response;
   }
-  const errorMsg = codeMessage[response.code] || response.statusText;
+  const errorMsg = codeMessage[response.status] || response.statusText;
   message.warning(errorMsg, 2);
 
   const error = new Error(errorMsg);
@@ -43,29 +43,35 @@ const checkStatus = (response) => {
 const request = (config, resolve, reject) => {
   const newConfig = { ...config
   };
-  if (newConfig.method === 'POST' || newConfig.method === 'PUT') {
-    if (!(newConfig.data instanceof FormData)) {
-      newConfig.headers = {
-        Accept: 'application/json',
-        // 'Content-Type': 'application/json; charset=utf-8',
-        // 'Authorization': 'Basic bXlfYXBwOm15X3NlY3JldA ==',
-        'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-        ...newConfig.headers,
-      };
-      newConfig.data = JSON.stringify(newConfig.data);
-    } else {
-      newConfig.headers = {
-        // 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
-        Accept: 'application/json',
-        ...newConfig.headers,
-      };
-    }
-  }
-  console.dir(newConfig);
+  console.log('url', config.url);
+
+  // if (newConfig.method === 'POST' || newConfig.method === 'PUT') {
+  //   if (!(newConfig.data instanceof FormData)) {
+  //     console.log('FormData', newConfig.data);
+
+  //     newConfig.headers = {
+  //       Accept: 'application/json',
+  //       // 'Content-Type': 'application/json; charset=utf-8',
+  //       // 'Authorization': 'Basic bXlfYXBwOm15X3NlY3JldA ==',
+  //       'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
+  //       ...newConfig.headers,
+  //     };
+  //     // newConfig.data = JSON.stringify(newConfig.data);
+  //   } else {
+  //     console.log('FormDataelse');
+  //     newConfig.headers = {
+  //       'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+  //       Accept: 'application/json',
+  //       ...newConfig.headers,
+  //     };
+  //   }
+  // }
   axios.request(newConfig)
     .then(checkStatus)
     .then((response) => {
       const data = response.data
+      console.log('response', response);
+
       if (data.resultCode === '000000') {
         typeof resolve === 'function' && resolve(data.data)
       } else {

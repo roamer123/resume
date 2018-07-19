@@ -1,7 +1,8 @@
 import React from 'react'
 import {Select, Table, Button} from 'components'
 import FilterStep from 'component/filter-step';
-import {optionsCreate, liCreate} from 'utils/creator';
+import {optionsCreate} from 'utils/creator';
+import {services, urls} from 'api';
 import styles from './index.less'
 // pro-drag
 export default class RecruitTitle extends React.Component {
@@ -9,7 +10,24 @@ export default class RecruitTitle extends React.Component {
     super(props)
     this.state = {
       selectedRowKeys: [], // Check here to configure the default column
+      active: false, // true流程按钮处于激活状态
+      jobs: [],
+      tableData: []
     };
+  }
+  componentDidMount() {
+    services.get(urls.queryDropdown, {TYPE: 'TECHNOLOGY_DIRECTION'}, this.getTechDirection)
+    services.get(urls.positionQueryList, {POSITION_PROCESS_CODE: 0, TECHNOLOGY_DIRECTION_CODE: 'WEBFRONT'}, this.getPositionQueryList)
+  }
+  getTechDirection = (data) => {
+    this.setState({
+      jobs: data
+    })
+  }
+  getPositionQueryList = (data) => {
+    this.setState({
+      tableData: data
+    })
   }
   handleStep = (e, step, li) => {
     e.target.style = {
@@ -22,24 +40,37 @@ export default class RecruitTitle extends React.Component {
   }
   handleDelete = () => {
     console.log('handleDelete')
+    services.get(urls.positionDelete, {ID: []}, this.deleteSuccess)
+  }
+  deleteSuccess = (data) => {
+    console.log(data);
   }
   render () {
-    const filters = {
-      recruiting: 0,
-      stopRecruit: 1,
-    }
+    const {
+      active,
+      jobs,
+      tableData
+    } = this.state
+    const colums = [{
+        CODE: 'recruiting',
+        VALUE: '招聘中',
+      }, {
+        CODE: 'stopRecruit',
+        VALUE: '停止招聘',
+    }]
     const stepsMap = {
       recruiting: '招聘中',
       stopRecruit: '停止招聘',
     }
-    const jobs = ['all', 'web', 'java', 'test']
-    const jobsMap = {
-      all: '全部职位',
-      web: '前端工程师',
-      java: 'JAVA工程师',
-      test: '测试工程师',
-    }
-    const columns = [{
+    // const jobs = ['all', 'web', 'java', 'test']
+    // const jobsMap = {
+    //   all: '全部职位',
+    //   web: '前端工程师',
+    //   java: 'JAVA工程师',
+    //   test: '测试工程师',
+    // }
+    const columns = [
+      {
          title: '职位名称',
          width: 100,
          dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
@@ -107,17 +138,7 @@ export default class RecruitTitle extends React.Component {
          width: 100,
          render: () => <a href='javascript:;' > 删除 </a>,
        },
-     ];
-
-    const data = [];
-     for (let i = 0; i < 100; i++) {
-       data.push({
-         key: i,
-         name: `Edrward ${i}`,
-         age: 32,
-         address: `London Park no. ${i}`,
-       });
-     }
+    ];
     const {
        selectedRowKeys
      } = this.state;
@@ -127,19 +148,21 @@ export default class RecruitTitle extends React.Component {
      };
     return (
       <div className={styles.recruit_title}>
-        <FilterStep filters={filters} stepsMap={stepsMap} handleStep={this.handleStep} />
+        <FilterStep colums={colums || []} stepsMap={stepsMap || {}} handleStep={this.handleStep} active={active} />
         <div className={styles.switch_tab}>
-          <Select defaultValue='all' style={{ width: 120 }}>
+          <Select defaultValue='全部职位' style={{ width: 120 }}>
             {
-                optionsCreate(jobs, jobsMap)
+                optionsCreate({
+                  options: jobs
+                  })
             }
           </Select>
           <div>
-            <Button onClick={this.handleAdd}>添加招聘职位</Button>
+            <Button onClick={this.handleAdd} type='primary'>添加招聘职位</Button>
             <Button onClick={this.handleDelete} style={{marginLeft: '16px'}}>停止招聘</Button>
           </div>
         </div>
-        <Table className={styles.table} rowSelection={rowSelection} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
+        <Table className={styles.table} rowSelection={rowSelection} columns={columns} dataSource={tableData} scroll={{ x: 1500, y: 300 }} />
       </div>
     )
   }

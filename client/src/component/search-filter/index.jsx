@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Icon, Input} from 'components'
+import { Button, Icon } from 'components'
 
 export default class SearchFilter extends React.Component {
   constructor (props) {
