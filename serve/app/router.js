@@ -39,6 +39,14 @@ module.exports = app => {
   router.all('/resume/update', controller.resumeController.update);
   router.all('/resume/delete', controller.resumeController.delete);
 
+  // 日程安排
+  router.all('/calendar/process_init_interview', controller.calendarController.initInterview);
+  router.all('/calendar/process_init_exam', controller.calendarController.initExam);
+  router.all('/calendar/process_init_in', controller.calendarController.initIn);
+  router.all('/calendar/add', controller.calendarController.add);
+  router.all('/calendar/delete', controller.calendarController.delete);
+
+
   // 批量生成数据
   router.all('/generatedata/candidate', controller.generateData.insertCandidate);
   router.all('/generatedata/position', controller.generateData.insertPosition);
