@@ -14,6 +14,11 @@ class PositionService extends Service {
     return queryResult;
   }
 
+  async count(options = {}) {
+    const countList = await this.ctx.model.Position.countPosition(options);
+    return countList;
+  }
+
   async insert(params) {
     const { ctx } = this;
     const insertResult = await ctx.model.Position.insertPosition(params);

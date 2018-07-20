@@ -41,6 +41,10 @@ module.exports = app => {
     });
   };
 
+  Position.countPosition = async function(options) {
+    return await this.count(options);
+  };
+
   Position.insertPosition = async function(params) {
     return await this.create(params);
   };

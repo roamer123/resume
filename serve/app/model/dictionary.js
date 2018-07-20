@@ -15,6 +15,10 @@ module.exports = app => {
     freezeTableName: true,
   });
 
+  Dictionary.queryCodeToValue = async function(CODE) {
+    return await app.model.query('SELECT VALUE FROM DICTIONARY WHERE CODE = :CODE', { replacements: { CODE }, type: app.Sequelize.QueryTypes.SELECT });
+  };
+
   Dictionary.add = async function(field) {
     this.ctx.create(field);
   };

@@ -47,6 +47,16 @@ module.exports = appInfo => {
     allowExtendedTokenAttributes: true,
   };
 
+  config.multipart = {
+    fileSize: '5mb',
+    whitelist: [
+      '.jpeg',
+      'jpg',
+      'png',
+      '.exel',
+    ],
+  };
+
   config.onerror = {
     all(err, ctx) {
       // 在此定义针对所有响应类型的错误处理方法

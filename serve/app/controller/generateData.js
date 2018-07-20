@@ -1,5 +1,6 @@
 'use strict';
 const Controller = require('egg').Controller;
+const moment = require('moment');
 
 class generateDataController extends Controller {
 
@@ -9,21 +10,23 @@ class generateDataController extends Controller {
     const insertParams = {};
     let insertResult = null;
     const TECHNOLOGY_DIRECTION_CODES = [ 'WEBFRONT', 'HTML5', 'NODEJS', 'JAVASCRIPT', 'ANDROID' ];
-    const OFFICIAL_ACADEMIC_CODES = [ 'LESS_JUNIOR', 'JUNIOR', 'BACHELOR', 'MASTER', 'OVER_MASTER' ];
+    const WORKING_YEARSS = [ 'NO_LIMIT', 'LESS_1', 'BETWEEN_1_3', 'BETWEEN_3_5', 'BETWEEN_5_10', 'OVER_10' ];
+    const EDUCATION_LEVEL_CODES = [ 'LESS_JUNIOR', 'JUNIOR', 'BACHELOR', 'MASTER', 'OVER_MASTER' ];
     const RANK_LEVEL_CODES = [ 'LEVEL_ASSISTANT', 'LEVEL_PRIMARY', 'LEVEL_MIDDLE', 'LEVEL_HIGH', 'LEVEL_HIGH' ];
     const INTERVIEWER_STATUSS = [ 'STATUS_NO_NEED', 'STATUS_NO_PASS', 'STATUS_HIGHPAY', 'STATUS_GIVEUP', 'STATUS_DOING' ];
     const INTERVIEWER_PROCESS_CODES = [ 'PROCESS_NEW', 'PROCESS_FIRST', 'PROCESS_SELF', 'PROCESS_CUSTOME', 'PROCESS_INTERVIEW' ];
     const ORGANIZATION_CODES = [ 'SUPPLIER_WSHH', 'SUPPLIER_WSHH', 'SUPPLIER_WSHH', 'SUPPLIER_ZR', 'SUPPLIER_FB' ];
     const NEED_ORGANIZATION_CODES = [ 'NEED_ZGPA', 'NEED_ALBB', 'NEED_SPA', 'NEED_ZGPA', 'NEED_ALBB' ];
 
-    for (let i = 1; i <= 2000; i++) {
+    for (let i = 1; i <= 500; i++) {
       const random = Math.floor(Math.random() * 4);
       console.log('random: ' + random);
       insertParams.id = i;
       insertParams.NAME = 'WJQ';
+      insertParams.AGE = 28;
       insertParams.TECHNOLOGY_DIRECTION_CODE = TECHNOLOGY_DIRECTION_CODES[random];
-      insertParams.WORK_AGE = 3;
-      insertParams.OFFICIAL_ACADEMIC_CODE = OFFICIAL_ACADEMIC_CODES[random];
+      insertParams.WORKING_YEARS_CODE = WORKING_YEARSS[random];
+      insertParams.EDUCATION_LEVEL_CODE = EDUCATION_LEVEL_CODES[random];
       insertParams.RANK_LEVEL_CODE = RANK_LEVEL_CODES[random];
       insertParams.TELEPHONE = '18812345678';
       insertParams.EMAIL = '188123456789@163.cpm';
@@ -31,23 +34,23 @@ class generateDataController extends Controller {
 
       insertParams.EXPECT_SALARY = '2000000000';
       insertParams.IS_ON_JOB = '0';
-      insertParams.ADDRESS = '上海市唐镇';
+      insertParams.DOMICILE = '上海市唐镇';
       insertParams.INTERVIEWER_PROCESS_CODE = INTERVIEWER_PROCESS_CODES[random];
       insertParams.INTERVIEWER_STATUS = INTERVIEWER_STATUSS[random];
 
       insertParams.ORGANIZATION_CODE = ORGANIZATION_CODES[random];
       insertParams.INTERVIEWER = 'lulu';
-      insertParams.INNER_INTERVIEWER_TIME = null;
-      insertParams.APPOINTMENT_INTERVIEWER_TIME = null;
-      insertParams.ACTUAL_INTERVIEWER_TIME = null;
+      insertParams.INNER_INTERVIEWER_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
+      insertParams.APPOINTMENT_INTERVIEWER_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
+      insertParams.ACTUAL_INTERVIEWER_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
 
-      insertParams.COMPUTER_EXAME_TIME = null;
-      insertParams.APPINT_ENTRANCE_TIME = null;
-      insertParams.ACTUAL_ENTRANCE_TIME = null;
+      insertParams.COMPUTER_EXAME_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
+      insertParams.APPINT_ENTRANCE_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
+      insertParams.ACTUAL_ENTRANCE_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
       insertParams.CHECK_RANK_LEVEL_CODE = RANK_LEVEL_CODES[random];
-      insertParams.ACTUAL_INTERVIEWER_TIME = null;
+      insertParams.ACTUAL_INTERVIEWER_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
 
-      insertParams.RECOMMEND_TIME = null;
+      insertParams.RECOMMEND_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
       insertParams.RECRUIT_TRACKER = 'xinge';
       insertParams.RECOMMEND_PROGRAME = 'dbox';
 
@@ -84,7 +87,7 @@ class generateDataController extends Controller {
       insertParams.JOB_EXPERIENCE_DEMAND_CODE = JOB_EXPERIENCE_DEMAND_CODES[random];
       insertParams.EDUCATION_LEVEL_CODE = OFFICIAL_ACADEMIC_CODES[random];
       insertParams.SALARY_DEMAND = '10k';
-      insertParams.LATEST_COME_TIME = null;
+      insertParams.LATEST_COME_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
       insertParams.PRINCIPAL = 'cxm';
       insertParams.COOPERATOR = 'lulu';
       insertParams.STARTOR = 'wjq';

@@ -10,19 +10,25 @@ class CandidateService extends Service {
 
   async search(params = {}) {
     const list = await this.ctx.model.Candidate.queryCandidate(params);
+    // const newList = list.reduce(async (promise, item) => {
+    //   // console.log('item', item);
+    //   item.dataValues.WORKING_YEARS = await this.ctx.model.Dictionary.queryCodeToValue(item.WORKING_YEARS_CODE)[0].VALUE;
+    //   item.dataValues.EDUCATION_LEVEL = await this.ctx.model.Dictionary.queryCodeToValue(item.EDUCATION_LEVEL_CODE)[0].VALUE;
+    //   item.dataValues.RANK_LEVEL = await this.ctx.model.Dictionary.queryCodeToValue(item.RANK_LEVEL_CODE)[0].VALUE;
+    //   item.dataValues.TECHNOLOGY_DIRECTION = await this.ctx.model.Dictionary.queryCodeToValue(item.TECHNOLOGY_DIRECTION_CODE)[0].VALUE;
+    //   return Promise.resolve();
+    // }, Promise.resolve());
+    // console.log('--------- newlist --------');
+    // console.log(newList);
+    // console.log('----------- end-----------');
     return list;
   }
 
-  async change(params = []) {
-    // for (let i = 0; i < 1000; i++) {
-    //   params.push({
-    //     INTERVIEWER_PROCESS_CODE: 'PROCESS_NEW' + i,
-    //     ID: i,
-    //   });
-    // }
+  async change(params) {
     const result = await this.ctx.model.Candidate.changeList(params);
     return {
       code: result ? 'success' : 'fail',
+      INTERVIEWER_PROCESS_CODE: params.INTERVIEWER_PROCESS_CODE,
     };
   }
 

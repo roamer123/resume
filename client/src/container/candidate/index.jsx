@@ -294,14 +294,14 @@ export default class CandidateHeader extends React.Component {
       {
         title: '年龄',
         width: 60,
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'AGE',
+        key: 'AGE',
         fixed: 'left'
       },
       {
         title: '工作年限',
-        dataIndex: 'RELA_WORKING_YEARS',
-        key: 'RELA_WORKING_YEARS',
+        dataIndex: 'WORKING_YEARS_CODE',
+        key: 'WORKING_YEARS_CODE',
         width: 150
       },
       {
@@ -336,8 +336,8 @@ export default class CandidateHeader extends React.Component {
       },
       {
         title: '技术方向',
-        dataIndex: 'TECHNOLOGY_DIRECTION',
-        key: 'TECHNOLOGY_DIRECTION',
+        dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
+        key: 'TECHNOLOGY_DIRECTION_CODE',
         width: 150
       },
       {

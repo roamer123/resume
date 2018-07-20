@@ -12,16 +12,14 @@ class CandidateController extends Controller {
     } : {
       group: 'INTERVIEWER_PROCESS_CODE',
       attributes: [ 'INTERVIEWER_PROCESS_CODE' ],
-      where: {
-        params,
-      },
+      where: params,
     };
-    const dropdownList = await ctx.service.candidateService.count(options);
-    ctx.body = ReturnJson.success(dropdownList.map(item => {
-      return {
-        [item.INTERVIEWER_PROCESS_CODE]: item.count,
-      };
-    }));
+    const countList = await ctx.service.candidateService.count(options);
+    const data = {};
+    countList.map(item => (
+      data[item.INTERVIEWER_PROCESS_CODE] = item.count
+    ));
+    ctx.body = ReturnJson.success(data);
   }
 
   async search() {
@@ -32,9 +30,9 @@ class CandidateController extends Controller {
       ctx.body = ReturnJson.fail('111111', '入参错误，ORGANIZATION_CODE是必须的', {});
     } else {
       const newParams = { ORGANIZATION_CODE };
-      if (INTERVIEWER_PROCESS_CODE) newParams[INTERVIEWER_PROCESS_CODE] = INTERVIEWER_PROCESS_CODE;
-      if (NEED_ORGANIZATION_CODE) newParams[NEED_ORGANIZATION_CODE] = NEED_ORGANIZATION_CODE;
-      if (TECHNOLOGY_DIRECTION_CODE) newParams[TECHNOLOGY_DIRECTION_CODE] = TECHNOLOGY_DIRECTION_CODE;
+      if (INTERVIEWER_PROCESS_CODE) newParams.INTERVIEWER_PROCESS_CODE = INTERVIEWER_PROCESS_CODE;
+      if (NEED_ORGANIZATION_CODE) newParams.NEED_ORGANIZATION_CODE = NEED_ORGANIZATION_CODE;
+      if (TECHNOLOGY_DIRECTION_CODE) newParams.TECHNOLOGY_DIRECTION_CODE = TECHNOLOGY_DIRECTION_CODE;
 
       const list = await ctx.service.candidateService.search(newParams);
       ctx.body = ReturnJson.success(list);
@@ -44,9 +42,13 @@ class CandidateController extends Controller {
   async change() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const { CHANGELIST } = params;
-    const result = await ctx.service.candidateService.change(CHANGELIST);
-    ctx.body = ReturnJson.success(result);
+    const { INTERVIEWER_PROCESS_CODE, IDS } = params;
+    if (!INTERVIEWER_PROCESS_CODE || (IDS && IDS.length === 0)) {
+      ctx.body = ReturnJson.fail('111111', '入参错误，INTERVIEWER_PROCESS_CODE是必须的且IDS不为空', {});
+    } else {
+      const result = await ctx.service.candidateService.change({ INTERVIEWER_PROCESS_CODE, IDS });
+      ctx.body = ReturnJson.success(result);
+    }
   }
 
   async add() {
