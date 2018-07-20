@@ -28,10 +28,10 @@ const codeMessage = {
 };
 
 const checkStatus = (response) => {
-  if (response.code >= 200 && response.code < 300) {
+  if (response.status >= 200 && response.status < 300) {
     return response;
   }
-  const errorMsg = codeMessage[response.code] || response.statusText;
+  const errorMsg = codeMessage[response.status] || response.statusText;
   message.warning(errorMsg, 2);
 
   const error = new Error(errorMsg);
@@ -66,11 +66,11 @@ const request = (config, resolve, reject) => {
   //     };
   //   }
   // }
+
   axios.request(newConfig)
-    // .then(checkStatus)
+    .then(checkStatus)
     .then((response) => {
       const data = response.data
-      // console.log('response', data);
 
       if (data.resultCode === '000000') {
         typeof resolve === 'function' && resolve(data.data)

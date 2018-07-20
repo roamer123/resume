@@ -1,7 +1,11 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import {Select, Table} from 'components'
+import {
+  Select,
+  Table,
+  message
+} from 'components'
 import SearchFilter from 'component/search-filter';
 import FilterStep from 'component/filter-step';
 import {optionsCreate} from 'utils/creator';
@@ -10,31 +14,76 @@ import {services, urls} from 'api';
 import styles from './index.less'
 
 // const Option = Select.Option;
+const CODE = 'CODE'
+const VALUE = 'VALUE'
+const TECHNOLOGY_DIRECTION = 'TECHNOLOGY_DIRECTION'
+const NEED_ORGANIZATION = 'NEED_ORGANIZATION'
+const INTERVIEWER_PROCESS = 'INTERVIEWER_PROCESS'
+const service = () => ({
+  queryDropdown: (f1, f2, f3) => {
+      services.get(urls.queryDropdown, { TYPE: TECHNOLOGY_DIRECTION }, f1)
+      services.get(urls.queryDropdown, { TYPE: NEED_ORGANIZATION }, f2)
+      services.get(urls.queryDropdown, { TYPE: INTERVIEWER_PROCESS }, f3)
+    },
+  candidateProcessCount: (fn) => services.post(urls.candidateProcessCount, {
+    ORGANIZATION_CODE: 'SUPPLIER_WSHH'
+  }, fn),
+  candidateSearch: (fn, param) => services.post(urls.candidateSearch, {
+    ...param,
+    ORGANIZATION_CODE: 'SUPPLIER_WSHH',
+  }, fn),
+  candidateProcessChange: (fn, param) => services.post(urls.candidateProcessChange, {
+    INTERVIEWER_PROCESS_CODE: param.INTERVIEWER_PROCESS_CODE,
+    IDS: param.IDS,
+  }, fn)
+})
+const successMsg = (msg) => {
+  message.success(msg || '成功', 0.5);
+};
+const errorMsg = (msg) => {
+  message.error(msg || '失败', 0.5);
+};
+const warningMsg = (msg) => {
+  message.warning(msg || '警告', 0.8);
+};
 
 export default class CandidateHeader extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      step: 'all',
-      selectedRowKeys: [], // Check here to configure the default column
+      step: '',
+      selectedRowKeys: [], // 已选择的记录的行号index：Array
       jobs: [],
       suppliers: [],
       steps: [],
       stepsData: [],
       tableData: [],
+      moveTo: '',
+      ORGANIZATION_CODE: 'SUPPLIER_WSHH',
+
     }
   }
   componentDidMount() {
-    services.get(urls.queryDropdown, { TYPE: 'TECHNOLOGY_DIRECTION' }, this.getTechDirection)
-    services.get(urls.queryDropdown, { TYPE: 'NEED_ORGANIZATION' }, this.getNeedOrganization)
-    services.get(urls.queryDropdown, { TYPE: 'INTERVIEWER_PROCESS' }, this.getInterviewerProcess)
-    services.post(urls.candidateProcessCount, {}, this.getCandidateProcessCount)
-    services.post(urls.candidateSearch, {
-      ORGANIZATION_CODE: 'SUPPLIER_WSHH',
-      INTERVIEWER_PROCESS_CODE: '',
-      NEED_ORGANIZATION_CODE: '',
-      TECHNOLOGY_DIRECTION_CODE: '',
-    }, this.getCandidateSearch)
+    service().queryDropdown.call(this, this.getTechDirection, this.getNeedOrganization, this.getInterviewerProcess);
+    service().candidateProcessCount.call(this, this.getCandidateProcessCount);
+    this.updateTable({})
+  }
+  shouldComponentUpdate = (nextProps, nextState) => {
+    if (nextState.moveTo !== this.state.moveTo) {
+      service().candidateProcessCount.call(this, this.getCandidateProcessCount);
+      this.updateTable({
+        INTERVIEWER_PROCESS_CODE: this.state.step // INTERVIEWER_PROCESS_CODE
+      })
+    }
+    return true
+  }
+  updateTable = (param) => {
+    service().candidateSearch.call(this, this.getCandidateSearch, {
+      INTERVIEWER_PROCESS_CODE: this.state.step || '',
+      NEED_ORGANIZATION_CODE: this.state.NEED_ORGANIZATION_CODE || '',
+      TECHNOLOGY_DIRECTION_CODE: this.state.TECHNOLOGY_DIRECTION_CODE || '',
+      ...param,
+    });
   }
   getTechDirection = (data) => {
     this.setState({
@@ -57,30 +106,79 @@ export default class CandidateHeader extends React.Component {
     })
   }
   getCandidateSearch = (data) => {
+    successMsg(`刷新成功`)
     this.setState({
       tableData: data
     })
   }
-  handleStep = (e, step, li) => {
+  handleStep = (e, li, step) => {
     e.target.style = {color: 'red'}
-    console.log(e.target, step, li)
-    services.get(urls.candidateProcessChange, [{
-      INTERVIEWER_PROCESS_CODE: 'PROCESS_NEW',
-      LIST: {},
-      ID: [],
-    }], this.getCandidateProcessChange)
-  }
-  getCandidateProcessChange = (data) => {
-    console.log(data);
+    console.log(e.target, step[CODE], li)
+    this.setState({
+      step: step[CODE]
+    }, () => {
+      console.log(this.state.step)
+       this.updateTable({
+         INTERVIEWER_PROCESS_CODE: this.state.step // INTERVIEWER_PROCESS_CODE
+       })
+    })
   }
   handleAdd = () => {
     window.location.href = `${window.location.href}/add`
   }
-  handleDelete = () => {
-    services.post(urls.candidateDelete, {IDS: []}, this.deleteCandidateSuccess)
+  handleDelete = (id) => {
+    event.persist()
+    var IDS = [...this.state.selectedRowKeys, id]
+    services.post(urls.candidateDelete, { IDS: IDS || [] }, this.deleteCandidateSuccess)
   }
   deleteCandidateSuccess = (data) => {
-
+    successMsg('删除成功')
+  }
+  handleMoveStep = (step) => {
+    console.log('handleMoveStep_e', step);
+    if (!this.state.selectIds) {
+      warningMsg(`请选择要操作的候选人`)
+      return
+    }
+    // services.post(urls.candidateProcessChange, {
+    //   INTERVIEWER_PROCESS_CODE: step,
+    //   IDS: this.state.selectIds,
+    // }, this.getCandidateProcessChange)
+    service().candidateProcessChange.call(this, this.getcandidateProcessChange, {
+      INTERVIEWER_PROCESS_CODE: step,
+      IDS: this.state.selectIds,
+    });
+  }
+  handleSearch = (key, value) => {
+    console.log(key, value);
+    const search = {[`${key}_CODE`]: value}
+    this.setState(search, () => {
+      this.updateTable({
+        INTERVIEWER_PROCESS_CODE: this.state.step,
+        NEED_ORGANIZATION_CODE: this.state.NEED_ORGANIZATION_CODE,
+        TECHNOLOGY_DIRECTION_CODE: this.state.TECHNOLOGY_DIRECTION_CODE,
+      })
+    })
+  }
+  getCandidateProcessChange = (data) => {
+    console.log('sfauuhiuiuui')
+    if (data && data.code === 'success') {
+      const step = data.INTERVIEWER_PROCESS_CODE
+      successMsg(`已移动到${step}`)
+      this.setState({
+        moveTo: step
+      })
+    }
+  }
+  onSelectChange = (selectedRowKeys, selectedRows) => {
+    const selectIds = selectedRows.map((record) => (record.ID))
+    console.log('selectedRowKeys changed: ', selectedRowKeys, selectedRows, selectIds);
+    this.setState({
+      selectIds: selectIds, // 已选择的记录的ID：Array
+      selectedRowKeys: selectedRowKeys, // 已选择的记录的行号：Array
+    }, () => {
+      console.log(this.state.selectedRowKeys)
+    });
   }
   modalLabelGenerator = (step) => {
     let modalLabel = []
@@ -144,115 +242,7 @@ export default class CandidateHeader extends React.Component {
       stepsData,
       tableData
     } = this.state
-    // const jobs =
-    // [
-    // '全部职位',
-    // '前端',
-    // 'web前端',
-    // 'HTML5',
-    // 'Node.js',
-    // 'JavaScript',
-    // 'Android',
-    // 'iOS',
-    // 'U3D',
-    // 'COCOS2DX',
-    // '前端架构师',
 
-    // '后端',
-    // 'JAVA工程师',
-    // 'PHP',
-    // 'C++',
-    // '.NET',
-    // 'C#',
-    // 'Python',
-    // '架构师',
-
-    // '数据',
-    // '数据挖掘',
-    // '算法工程师',
-    // '数据分析师',
-    // '数据架构师',
-    // '算法研究员',
-
-    // '测试',
-    // '测试工程师',
-    // '自动化测试',
-    // '功能测试',
-    // '性能测试',
-    // '测试开发',
-    // '移动端测试',
-    // '游戏测试',
-    // '硬件测试',
-    // '软件测试',
-
-    // '运维/技术支持',
-    // '运维工程师',
-    // '运维开发工程师',
-    // '网络工程师',
-    // '系统工程师',
-    // 'IT技术支持',
-    // '系统管理员',
-    // '网络安全',
-    // '系统安全',
-
-    // '项目管理',
-    // '项目经理',
-    // '项目助理',
-
-    // '产品',
-    // '产品经理',
-    // '网页产品经理',
-    // '移动产品经理',
-    // '产品助理',
-
-    // '设计',
-    // '视觉设计',
-    // '网页设计师',
-    // 'APP设计师',
-    // 'UI设计师',
-    // '平面设计师',
-    // '美工',
-    // '设计师助理',
-
-    // '交互设计',
-    // '交互设计师',
-    // '无线交互设计师',
-    // '网页交互设计师',
-    // '硬件交互设计师',
-    // 'UX设计师',
-    // '用户研究员',
-
-    // '其他',
-    // '人事助理',
-    // '助理专员',
-    // ]
-    const filters = {
-      newCandidate: 0,
-      resumeFirst: 1,
-      interviewSelf: 2,
-      resume: 3,
-      interview: 4,
-      computerTest: 5,
-      pass: 6,
-      deleted: 7,
-    }
-    // const steps = ['newCandidate', 'resumeFirst', 'interviewSelf', 'resume', 'interview', 'computerTest', 'pass', 'deleted']
-    // const stepsMap = {
-    //   newCandidate: '新增候选人', // 0
-    //   resumeFirst: '初选通过', // 1
-    //   interviewSelf: '内面', // 2
-    //   resume: '客户简历筛选', // 3
-    //   interview: '面试', // 4
-    //   computerTest: '机考', // 5
-    //   pass: '入场', // 6
-    //   deleted: '已淘汰', // 7
-    // }
-    // const filterCategories = {
-    //   job: 'all',
-    //   step: 'interview', // 对应流程
-    //   state: 'abandon', // 对应状态，放弃 | 不符合 | 无需求 | 薪资过高
-    //   supplier: '中国平安', // 供应商
-    // }
     const filterDetail = {
       name: '张三',
       minAge: 18,
@@ -264,24 +254,12 @@ export default class CandidateHeader extends React.Component {
       max_education: 0, // 0-硕士，1-本科，2-大专，3-大专以下
       job_rank: 0, // 0-初级，1-中级，2-高级，3-资深
     }
-    // const filterRequirement = {...filterCategories, ...filterDetail}
-    // const candidate = {
-    //   job: 'web',
-    //   name: '张三',
-    //   age: 24,
-    //   workAge: 3,
-    //   supplier: 'pingan',
-    //   max_education: 0,
-    //   job_rank: 0,
-    //   remark: '',
-    // }
-    // const suppliers = ['供应商', '中国平安', '金融股份']
     const actions = [{
-      CODE: 'addOne',
-      VALUE: '添加候选人',
-    }, {
-      CODE: 'addMore',
-      VALUE: '批量添加',
+        CODE: 'addOne',
+        VALUE: '添加候选人',
+      }, {
+        CODE: 'addMore',
+        VALUE: '批量添加',
     }]
 
     const columns = [{
@@ -294,8 +272,8 @@ export default class CandidateHeader extends React.Component {
       {
         title: '年龄',
         width: 60,
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'AGE',
+        key: 'AGE',
         fixed: 'left'
       },
       {
@@ -360,15 +338,6 @@ export default class CandidateHeader extends React.Component {
       },
     ];
 
-    const data = [];
-    for (let i = 0; i < 100; i++) {
-      data.push({
-        key: i,
-        name: `Edrward ${i}`,
-        age: 32,
-        address: `London Park no. ${i}`,
-      });
-    }
     const { selectedRowKeys } = this.state;
     const rowSelection = {
       selectedRowKeys,
@@ -378,7 +347,11 @@ export default class CandidateHeader extends React.Component {
     return (
       <div className={styles.candidate_list}>
         <div className={styles.switch_tab}>
-          <Select defaultValue='全部职位' style={{ width: 120 }}>
+          <Select
+            defaultValue='全部职位'
+            style={{ width: 120 }}
+            onSelect={(value) => this.handleSearch(INTERVIEWER_PROCESS, value)}
+            >
             {
               optionsCreate({
                 options: jobs,
@@ -401,7 +374,7 @@ export default class CandidateHeader extends React.Component {
           </Select>
         </div>
         {
-          <FilterStep colums={steps || []} stepsMap={stepsData || []} handleStep={this.handleStep} />
+          <FilterStep colums={steps || []} data={stepsData || {}} handleStep={this.handleStep} />
         }
         <div className={styles.detail}>
           <div className={styles.filter_detail}>
@@ -409,6 +382,7 @@ export default class CandidateHeader extends React.Component {
             <Select
               defaultValue='全部供应商'
               className={styles.suppliers_filter}
+              onSelect={(value) => this.handleSearch(NEED_ORGANIZATION, value)}
               >
               {
                 optionsCreate({
@@ -420,14 +394,9 @@ export default class CandidateHeader extends React.Component {
           <div className={styles.action_detail}>
             <Select
               defaultValue='移动到面试'
-              className={
-                classNames(styles.suppliers_filter, 'dark')
-              }
-              style={
-                {
-                  minWidth: '160px',
-                }
-              }
+              className={classNames(styles.suppliers_filter, 'dark')}
+              style={{minWidth: '160px'}}
+              onSelect={this.handleMoveStep}
               >
               {
                 optionsCreate({
@@ -443,6 +412,7 @@ export default class CandidateHeader extends React.Component {
           rowSelection={rowSelection}
           columns={columns}
           dataSource={tableData}
+          rowKey={(record => (record.ID))}
           scroll={{ x: 1500, y: 300 }} />
       </div>
     )

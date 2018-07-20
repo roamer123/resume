@@ -1,6 +1,8 @@
 import React from 'react';
-import {Select} from 'components'
+import { Select } from 'components'
 
+const CODE = 'CODE'
+const VALUE = 'VALUE'
 const Option = Select.Option;
 const optionsCreate = ({options, addonBefore, addonAfter}) => {
       // console.log(options)
@@ -24,19 +26,16 @@ const liCreate = ({
     addonAfter,
     active
   }) => {
-    console.log('lis', lis, liData);
-
   return lis.map((li, i) => {
-      const step = li['VALUE']
-      const code = li['CODE']
-      console.log('code', code, li, liData[code]);
+      const step = li[VALUE]
+      const code = li[CODE]
       return (
         <li
           className={active}
           onClick={(e) => handleClick(e, step, li)}
           key={i}
        >
-          <p>{`${addonBefore || ''} ${step} ${addonAfter || ''}`}</p>
+          <p>{`${addonBefore || ''} ${step} ${liData[code] || 0} ${addonAfter || ''}`}</p>
         </li>
 
       )

@@ -4,14 +4,14 @@ import styles from './index.less'
 
 export default class FilterStep extends React.Component {
   render () {
-    const {colums, stepsMap, handleStep, active} = this.props
+    const {colums, data, handleStep, active} = this.props
     return (
       <div className={styles.filter_step}>
         <ul className={styles.filter_group}>
           {
               liCreate({
                 lis: colums,
-                liData: stepsMap,
+                liData: data,
                 handleClick: handleStep,
                 active,
                 addonAfter: '人'

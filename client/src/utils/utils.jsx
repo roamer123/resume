@@ -64,3 +64,31 @@ export function getTodayTime() {
 
   return year + '年' + month + '月' + date + '日' + ' ' + week[day - 1]
 }
+
+// 将数组对象化
+const objify = (arr, key) => {
+  let obj = {}
+  arr.map((item) => {
+    var id = item[key]
+    obj = {...obj, [id]: item}
+  })
+  return obj
+}
+
+export { objify }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

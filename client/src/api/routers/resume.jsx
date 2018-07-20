@@ -1,6 +1,7 @@
 export default {
     queryDropdown: '/dropdown',
     queryPosition: '/position/search',
+    positionProcessCount: '/position/process_count',
     positionQueryList: '/position/query_list',
     positionAdd: '/position/add',
     positionDelete: '/position/delete',

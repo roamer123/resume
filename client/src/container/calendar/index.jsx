@@ -26,20 +26,18 @@ export default class Calendar extends React.Component {
     this.state = {
       selectedRowKeys: [], // Check here to configure the default column
       modalVisible: false,
-      step: 0, // 0-安排面试，1-安排机考，2-安排入场
+      step: '', // 0-安排面试，1-安排机考，2-安排入场
       Key: '0',
       data: [],
     };
   }
   componentDidMount () {
-    const url = CODE[this.state.step]
-    console.log(url)
-    services.post(urls[url], {
-      ORGANIZATION_CODE: 'SUPPLIER_ZR'
-    }, this.getData)
+    this.setState({
+      step: 0
+    })
   }
   shouldComponentUpdate (nextProps, nextState) {
-    console.log(this.state.step, nextState.step);
+    console.log('this.state.step', this.state.step, 'nextState.step', nextState.step);
 
     if (this.state.step !== nextState.step) {
       const url = CODE[nextState.step]
@@ -47,9 +45,8 @@ export default class Calendar extends React.Component {
       services.post(urls[url], {
         ORGANIZATION_CODE: 'SUPPLIER_ZR'
       }, this.getData)
-      return true
     }
-    return false
+    return true
   }
 
   getData = (data) => {
@@ -57,8 +54,8 @@ export default class Calendar extends React.Component {
     this.setState({
       data
     })
-
   }
+
   onTabChange = (key, type) => {
     // console.log(key, type);
     this.setState({
@@ -78,7 +75,7 @@ export default class Calendar extends React.Component {
   }
   handleCancel = () => {
     this.handleModal()
-    console.log('handleCancel')
+    console.log('handleCancel', this.state.modalVisible)
   }
   handleModal = () => {
     this.setState((state) => ({
@@ -250,7 +247,6 @@ export default class Calendar extends React.Component {
     ],
     };
     // console.log('datarender', data);
-
     const { selectedRowKeys } = this.state;
     const rowSelection = {
       selectedRowKeys,
@@ -268,13 +264,13 @@ export default class Calendar extends React.Component {
     }];
     const contentList = (step) => ([
       <Button type='primary' onClick={() => this.handleAction(step)} key={`${step}_button`}>{`安排${steps[step]}`}</Button>,
-      <Button onClick={() => this.handleAction(3)} style={{marginLeft: '16px'}} key={`${step}_delete`}>删除</Button>,
+      <Button onClick={() => this.handleAction(3)} style={{marginLeft: '16px'}} key={`${step}_delete`}>取消日程</Button>,
       <Table
         rowSelection={rowSelection}
         className={styles.table}
         columns={columns[step]}
         dataSource={data}
-        // scroll={{ x: 1500, y: 300 }}
+        scroll={{ x: 1500, y: 300 }}
         key={`${step}_table`} />
     ]);
     const modalLabel = this.modalLabelGenerator(step)
@@ -312,8 +308,7 @@ export default class Calendar extends React.Component {
               {
                 Object.keys(Info).map((item, i) => React.createElement(Info[item], {key: `${step}_${i}`, name: item}))
               }
-              {/* <Submit className='saveButton'>仅保存</Submit>
-              <Submit className='saveButton'>保存并添加候选人</Submit> */}
+              <Submit className='saveButton'>提交</Submit>
             </FormInfo>
           </Modal>
         </div>
