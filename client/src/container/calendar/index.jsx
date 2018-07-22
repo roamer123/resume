@@ -84,7 +84,7 @@ export default class Calendar extends React.Component {
   }
   modalLabelGenerator = (step) => {
     let modalLabel = {}
-    console.log('modalLabelGenerator', step)
+    // console.log('modalLabelGenerator', step)
     switch (parseInt(step)) {
       case 0:
         modalLabel = {
@@ -308,7 +308,6 @@ export default class Calendar extends React.Component {
               {
                 Object.keys(Info).map((item, i) => React.createElement(Info[item], {key: `${step}_${i}`, name: item}))
               }
-              <Submit className='saveButton'>提交</Submit>
             </FormInfo>
           </Modal>
         </div>

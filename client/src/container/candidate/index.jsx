@@ -6,16 +6,17 @@ import {
   Table,
   message
 } from 'components'
-import SearchFilter from 'component/search-filter';
-import FilterStep from 'component/filter-step';
-import {optionsCreate} from 'utils/creator';
-import {services, urls} from 'api';
+import SearchFilter from 'component/search-filter'
+import FilterStep from 'component/filter-step'
+import Guid from 'component/guid'
+import {optionsCreate} from 'utils/creator'
+import {services, urls} from 'api'
 
 import styles from './index.less'
 
 // const Option = Select.Option;
 const CODE = 'CODE'
-const VALUE = 'VALUE'
+const VALUE = 'VALUE' // eslint-disable-line no-console
 const TECHNOLOGY_DIRECTION = 'TECHNOLOGY_DIRECTION'
 const NEED_ORGANIZATION = 'NEED_ORGANIZATION'
 const INTERVIEWER_PROCESS = 'INTERVIEWER_PROCESS'
@@ -40,7 +41,7 @@ const service = () => ({
 const successMsg = (msg) => {
   message.success(msg || '成功', 0.5);
 };
-const errorMsg = (msg) => {
+const errorMsg = (msg) => { // eslint-disable-line no-console
   message.error(msg || '失败', 0.5);
 };
 const warningMsg = (msg) => {
@@ -61,8 +62,43 @@ export default class CandidateHeader extends React.Component {
       moveTo: '',
       ORGANIZATION_CODE: 'SUPPLIER_WSHH',
 
+      // @guid
+      guidSteps: [{
+          target: '.my-first-step',
+          title: '职位筛选',
+          content: '通过“职位筛选”过滤出符合条件的候选人',
+          placement: 'bottom',
+        },
+        {
+          target: '.my-other-step',
+          title: '添加候选人',
+          content: (
+            <div>
+              通过“添加候选人
+              <br />”新增一条记录到“新增候选人”记录
+            </div>
+          ),
+          placement: 'bottom',
+          // disableCloseOnEsc: true,
+          // disableOverlayClicks: true,
+          // disableBeacon: true,
+          // event: 'hover',
+        },
+        {
+          target: '.my-3-step',
+          title: '添加候选人',
+          content: `通过“添加候选人”新增一条记录到“新增候选人”记录`,
+          placement: 'bottom',
+          // disableCloseOnEsc: true,
+          // disableOverlayClicks: true,
+          // disableBeacon: true,
+          // event: 'hover',
+        },
+      ]
+
     }
   }
+
   componentDidMount() {
     service().queryDropdown.call(this, this.getTechDirection, this.getNeedOrganization, this.getInterviewerProcess);
     service().candidateProcessCount.call(this, this.getCandidateProcessCount);
@@ -240,7 +276,8 @@ export default class CandidateHeader extends React.Component {
       suppliers,
       steps,
       stepsData,
-      tableData
+      tableData,
+      guidSteps, // @guid
     } = this.state
 
     const filterDetail = {
@@ -336,7 +373,7 @@ export default class CandidateHeader extends React.Component {
         width: 100,
         render: () => <a href='javascript:;' onClick={this.handleDelete}> 删除 </a>,
       },
-    ];
+  ];
 
     const { selectedRowKeys } = this.state;
     const rowSelection = {
@@ -346,11 +383,15 @@ export default class CandidateHeader extends React.Component {
 
     return (
       <div className={styles.candidate_list}>
+        <Guid
+          guidSteps={guidSteps}
+         />
         <div className={styles.switch_tab}>
           <Select
             defaultValue='全部职位'
             style={{ width: 120 }}
             onSelect={(value) => this.handleSearch(INTERVIEWER_PROCESS, value)}
+            className='my-first-step'
             >
             {
               optionsCreate({
@@ -358,12 +399,13 @@ export default class CandidateHeader extends React.Component {
               })
             }
           </Select>
+
           <Select
             defaultValue='addOne'
             style={{ width: 120 }}
             onSelect={this.handleAdd}
             className={
-              classNames('dark')
+              classNames('dark', 'my-other-step')
             }
           >
             {
@@ -381,7 +423,9 @@ export default class CandidateHeader extends React.Component {
             <SearchFilter columns={filterDetail} className={styles.search_filter} />
             <Select
               defaultValue='全部供应商'
-              className={styles.suppliers_filter}
+              className={
+              classNames(styles.suppliers_filter, 'my-3-step')
+              }
               onSelect={(value) => this.handleSearch(NEED_ORGANIZATION, value)}
               >
               {
