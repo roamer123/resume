@@ -31,9 +31,7 @@ class PositionController extends Controller {
     } : {
       group: 'POSITION_PROCESS_CODE',
       attributes: [ 'POSITION_PROCESS_CODE' ],
-      where: {
-        params,
-      },
+      where: params,
     };
     const countList = await ctx.service.positionService.count(options);
     const data = {

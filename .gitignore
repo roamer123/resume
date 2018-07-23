@@ -36,3 +36,6 @@ yarn.lock
 #logs
 serve/logs
 logs
+
+#upload test
+serve/app/egg-multipart-test
