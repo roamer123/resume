@@ -12,9 +12,6 @@ export default class AddPosition extends React.Component {
       notice: ''
     }
   }
-  componentDidMount() {
-    services.post(urls.queryPosition, {}, this.authSuccess)
-  }
   handleChange = (key, value) => {
     console.log(key, value)
   }
@@ -24,6 +21,16 @@ export default class AddPosition extends React.Component {
   handleBack = (e) => {
     e.preventDefault()
     window.history.back()
+  }
+  handleSave = () => {
+    services.post(urls.positionAdd, {}, this.addSuccess)
+  }
+  addSuccess = (data) => {
+    console.log(data);
+    window.history.back()
+  }
+  handleSaveAndToAdd = () => {
+    this.handleSave()
   }
   render () {
     return (
@@ -42,8 +49,8 @@ export default class AddPosition extends React.Component {
           {
             Object.keys(Info).map((item, i) => React.createElement(Info[item], {key: i, name: item}))
           }
-          <Submit className='saveButton'>仅保存</Submit>
-          <Submit className='saveButton'>保存并添加候选人</Submit>
+          <Submit className='saveButton' onClick={this.handleSave}>仅保存</Submit>
+          <Submit className='saveButton' onClick={this.handleSaveAndToAdd}>保存并添加候选人</Submit>
         </FormInfo>
       </div>
     )

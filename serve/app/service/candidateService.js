@@ -10,13 +10,38 @@ class CandidateService extends Service {
 
   async search(params = {}) {
     const list = await this.ctx.model.Candidate.queryCandidate(params);
-    return list;
+    const mapList = [];
+    await this.ctx.model.transaction(async t => {
+      await list.reduce(async (promise, item) => {
+        item.dataValues.WORKING_YEARS = (await this.ctx.model.Dictionary.queryCodeToValue(item.WORKING_YEARS_CODE, {
+          transaction: t,
+        }))[0].VALUE;
+        item.dataValues.EDUCATION_LEVEL = (await this.ctx.model.Dictionary.queryCodeToValue(item.EDUCATION_LEVEL_CODE, {
+          transaction: t,
+        }))[0].VALUE;
+        item.dataValues.RANK_LEVEL = (await this.ctx.model.Dictionary.queryCodeToValue(item.RANK_LEVEL_CODE, {
+          transaction: t,
+        }))[0].VALUE;
+        item.dataValues.TECHNOLOGY_DIRECTION = (await this.ctx.model.Dictionary.queryCodeToValue(item.TECHNOLOGY_DIRECTION_CODE, {
+          transaction: t,
+        }))[0].VALUE;
+        mapList.push(item.dataValues);
+        return Promise.resolve();
+      }, Promise.resolve()).then(() => {
+        return mapList;
+      }).catch(err => {
+        console.log(err);
+        return [];
+      });
+    });
+    return mapList;
   }
 
-  async change(params = []) {
+  async change(params) {
     const result = await this.ctx.model.Candidate.changeList(params);
     return {
       code: result ? 'success' : 'fail',
+      INTERVIEWER_PROCESS_CODE: params.INTERVIEWER_PROCESS_CODE,
     };
   }
 

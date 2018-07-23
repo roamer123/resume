@@ -2,6 +2,8 @@ import React from 'react'
 import SearchFilter from 'component/search-filter';
 import AlertInfo from 'component/alert-info';
 import FormInfo, { generator, Submit } from 'component/form-info';
+import { services, urls } from 'api'
+
 import {
   Button,
   Table,
@@ -14,8 +16,10 @@ import {
 } from 'components';
 import styles from './index.less'
 
-
 const steps = ['面试', '机考', '入场', '取消原因']
+const CODE = ['CALANDAR_INTERVIEW', 'CALANDAR_EXAM', 'CALANDAR_IN']
+
+const ORGANIZATION_CODE = 'SUPPLIER_ZR'
 export default class Calendar extends React.Component {
   constructor (props) {
     super(props)
@@ -24,7 +28,36 @@ export default class Calendar extends React.Component {
       modalVisible: false,
       step: 0, // 0-安排面试，1-安排机考，2-安排入场
       Key: '0',
+      data: [],
     };
+  }
+  componentDidMount () {
+    const url = CODE[this.state.step]
+    console.log(url)
+    services.post(urls[url], {
+      ORGANIZATION_CODE: 'SUPPLIER_ZR'
+    }, this.getData)
+  }
+  shouldComponentUpdate (nextProps, nextState) {
+    console.log(this.state.step, nextState.step);
+
+    if (this.state.step !== nextState.step) {
+      const url = CODE[nextState.step]
+      console.log(url)
+      services.post(urls[url], {
+        ORGANIZATION_CODE: 'SUPPLIER_ZR'
+      }, this.getData)
+      return true
+    }
+    return false
+  }
+
+  getData = (data) => {
+    // console.log('getData', data);
+    this.setState({
+      data
+    })
+
   }
   onTabChange = (key, type) => {
     // console.log(key, type);
@@ -92,7 +125,7 @@ export default class Calendar extends React.Component {
 
   }
   render () {
-    const { step } = this.state;
+    const { step, data } = this.state;
     const filterDetail = {}
     const columns = {
       0: [
@@ -216,25 +249,25 @@ export default class Calendar extends React.Component {
         }
     ],
     };
+    // console.log('datarender', data);
 
-    const data = [];
     const { selectedRowKeys } = this.state;
     const rowSelection = {
       selectedRowKeys,
       onChange: this.onSelectChange,
     };
     const tabList = [{
-      key: '0',
-      tab: ' 面试 ',
-    }, {
-      key: '1',
-      tab: ' 机考 ',
-    }, {
-      key: '2',
-      tab: ' 入场 ',
+        key: '0',
+        tab: ' 面试 ',
+      }, {
+        key: '1',
+        tab: ' 机考 ',
+      }, {
+        key: '2',
+        tab: ' 入场 ',
     }];
     const contentList = (step) => ([
-      <Button onClick={() => this.handleAction(step)} key={`${step}_button`}>{`安排${steps[step]}`}</Button>,
+      <Button type='primary' onClick={() => this.handleAction(step)} key={`${step}_button`}>{`安排${steps[step]}`}</Button>,
       <Button onClick={() => this.handleAction(3)} style={{marginLeft: '16px'}} key={`${step}_delete`}>删除</Button>,
       <Table
         rowSelection={rowSelection}

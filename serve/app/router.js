@@ -10,6 +10,9 @@ module.exports = app => {
   // dropdown
   router.get('/dropdown', controller.dropdownController.query);
 
+  // upload
+  router.post('/upload', controller.uploader.upload);
+
   // candidate
   router.post('/candidate/process_count', controller.candidateController.count);
   router.post('/candidate/search', controller.candidateController.search);
@@ -31,6 +34,7 @@ module.exports = app => {
   router.all('/position/update', controller.positionController.update);
   router.all('/position/delete', controller.positionController.delete);
   router.all('/position/query_list', controller.positionController.queryList);
+  router.all('/position/process_count', controller.positionController.count);
 
 
   // resume表相关操作
