@@ -18,14 +18,14 @@ class CalendarService extends Service {
     const list = await this.ctx.model.Candidate.queryInitExam(params);
     // 从字典表做映射
     for (const item in list) {
-      let valueRes;
+      let VALUE;
       const orgCode = list[item].NEED_ORGANIZATION_CODE;
-      valueRes = await this.ctx.model.Dictionary.find({ code: orgCode });
-      list[item].NEED_ORGANIZATION_NAME = valueRes.VALUE;
+      ({ VALUE } = await this.ctx.model.Dictionary.find({ code: orgCode }));
+      list[item].NEED_ORGANIZATION_NAME = VALUE;
 
       const levelCode = list[item].RANK_LEVEL_CODE;
-      valueRes = await this.ctx.model.Dictionary.find({ code: levelCode });
-      list[item].RANK_LEVEL_NAME = valueRes.VALUE;
+      ({ VALUE } = await this.ctx.model.Dictionary.find({ code: levelCode }));
+      list[item].RANK_LEVEL_NAME = VALUE;
     }
     return list;
   }
@@ -34,14 +34,14 @@ class CalendarService extends Service {
     const list = await this.ctx.model.Candidate.queryIn(params);
     // 从字典表做映射
     for (const item in list) {
-      let valueRes;
+      let VALUE;
       const orgCode = list[item].NEED_ORGANIZATION_CODE;
-      valueRes = await this.ctx.model.Dictionary.find({ code: orgCode });
-      list[item].NEED_ORGANIZATION_NAME = valueRes.VALUE;
+      ({ VALUE } = await this.ctx.model.Dictionary.find({ code: orgCode }));
+      list[item].NEED_ORGANIZATION_NAME = VALUE;
 
       const levelCode = list[item].RANK_LEVEL_CODE;
-      valueRes = await this.ctx.model.Dictionary.find({ code: levelCode });
-      list[item].RANK_LEVEL_NAME = valueRes.VALUE;
+      ({ VALUE } = await this.ctx.model.Dictionary.find({ code: levelCode }));
+      list[item].RANK_LEVEL_NAME = VALUE;
     }
     return list;
   }

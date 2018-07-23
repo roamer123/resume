@@ -32,7 +32,7 @@ module.exports = appInfo => {
     methodnoallow: {
       enable: false,
     },
-    domainWhiteList: ['http://172.31.7.167:8080'],
+    domainWhiteList: [ 'http://172.31.7.167:8080' ],
   };
 
   config.cors = {
