@@ -15,8 +15,8 @@ module.exports = app => {
     freezeTableName: true,
   });
 
-  Dictionary.queryCodeToValue = async function(CODE) {
-    return await app.model.query('SELECT VALUE FROM DICTIONARY WHERE CODE = :CODE', { replacements: { CODE }, type: app.Sequelize.QueryTypes.SELECT });
+  Dictionary.queryCodeToValue = async function(CODE, options) {
+    return await app.model.query('SELECT VALUE FROM DICTIONARY WHERE CODE = :CODE', Object.assign({ replacements: { CODE }, type: app.Sequelize.QueryTypes.SELECT }, options));
   };
 
   Dictionary.add = async function(field) {
