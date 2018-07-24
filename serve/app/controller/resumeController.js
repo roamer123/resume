@@ -5,7 +5,9 @@ class ResumeController extends Controller {
   async query() {
     const { ctx } = this;
     const params = ctx.request.body;
+    ctx.logger.info('resume query request data: %j', params);
     const resumeResult = await ctx.service.resumeService.query(params);
+    ctx.logger.info('resume query response data: %j', resumeResult);
 
     ctx.body = ReturnJson.success(resumeResult);
   }
