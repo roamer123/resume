@@ -15,7 +15,7 @@ class UploadController extends Controller {
     while ((stream = await parts()) != null) {
       const filename = stream.filename;
       const target = path.join(this.config.baseDir, 'app/egg-multipart-test', filename);
-      fs.writeFileSync(target);
+      // fs.writeFileSync(target);
       // 生成写入流
       const writeStream = fs.createWriteStream(target);
       try {

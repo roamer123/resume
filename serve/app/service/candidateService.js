@@ -13,16 +13,16 @@ class CandidateService extends Service {
     const mapList = [];
     await this.ctx.model.transaction(async t => {
       await list.reduce(async (promise, item) => {
-        item.dataValues.WORKING_YEARS = (await this.ctx.model.Dictionary.queryCodeToValue(item.WORKING_YEARS_CODE, {
+        item.dataValues.WORKING_YEARS_NAME = (await this.ctx.model.Dictionary.queryCodeToValue(item.WORKING_YEARS_CODE, {
           transaction: t,
         }))[0].VALUE;
-        item.dataValues.EDUCATION_LEVEL = (await this.ctx.model.Dictionary.queryCodeToValue(item.EDUCATION_LEVEL_CODE, {
+        item.dataValues.EDUCATION_LEVEL_NAME = (await this.ctx.model.Dictionary.queryCodeToValue(item.EDUCATION_LEVEL_CODE, {
           transaction: t,
         }))[0].VALUE;
-        item.dataValues.RANK_LEVEL = (await this.ctx.model.Dictionary.queryCodeToValue(item.RANK_LEVEL_CODE, {
+        item.dataValues.RANK_LEVEL_NAME = (await this.ctx.model.Dictionary.queryCodeToValue(item.RANK_LEVEL_CODE, {
           transaction: t,
         }))[0].VALUE;
-        item.dataValues.TECHNOLOGY_DIRECTION = (await this.ctx.model.Dictionary.queryCodeToValue(item.TECHNOLOGY_DIRECTION_CODE, {
+        item.dataValues.TECHNOLOGY_DIRECTION_NAME = (await this.ctx.model.Dictionary.queryCodeToValue(item.TECHNOLOGY_DIRECTION_CODE, {
           transaction: t,
         }))[0].VALUE;
         mapList.push(item.dataValues);

@@ -1,26 +1,27 @@
 'use strict';
-
 /**
  * @param {Egg.Application} app - egg application
  */
 module.exports = app => {
+  const { authenticate, isAuthenticated } = app.middleware;
   const { router, controller } = app;
-  router.get('/', controller.home.index);
+  // router.get('/', controller.home.login);
+  // 登录校验
+  router.all('/login', authenticate, app.passport.authenticate('local'));
 
   // dropdown
   router.get('/dropdown', controller.dropdownController.query);
 
   // upload
-  router.post('/upload', controller.uploader.upload);
+  router.post('/upload', isAuthenticated, controller.uploader.upload);
 
   // candidate
-  router.post('/candidate/process_count', controller.candidateController.count);
-  router.post('/candidate/search', controller.candidateController.search);
-  router.post('/candidate/process_change', controller.candidateController.change);
-  router.post('/candidate/add', controller.candidateController.add);
-  router.post('/candidate/add_remark', controller.candidateController.addRemark);
-  router.post('/candidate/delete', controller.candidateController.delete);
-  router.all('/login', app.oAuth2Server.token());
+  router.post('/candidate/process_count', isAuthenticated, controller.candidateController.count);
+  router.post('/candidate/search', isAuthenticated, controller.candidateController.search);
+  router.post('/candidate/process_change', isAuthenticated, controller.candidateController.change);
+  router.post('/candidate/add', isAuthenticated, controller.candidateController.add);
+  router.post('/candidate/add_remark', isAuthenticated, controller.candidateController.addRemark);
+  router.post('/candidate/delete', isAuthenticated, controller.candidateController.delete);
 
   // log表相关操作
   router.all('/log/query', controller.logController.query);
@@ -29,26 +30,26 @@ module.exports = app => {
   router.all('/log/delete', controller.logController.delete);
 
   // position表相关操作
-  router.all('/position/search', controller.positionController.query);
-  router.all('/position/add', controller.positionController.insert);
-  router.all('/position/update', controller.positionController.update);
-  router.all('/position/delete', controller.positionController.delete);
-  router.all('/position/query_list', controller.positionController.queryList);
-  router.all('/position/process_count', controller.positionController.count);
+  router.all('/position/search', isAuthenticated, controller.positionController.query);
+  router.all('/position/add', isAuthenticated, controller.positionController.insert);
+  router.all('/position/update', isAuthenticated, controller.positionController.update);
+  router.all('/position/delete', isAuthenticated, controller.positionController.delete);
+  router.all('/position/query_list', isAuthenticated, controller.positionController.queryList);
+  router.all('/position/process_count', isAuthenticated, controller.positionController.count);
 
 
   // resume表相关操作
-  router.all('/resume/query', controller.resumeController.query);
-  router.all('/resume/insert', controller.resumeController.insert);
-  router.all('/resume/update', controller.resumeController.update);
-  router.all('/resume/delete', controller.resumeController.delete);
+  router.all('/resume/query', isAuthenticated, controller.resumeController.query);
+  router.all('/resume/insert', isAuthenticated, controller.resumeController.insert);
+  router.all('/resume/update', isAuthenticated, controller.resumeController.update);
+  router.all('/resume/delete', isAuthenticated, controller.resumeController.delete);
 
   // 日程安排
-  router.all('/calendar/process_init_interview', controller.calendarController.initInterview);
-  router.all('/calendar/process_init_exam', controller.calendarController.initExam);
-  router.all('/calendar/process_init_in', controller.calendarController.initIn);
-  router.all('/calendar/add', controller.calendarController.add);
-  router.all('/calendar/delete', controller.calendarController.delete);
+  router.all('/calendar/process_init_interview', isAuthenticated, controller.calendarController.initInterview);
+  router.all('/calendar/process_init_exam', isAuthenticated, controller.calendarController.initExam);
+  router.all('/calendar/process_init_in', isAuthenticated, controller.calendarController.initIn);
+  router.all('/calendar/add', isAuthenticated, controller.calendarController.add);
+  router.all('/calendar/delete', isAuthenticated, controller.calendarController.delete);
 
 
   // 批量生成数据

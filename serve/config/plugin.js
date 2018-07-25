@@ -21,3 +21,10 @@ exports.cors = {
   enable: true,
   package: 'egg-cors',
 };
+
+exports.session = true;
+
+module.exports.passport = {
+  enable: true,
+  package: 'egg-passport',
+};
