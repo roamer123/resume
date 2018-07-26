@@ -8,7 +8,7 @@ async function authenticate(ctx, next) {
   } catch (err) {
     ctx.body = ReturnJson.success({
       CODE: 'fail',
-      MESG: err.toString(),
+      MSG: err.toString(),
     });
   }
 

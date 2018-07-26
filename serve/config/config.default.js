@@ -40,24 +40,19 @@ module.exports = appInfo => {
     allowMethod: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
   };
 
-  // oauth2Serve开启password和client_credentials模式
-  config.oAuth2Server = {
-    debug: config.env === 'local',
-    grants: [ 'password' ],
-    allowExtendedTokenAttributes: true,
-  };
-
-  config.session = {
-    renew: true,
-  };
+  // config.session = {
+  //   renew: true,
+  // };
 
   config.multipart = {
     fileSize: '5mb',
     whitelist: [
       '.jpeg',
-      'jpg',
-      'png',
-      '.exel',
+      '.jpg',
+      '.png',
+      '.xlsx',
+      '.pdf',
+      '.docx',
     ],
   };
 

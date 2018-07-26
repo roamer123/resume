@@ -24,10 +24,11 @@ class UploadController extends Controller {
         await sendToWormhole(stream);
         throw err;
       }
+      const fileInfo = filename.split('.');
       await ctx.model.FileInfo.addFileInfo({
         // CANDIDATE_ID: , // 候选人ID
         FILE_NAME: filename, // 文件名
-        FILE_TYPE: stream.mimeType, // 文件类型
+        FILE_TYPE: fileInfo[fileInfo.length - 1], // 文件类型
         FILE_URL: target, // 文件路径
       });
       files.push(filename);
