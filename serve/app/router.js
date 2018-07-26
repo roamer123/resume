@@ -9,6 +9,9 @@ module.exports = app => {
   // 登录校验
   router.all('/login', authenticate, app.passport.authenticate('local'));
 
+  // 退出登录
+  router.all('/loginout', isAuthenticated, controller.loginController.loginout);
+
   // dropdown
   router.get('/dropdown', controller.dropdownController.query);
 
