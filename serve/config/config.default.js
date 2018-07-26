@@ -56,6 +56,13 @@ module.exports = appInfo => {
     ],
   };
 
+  config.session = {
+    key: 'EGG_SESS',
+    maxAge: 24 * 3600 * 1000, // 1 天 设置过期时间
+    httpOnly: true,
+    encrypt: true,
+  };
+
   config.onerror = {
     all(err, ctx) {
       // 在此定义针对所有响应类型的错误处理方法
