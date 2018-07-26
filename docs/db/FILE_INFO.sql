@@ -11,7 +11,7 @@
  Target Server Version : 50721
  File Encoding         : utf-8
 
- Date: 07/05/2018 20:37:13 PM
+ Date: 07/23/2018 21:07:20 PM
 */
 
 SET NAMES utf8;
@@ -22,10 +22,10 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `FILE_INFO`;
 CREATE TABLE `FILE_INFO` (
-  `ID` int(11) NOT NULL COMMENT '文件id 主键',
-  `USER_ID` varchar(20) DEFAULT NULL COMMENT '员工id',
+  `ID` int(11) NOT NULL AUTO_INCREMENT COMMENT '文件id 主键',
+  `CANDIDATE_ID` varchar(20) DEFAULT NULL COMMENT '员工id',
   `FILE_NAME` varchar(50) CHARACTER SET utf8 DEFAULT NULL COMMENT '文件名',
-  `FILE_URL` varchar(100) DEFAULT NULL COMMENT '文件URL',
+  `FILE_URL` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '文件URL',
   `FILE_TYPE` varchar(20) DEFAULT NULL COMMENT '文件类型',
   `CREATED_BY` varchar(20) CHARACTER SET utf8 DEFAULT NULL COMMENT '创建人',
   `DATE_CREATED` datetime(6) DEFAULT NULL COMMENT '创建时间',

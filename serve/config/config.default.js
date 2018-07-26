@@ -47,6 +47,10 @@ module.exports = appInfo => {
     allowExtendedTokenAttributes: true,
   };
 
+  config.session = {
+    renew: true,
+  };
+
   config.multipart = {
     fileSize: '5mb',
     whitelist: [
@@ -63,6 +67,7 @@ module.exports = appInfo => {
       // 注意，定义了config.all之后，其他错误处理方法不会再生效
       ctx.body = 'error all';
       ctx.status = 500;
+
     },
     // html(err, ctx) {
     //   // html hander
