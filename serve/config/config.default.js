@@ -82,6 +82,13 @@ module.exports = appInfo => {
     // notfound: {
     //   pageUrl: '/404.html',
     // },
+
+    logger: {
+      appLogName: `${appInfo.name}-web.log`, // 应用相关日志
+      coreLogName: 'egg-web.log', // 框架内核、插件日志
+      agentLogName: 'egg-agent.log', // agent 进程日志
+      errorLogName: 'common-error.log', // 任何 logger 的 .error() 调用输出的日志都会重定向到这里，重点通过查看此日志定位异常。
+    },
   };
 
   return config;
