@@ -8,8 +8,8 @@ class DropdownController extends Controller {
    */
   async query() {
     const { ctx } = this;
-    const params = ctx.request.query;
-    const DropdownList = await ctx.service.dropdownService.query(params);
+    const { TYPE } = ctx.request.query;
+    const DropdownList = await ctx.service.dropdownService.query({ TYPE });
     ctx.body = ReturnJson.success(DropdownList);
   }
 }

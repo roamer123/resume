@@ -22,6 +22,25 @@ class PositionController extends Controller {
     ctx.body = ReturnJson.success(positionResult);
   }
 
+  async count() {
+    const { ctx } = this;
+    const params = ctx.request.body;
+    const options = Object.keys(params).length === 0 ? {
+      group: 'POSITION_PROCESS_CODE',
+      attributes: [ 'POSITION_PROCESS_CODE' ],
+    } : {
+      group: 'POSITION_PROCESS_CODE',
+      attributes: [ 'POSITION_PROCESS_CODE' ],
+      where: params,
+    };
+    const countList = await ctx.service.positionService.count(options);
+    const data = {
+      RECRUITING: countList[0].count,
+      STOPRECRUIT: countList[1].count,
+    };
+    ctx.body = ReturnJson.success(data);
+  }
+
   async insert() {
     const { ctx } = this;
     const params = ctx.request.body;

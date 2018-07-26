@@ -1,8 +1,9 @@
 import React from 'react'
-import map, { dataMap } from './map.js';
-import { Alert, Divider } from 'components';
-import FormInfo, { generator, Submit } from 'component/form-info';
-import {services, urls} from 'api';
+// import PropTypes from 'prop-types'
+import map, { dataMap } from './map.js'
+import { Alert, Divider } from 'components'
+import FormInfo, { generator, Submit } from 'component/form-info'
+import {services, urls} from 'api'
 import styles from './index.less'
 
 export default class AddPosition extends React.Component {

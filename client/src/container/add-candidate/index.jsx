@@ -1,7 +1,9 @@
 import React from 'react'
+// import PropTypes from 'prop-types';
 import map, { dataMap } from './map.js';
 import { Alert, Divider } from 'components';
 import FormInfo, { generator, Submit } from 'component/form-info';
+import { services, urls } from 'api'
 import styles from './index.less'
 
 export default class AddCandidate extends React.Component {
@@ -11,11 +13,18 @@ export default class AddCandidate extends React.Component {
       notice: ''
     }
   }
-  handleChange = (key, value) => {
-    console.log(key, value)
+  handleChange = (key, e) => {
+    console.log(key, e.target.value)
+    this.setState({
+      [key]: e.target.value
+    })
   }
   onSubmit = () => {
     console.log('表单提交')
+    services.get(urls.candidateAdd, { TYPE: 'TECHNOLOGY_DIRECTION' }, this.addCandidateSuccess)
+  }
+  addCandidateSuccess = (data) => {
+    console.log(data)
   }
   handleBack = (e) => {
     e.preventDefault()
@@ -33,10 +42,21 @@ export default class AddCandidate extends React.Component {
           >
           {
             this.state.notice &&
-            <Alert style={{ marginBottom: 24 }} message={this.state.notice} type='error' showIcon closable />
+            <Alert
+              style={{ marginBottom: 24 }}
+              message={this.state.notice}
+              type='error'
+              showIcon
+              closable />
           }
           {
-            Object.keys(Info).map((item, i) => React.createElement(Info[item], {key: i, name: item}))
+            Object
+            .keys(Info)
+            .map((item, i) => React.createElement(Info[item], {
+              key: i,
+              name: item,
+              value: this.state[item] || '',
+              onChange: (e) => this.handleChange(item, e)}))
           }
           <Submit className='saveButton'>保存并继续添加</Submit>
           <Submit className='saveButton'>保存</Submit>

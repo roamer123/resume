@@ -19,7 +19,7 @@ export default class RecruitTitle extends React.Component {
   componentDidMount() {
     services.get(urls.queryDropdown, {TYPE: 'TECHNOLOGY_DIRECTION'}, this.getTechDirection)
     services.post(urls.positionQueryList, {POSITION_PROCESS_CODE: 0, TECHNOLOGY_DIRECTION_CODE: 'WEBFRONT'}, this.getPositionQueryList)
-    services.post(urls.positionProcessCount, {ORGANIZATION_CODE: 'SUPPLIER_WSHH'}, this.getPositionProcessCount)
+    services.post(urls.positionProcessCount, {}, this.getPositionProcessCount)
   }
   getTechDirection = (data) => {
     this.setState({
@@ -89,7 +89,8 @@ export default class RecruitTitle extends React.Component {
          width: 100,
          dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
          key: 'TECHNOLOGY_DIRECTION_CODE',
-         fixed: 'left'
+         fixed: 'left',
+         render: (text, record, index) => record.TECHNOLOGY_DIRECTION
        },
        {
          title: '招聘人数',
@@ -102,7 +103,8 @@ export default class RecruitTitle extends React.Component {
          title: '供应商',
          dataIndex: 'NEED_ORGANIZATION_CODE',
          key: 'NEED_ORGANIZATION_CODE',
-         width: 150
+         width: 150,
+         render: (text, record, index) => record.NEED_ORGANIZATION
        },
        {
          title: '负责人',
@@ -120,13 +122,15 @@ export default class RecruitTitle extends React.Component {
          title: '学历要求',
          dataIndex: 'EDUCATION_LEVEL_CODE',
          key: 'EDUCATION_LEVEL_CODE',
-         width: 150
+         width: 150,
+         render: (text, record, index) => record.EDUCATION_LEVEL
        },
        {
          title: '工作经验要求',
          dataIndex: 'JOB_EXPERIENCE_DEMAND_CODE',
          key: 'JOB_EXPERIENCE_DEMAND_CODE',
-         width: 150
+         width: 150,
+         render: (text, record, index) => record.JOB_EXPERIENCE_DEMAND
        },
        {
          title: '薪资要求',

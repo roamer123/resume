@@ -16,7 +16,7 @@ export default class SearchFilter extends React.Component {
 })
   }
   render () {
-    const { columns, data, className } = this.props
+    const { className } = this.props
 
     return (
       <div className={className}>

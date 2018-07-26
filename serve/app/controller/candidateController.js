@@ -12,27 +12,51 @@ class CandidateController extends Controller {
     } : {
       group: 'INTERVIEWER_PROCESS_CODE',
       attributes: [ 'INTERVIEWER_PROCESS_CODE' ],
-      where: {
-        params,
-      },
+      where: params,
     };
-    const DropdownList = await ctx.service.candidateService.count(options);
-    ctx.body = ReturnJson.success(DropdownList);
+    const countList = await ctx.service.candidateService.count(options);
+    const data = {};
+    countList.map(item => (
+      data[item.INTERVIEWER_PROCESS_CODE] = item.count
+    ));
+    ctx.body = ReturnJson.success(data);
   }
 
   async search() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const list = await ctx.service.candidateService.search(params);
-    ctx.body = ReturnJson.success(list);
+    const { ORGANIZATION_CODE, INTERVIEWER_PROCESS_CODE, NEED_ORGANIZATION_CODE, TECHNOLOGY_DIRECTION_CODE } = params;
+    const defaulParam = INTERVIEWER_PROCESS_CODE !== 'PROCESS_OUT' ? {
+      INTERVIEWER_PROCESS_CODE: {
+        ne: 'PROCESS_OUT',
+      },
+    } : {
+      INTERVIEWER_PROCESS_CODE,
+    };
+
+    if (!ORGANIZATION_CODE) {
+      ctx.body = ReturnJson.fail('111111', '入参错误，ORGANIZATION_CODE是必须的', {});
+    } else {
+      const newParams = Object.assign(defaulParam, { ORGANIZATION_CODE });
+      if (INTERVIEWER_PROCESS_CODE) newParams.INTERVIEWER_PROCESS_CODE = INTERVIEWER_PROCESS_CODE;
+      if (NEED_ORGANIZATION_CODE) newParams.NEED_ORGANIZATION_CODE = NEED_ORGANIZATION_CODE;
+      if (TECHNOLOGY_DIRECTION_CODE) newParams.TECHNOLOGY_DIRECTION_CODE = TECHNOLOGY_DIRECTION_CODE;
+
+      const list = await ctx.service.candidateService.search(newParams);
+      ctx.body = ReturnJson.success(list);
+    }
   }
 
   async change() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const { CHANGELIST } = params;
-    const result = await ctx.service.candidateService.change(CHANGELIST);
-    ctx.body = ReturnJson.success(result);
+    const { INTERVIEWER_PROCESS_CODE, IDS } = params;
+    if (!INTERVIEWER_PROCESS_CODE || (IDS && IDS.length === 0)) {
+      ctx.body = ReturnJson.fail('111111', '入参错误，INTERVIEWER_PROCESS_CODE是必须的且IDS不为空', {});
+    } else {
+      const result = await ctx.service.candidateService.change({ INTERVIEWER_PROCESS_CODE, IDS });
+      ctx.body = ReturnJson.success(result);
+    }
   }
 
   async add() {
@@ -66,13 +90,20 @@ class CandidateController extends Controller {
   async delete() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const { ID } = params;
-    const options = {
-      where: {
-        ID,
-      },
-    };
-    const result = ID && await ctx.service.candidateService.delete(options);
+    const { IDS } = params;
+    const INTERVIEWER_PROCESS_CODE = 'PROCESS_OUT';
+    if (IDS && IDS.length === 0) {
+      ctx.body = ReturnJson.fail('111111', '入参错误，INTERVIEWER_PROCESS_CODE是必须的且IDS不为空', {});
+    } else {
+      const result = await ctx.service.candidateService.change({ INTERVIEWER_PROCESS_CODE, IDS });
+      ctx.body = ReturnJson.success(result);
+    }
+  }
+
+  async destory() {
+    const { ctx } = this;
+    const params = ctx.request.body;
+    const result = await ctx.service.candidateService.delete(params);
     ctx.body = ReturnJson.success({
       code: result ? 'success' : 'fail',
     });

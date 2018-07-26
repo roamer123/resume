@@ -26,8 +26,8 @@ function initHostname() {
 		return {
 			// domainName: `http://localhost:8080/mock`,
 			// domainName: `http://172.31.24.3:7001`, // XUMIN
-			domainName: `http://172.31.8.117:7001`, // JUNQIANG
-			// domainName: `http://localhost:7001`,
+			// domainName: `http://172.31.8.117:7001`, // JUNQIANG
+			domainName: `http://localhost:7001`,
 			// suffix: '.json',
 			suffix: '',
 			// mock数据中间地址
@@ -64,4 +64,5 @@ urlModules.map((v) => (
 // 	urls[key] = hostname.domainName + value + (hostname.suffix || '')
 // })
 
+export { hostname }
 export default urls

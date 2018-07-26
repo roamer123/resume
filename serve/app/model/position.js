@@ -31,14 +31,26 @@ module.exports = app => {
 
   // 查所有记录
   Position.queryPosition = async function() {
-    return await this.findAll();
+    return await this.findAll(Object.assign({
+      limit: 200,
+      attributes: [ 'ID', 'TECHNOLOGY_DIRECTION_CODE', 'NEED_ORGANIZATION_CODE', 'JOB_CATEGORY_CODE', 'JOB_CATEGORY_CODE_NAME', 'JOB_EXPERIENCE_DEMAND_CODE',
+        'EDUCATION_LEVEL_CODE', 'SALARY_DEMAND', 'LATEST_COME_TIME', 'PRINCIPAL', 'COOPERATOR', 'STARTOR', 'JOB_DESC', 'REMARK', 'NUMBER', 'RANK_LEVEL_CODE', 'POSITION_PROCESS_CODE',
+        'CREATED_BY', 'UPDATED_BY' ],
+    }));
   };
 
   Position.queryPositionList = async function(params) {
     return await this.findAll({
       where: params,
-    //   attributes: [ 'ID', 'OPERATION_CODE', 'OPERATION__NAME' ],
+      limit: 200,
+      attributes: [ 'ID', 'TECHNOLOGY_DIRECTION_CODE', 'NEED_ORGANIZATION_CODE', 'JOB_CATEGORY_CODE', 'JOB_CATEGORY_CODE_NAME', 'JOB_EXPERIENCE_DEMAND_CODE',
+        'EDUCATION_LEVEL_CODE', 'SALARY_DEMAND', 'LATEST_COME_TIME', 'PRINCIPAL', 'COOPERATOR', 'STARTOR', 'JOB_DESC', 'REMARK', 'NUMBER', 'RANK_LEVEL_CODE', 'POSITION_PROCESS_CODE',
+        'CREATED_BY', 'UPDATED_BY' ],
     });
+  };
+
+  Position.countPosition = async function(options) {
+    return await this.count(options);
   };
 
   Position.insertPosition = async function(params) {

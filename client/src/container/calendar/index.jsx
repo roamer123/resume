@@ -1,7 +1,8 @@
 import React from 'react'
+// import PropTypes from 'prop-types';
 import SearchFilter from 'component/search-filter';
 import AlertInfo from 'component/alert-info';
-import FormInfo, { generator, Submit } from 'component/form-info';
+import FormInfo, { generator } from 'component/form-info';
 import { services, urls } from 'api'
 
 import {
@@ -11,15 +12,12 @@ import {
   Card,
   Alert,
   Input,
-  Select,
-  DatePicker
 } from 'components';
 import styles from './index.less'
 
 const steps = ['面试', '机考', '入场', '取消原因']
 const CODE = ['CALANDAR_INTERVIEW', 'CALANDAR_EXAM', 'CALANDAR_IN']
 
-const ORGANIZATION_CODE = 'SUPPLIER_ZR'
 export default class Calendar extends React.Component {
   constructor (props) {
     super(props)
@@ -135,8 +133,9 @@ export default class Calendar extends React.Component {
         {
           title: '需求方',
           width: 100,
-          dataIndex: 'NEED_ORGANIZATION',
-          key: 'NEED_ORGANIZATION',
+          dataIndex: 'NEED_ORGANIZATION_CODE',
+          key: 'NEED_ORGANIZATION_CODE',
+          render: (text, record, index) => record.NEED_ORGANIZATION_NAME
         },
         {
           title: '客户经理',
@@ -173,8 +172,9 @@ export default class Calendar extends React.Component {
         {
           title: '需求方',
           width: 100,
-          dataIndex: 'NEED_ORGANIZATION',
-          key: 'NEED_ORGANIZATION',
+          dataIndex: 'NEED_ORGANIZATION_CODE',
+          key: 'NEED_ORGANIZATION_CODE',
+          render: (text, record, index) => record.NEED_ORGANIZATION_NAME
         },
         {
           title: '客户经理',
@@ -212,7 +212,8 @@ export default class Calendar extends React.Component {
           title: '需求方',
           width: 100,
           dataIndex: 'NEED_ORGANIZATION',
-          key: 'NEED_ORGANIZATION',
+          key: 'NEED_ORGANIZATION_CODE',
+          render: (text, record, index) => record.NEED_ORGANIZATION_NAME
         },
         {
           title: '客户经理',

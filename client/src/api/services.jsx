@@ -4,7 +4,9 @@
  * @Last Modified by: mikey.zhaopeng
  * @Last Modified time: 2018-05-11 09:54:42
  */
-import axios from 'axios'
+import axios from 'axios';
+import qs from 'qs';
+
 import {
   message
 } from 'components'
@@ -26,7 +28,7 @@ const codeMessage = {
   503: '服务不可用，服务器暂时过载或维护。',
   504: '网关超时。'
 };
-
+let Authorization = ''
 const checkStatus = (response) => {
   if (response.status >= 200 && response.status < 300) {
     return response;
@@ -46,17 +48,17 @@ const request = (config, resolve, reject) => {
   console.log('url', config.url);
 
   // if (newConfig.method === 'POST' || newConfig.method === 'PUT') {
-  //   if (!(newConfig.data instanceof FormData)) {
-  //     console.log('FormData', newConfig.data);
-
-  //     newConfig.headers = {
-  //       Accept: 'application/json',
-  //       // 'Content-Type': 'application/json; charset=utf-8',
-  //       // 'Authorization': 'Basic bXlfYXBwOm15X3NlY3JldA ==',
-  //       'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-  //       ...newConfig.headers,
-  //     };
-  //     // newConfig.data = JSON.stringify(newConfig.data);
+    // if (!(newConfig.data instanceof FormData)) {
+    //   console.log('FormData', newConfig.data);
+      newConfig.headers = {
+        Accept: 'application/json',
+        // 'Content-Type': 'application/json; charset=utf-8',
+        'Authorization': Authorization || 'Basic bXlfYXBwOm15X3NlY3JldA==',
+        // 'Authorization': 'token_type access_toke',
+        'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
+        ...newConfig.headers,
+      };
+  //     newConfig.data = JSON.stringify(newConfig.data);
   //   } else {
   //     console.log('FormDataelse');
   //     newConfig.headers = {
@@ -64,16 +66,16 @@ const request = (config, resolve, reject) => {
   //       Accept: 'application/json',
   //       ...newConfig.headers,
   //     };
-  //   }
   // }
 
   axios.request(newConfig)
     .then(checkStatus)
     .then((response) => {
       const data = response.data
-
+      // console.log('response', response);
       if (data.resultCode === '000000') {
         typeof resolve === 'function' && resolve(data.data)
+        window.location.hash === '#/login' && data.hasOwnproperty('access_token') && (Authorization = `${data.access_token} ${data.access_token}`)
       } else {
         message.success(data.resultMesg);
         typeof reject === 'function' && reject(data.data);
@@ -95,10 +97,12 @@ export default {
     }, resolve, reject)
   },
   post: (url, data, resolve, reject) => {
+    const qsData = qs.stringify(data)
+    // console.log('qsData', qsData)
     request({
       method: 'POST',
       url,
-      data
+      data: qsData,
     }, resolve, reject)
   },
   request: (config, resolve, reject) => {

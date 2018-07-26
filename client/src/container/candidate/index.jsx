@@ -1,10 +1,12 @@
 import React from 'react'
 import classNames from 'classnames'
-
+// import PropTypes from 'prop-types';
 import {
   Select,
   Table,
-  message
+  message,
+  Button,
+  Icon
 } from 'components'
 import SearchFilter from 'component/search-filter'
 import FilterStep from 'component/filter-step'
@@ -16,10 +18,11 @@ import styles from './index.less'
 
 // const Option = Select.Option;
 const CODE = 'CODE'
-const VALUE = 'VALUE' // eslint-disable-line no-console
+// const VALUE = 'VALUE' // eslint-disable-line no-console
 const TECHNOLOGY_DIRECTION = 'TECHNOLOGY_DIRECTION'
 const NEED_ORGANIZATION = 'NEED_ORGANIZATION'
 const INTERVIEWER_PROCESS = 'INTERVIEWER_PROCESS'
+const ORGANIZATION_CODE = 'SUPPLIER_WSHH'
 const service = () => ({
   queryDropdown: (f1, f2, f3) => {
       services.get(urls.queryDropdown, { TYPE: TECHNOLOGY_DIRECTION }, f1)
@@ -27,16 +30,17 @@ const service = () => ({
       services.get(urls.queryDropdown, { TYPE: INTERVIEWER_PROCESS }, f3)
     },
   candidateProcessCount: (fn) => services.post(urls.candidateProcessCount, {
-    ORGANIZATION_CODE: 'SUPPLIER_WSHH'
+    ORGANIZATION_CODE: ORGANIZATION_CODE,
   }, fn),
   candidateSearch: (fn, param) => services.post(urls.candidateSearch, {
     ...param,
-    ORGANIZATION_CODE: 'SUPPLIER_WSHH',
+    ORGANIZATION_CODE: ORGANIZATION_CODE,
   }, fn),
   candidateProcessChange: (fn, param) => services.post(urls.candidateProcessChange, {
     INTERVIEWER_PROCESS_CODE: param.INTERVIEWER_PROCESS_CODE,
     IDS: param.IDS,
-  }, fn)
+  }, fn),
+  candidateDelete: (fn, param) => services.post(urls.candidateDelete, param, fn),
 })
 const successMsg = (msg) => {
   message.success(msg || '成功', 0.5);
@@ -60,7 +64,7 @@ export default class CandidateHeader extends React.Component {
       stepsData: [],
       tableData: [],
       moveTo: '',
-      ORGANIZATION_CODE: 'SUPPLIER_WSHH',
+      ORGANIZATION_CODE: ORGANIZATION_CODE,
 
       // @guid
       guidSteps: [{
@@ -106,10 +110,6 @@ export default class CandidateHeader extends React.Component {
   }
   shouldComponentUpdate = (nextProps, nextState) => {
     if (nextState.moveTo !== this.state.moveTo) {
-      service().candidateProcessCount.call(this, this.getCandidateProcessCount);
-      this.updateTable({
-        INTERVIEWER_PROCESS_CODE: this.state.step // INTERVIEWER_PROCESS_CODE
-      })
     }
     return true
   }
@@ -162,13 +162,17 @@ export default class CandidateHeader extends React.Component {
   handleAdd = () => {
     window.location.href = `${window.location.href}/add`
   }
-  handleDelete = (id) => {
-    event.persist()
+  handleDelete = (e, id) => {
+    console.log('handleDelete', e, id);
     var IDS = [...this.state.selectedRowKeys, id]
-    services.post(urls.candidateDelete, { IDS: IDS || [] }, this.deleteCandidateSuccess)
+    service().candidateDelete.call(this, this.deleteCandidateSuccess, { IDS: IDS || [] });
   }
   deleteCandidateSuccess = (data) => {
-    successMsg('删除成功')
+    successMsg('已淘汰/流失')
+    service().candidateProcessCount.call(this, this.getCandidateProcessCount);
+    this.updateTable({
+      INTERVIEWER_PROCESS_CODE: this.state.step // INTERVIEWER_PROCESS_CODE
+    })
   }
   handleMoveStep = (step) => {
     console.log('handleMoveStep_e', step);
@@ -176,11 +180,7 @@ export default class CandidateHeader extends React.Component {
       warningMsg(`请选择要操作的候选人`)
       return
     }
-    // services.post(urls.candidateProcessChange, {
-    //   INTERVIEWER_PROCESS_CODE: step,
-    //   IDS: this.state.selectIds,
-    // }, this.getCandidateProcessChange)
-    service().candidateProcessChange.call(this, this.getcandidateProcessChange, {
+    service().candidateProcessChange.call(this, this.getCandidateProcessChange, {
       INTERVIEWER_PROCESS_CODE: step,
       IDS: this.state.selectIds,
     });
@@ -197,13 +197,18 @@ export default class CandidateHeader extends React.Component {
     })
   }
   getCandidateProcessChange = (data) => {
-    console.log('sfauuhiuiuui')
     if (data && data.code === 'success') {
       const step = data.INTERVIEWER_PROCESS_CODE
+      service().candidateProcessCount.call(this, this.getCandidateProcessCount);
+      this.updateTable({
+        INTERVIEWER_PROCESS_CODE: this.state.step // INTERVIEWER_PROCESS_CODE
+      })
       successMsg(`已移动到${step}`)
       this.setState({
         moveTo: step
       })
+    } else {
+      errorMsg(data.code)
     }
   }
   onSelectChange = (selectedRowKeys, selectedRows) => {
@@ -315,27 +320,33 @@ export default class CandidateHeader extends React.Component {
       },
       {
         title: '工作年限',
-        dataIndex: 'RELA_WORKING_YEARS',
-        key: 'RELA_WORKING_YEARS',
-        width: 150
+        dataIndex: 'WORKING_YEARS_CODE',
+        key: 'WORKING_YEARS_CODE',
+        width: 150,
+        render: (text, record, index) => record.WORKING_YEARS
+
       },
       {
         title: '最高学历',
         dataIndex: 'EDUCATION_LEVEL_CODE',
         key: 'EDUCATION_LEVEL_CODE',
-        width: 150
+        width: 150,
+        render: (text, record, index) => record.EDUCATION_LEVEL
       },
       {
         title: '是否在职',
         dataIndex: 'IS_ON_JOB',
         key: 'IS_ON_JOB',
-        width: 150
+        width: 150,
+        // 0-否，1-是
+        render: (text, record, index) => record.IS_ON_JOB === 0 ? '否' : '是'
       },
       {
         title: '级别',
         dataIndex: 'RANK_LEVEL_CODE',
         key: 'RANK_LEVEL_CODE',
-        width: 150
+        width: 150,
+        render: (text, record, index) => record.RANK_LEVEL
       },
       {
         title: '联系方式',
@@ -351,9 +362,10 @@ export default class CandidateHeader extends React.Component {
       },
       {
         title: '技术方向',
-        dataIndex: 'TECHNOLOGY_DIRECTION',
-        key: 'TECHNOLOGY_DIRECTION',
-        width: 150
+        dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
+        key: 'TECHNOLOGY_DIRECTION_CODE',
+        width: 150,
+        render: (text, record, index) => record.TECHNOLOGY_DIRECTION
       },
       {
         title: '住址',
@@ -371,7 +383,7 @@ export default class CandidateHeader extends React.Component {
         key: 'operation',
         fixed: 'right',
         width: 100,
-        render: () => <a href='javascript:;' onClick={this.handleDelete}> 删除 </a>,
+        render: (text, record, index) => <a href='javascript:;' onClick={(e) => this.handleDelete(e, index)}> 删除 </a>,
       },
   ];
 
@@ -436,6 +448,10 @@ export default class CandidateHeader extends React.Component {
             </Select>
           </div>
           <div className={styles.action_detail}>
+            <Button
+              onClick={() => this.handleMoveStep('PROCESS_OUT')}>
+              <Icon type='delete' />淘汰
+            </Button>
             <Select
               defaultValue='移动到面试'
               className={classNames(styles.suppliers_filter, 'dark')}
