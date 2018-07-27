@@ -15,7 +15,7 @@ import { getMenuData } from './getMenuData';
 import { getAuthority, setAuthority } from 'utils/localStorageAuthority';
 import { getRedirect } from 'utils/getRedirect';
 
-import {services, urls} from 'api';
+import { services, urls } from 'api';
 
 import styles from './index.less';
 
@@ -68,7 +68,7 @@ export default class BasicLayout extends React.Component {
   }
   handleQuit = () => {
     // console.log('handleQuit', 'redirectTo: /login');
-    services.get(urls.logout, {um: this.state.auth}, this.logoutSuccess)
+    services.get(urls.logout, {}, this.logoutSuccess)
   }
   onCollapse = (collapsed) => {
     this.setState({

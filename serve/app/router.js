@@ -10,7 +10,7 @@ module.exports = app => {
   router.all('/login', authenticate, app.passport.authenticate('local'));
 
   // 退出登录
-  router.all('/loginout', isAuthenticated, controller.loginController.loginout);
+  router.all('/logout', isAuthenticated, controller.loginController.logout);
 
   // dropdown
   router.get('/dropdown', controller.dropdownController.query);

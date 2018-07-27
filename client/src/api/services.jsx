@@ -53,7 +53,7 @@ const request = (config, resolve, reject) => {
       newConfig.headers = {
         Accept: 'application/json',
         // 'Content-Type': 'application/json; charset=utf-8',
-        'Authorization': Authorization || 'Basic bXlfYXBwOm15X3NlY3JldA==',
+        // 'Authorization': Authorization || 'Basic bXlfYXBwOm15X3NlY3JldA==',
         // 'Authorization': 'token_type access_toke',
         'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
         ...newConfig.headers,

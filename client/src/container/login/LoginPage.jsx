@@ -38,7 +38,7 @@ export default class LoginPage extends React.Component {
   onSubmit = (err, values) => {
     if (!err) {
       services.post(urls.login, {
-        grant_type: 'password',
+        // grant_type: 'password',
         username: values.username,
         password: values.password,
         // autoLogin: this.state.autoLogin
