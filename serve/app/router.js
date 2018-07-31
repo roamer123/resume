@@ -5,15 +5,15 @@
 module.exports = app => {
   const { authenticate, isAuthenticated } = app.middleware;
   const { router, controller } = app;
-  // router.get('/', controller.home.login);
+  router.get('/passport', controller.home.login);
   // 登录校验
-  router.all('/login', authenticate, app.passport.authenticate('local'));
+  router.all('/login', authenticate, app.passport.authenticate('local', { failureRedirect: '/login', successReturnToOrRedirect: '/passport' }));
 
   // 退出登录
   router.all('/logout', isAuthenticated, controller.loginController.logout);
 
   // dropdown
-  router.get('/dropdown', controller.dropdownController.query);
+  router.get('/dropdown', isAuthenticated, controller.dropdownController.query);
 
   // upload
   router.post('/upload', isAuthenticated, controller.uploader.upload);

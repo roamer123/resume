@@ -7,7 +7,7 @@ node_modules
 coverage
 
 #production
-# /dist
+client/dist
 # dist/
 
 # misc
