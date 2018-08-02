@@ -16,6 +16,7 @@ class HomeController extends Controller {
       ctx.body = ReturnJson.success({
         CODE: 'success',
         ORGANIZATION_CODE: user.ORGANIZATION_CODE,
+        ROLE_TYPE: user.ROLE_TYPE,
       });
     }
   }

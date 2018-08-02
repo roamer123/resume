@@ -27,17 +27,15 @@ module.exports = app => {
   });
 
   app.passport.serializeUser(async (ctx, user) => {
-    console.log('---- in serializeUser');
     ctx.session.user = {
-      username: user.USERNAME,
-      organization_code: user.ORGANIZATION_CODE,
+      USERNAME: user.USERNAME,
+      ORGANIZATION_CODE: user.ORGANIZATION_CODE,
+      ROLE_TYPE: user.ROLE_TYPE,
     };
-    console.log('ctx.session', ctx.session);
     return user;
   });
 
   app.passport.deserializeUser(async (ctx, user) => {
-    console.log('---- in deserializeUser');
     return user;
   });
 
