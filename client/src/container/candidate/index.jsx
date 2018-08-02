@@ -4,7 +4,6 @@ import classNames from 'classnames'
 import {
   Select,
   Table,
-  message,
   Button,
   Icon
 } from 'components'
@@ -12,6 +11,11 @@ import SearchFilter from 'component/search-filter'
 import FilterStep from 'component/filter-step'
 import Guid from 'component/guid'
 import {optionsCreate} from 'utils/creator'
+import {
+  successMsg,
+  errorMsg,
+  warningMsg,
+} from 'utils/message'
 import {services, urls} from 'api'
 
 import styles from './index.less'
@@ -42,15 +46,7 @@ const service = () => ({
   }, fn),
   candidateDelete: (fn, param) => services.post(urls.candidateDelete, param, fn),
 })
-const successMsg = (msg) => {
-  message.success(msg || '成功', 0.5);
-};
-const errorMsg = (msg) => { // eslint-disable-line no-console
-  message.error(msg || '失败', 0.5);
-};
-const warningMsg = (msg) => {
-  message.warning(msg || '警告', 0.8);
-};
+
 
 export default class CandidateHeader extends React.Component {
   constructor (props) {

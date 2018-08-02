@@ -1,11 +1,26 @@
 import React from 'react'
 // import PropTypes from 'prop-types';
 import map, { dataMap } from './map.js';
-import { Alert, Divider } from 'components';
+import {
+  successMsg,
+  errorMsg,
+  warningMsg,
+} from 'utils/message'
+import {
+  Alert,
+  Divider,
+  Upload,
+  Icon,
+  message
+} from 'components';
 import FormInfo, { generator, Submit } from 'component/form-info';
 import { services, urls } from 'api'
 import styles from './index.less'
+import {
+  addWrapper
+} from './style.js'
 
+const Dragger = Upload.Dragger;
 export default class AddCandidate extends React.Component {
   constructor (props) {
     super(props)
@@ -31,8 +46,24 @@ export default class AddCandidate extends React.Component {
     window.history.back()
   }
   render () {
+    const props = {
+      name: 'file',
+      multiple: true,
+      action: 'http://localhost:7001/upload',
+      onChange(info) {
+        const status = info.file.status;
+        if (status !== 'uploading') {
+          console.log(info.file, info.fileList);
+        }
+        if (status === 'done') {
+          successMsg(`${info.file.name} 上传成功.`)
+        } else if (status === 'error') {
+          errorMsg(`${info.file.name} 上传失败.`)
+        }
+      },
+    };
     return (
-      <div>
+      <addWrapper>
         <div className={styles.subheading}>
           <a href='#' onClick={this.handleBack}>返回</a><Divider type='vertical' />添加候选人
         </div>
@@ -58,10 +89,16 @@ export default class AddCandidate extends React.Component {
               value: this.state[item] || '',
               onChange: (e) => this.handleChange(item, e)}))
           }
+          <Dragger {...props}>
+            <p className='upload-drag-icon'>
+              <Icon type='inbox' />
+            </p>
+            <p className='upload-text'>Click or drag file to this area to upload</p>
+          </Dragger>
           <Submit className='saveButton'>保存并继续添加</Submit>
           <Submit className='saveButton'>保存</Submit>
         </FormInfo>
-      </div>
+      </addWrapper>
     )
   }
 }

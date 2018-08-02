@@ -14,7 +14,6 @@ module.exports = {
     filename: 'build.js',
     publicPath: ''
   },
-
   resolve: {
     // 自动补全的拓展名
     extensions: ['.js', '.jsx', '.json', '.less'],
@@ -39,9 +38,9 @@ module.exports = {
     historyApiFallback: true,
     inline: true,
     progress: true,
-    // proxy: {
-    //   '/': 'http://localhost:7001'
-    // }
+    proxy: {
+      '/': 'http://localhost:7001'
+    }
   },
   // css 处理
   module: {

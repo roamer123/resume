@@ -8,7 +8,7 @@
 
 const data = {
 	common: {
-		systemName: 'Dbox Pro',
+		systemName: '聘无忧',
 	},
 	gfooter: {
 		links: [{
@@ -22,14 +22,14 @@ const data = {
 	        href: '#',
 	        blankTarget: true,
 	      }, {
-	        key: 'DBOX',
-	        title: 'DBOX',
+	        key: 'IDOLL',
+	        title: 'IDOLL',
 	        href: '#',
 	        blankTarget: true,
 	      }],
 		copyright: {
 			key: 'copyright',
-			title: '2018 DBox UI 前端协会出品'
+			title: '2018 IDOLL UI 前端协会出品'
 		}
 	}
 }

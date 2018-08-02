@@ -77,7 +77,7 @@ const request = (config, resolve, reject) => {
         typeof resolve === 'function' && resolve(data.data)
         // window.location.hash === '#/login' && data.hasOwnproperty('access_token') && (Authorization = `${data.access_token} ${data.access_token}`)
       } else {
-        message.success(data.resultMesg);
+        message.success(data.resultMesg, 0.5);
         typeof reject === 'function' && reject(data.data);
       }
     }, (response) => {
