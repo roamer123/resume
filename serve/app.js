@@ -21,7 +21,6 @@ module.exports = app => {
     const { username, password } = user;
     const newUser = await app.model.User.getUser(username, password);
     if (!newUser) throw new Error('用户名密码错误');
-    console.log('in --- newUser:', newUser);
     ctx.login(user);
     return newUser;
   });

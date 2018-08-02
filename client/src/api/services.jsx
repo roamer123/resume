@@ -93,6 +93,8 @@ export default {
     request({
       method: 'GET',
       url,
+      withCredentials: true,
+      crossDomain: true,
       params
     }, resolve, reject)
   },
@@ -102,6 +104,8 @@ export default {
     request({
       method: 'POST',
       url,
+      withCredentials: true,
+      crossDomain: true,
       data: qsData,
     }, resolve, reject)
   },
