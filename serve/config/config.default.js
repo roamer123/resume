@@ -1,4 +1,5 @@
 'use strict';
+const path = require('path');
 
 module.exports = appInfo => {
   const config = exports = {};
@@ -40,9 +41,15 @@ module.exports = appInfo => {
     allowMethod: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
   };
 
-  // config.session = {
-  //   renew: true,
-  // };
+  config.static = {
+    prefix: '/public/',
+    dir: path.join(appInfo.baseDir, 'app/public'),
+    // support lazy load
+    dynamic: true,
+    preload: false,
+    buffer: false,
+    maxFiles: 1000,
+  };
 
   config.multipart = {
     fileSize: '5mb',
@@ -61,6 +68,7 @@ module.exports = appInfo => {
     maxAge: 24 * 3600 * 1000, // 1 天 设置过期时间
     httpOnly: true,
     encrypt: true,
+    // renew: true,
   };
 
   config.onerror = {

@@ -32,7 +32,7 @@ module.exports = app => {
       username: user.USERNAME,
       organization_code: user.ORGANIZATION_CODE,
     };
-    console.log('user', user);
+    console.log('ctx.session', ctx.session);
     return user;
   });
 

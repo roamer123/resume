@@ -5,6 +5,7 @@
 module.exports = app => {
   const { authenticate, isAuthenticated } = app.middleware;
   const { router, controller } = app;
+  router.all('/', controller.home.index);
   router.get('/passport', controller.home.login);
   // 登录校验
   router.all('/login', authenticate, app.passport.authenticate('local', { failureRedirect: '/login', successReturnToOrRedirect: '/passport' }));

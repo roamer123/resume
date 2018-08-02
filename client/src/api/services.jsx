@@ -28,7 +28,7 @@ const codeMessage = {
   503: '服务不可用，服务器暂时过载或维护。',
   504: '网关超时。'
 };
-let Authorization = ''
+// let Authorization = '';
 const checkStatus = (response) => {
   if (response.status >= 200 && response.status < 300) {
     return response;
@@ -75,7 +75,7 @@ const request = (config, resolve, reject) => {
       // console.log('response', response);
       if (data.resultCode === '000000') {
         typeof resolve === 'function' && resolve(data.data)
-        window.location.hash === '#/login' && data.hasOwnproperty('access_token') && (Authorization = `${data.access_token} ${data.access_token}`)
+        // window.location.hash === '#/login' && data.hasOwnproperty('access_token') && (Authorization = `${data.access_token} ${data.access_token}`)
       } else {
         message.success(data.resultMesg);
         typeof reject === 'function' && reject(data.data);

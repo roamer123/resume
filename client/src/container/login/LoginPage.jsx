@@ -9,7 +9,8 @@ import Login from 'component/login';
 import Image from 'assets/images/logo.png';
 import {
   getAuthority,
-  setOrganization,
+	setOrganization,
+	getOrganization
 } from 'utils/localStorageAuthority';
 
 import {services, urls} from 'api';
@@ -49,7 +50,7 @@ export default class LoginPage extends React.Component {
     // 如果登陆成功，则将供应商编号ORGANIZATION_CODE存入localStorage
     setOrganization(ORGANIZATION_CODE)
 		// if (ORGANIZATION_CODE && !msg) {
-		if (ORGANIZATION_CODE && getAuthority()) {
+		if (ORGANIZATION_CODE && getOrganization()) {
 			// console.log('um', um)
 			this.setState({
 				redirectTO: '/dashboard',
@@ -83,6 +84,7 @@ export default class LoginPage extends React.Component {
     });
 	}
 	render() {
+		console.log('redirectTO', this.state.redirectTO)
 return this.state.redirectTO ? <Redirect to={this.state.redirectTO} /> : (
   <div className={styles.loginpage}>
     <div className={styles.header}>
