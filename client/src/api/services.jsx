@@ -45,37 +45,18 @@ const checkStatus = (response) => {
 const request = (config, resolve, reject) => {
   const newConfig = { ...config
   };
-  console.log('url', config.url);
-
-  // if (newConfig.method === 'POST' || newConfig.method === 'PUT') {
-    // if (!(newConfig.data instanceof FormData)) {
-    //   console.log('FormData', newConfig.data);
-      newConfig.headers = {
-        Accept: 'application/json',
-        // 'Content-Type': 'application/json; charset=utf-8',
-        // 'Authorization': Authorization || 'Basic bXlfYXBwOm15X3NlY3JldA==',
-        // 'Authorization': 'token_type access_toke',
-        'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-        ...newConfig.headers,
-      };
-  //     newConfig.data = JSON.stringify(newConfig.data);
-  //   } else {
-  //     console.log('FormDataelse');
-  //     newConfig.headers = {
-  //       'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
-  //       Accept: 'application/json',
-  //       ...newConfig.headers,
-  //     };
-  // }
+  newConfig.headers = {
+    Accept: 'application/json',
+    'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
+    ...newConfig.headers,
+  };
 
   axios.request(newConfig)
     .then(checkStatus)
     .then((response) => {
       const data = response.data
-      // console.log('response', response);
       if (data.resultCode === '000000') {
         typeof resolve === 'function' && resolve(data.data)
-        // window.location.hash === '#/login' && data.hasOwnproperty('access_token') && (Authorization = `${data.access_token} ${data.access_token}`)
       } else {
         message.success(data.resultMesg, 0.5);
         typeof reject === 'function' && reject(data.data);
@@ -100,7 +81,6 @@ export default {
   },
   post: (url, data, resolve, reject) => {
     const qsData = qs.stringify(data)
-    // console.log('qsData', qsData)
     request({
       method: 'POST',
       url,

@@ -39,3 +39,4 @@ logs
 
 #upload test
 serve/app/egg-multipart-test
+serve/app/public/upload

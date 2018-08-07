@@ -4,8 +4,7 @@ const Service = require('egg').Service;
 class CandidateService extends Service {
 
   async count(options = {}) {
-    const countList = await this.ctx.model.Candidate.countCandidate(options);
-    return countList;
+    return await this.ctx.model.Candidate.countCandidate(options);
   }
 
   async search(params = {}) {
@@ -46,25 +45,15 @@ class CandidateService extends Service {
   }
 
   async add(params) {
-    const result = await this.ctx.model.Candidate.add(params);
-    console.log('result', result);
-    return result;
+    return await this.ctx.model.Candidate.add(params);
   }
 
   async update(attributes = {}, options = {}) {
-    const result = await this.ctx.model.Candidate.update(attributes, options);
-    return result;
+    return await this.ctx.model.Candidate.update(attributes, options);
   }
 
   async delete(options = {}) {
-    const result = await this.ctx.model.Candidate.destory(options);
-    return result;
-  }
-
-  async insert(params) {
-    const { ctx } = this;
-    const insertResult = await ctx.model.Candidate.insertCandidate(params);
-    return insertResult;
+    return await this.ctx.model.Candidate.destory(options);
   }
 }
 module.exports = CandidateService;

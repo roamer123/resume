@@ -17,7 +17,16 @@ module.exports = app => {
   router.get('/dropdown', isAuthenticated, controller.dropdownController.query);
 
   // upload
-  router.post('/upload', isAuthenticated, controller.uploader.upload);
+  // router.post('/upload', isAuthenticated, controller.uploader.upload);
+  router.post('/upload', controller.uploader.sigleUpload);
+
+  router.post('/download', controller.uploader.download);
+
+  // interview
+  router.post('/interview/query', isAuthenticated, controller.interviewController.query);
+  router.post('/interview/update', isAuthenticated, controller.interviewController.update);
+  router.post('/interview/add', isAuthenticated, controller.interviewController.add);
+  router.post('/interview/delete', isAuthenticated, controller.interviewController.delete);
 
   // candidate
   router.post('/candidate/process_count', isAuthenticated, controller.candidateController.count);

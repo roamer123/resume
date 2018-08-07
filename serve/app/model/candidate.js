@@ -50,7 +50,7 @@ module.exports = app => {
   Candidate.queryCandidate = async function(params) {
     return await this.findAll(Object.assign({
       where: params,
-      limit: 10,
+      limit: 200,
       attributes: [ 'ID', 'NAME', 'TECHNOLOGY_DIRECTION_CODE', 'WORKING_YEARS_CODE', 'EDUCATION_LEVEL_CODE', 'RANK_LEVEL_CODE', 'TELEPHONE', 'EMAIL', 'CURRENT_SALARY', 'EXPECT_SALARY', 'IS_ON_JOB', 'DOMICILE', 'INTERVIEWER_PROCESS_CODE', 'INTERVIEWER_STATUS', 'ORGANIZATION_CODE', 'INTERVIEWER', 'INNER_INTERVIEWER_TIME', 'APPOINTMENT_INTERVIEWER_TIME', 'ACTUAL_INTERVIEWER_TIME', 'COMPUTER_EXAME_TIME', 'APPINT_ENTRANCE_TIME', 'ACTUAL_ENTRANCE_TIME', 'CHECK_RANK_LEVEL_CODE', 'RECOMMEND_TIME', 'RECRUIT_TRACKER', 'RECOMMEND_PROGRAME', 'INTERVIEW_ADDRESS', 'CUSTOMER_MANAGER', 'REMARK', 'NEED_ORGANIZATION_CODE' ],
     }));
   };
@@ -62,7 +62,6 @@ module.exports = app => {
   Candidate.destory = function({ IDS }) {
     return app.model.transaction(t => {
       return IDS && IDS.reduce(async (promise, ID) => {
-        console.log('id', ID);
         return promise.then(async () => {
           await this.destroy({
             where: {
@@ -85,10 +84,6 @@ module.exports = app => {
 
   Candidate.countCandidate = async function(options) {
     return await this.count(options);
-  };
-
-  Candidate.insertCandidate = async function(params) {
-    return await this.create(params);
   };
 
   Candidate.deleteCandidate = async function(options) {

@@ -61,6 +61,7 @@ module.exports = appInfo => {
       '.xlsx',
       '.pdf',
       '.docx',
+      '.xlsm',
     ],
   };
 
