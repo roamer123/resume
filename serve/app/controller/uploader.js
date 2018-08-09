@@ -89,7 +89,7 @@ class UploadController extends Controller {
 
   async download() {
     const { ctx } = this;
-    const { CANDIDATE_ID } = ctx.request.body;
+    const { CANDIDATE_ID } = ctx.request.query;
     if (CANDIDATE_ID) {
       const fileInfo = await ctx.model.FileInfo.queryFileInfo({
         CANDIDATE_ID,

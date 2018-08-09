@@ -15,8 +15,6 @@ module.exports = app => {
     NEED_ORGANIZATION_CODE: STRING, // 需求方组织CODE
     STATUS: INTEGER, // 0未安排面试，1已安排面试
     REMARK: STRING, // 备注
-    CREATED_BY: STRING,
-    UPDATED_BY: STRING,
   }, {
     createdAt: 'DATE_CREATED',
     updatedAt: 'DATE_UPDATED',

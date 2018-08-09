@@ -5,8 +5,8 @@ const ReturnJson = require('../utils/returnJson');
 class InterviewController extends Controller {
   async query() {
     const { ctx } = this;
-    const { OORGANIZATION_CODE } = ctx.request.body;
-    const list = await ctx.service.interviewService.queryAll({ OORGANIZATION_CODE });
+    const { ORGANIZATION_CODE } = ctx.request.body;
+    const list = await ctx.service.interviewService.queryAll({ ORGANIZATION_CODE });
     ctx.body = ReturnJson.success(list);
   }
 
@@ -22,9 +22,20 @@ class InterviewController extends Controller {
   async update() {
     const { ctx } = this;
     const { ID, ...params } = ctx.request.body;
-    console.log('ID', ID);
-    console.log('params', params);
     const result = await ctx.service.interviewService.update(params, {
+      ID,
+    });
+    ctx.body = ReturnJson.success({
+      code: result ? 'success' : 'fail',
+    });
+  }
+
+  async cancel() {
+    const { ctx } = this;
+    const { ID } = ctx.request.body;
+    const result = await ctx.service.interviewService.update({
+      STATUS: 0,
+    }, {
       ID,
     });
     ctx.body = ReturnJson.success({

@@ -35,8 +35,9 @@ class PositionController extends Controller {
     };
     const countList = await ctx.service.positionService.count(options);
     const data = {
-      RECRUITING: countList[0].count,
-      STOPRECRUIT: countList[1].count,
+      PRERECRUITING: countList[0].count,
+      RECRUITING: countList[1].count,
+      STOPRECRUIT: countList[2].count,
     };
     ctx.body = ReturnJson.success(data);
   }
