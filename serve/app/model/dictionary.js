@@ -4,6 +4,7 @@ module.exports = app => {
   const { STRING, INTEGER } = app.Sequelize;
 
   const Dictionary = app.model.define('DICTIONARY', {
+    ID: { type: INTEGER, unique: true },
     TYPE: { type: STRING(50) }, // 类型code
     CODE: { type: STRING(50) }, // 编码
     VALUE: { type: STRING(100) }, // 名称

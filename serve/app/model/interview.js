@@ -4,7 +4,7 @@ module.exports = app => {
   const { STRING, INTEGER, DATE } = app.Sequelize;
 
   const Interview = app.model.define('INTERVIEW', {
-    ID: INTEGER,
+    ID: { type: INTEGER, unique: true },
     CANDIDATE_ID: INTEGER, // 候选人ID
     INTERVIEWER: STRING, // 面试官／助理
     APPOINTMENT_INTERVIEWER_TIME: DATE, // 预约时间
