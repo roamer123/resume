@@ -10,15 +10,15 @@ class PositionService extends Service {
       let VALUE;
       const orgCode = queryResult[item].dataValues.JOB_EXPERIENCE_DEMAND_CODE;
       ({ VALUE } = orgCode ? await this.ctx.model.Dictionary.find({ code: orgCode }) : { VALUE: null });
-      queryResult[item].dataValues.JOB_EXPERIENCE_DEMAND_CODE_NAME = VALUE;
+      queryResult[item].dataValues.JOB_EXPERIENCE_DEMAND_NAME = VALUE;
 
       const levelCode = queryResult[item].dataValues.EDUCATION_LEVEL_CODE;
       ({ VALUE } = levelCode ? await this.ctx.model.Dictionary.find({ code: levelCode }) : { VALUE: null });
-      queryResult[item].dataValues.EDUCATION_LEVEL_CODE_NAME = VALUE;
+      queryResult[item].dataValues.EDUCATION_LEVEL_NAME = VALUE;
 
       const rankLevelCode = queryResult[item].dataValues.RANK_LEVEL_CODE;
       ({ VALUE } = rankLevelCode ? await this.ctx.model.Dictionary.find({ code: rankLevelCode }) : { VALUE: null });
-      queryResult[item].dataValues.RANK_LEVEL_CODE_NAME = VALUE;
+      queryResult[item].dataValues.RANK_LEVEL_NAME = VALUE;
     }
     return queryResult;
   }
@@ -31,15 +31,15 @@ class PositionService extends Service {
       let VALUE;
       const orgCode = queryResult[item].dataValues.JOB_EXPERIENCE_DEMAND_CODE;
       ({ VALUE } = orgCode ? await this.ctx.model.Dictionary.find({ code: orgCode }) : { VALUE: null });
-      queryResult[item].dataValues.JOB_EXPERIENCE_DEMAND_CODE_NAME = VALUE;
+      queryResult[item].dataValues.JOB_EXPERIENCE_DEMAND_NAME = VALUE;
 
       const levelCode = queryResult[item].dataValues.EDUCATION_LEVEL_CODE;
       ({ VALUE } = levelCode ? await this.ctx.model.Dictionary.find({ code: levelCode }) : { VALUE: null });
-      queryResult[item].dataValues.EDUCATION_LEVEL_CODE_NAME = VALUE;
+      queryResult[item].dataValues.EDUCATION_LEVEL_NAME = VALUE;
 
       const rankLevelCode = queryResult[item].dataValues.RANK_LEVEL_CODE;
       ({ VALUE } = rankLevelCode ? await this.ctx.model.Dictionary.find({ code: rankLevelCode }) : { VALUE: null });
-      queryResult[item].dataValues.RANK_LEVEL_CODE_NAME = VALUE;
+      queryResult[item].dataValues.RANK_LEVEL_NAME = VALUE;
     }
     return queryResult;
   }
