@@ -28,9 +28,7 @@ module.exports = app => {
 
   FileInfo.updateFileInfo = async function(params, options) {
     return await this.update(params, {
-      where: {
-        options,
-      },
+      where: options,
     });
   };
 

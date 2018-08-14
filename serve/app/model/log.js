@@ -4,7 +4,7 @@ module.exports = app => {
   const { STRING, INTEGER, DATE } = app.Sequelize;
 
   const Log = app.model.define('LOG', {
-    ID: INTEGER,
+    ID: { type: INTEGER, unique: true },
     OPERATION_CODE: STRING, // 操作者CODE
     OPERATION_NAME: STRING, // 操作者名称
     OPERATION_TYPE: STRING, // 操作类别

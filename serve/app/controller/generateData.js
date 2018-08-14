@@ -56,7 +56,7 @@ class generateDataController extends Controller {
 
       insertParams.NEED_ORGANIZATION_CODE = NEED_ORGANIZATION_CODES[random];
 
-      insertResult = await ctx.service.candidateService.insert(insertParams);
+      insertResult = await ctx.service.candidateService.add(insertParams);
     }
     console.log('insert result ' + JSON.stringify(insertResult));
     ctx.body = insertResult;

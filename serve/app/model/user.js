@@ -3,9 +3,10 @@
 // const bcrypt = require('bcryptjs');
 
 module.exports = app => {
-  const { STRING, DATE } = app.Sequelize;
+  const { INTEGER, STRING, DATE } = app.Sequelize;
 
   const User = app.model.define('USER', {
+    ID: { type: INTEGER, unique: true },
     USER_NAME: { type: STRING(20), unique: true },
     PASSWORD: STRING,
     ROLE_TYPE: STRING, // 用户角色code

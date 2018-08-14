@@ -4,7 +4,7 @@ module.exports = app => {
   const { STRING, INTEGER, DATE } = app.Sequelize;
 
   const Position = app.model.define('POSITION', {
-    ID: INTEGER,
+    ID: { type: INTEGER, unique: true },
     TECHNOLOGY_DIRECTION_CODE: STRING, // 职位名称code
     NEED_ORGANIZATION_CODE: STRING, // 需求方code
     JOB_CATEGORY_CODE: STRING, // 工作性质code
