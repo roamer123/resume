@@ -40,6 +40,15 @@ class PositionService extends Service {
       const rankLevelCode = queryResult[item].dataValues.RANK_LEVEL_CODE;
       ({ VALUE } = rankLevelCode ? await this.ctx.model.Dictionary.find({ code: rankLevelCode }) : { VALUE: null });
       queryResult[item].dataValues.RANK_LEVEL_NAME = VALUE;
+
+      const needOrgnazitionCode = queryResult[item].dataValues.NEED_ORGANIZATION_CODE;
+      ({ VALUE } = needOrgnazitionCode ? await this.ctx.model.Dictionary.find({ code: needOrgnazitionCode }) : { VALUE: null });
+      queryResult[item].dataValues.NEED_ORGANIZATION_NAME = VALUE;
+
+      const technologyDirectionCode = queryResult[item].dataValues.TECHNOLOGY_DIRECTION_CODE;
+      ({ VALUE } = technologyDirectionCode ? await this.ctx.model.Dictionary.find({ code: technologyDirectionCode }) : { VALUE: null });
+      queryResult[item].dataValues.TECHNOLOGY_DIRECTION_NAME = VALUE;
+
     }
     return queryResult;
   }
