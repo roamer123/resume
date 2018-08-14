@@ -1,26 +1,45 @@
-.filter_step {
-  width: 100%;
+@import '../../../style/theme/default/index.less';
+
+.filter_group {
   display: flex;
-  margin-top: 16px;
-  margin-bottom: 32px;
-  height: 100px;
-  .filter_group {
-    display: flex;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #000;
-    width: 100%;
-    li {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex: 2;
-      height: 100%;
-      p {
-        cursor: pointer;
-        width: 100%;
-        position: relative;
-        text-align: center;
+  width: 100%;
+  height: 100%;
+  li {
+    height: 100%;
+    padding: 24px 0;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    &:hover {
+      background: #f8f8f9;
+    }
+    .bow {
+
+    }
+    p {
+      cursor: pointer;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      .circle {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #d9d9d9;
+        border-radius: 50%;
+      }
+      &.step {
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 22px;
+      }
+      &.data {
+        font-size: 20px;
+        line-height: 36px;
+        color: rgba(0, 0, 0, 0.85);
       }
     }
+  }
+  .active {
+    color: @primary-color;
   }
 }

@@ -1,7 +1,9 @@
+@import '../../../style/theme/default/index.less';
+
 .candidate_list {
-    height: calc(100vh - 121px - 40px);
-    position: relative;
-    padding: 16px 32px 32px;
+    // height: calc(100vh - 121px - 40px);
+    // position: relative;
+    // padding: 16px 32px 32px;
 }
 
 .switch_tab {
@@ -10,33 +12,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between
-}
-
-.filter_step {
-  width: 100%;
-  display: flex;
-  margin-top: 16px;
-  margin-bottom: 32px;
-  height: 100px;
-  .filter_group {
-    display: flex;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #000;
-    width: 100%;
-    li {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex: 2;
-      height: 100%;
-      p {
-        cursor: pointer;
-        width: 100%;
-        position: relative;
-        text-align: center;
-      }
-    }
-  }
 }
 .detail {
   display: flex;
@@ -48,7 +23,11 @@
 .suppliers_filter {
   margin-left: 16px;
   display: inline-block;
+  min-width: 130px;
+
 }
+
 .table {
   margin-top: 16px;
+  background: #fff;
 }

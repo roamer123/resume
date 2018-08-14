@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import Home from './Home';
 import Dropdown from 'templates/dropdown';
@@ -41,13 +41,14 @@ import List from 'templates/list';
 import Table from 'templates/table';
 import Anchor from 'templates/anchor';
 import Cascader from 'templates/cascader';
+import Main from 'templates/main';
+import SearchFilter from 'templates/search-filter';
 
 
 
 // import styles from './App.css';
 
 const DboxRouter = () => (
-  <Router>
     <div>
       <Route exact path='/home' component={Home} />
       <Route exact path='/collapse' component={Collapse} />
@@ -89,8 +90,8 @@ const DboxRouter = () => (
       <Route exact path='/table' component={Table} />
       <Route exact path='/cascader' component={Cascader} />
       <Route exact path='/anchor' component={Anchor} />
-
+      <Route exact path='/main' component={Main} />
+      <Route exact path='/SearchFilter' component={SearchFilter} />
     </div>
-  </Router>
 )
 export default DboxRouter;

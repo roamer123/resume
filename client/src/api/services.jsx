@@ -4,7 +4,9 @@
  * @Last Modified by: mikey.zhaopeng
  * @Last Modified time: 2018-05-11 09:54:42
  */
-import axios from 'axios'
+import axios from 'axios';
+import qs from 'qs';
+
 import {
   message
 } from 'components'
@@ -26,12 +28,12 @@ const codeMessage = {
   503: '服务不可用，服务器暂时过载或维护。',
   504: '网关超时。'
 };
-
+// let Authorization = '';
 const checkStatus = (response) => {
-  if (response.code >= 200 && response.code < 300) {
+  if (response.status >= 200 && response.status < 300) {
     return response;
   }
-  const errorMsg = codeMessage[response.code] || response.statusText;
+  const errorMsg = codeMessage[response.status] || response.statusText;
   message.warning(errorMsg, 2);
 
   const error = new Error(errorMsg);
@@ -43,25 +45,12 @@ const checkStatus = (response) => {
 const request = (config, resolve, reject) => {
   const newConfig = { ...config
   };
-  if (newConfig.method === 'POST' || newConfig.method === 'PUT') {
-    if (!(newConfig.body instanceof FormData)) {
-      newConfig.headers = {
-        Accept: 'application/json',
-        // 'Content-Type': 'application/json; charset=utf-8',
-        // 'Authorization': 'Basic bXlfYXBwOm15X3NlY3JldA ==',
-        'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
-        ...newConfig.headers,
-      };
-      newConfig.body = JSON.stringify(newConfig.body);
-    } else {
-      newConfig.headers = {
-        // 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
-        Accept: 'application/json',
-        ...newConfig.headers,
-      };
-    }
-  }
-  console.dir(newConfig);
+  newConfig.headers = {
+    Accept: 'application/json',
+    'Content-type': 'application/x-www-form-urlencoded; charset=utf-8',
+    ...newConfig.headers,
+  };
+
   axios.request(newConfig)
     .then(checkStatus)
     .then((response) => {
@@ -69,7 +58,7 @@ const request = (config, resolve, reject) => {
       if (data.resultCode === '000000') {
         typeof resolve === 'function' && resolve(data.data)
       } else {
-        message.success(data.resultMesg);
+        message.success(data.resultMesg, 0.5);
         typeof reject === 'function' && reject(data.data);
       }
     }, (response) => {
@@ -85,14 +74,19 @@ export default {
     request({
       method: 'GET',
       url,
+      withCredentials: true,
+      crossDomain: true,
       params
     }, resolve, reject)
   },
   post: (url, data, resolve, reject) => {
+    const qsData = qs.stringify(data)
     request({
       method: 'POST',
       url,
-      data
+      withCredentials: true,
+      crossDomain: true,
+      data: qsData,
     }, resolve, reject)
   },
   request: (config, resolve, reject) => {

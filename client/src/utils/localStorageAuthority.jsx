@@ -36,5 +36,13 @@ export function setAuthority(authority) {
   return setItem('idoll-pro-authority', authority);
 }
 
+export function getOrganization() {
+  return getItem('idoll-Organization') || '';
+}
+
+export function setOrganization(Organization) {
+  return setItem('idoll-Organization', Organization);
+}
+
 const Authorized = authorizedRender(getAuthority());
 export default Authorized;

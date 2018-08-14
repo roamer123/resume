@@ -60,5 +60,6 @@ module.exports = {
     'no-callback-literal': 0,
     'no-mixed-operators': 0,
     'no-unsafe-finally': 0,
+    'react/jsx-indent': 0,
   }
 }

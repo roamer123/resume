@@ -23,7 +23,9 @@ class CalendarController extends Controller {
     const queryParams = {
       ORGANIZATION_CODE,
     };
+    ctx.logger.info('calender initExam request data: %j', params);
     const calendarResult = await ctx.service.calendarService.initExam(queryParams);
+    ctx.logger.info('calender initExam response data: %j', calendarResult);
 
     ctx.body = ReturnJson.success(calendarResult);
   }

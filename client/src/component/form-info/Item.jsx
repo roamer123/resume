@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Form from 'components/form';
-import { classNames } from 'classnames';
+// import { classNames } from 'classnames';
 
 const FormItem = Form.Item;
 
@@ -19,25 +19,29 @@ export function generator({ defaultProps, defaultRules, type, title, width }) {
 					// rules: 校验规则
 					// initialValue: 子节点的初始值，类型、可选值均由子节点决定
 				const { getFieldDecorator } = this.context.form;
-				const { onChange, defaultValue, rules, name, ...restProps } = this.props;
+        const { onChange, defaultValue, value, rules, name, ...restProps } = this.props;
+        // console.log('generator', this.props);
+
 				const options = {};
 				let otherProps = {};
 				options.rules = rules || defaultRules;
 				if (onChange) {
 					options.onChange = onChange;
 				}
-				if (defaultValue) {
-					options.initialValue = defaultValue;
+				if (defaultValue || value) {
+					options.initialValue = defaultValue || value;
 				}
 				otherProps = restProps || otherProps;
 
 				return (
   <FormItem label={title || ''} style={{width: width}}>
     {
-              getFieldDecorator(name, options)(
-                <WrappedComponent {...defaultProps} {...otherProps} />
-              )
-    }
+					              getFieldDecorator(name, options)(
+  <div>
+    <WrappedComponent {...defaultProps} {...otherProps} />
+  </div>
+					              )
+					    }
   </FormItem>
 				);
 			}

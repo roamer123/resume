@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Icon, Input} from 'components'
+import { Button, Icon } from 'components'
 
 export default class SearchFilter extends React.Component {
   constructor (props) {
@@ -16,7 +16,7 @@ export default class SearchFilter extends React.Component {
 })
   }
   render () {
-    const { columns, data, className } = this.props
+    const { className } = this.props
 
     return (
       <div className={className}>

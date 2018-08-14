@@ -7,7 +7,7 @@ node_modules
 coverage
 
 #production
-# /dist
+client/dist
 # dist/
 
 # misc
@@ -36,3 +36,7 @@ yarn.lock
 #logs
 serve/logs
 logs
+
+#upload test
+serve/app/egg-multipart-test
+serve/app/public/upload

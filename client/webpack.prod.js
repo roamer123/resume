@@ -22,6 +22,9 @@ const _PRD_ = (process.env.NODE_ENV || 'production') === 'production';
 
 
 let webpackConfig = merge(common, {
+  output: {
+    publicPath: './public'
+  },
   devtool: '#source-map',
   module: {
     rules: [{
