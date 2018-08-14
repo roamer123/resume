@@ -1,5 +1,8 @@
 import React from 'react';
 import { Select } from 'components'
+import {
+  MenuItem,
+} from 'rc-menu';
 
 const CODE = 'CODE'
 const VALUE = 'VALUE'
@@ -13,11 +16,24 @@ const optionsCreate = ({options, addonBefore, addonAfter}) => {
           value={option['CODE']}
         >
           {
-            `${addonBefore || ''}${option['VALUE']} ${addonAfter || ''}`
+            `${addonBefore || ''}${option[VALUE]} ${addonAfter || ''}`
           }
         </Option>
       )
-    }
+}
+const itemCreate = ({options, addonBefore, addonAfter, handleClick}) => {
+      // console.log(options)
+      !options && (options = [])
+      return options.map((option, i) =>
+        <MenuItem
+          key={i}
+        >
+          {
+            <span onClick={() => handleClick(option[CODE])}>{`${addonBefore || ''}${option[VALUE]} ${addonAfter || ''}`}</span>
+          }
+        </MenuItem>
+      )
+}
 const liCreate = ({
     lis,
     liData,
@@ -44,4 +60,8 @@ const liCreate = ({
 }
 
 
-export { optionsCreate, liCreate }
+export {
+  optionsCreate,
+  liCreate,
+  itemCreate
+}
