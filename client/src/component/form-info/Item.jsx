@@ -32,21 +32,16 @@ export function generator({ defaultProps, defaultRules, type, title, width }) {
 					options.initialValue = defaultValue || value;
 				}
 				otherProps = restProps || otherProps;
-        console.log('options', options);
-        console.log('defaultProps', defaultProps);
-        console.log('otherProps', otherProps);
-
-
 
 				return (
   <FormItem label={title || ''} style={{width: width}}>
     {
-              getFieldDecorator(name, options)(
-                <div>
-                  <WrappedComponent {...defaultProps} {...otherProps} />
-                </div>
-              )
-    }
+					              getFieldDecorator(name, options)(
+  <div>
+    <WrappedComponent {...defaultProps} {...otherProps} />
+  </div>
+					              )
+					    }
   </FormItem>
 				);
 			}
