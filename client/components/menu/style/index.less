@@ -13,6 +13,7 @@
   box-shadow: @box-shadow-base;
   color: @menu-item-color;
   background: @menu-bg;
+  margin-right: 4px;
   line-height: 0; // 修复display: inline-block 的间隙
   transition: background .3s, width .2s;
   .clearfix;
@@ -53,10 +54,9 @@
   // 子项目是链接时的样式
   &-item > a {
     display: block;
-    color: @menu-dark-item-color;
+    color: @menu-item-color;
     &:hover {
-      // color: @menu-highlight-color;
-    color: #fff;
+      color: @menu-highlight-color;
     }
     &:focus {
       text-decoration: none;
@@ -87,7 +87,7 @@
   &-submenu-active,
   &-submenu-title:hover {
     color: #fff;
-    background: @menu-dark-item-selected-bg;
+    background: @menu-item-selected-bg;
   }
 
   &-horizontal &-item,

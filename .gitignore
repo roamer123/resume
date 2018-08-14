@@ -7,7 +7,7 @@ node_modules
 coverage
 
 #production
-# /dist
+client/dist
 # dist/
 
 # misc
@@ -20,11 +20,11 @@ coverage
 .idea
 serve/run
 
-
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 yarn.lock
+
 
 
 # .idea
@@ -32,3 +32,11 @@ yarn.lock
 # .DS_Store
 # *.sw*
 # *.un~
+
+#logs
+serve/logs
+logs
+
+#upload test
+serve/app/egg-multipart-test
+serve/app/public/upload

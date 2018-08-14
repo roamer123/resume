@@ -4,9 +4,18 @@
   "description": "resume manager system",
   "private": true,
   "dependencies": {
+    "bcrypt": "^3.0.0",
     "egg": "^2.2.1",
+    "egg-cors": "^2.1.0",
     "egg-mysql": "^3.0.0",
-    "egg-scripts": "^2.5.0"
+    "egg-passport": "^2.0.1",
+    "egg-scripts": "^2.5.0",
+    "egg-sequelize": "^3.1.5",
+    "egg-session": "^3.1.0",
+    "moment": "^2.22.2",
+    "mysql2": "^1.5.3",
+    "passport-local": "^1.0.0",
+    "stream-wormhole": "^1.0.4"
   },
   "devDependencies": {
     "autod": "^3.0.1",

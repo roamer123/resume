@@ -5,7 +5,7 @@
  * @Last Modified time: 2018-05-10 21:22:42
 * 用于统一管理域名
 */
-import peopleManagement from './routers/peopleManagement'
+import resume from './routers/resume'
 import User from './routers/user' // 第一步：导入
 // import _ from 'lodash'
 
@@ -16,7 +16,7 @@ const _DEV_ = (process.env.NODE_ENV || 'development') === 'development';
 // 判断当前是否处于生产环境
 const _PRD_ = (process.env.NODE_ENV || 'production') === 'production';
 
-const urlModules = [peopleManagement, User]; // 第二步：将导入模块引入
+const urlModules = [resume, User]; // 第二步：将导入模块引入
 // console.log('urls', urls);
 
 
@@ -24,8 +24,12 @@ function initHostname() {
 	if (_DEV_) {
 		// 用于本地开发测试
 		return {
-			domainName: `http://localhost:8080/mock`,
-			suffix: '.json',
+			// domainName: `http://localhost:8080/mock`,
+			//  domainName: `http://172.31.24.3:7001`, // XUMIN
+			// domainName: `http://172.31.8.117:7001`, // JUNQIANG
+			domainName: `http://localhost:7001`,
+			// suffix: '.json',
+			suffix: '',
 			// mock数据中间地址
 			mockAdd: '',
 			userUrl: '',
@@ -35,7 +39,7 @@ function initHostname() {
 		// 用于生产环境
 		return {
 			domainName: ``,
-			suffix: '.do',
+			suffix: '',
 			// mock数据中间地址
 			mockAdd: '',
 			userUrl: '',
@@ -56,8 +60,9 @@ urlModules.map((v) => (
   })
 ))
 // console.log('urls', urls);
-// _.mapKeys(peopleManagement, function(value, key) {
+// _.mapKeys(resume, function(value, key) {
 // 	urls[key] = hostname.domainName + value + (hostname.suffix || '')
 // })
 
+export { hostname }
 export default urls
