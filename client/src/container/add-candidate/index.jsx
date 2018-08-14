@@ -2,23 +2,30 @@ import React from 'react'
 // import PropTypes from 'prop-types';
 import map, { dataMap } from './map.js';
 import {
+  Route,
+  Switch,
+} from 'react-router-dom';
+import {
   successMsg,
   errorMsg,
-  warningMsg,
 } from 'utils/message'
 import {
   Alert,
-  Divider,
+  // Divider,
   Upload,
   Icon,
-  message
 } from 'components';
-import FormInfo, { generator, Submit } from 'component/form-info';
-import { services, urls } from 'api'
-import styles from './index.less'
 import {
-  addWrapper
-} from './style.js'
+  FormInfo,
+  generator,
+  // Submit,
+  MainHeader,
+  Main,
+  SaveSuccess,
+} from 'component';
+import { services, urls } from 'api'
+// import styles from './index.less'
+// import { addWrapper } from './style.js'
 
 const Dragger = Upload.Dragger;
 export default class AddCandidate extends React.Component {
@@ -41,10 +48,6 @@ export default class AddCandidate extends React.Component {
   addCandidateSuccess = (data) => {
     console.log(data)
   }
-  handleBack = (e) => {
-    e.preventDefault()
-    window.history.back()
-  }
   render () {
     const props = {
       name: 'file',
@@ -62,43 +65,51 @@ export default class AddCandidate extends React.Component {
         }
       },
     };
+    const CandidateInfo = <FormInfo
+      onSubmit={this.onSubmit}
+      className='content'
+    >
+    {
+      this.state.notice &&
+      <Alert
+        style={{ marginBottom: 24 }}
+        message={this.state.notice}
+        type='error'
+        showIcon
+        closable />
+    }
+    {
+      Object
+      .keys(Info)
+      .map((item, i) => React.createElement(Info[item], {
+        key: i,
+        name: item,
+        value: this.state[item] || '',
+        onChange: (e) => this.handleChange(item, e)}))
+    }
+    <Dragger {...props}>
+      <p className='upload-drag-icon'>
+        <Icon type='achievement' style={{'fontSize': '46px', color: '#0db27a'}} />
+      </p>
+      <p className='upload-text' style={{'fontSize': '14px', 'lineHeight': '22px', 'color': 'rgba(0, 0, 0, 0.65)'}}>点击或拖拽文件到此区域</p>
+      <p className='upload-text' style={{'fontSize': '12px', 'lineHeight': '20px', 'color': 'rgba(0, 0, 0, 0.45)'}}>1.简历名称需符合“职位名称+姓名+手机号.格式名”规则；2.上传的文件支持doc/pdf格式，大小不超过10M。</p>
+    </Dragger>
+  </FormInfo>
+    const Success = <SaveSuccess
+      detail='请核对候选人信息的准确性，如发现输入有误请及时修改。'
+      columns=''
+      data=''
+    />
     return (
-      <addWrapper>
-        <div className={styles.subheading}>
-          <a href='#' onClick={this.handleBack}>返回</a><Divider type='vertical' />添加候选人
-        </div>
-        <FormInfo
-          onSubmit={this.onSubmit}
-          className='content'
-          >
-          {
-            this.state.notice &&
-            <Alert
-              style={{ marginBottom: 24 }}
-              message={this.state.notice}
-              type='error'
-              showIcon
-              closable />
-          }
-          {
-            Object
-            .keys(Info)
-            .map((item, i) => React.createElement(Info[item], {
-              key: i,
-              name: item,
-              value: this.state[item] || '',
-              onChange: (e) => this.handleChange(item, e)}))
-          }
-          <Dragger {...props}>
-            <p className='upload-drag-icon'>
-              <Icon type='inbox' />
-            </p>
-            <p className='upload-text'>Click or drag file to this area to upload</p>
-          </Dragger>
-          <Submit className='saveButton'>保存并继续添加</Submit>
-          <Submit className='saveButton'>保存</Submit>
-        </FormInfo>
-      </addWrapper>
+      <div>
+        <MainHeader title='添加候选人' />
+        <Main>
+          <Switch>
+            <Route exact path='/candidate/add' render={() => CandidateInfo} />
+            <Route exact path='/candidate/add/success' render={() => Success} />
+          </Switch>
+        </Main>
+      </div>
     )
   }
 }
