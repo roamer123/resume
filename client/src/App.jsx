@@ -13,6 +13,7 @@ import AddPosition from 'container/add-position';
 import Candidate from 'container/candidate';
 import AddCandidate from 'container/add-candidate';
 import Calendar from 'container/calendar';
+import SaveSuccess from 'component/save-success';
 import Icon from 'templates/icon';
 import DboxRouter from './DboxRouter';
 import '../style/reset.less';
@@ -34,8 +35,9 @@ const App = () => (
           <Route exact path='/recruit-title/add' component={AddPosition} />
           <Route exact path='/recruit-title/add-excel' component={AddPosition} />
           <Route exact path='/candidate' component={Candidate} />
-          <Route exact path='/candidate/add' component={AddCandidate} />
+          <Route path='/candidate/add' component={AddCandidate} />
           <Route exact path='/calendar' component={Calendar} />
+          <Route exact path='/success' component={SaveSuccess} />
         </BasicLayout>
         <Route component={NotFound} />
         <DboxRouter />

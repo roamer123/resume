@@ -17,7 +17,7 @@ module.exports = app => {
   router.get('/dropdown', isAuthenticated, controller.dropdownController.query);
 
   // upload
-  router.post('/upload', isAuthenticated, controller.uploader.upload);
+  router.post('/upload', controller.uploader.upload);
 
   // candidate
   router.post('/candidate/process_count', isAuthenticated, controller.candidateController.count);
