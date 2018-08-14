@@ -5,12 +5,20 @@ import {
   Select,
   Table,
   Button,
-  Icon
+  Icon,
+  Dropdown,
 } from 'components'
+import Menu, {
+  MenuItem,
+} from 'rc-menu';
 import SearchFilter from 'component/search-filter'
 import FilterStep from 'component/filter-step'
 import Guid from 'component/guid'
-import {optionsCreate} from 'utils/creator'
+import Main from 'component/main';
+import {
+  optionsCreate,
+  itemCreate
+} from 'utils/creator'
 import {
   successMsg,
   errorMsg,
@@ -20,7 +28,7 @@ import {services, urls} from 'api'
 
 import styles from './index.less'
 
-// const Option = Select.Option;
+const Option = Select.Option;
 const CODE = 'CODE'
 // const VALUE = 'VALUE' // eslint-disable-line no-console
 const TECHNOLOGY_DIRECTION = 'TECHNOLOGY_DIRECTION'
@@ -45,6 +53,7 @@ const service = () => ({
     IDS: param.IDS,
   }, fn),
   candidateDelete: (fn, param) => services.post(urls.candidateDelete, param, fn),
+  // download: (fn, param) => services.post(urls.download, param, fn),
 })
 
 
@@ -52,12 +61,12 @@ export default class CandidateHeader extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      step: '',
+      step: 'PROCESS_NEW', // ‘CODE’字段值
       selectedRowKeys: [], // 已选择的记录的行号index：Array
       jobs: [],
       suppliers: [],
-      steps: [],
-      stepsData: [],
+      steps: [], // 流程，‘CODE’ ‘VALUE’
+      stepsData: [], // ‘CODE’字段值，Number
       tableData: [],
       moveTo: '',
       ORGANIZATION_CODE: ORGANIZATION_CODE,
@@ -98,7 +107,6 @@ export default class CandidateHeader extends React.Component {
 
     }
   }
-
   componentDidMount() {
     service().queryDropdown.call(this, this.getTechDirection, this.getNeedOrganization, this.getInterviewerProcess);
     service().candidateProcessCount.call(this, this.getCandidateProcessCount);
@@ -162,6 +170,13 @@ export default class CandidateHeader extends React.Component {
     console.log('handleDelete', e, id);
     var IDS = [...this.state.selectedRowKeys, id]
     service().candidateDelete.call(this, this.deleteCandidateSuccess, { IDS: IDS || [] });
+  }
+  download = (e, id) => {
+    // service().download.call(this, this.downloadSuccess, { CANDIDATE_ID: 2 });
+    // window.href = 'http://172.31.8.117:7001/download?CANDIDATE_ID=2'
+  }
+  downloadSuccess = (data) => {
+    console.log('downloadSuccess', data)
   }
   deleteCandidateSuccess = (data) => {
     successMsg('已淘汰/流失')
@@ -275,6 +290,7 @@ export default class CandidateHeader extends React.Component {
     const {
       jobs,
       suppliers,
+      step,
       steps,
       stepsData,
       tableData,
@@ -292,14 +308,6 @@ export default class CandidateHeader extends React.Component {
       max_education: 0, // 0-硕士，1-本科，2-大专，3-大专以下
       job_rank: 0, // 0-初级，1-中级，2-高级，3-资深
     }
-    const actions = [{
-        CODE: 'addOne',
-        VALUE: '添加候选人',
-      }, {
-        CODE: 'addMore',
-        VALUE: '批量添加',
-    }]
-
     const columns = [{
         title: '姓名',
         width: 80,
@@ -309,7 +317,7 @@ export default class CandidateHeader extends React.Component {
       },
       {
         title: '年龄',
-        width: 60,
+        width: 46,
         dataIndex: 'AGE',
         key: 'AGE',
         fixed: 'left'
@@ -318,7 +326,7 @@ export default class CandidateHeader extends React.Component {
         title: '工作年限',
         dataIndex: 'WORKING_YEARS_CODE',
         key: 'WORKING_YEARS_CODE',
-        width: 150,
+        width: 100,
         render: (text, record, index) => record.WORKING_YEARS
 
       },
@@ -326,14 +334,14 @@ export default class CandidateHeader extends React.Component {
         title: '最高学历',
         dataIndex: 'EDUCATION_LEVEL_CODE',
         key: 'EDUCATION_LEVEL_CODE',
-        width: 150,
+        width: 100,
         render: (text, record, index) => record.EDUCATION_LEVEL
       },
       {
         title: '是否在职',
         dataIndex: 'IS_ON_JOB',
         key: 'IS_ON_JOB',
-        width: 150,
+        width: 100,
         // 0-否，1-是
         render: (text, record, index) => record.IS_ON_JOB === 0 ? '否' : '是'
       },
@@ -341,7 +349,7 @@ export default class CandidateHeader extends React.Component {
         title: '级别',
         dataIndex: 'RANK_LEVEL_CODE',
         key: 'RANK_LEVEL_CODE',
-        width: 150,
+        width: 50,
         render: (text, record, index) => record.RANK_LEVEL
       },
       {
@@ -379,88 +387,141 @@ export default class CandidateHeader extends React.Component {
         key: 'operation',
         fixed: 'right',
         width: 100,
-        render: (text, record, index) => <a href='javascript:;' onClick={(e) => this.handleDelete(e, index)}> 删除 </a>,
+        render: (text, record, index) => (<div>
+          <a href='javascript:;' onClick={(e) => this.handleDelete(e, record.ID)}> 淘汰 </a>
+          <Dropdown
+            trigger={['click']}
+            overlay={
+              <Menu>
+              <MenuItem
+                key={`${index}_1`}
+              >
+                <a href={`http://172.31.8.117:7001/candidate/download?CANDIDATE_ID=${2}`}
+                  onClick={(e) => this.download(e, record.ID)}
+                >查看简历</a>
+              </MenuItem>
+              <MenuItem
+                key={`${index}_2`}
+              >
+                <a href={`http://172.31.8.117:7001/candidate/download?CANDIDATE_ID=${record.ID}`}
+                  onClick={(e) => this.download(e, record.ID)}
+                >下载简历</a>
+              </MenuItem>
+              <MenuItem
+                key={`${index}_3`}
+              >
+                  <span onClick={(e) => this.download(e, record.ID)}>修改信息</span>
+              </MenuItem>
+              </Menu>
+            }
+            >
+            <a href='#' className='idoll-icon-a'>
+              更多 {<Icon type='caret-down' />}
+            </a>
+          </Dropdown>
+        </div>),
       },
   ];
-
     const { selectedRowKeys } = this.state;
     const rowSelection = {
       selectedRowKeys,
       onChange: this.onSelectChange,
     };
-
+    const containerStyle = {
+      'marginBottom': '24px',
+      'backgroundColor': '#fff',
+      'borderRadius': '2px',
+      'border': '1px solid #0db27a'
+    }
+    const headerStyle = {
+      'height': '64px',
+      'padding': '16px 24px',
+      'borderBottom': '1px solid #e9e9e9',
+      'display': 'flex',
+      'justifyContent': 'space-between'
+    }
     return (
-      <div className={styles.candidate_list}>
+      <Main className={styles.candidate_list} backgroundColor='transparent'>
         <Guid
           guidSteps={guidSteps}
          />
-        <div className={styles.switch_tab}>
-          <Select
-            defaultValue='全部职位'
-            style={{ width: 120 }}
-            onSelect={(value) => this.handleSearch(INTERVIEWER_PROCESS, value)}
-            className='my-first-step'
-            >
-            {
-              optionsCreate({
-                options: jobs,
-              })
-            }
-          </Select>
-
-          <Select
-            defaultValue='addOne'
-            style={{ width: 120 }}
-            onSelect={this.handleAdd}
-            className={
-              classNames('dark', 'my-other-step')
-            }
-          >
-            {
-              optionsCreate({
-                options: actions,
-              })
-            }
-          </Select>
+        <div style={containerStyle}>
+          <div style={headerStyle}>
+            <Select
+              defaultValue='全部职位'
+              style={{ width: 120 }}
+              onSelect={(value) => this.handleSearch(INTERVIEWER_PROCESS, value)}
+              className='my-first-step'
+              >
+              {
+                optionsCreate({
+                  options: jobs,
+                })
+              }
+            </Select>
+            <div>
+              <Button type='primary' onClick={this.handleAdd}>添加候选人</Button>
+              <Button className='ml8'>批量添加</Button>
+              <Button className='ml8' disabled>智能添加</Button>
+            </div>
+          </div>
+          <FilterStep colums={steps || []} data={stepsData || {}} handleStep={this.handleStep} active={step} />
         </div>
-        {
-          <FilterStep colums={steps || []} data={stepsData || {}} handleStep={this.handleStep} />
-        }
         <div className={styles.detail}>
+          <div className={styles.action_detail}>
+          <Dropdown
+            trigger={['click']}
+            style={{minWidth: '160px'}}
+            overlay={
+              <Menu
+                style={{minWidth: '160px'}}
+              >
+                {itemCreate({
+                options: steps,
+                addonBefore: '移动到',
+                handleClick: (step) => this.handleMoveStep(step)
+              })}
+            </Menu>
+            }
+            >
+            <a href='#' className='idoll-icon-a'>
+              <Button type='primary' style={{minWidth: '160px'}}>{<Icon type='swap' />}移动到面试 {<Icon type='caret-down' />}</Button>
+            </a>
+          </Dropdown>
+            <Button
+              onClick={() => this.handleMoveStep('PROCESS_OUT')}
+              className='ml8'
+              >
+              <Icon type='delete' />批量淘汰
+            </Button>
+            <Button
+              onClick={() => this.handleMoveStep('PROCESS_OUT')}
+              className='ml8'
+              >
+              <Icon type='plus-circle-o' />增加需求方
+            </Button>
+          </div>
           <div className={styles.filter_detail}>
-            <SearchFilter columns={filterDetail} className={styles.search_filter} />
             <Select
               defaultValue='全部供应商'
-              className={
-              classNames(styles.suppliers_filter, 'my-3-step')
-              }
+              className={classNames(styles.suppliers_filter, 'my-3-step')}
               onSelect={(value) => this.handleSearch(NEED_ORGANIZATION, value)}
               >
+              <Option
+                key={0}
+                value={'全部供应商'}
+              >
+                {
+                  `全部供应商`
+                }
+              </Option>
               {
                 optionsCreate({
                   options: suppliers
                 })
               }
             </Select>
-          </div>
-          <div className={styles.action_detail}>
-            <Button
-              onClick={() => this.handleMoveStep('PROCESS_OUT')}>
-              <Icon type='delete' />淘汰
-            </Button>
-            <Select
-              defaultValue='移动到面试'
-              className={classNames(styles.suppliers_filter, 'dark')}
-              style={{minWidth: '160px'}}
-              onSelect={this.handleMoveStep}
-              >
-              {
-                optionsCreate({
-                  options: steps,
-                  addonBefore: '移动到'
-                })
-              }
-            </Select>
+            <SearchFilter columns={filterDetail} className={classNames('ml8', styles.search_filter)} />
           </div>
         </div>
         <Table
@@ -469,8 +530,13 @@ export default class CandidateHeader extends React.Component {
           columns={columns}
           dataSource={tableData}
           rowKey={(record => (record.ID))}
-          scroll={{ x: 1500, y: 300 }} />
-      </div>
+          scroll={{ x: 1500, y: 300 }}
+          pageSize={10}
+          showTotal
+          showQuickJumper
+          showSizeChanger
+          />
+      </Main>
     )
   }
 }
