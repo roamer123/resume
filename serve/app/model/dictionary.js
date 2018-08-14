@@ -34,7 +34,7 @@ module.exports = app => {
   Dictionary.query = async function(params) {
     return await this.findAll({
       where: params,
-      attributes: [ 'CODE', 'VALUE' ],
+      attributes: [ 'CODE', 'VALUE', 'SORT_NO' ],
     });
   };
 
