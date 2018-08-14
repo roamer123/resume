@@ -327,7 +327,7 @@ export default class CandidateHeader extends React.Component {
         dataIndex: 'WORKING_YEARS_CODE',
         key: 'WORKING_YEARS_CODE',
         width: 100,
-        render: (text, record, index) => record.WORKING_YEARS
+        render: (text, record, index) => record.WORKING_YEARS_NAME
 
       },
       {
@@ -335,7 +335,7 @@ export default class CandidateHeader extends React.Component {
         dataIndex: 'EDUCATION_LEVEL_CODE',
         key: 'EDUCATION_LEVEL_CODE',
         width: 100,
-        render: (text, record, index) => record.EDUCATION_LEVEL
+        render: (text, record, index) => record.EDUCATION_LEVEL_NAME
       },
       {
         title: '是否在职',
@@ -350,26 +350,26 @@ export default class CandidateHeader extends React.Component {
         dataIndex: 'RANK_LEVEL_CODE',
         key: 'RANK_LEVEL_CODE',
         width: 50,
-        render: (text, record, index) => record.RANK_LEVEL
+        render: (text, record, index) => record.RANK_LEVEL_NAME
       },
       {
         title: '联系方式',
-        dataIndex: 'PHONE',
-        key: 'PHONE',
-        width: 150
+        dataIndex: 'TELEPHONE',
+        key: 'TELEPHONE',
+        width: 120
       },
       {
         title: '邮箱',
         dataIndex: 'EMAIL',
         key: 'EMAIL',
-        width: 150
+        width: 190
       },
       {
         title: '技术方向',
         dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
         key: 'TECHNOLOGY_DIRECTION_CODE',
-        width: 150,
-        render: (text, record, index) => record.TECHNOLOGY_DIRECTION
+        width: 140,
+        render: (text, record, index) => record.TECHNOLOGY_DIRECTION_NAME
       },
       {
         title: '住址',
