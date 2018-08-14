@@ -14,6 +14,7 @@ import Candidate from 'container/candidate';
 import AddCandidate from 'container/add-candidate';
 import Calendar from 'container/calendar';
 import Icon from 'templates/icon';
+import DboxRouter from './DboxRouter';
 import '../style/reset.less';
 
 const NotFound = () => (<Content title='404' text='抱歉，你访问的页面不存在' />)
@@ -37,6 +38,7 @@ const App = () => (
           <Route exact path='/calendar' component={Calendar} />
         </BasicLayout>
         <Route component={NotFound} />
+        <DboxRouter />
       </Switch>
     </div>
   </Router>)
