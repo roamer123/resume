@@ -1,7 +1,8 @@
 import React from 'react'
 import {Select, Table, Button} from 'components'
 import FilterStep from 'component/filter-step';
-import {optionsCreate, liCreate} from 'utils/creator';
+import {optionsCreate} from 'utils/creator';
+import {services, urls} from 'api';
 import styles from './index.less'
 // pro-drag
 export default class RecruitTitle extends React.Component {
@@ -9,7 +10,31 @@ export default class RecruitTitle extends React.Component {
     super(props)
     this.state = {
       selectedRowKeys: [], // Check here to configure the default column
+      active: false, // true流程按钮处于激活状态
+      jobs: [],
+      tableData: [],
+      stepsData: [],
     };
+  }
+  componentDidMount() {
+    services.get(urls.queryDropdown, {TYPE: 'TECHNOLOGY_DIRECTION'}, this.getTechDirection)
+    services.post(urls.positionQueryList, {POSITION_PROCESS_CODE: 0, TECHNOLOGY_DIRECTION_CODE: 'WEBFRONT'}, this.getPositionQueryList)
+    services.post(urls.positionProcessCount, {}, this.getPositionProcessCount)
+  }
+  getTechDirection = (data) => {
+    this.setState({
+      jobs: data
+    })
+  }
+  getPositionQueryList = (data) => {
+    this.setState({
+      tableData: data
+    })
+  }
+  getPositionProcessCount = (data) => {
+    this.setState({
+      stepsData: data
+    })
   }
   handleStep = (e, step, li) => {
     e.target.style = {
@@ -22,29 +47,50 @@ export default class RecruitTitle extends React.Component {
   }
   handleDelete = () => {
     console.log('handleDelete')
+    services.get(urls.positionDelete, {ID: []}, this.deleteSuccess)
+  }
+  deleteSuccess = (data) => {
+    console.log(data);
+  }
+  onSelectChange = (selectedRowKeys) => {
+    console.log('selectedRowKeys changed: ', selectedRowKeys);
+    this.setState({
+      selectedRowKeys
+    });
   }
   render () {
-    const filters = {
-      recruiting: 0,
-      stopRecruit: 1,
-    }
-    const stepsMap = {
-      recruiting: '招聘中',
-      stopRecruit: '停止招聘',
-    }
-    const jobs = ['all', 'web', 'java', 'test']
-    const jobsMap = {
-      all: '全部职位',
-      web: '前端工程师',
-      java: 'JAVA工程师',
-      test: '测试工程师',
-    }
-    const columns = [{
+    const {
+      active,
+      jobs,
+      tableData,
+      stepsData,
+    } = this.state
+    const colums = [{
+        CODE: 'RECRUITING',
+        VALUE: '招聘中',
+      }, {
+        CODE: 'STOPRECRUIT',
+        VALUE: '停止招聘',
+    }]
+    // const stepsData = {
+    //   RECRUITING: 12,
+    //   STOPRECRUIT: 3,
+    // }
+    // const jobs = ['all', 'web', 'java', 'test']
+    // const jobsMap = {
+    //   all: '全部职位',
+    //   web: '前端工程师',
+    //   java: 'JAVA工程师',
+    //   test: '测试工程师',
+    // }
+    const columns = [
+      {
          title: '职位名称',
          width: 100,
          dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
          key: 'TECHNOLOGY_DIRECTION_CODE',
-         fixed: 'left'
+         fixed: 'left',
+         render: (text, record, index) => record.TECHNOLOGY_DIRECTION
        },
        {
          title: '招聘人数',
@@ -57,7 +103,8 @@ export default class RecruitTitle extends React.Component {
          title: '供应商',
          dataIndex: 'NEED_ORGANIZATION_CODE',
          key: 'NEED_ORGANIZATION_CODE',
-         width: 150
+         width: 150,
+         render: (text, record, index) => record.NEED_ORGANIZATION
        },
        {
          title: '负责人',
@@ -75,13 +122,15 @@ export default class RecruitTitle extends React.Component {
          title: '学历要求',
          dataIndex: 'EDUCATION_LEVEL_CODE',
          key: 'EDUCATION_LEVEL_CODE',
-         width: 150
+         width: 150,
+         render: (text, record, index) => record.EDUCATION_LEVEL
        },
        {
          title: '工作经验要求',
          dataIndex: 'JOB_EXPERIENCE_DEMAND_CODE',
          key: 'JOB_EXPERIENCE_DEMAND_CODE',
-         width: 150
+         width: 150,
+         render: (text, record, index) => record.JOB_EXPERIENCE_DEMAND
        },
        {
          title: '薪资要求',
@@ -105,19 +154,9 @@ export default class RecruitTitle extends React.Component {
          key: 'action',
          fixed: 'right',
          width: 100,
-         render: () => <a href='javascript:;' > 删除 </a>,
+         render: () => <a href='javascript:;' onClick={this.handleDelete}> 删除 </a>,
        },
-     ];
-
-    const data = [];
-     for (let i = 0; i < 100; i++) {
-       data.push({
-         key: i,
-         name: `Edrward ${i}`,
-         age: 32,
-         address: `London Park no. ${i}`,
-       });
-     }
+    ];
     const {
        selectedRowKeys
      } = this.state;
@@ -127,19 +166,21 @@ export default class RecruitTitle extends React.Component {
      };
     return (
       <div className={styles.recruit_title}>
-        <FilterStep filters={filters} stepsMap={stepsMap} handleStep={this.handleStep} />
+        <FilterStep colums={colums || []} data={stepsData || {}} handleStep={this.handleStep} active={active} />
         <div className={styles.switch_tab}>
-          <Select defaultValue='all' style={{ width: 120 }}>
+          <Select defaultValue='全部职位' style={{ width: 120 }}>
             {
-                optionsCreate(jobs, jobsMap)
+                optionsCreate({
+                  options: jobs
+                })
             }
           </Select>
           <div>
-            <Button onClick={this.handleAdd}>添加招聘职位</Button>
+            <Button onClick={this.handleAdd} type='primary'>添加招聘职位</Button>
             <Button onClick={this.handleDelete} style={{marginLeft: '16px'}}>停止招聘</Button>
           </div>
         </div>
-        <Table className={styles.table} rowSelection={rowSelection} columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
+        <Table className={styles.table} rowSelection={rowSelection} columns={columns} dataSource={tableData} scroll={{ x: 1500, y: 300 }} rowKey={(record) => (record.ID)} />
       </div>
     )
   }

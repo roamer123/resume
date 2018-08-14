@@ -3,9 +3,10 @@
 // const bcrypt = require('bcryptjs');
 
 module.exports = app => {
-  const { STRING, DATE } = app.Sequelize;
+  const { INTEGER, STRING, DATE } = app.Sequelize;
 
   const User = app.model.define('USER', {
+    ID: { type: INTEGER, unique: true },
     USER_NAME: { type: STRING(20), unique: true },
     PASSWORD: STRING,
     ROLE_TYPE: STRING, // 用户角色code
@@ -36,7 +37,7 @@ module.exports = app => {
   User.authenticate = async function(USER_NAME, PASSWORD) {
     const user = await this.findOne({
       where: { USER_NAME },
-      attributes: [ 'ID', 'USER_NAME', 'PASSWORD' ],
+      attributes: [ 'ID', 'USER_NAME', 'PASSWORD', 'ORGANIZATION_CODE', 'ROLE_TYPE' ],
     });
     if (!user) return null;
     return PASSWORD === user.dataValues.PASSWORD ? (delete user.dataValues.PASSWORD && user.dataValues) : null;

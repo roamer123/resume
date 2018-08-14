@@ -7,7 +7,11 @@ import Checkbox from 'components/checkbox';
 import Login from 'component/login';
 
 import Image from 'assets/images/logo.png';
-import { setAuthority, getAuthority } from 'utils/localStorageAuthority';
+import {
+  getAuthority,
+	setOrganization,
+	getOrganization
+} from 'utils/localStorageAuthority';
 
 import {services, urls} from 'api';
 
@@ -31,12 +35,23 @@ export default class LoginPage extends React.Component {
 		// console.log(this.props.history);
 		const auth = getAuthority();
 		console.log(auth)
-	}
-	authSuccess = ({userType, msg, um}) => {
-		// 如果登陆成功，则将登陆账号存入localStorage
-		if (um === 'guanguan' && !msg) {
+  }
+  onSubmit = (err, values) => {
+    if (!err) {
+      services.post(urls.login, {
+        // grant_type: 'password',
+        username: values.username,
+        password: values.password,
+        // autoLogin: this.state.autoLogin
+      }, this.authSuccess)
+    }
+  }
+	authSuccess = ({ORGANIZATION_CODE, msg}) => {
+    // 如果登陆成功，则将供应商编号ORGANIZATION_CODE存入localStorage
+    setOrganization(ORGANIZATION_CODE)
+		// if (ORGANIZATION_CODE && !msg) {
+		if (ORGANIZATION_CODE && getOrganization()) {
 			// console.log('um', um)
-			setAuthority(um);
 			this.setState({
 				redirectTO: '/dashboard',
 			})
@@ -56,16 +71,7 @@ export default class LoginPage extends React.Component {
 			notice: message
 		})
 	}
-	onSubmit = (err, values) => {
-		if (!err) {
-			services.post(urls.login, {
-        grant_type: 'password',
-        username: values.username,
-			  password: values.password,
-			  // autoLogin: this.state.autoLogin
-			}, this.authSuccess)
-		}
-	}
+
 	changeAutoLogin = (e) => {
     this.setState({
       autoLogin: e.target.checked,
@@ -78,6 +84,7 @@ export default class LoginPage extends React.Component {
     });
 	}
 	render() {
+		console.log('redirectTO', this.state.redirectTO)
 return this.state.redirectTO ? <Redirect to={this.state.redirectTO} /> : (
   <div className={styles.loginpage}>
     <div className={styles.header}>

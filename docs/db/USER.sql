@@ -22,7 +22,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `USER`;
 CREATE TABLE `USER` (
-  `ID` int(11) NOT NULL COMMENT '主键',
+  `ID` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `USER_NAME` varchar(20) NOT NULL COMMENT '用户名称',
   `PASSWORD` varchar(50) NOT NULL COMMENT '密码',
   `ROLE_TYPE` varchar(20) NOT NULL COMMENT '用户类型',

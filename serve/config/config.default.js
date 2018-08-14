@@ -1,4 +1,5 @@
 'use strict';
+const path = require('path');
 
 module.exports = appInfo => {
   const config = exports = {};
@@ -32,19 +33,73 @@ module.exports = appInfo => {
     methodnoallow: {
       enable: false,
     },
-    domainWhiteList: ['http://172.31.7.167:8080'],
+    domainWhiteList: [ 'http://172.31.7.167:8080', 'http://172.0.0.1:8080' ],
   };
 
   config.cors = {
-    origin: '*',
+    origin: 'http://localhost:8080',
     allowMethod: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
+    credentials: true,
   };
 
+  config.static = {
+    prefix: '/public/',
+    dir: path.join(appInfo.baseDir, 'app/public'),
+    // support lazy load
+    dynamic: true,
+    preload: false,
+    buffer: false,
+    maxFiles: 1000,
+  };
 
-  // oauth2Serve开启password和client_credentials模式
-  config.oAuth2Server = {
-    debug: config.env === 'local',
-    grants: [ 'password' ],
+  config.multipart = {
+    fileSize: '5mb',
+    whitelist: [
+      '.jpeg',
+      '.jpg',
+      '.png',
+      '.xlsx',
+      '.pdf',
+      '.docx',
+      '.xlsm',
+    ],
+  };
+
+  config.session = {
+    key: 'EGG_SESS',
+    maxAge: 24 * 3600 * 1000, // 1 天 设置过期时间
+    httpOnly: true,
+    encrypt: true,
+    // renew: true,
+  };
+
+  config.onerror = {
+    all(err, ctx) {
+      // 在此定义针对所有响应类型的错误处理方法
+      // 注意，定义了config.all之后，其他错误处理方法不会再生效
+      ctx.body = 'error all';
+      ctx.status = 500;
+    },
+    // html(err, ctx) {
+    //   // html hander
+    //   ctx.body = '<h2>error html</h2>';
+    //   ctx.status = 500;
+    // },
+    // json(err, ctx) {
+    //   // json hander
+    //   ctx.body = { message: 'error json' };
+    //   ctx.status = 500;
+    // },
+    // notfound: {
+    //   pageUrl: '/404.html',
+    // },
+
+    logger: {
+      appLogName: `${appInfo.name}-web.log`, // 应用相关日志
+      coreLogName: 'egg-web.log', // 框架内核、插件日志
+      agentLogName: 'egg-agent.log', // agent 进程日志
+      errorLogName: 'common-error.log', // 任何 logger 的 .error() 调用输出的日志都会重定向到这里，重点通过查看此日志定位异常。
+    },
   };
 
   return config;

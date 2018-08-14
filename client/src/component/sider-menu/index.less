@@ -1,20 +1,16 @@
-@import "../../../style/theme/default/default";
+@import "../../../style/theme/default/index.less";
 @import "../../../style/mixins/size.less";
 
 
 @ease-in-out-circ: cubic-bezier(.78, .14, .15, .86);
 @width: 60px;
+@menu-bg-color: @menu-dark-bg;
+
 
 .menu {
   padding: 8px 0;
   width: 100%;
   height: 100%;
-  :global {
-    .idoll-menu-item-selected {
-      background-color: @primary-color !important;
-      color: red
-    }
-  } 
 }
 .logo {
   height: 84px;
@@ -25,7 +21,7 @@
   // padding-left: 36px;
   text-align: center;
   transition: all .3s;
-  background: #2f323b;
+  background: @menu-bg-color;
   overflow: hidden;
   margin: 0 auto;
   img {
