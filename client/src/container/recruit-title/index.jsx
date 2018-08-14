@@ -66,23 +66,15 @@ export default class RecruitTitle extends React.Component {
       stepsData,
     } = this.state
     const colums = [{
+        CODE: 'PRERECRUITING',
+        VALUE: '待招聘',
+      }, {
         CODE: 'RECRUITING',
         VALUE: '招聘中',
       }, {
         CODE: 'STOPRECRUIT',
         VALUE: '停止招聘',
     }]
-    // const stepsData = {
-    //   RECRUITING: 12,
-    //   STOPRECRUIT: 3,
-    // }
-    // const jobs = ['all', 'web', 'java', 'test']
-    // const jobsMap = {
-    //   all: '全部职位',
-    //   web: '前端工程师',
-    //   java: 'JAVA工程师',
-    //   test: '测试工程师',
-    // }
     const columns = [
       {
          title: '职位名称',
@@ -176,7 +168,7 @@ export default class RecruitTitle extends React.Component {
             }
           </Select>
           <div>
-            <Button onClick={this.handleAdd} type='primary'>添加招聘职位</Button>
+            <Button onClick={this.handleAdd} type='primary' icon='plus'>添加职位</Button>
             <Button onClick={this.handleDelete} style={{marginLeft: '16px'}}>停止招聘</Button>
           </div>
         </div>
