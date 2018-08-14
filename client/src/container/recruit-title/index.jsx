@@ -82,7 +82,7 @@ export default class RecruitTitle extends React.Component {
          dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
          key: 'TECHNOLOGY_DIRECTION_CODE',
          fixed: 'left',
-         render: (text, record, index) => record.TECHNOLOGY_DIRECTION
+         render: (text, record, index) => record.TECHNOLOGY_DIRECTION_NAME
        },
        {
          title: '招聘人数',
@@ -96,7 +96,7 @@ export default class RecruitTitle extends React.Component {
          dataIndex: 'NEED_ORGANIZATION_CODE',
          key: 'NEED_ORGANIZATION_CODE',
          width: 150,
-         render: (text, record, index) => record.NEED_ORGANIZATION
+         render: (text, record, index) => record.NEED_ORGANIZATION_NAME
        },
        {
          title: '负责人',
@@ -115,14 +115,14 @@ export default class RecruitTitle extends React.Component {
          dataIndex: 'EDUCATION_LEVEL_CODE',
          key: 'EDUCATION_LEVEL_CODE',
          width: 150,
-         render: (text, record, index) => record.EDUCATION_LEVEL
+         render: (text, record, index) => record.EDUCATION_LEVEL_NAME
        },
        {
          title: '工作经验要求',
          dataIndex: 'JOB_EXPERIENCE_DEMAND_CODE',
          key: 'JOB_EXPERIENCE_DEMAND_CODE',
          width: 150,
-         render: (text, record, index) => record.JOB_EXPERIENCE_DEMAND
+         render: (text, record, index) => record.JOB_EXPERIENCE_DEMAND_NAME
        },
        {
          title: '薪资要求',
