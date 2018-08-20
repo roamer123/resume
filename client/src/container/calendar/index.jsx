@@ -1,19 +1,25 @@
 import React from 'react'
 // import PropTypes from 'prop-types';
-import SearchFilter from 'component/search-filter';
-import AlertInfo from 'component/alert-info';
 import FormInfo, { generator } from 'component/form-info';
-import { services, urls } from 'api'
+import { services, urls } from 'api';
 
 import {
-  Button,
+  // Button,
   Table,
   Modal,
   Card,
   Alert,
   Input,
+  DatePicker,
+  Radio,
+  Divider,
 } from 'components';
 import styles from './index.less'
+
+const RangePicker = DatePicker.RangePicker;
+const RadioGroup = Radio.RadioGroup;
+const RadioButton = Radio.RadioButton;
+const Search = Input.Search;
 
 const steps = ['面试', '机考', '入场', '取消原因']
 const CODE = ['CALANDAR_INTERVIEW', 'CALANDAR_EXAM', 'CALANDAR_IN']
@@ -25,7 +31,10 @@ export default class Calendar extends React.Component {
       selectedRowKeys: [], // Check here to configure the default column
       modalVisible: false,
       step: '', // 0-安排面试，1-安排机考，2-安排入场
-      Key: '0',
+      key: '0',
+      queryParam: {
+        STATE: '',
+      },
       data: [],
     };
   }
@@ -34,15 +43,15 @@ export default class Calendar extends React.Component {
       step: 0
     })
   }
+
   shouldComponentUpdate (nextProps, nextState) {
     console.log('this.state.step', this.state.step, 'nextState.step', nextState.step);
 
-    if (this.state.step !== nextState.step) {
+    if (this.state.step !== nextState.step || this.state.queryParam !== nextState.queryParam) {
       const url = CODE[nextState.step]
-      console.log(url)
-      services.post(urls[url], {
-        ORGANIZATION_CODE: 'SUPPLIER_ZR'
-      }, this.getData)
+      services.post(urls[url], Object.assign({
+        ORGANIZATION_CODE: 'SUPPLIER_WSHH'
+      }, nextState.queryParam), this.getData)
     }
     return true
   }
@@ -53,28 +62,38 @@ export default class Calendar extends React.Component {
       data
     })
   }
-
+  // 切换tab页
   onTabChange = (key, type) => {
-    // console.log(key, type);
     this.setState({
       [type]: key,
       step: key,
     });
   }
+  // table选择行
   onSelectChange = (selectedRowKeys) => {
     console.log('selectedRowKeys changed: ', selectedRowKeys);
     this.setState({
       selectedRowKeys
     });
   }
+  // 查询条件变更
+  queryParamChange = (type, value) => {
+    this.setState({
+      queryParam: Object.assign({}, this.state.queryParam, {
+        [type]: value,
+      })});
+  }
+  // modal弹出框确认
   handleOk = () => {
     this.handleModal()
     console.log('handleOk')
   }
+  // modal弹出框取消
   handleCancel = () => {
     this.handleModal()
     console.log('handleCancel', this.state.modalVisible)
   }
+  // modal框处理
   handleModal = () => {
     this.setState((state) => ({
       modalVisible: !state.modalVisible
@@ -109,26 +128,30 @@ export default class Calendar extends React.Component {
         return modalLabel;
     }
   }
-  handleAction = (step) => {
-    this.handleModal()
-    this.setState({
-      step: step
-    })
-    console.log('handleAction', step)
-  }
-  handleDelete = (step) => {
 
-  }
   render () {
     const { step, data } = this.state;
-    const filterDetail = {}
+    // const filterDetail = {}
+    const statusMap = {
+      '0': '未安排',
+      '1': '已安排',
+      '2': '未通过',
+    };
+
     const columns = {
       0: [
         {
           title: '姓名',
           width: 100,
-          dataIndex: 'NAME',
-          key: 'NAME',
+          dataIndex: 'INTERVIEWEE',
+          key: 'INTERVIEWEE',
+        },
+        {
+          title: '应聘职位',
+          width: 100,
+          dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
+          key: 'TECHNOLOGY_DIRECTION_CODE',
+          render: (text, record, index) => record.TECHNOLOGY_DIRECTION_NAME
         },
         {
           title: '需求方',
@@ -147,19 +170,65 @@ export default class Calendar extends React.Component {
           title: '招聘跟踪人',
           dataIndex: 'RECRUIT_TRACKER',
           key: 'RECRUIT_TRACKER',
-          width: 150
+          width: 100
         },
         {
           title: `预约面试时间`,
           dataIndex: 'APPOINTMENT_INTERVIEWER_TIME',
           key: 'APPOINTMENT_INTERVIEWER_TIME',
-          width: 150
+          width: 150,
+          render: (text, record, index) => record.APPOINTMENT_INTERVIEWER_TIME && record.APPOINTMENT_INTERVIEWER_TIME.slice(0, 19)
         },
         {
           title: `实际面试时间`,
           dataIndex: 'ACTUAL_INTERVIEWER_TIME',
           key: 'ACTUAL_INTERVIEWER_TIME',
-          width: 150
+          width: 150,
+          render: (text, record, index) => record.NEED_ORGANIZATION_NAME
+        },
+        {
+          title: `面试官`,
+          dataIndex: 'INTERVIEWER',
+          key: 'INTERVIEWER',
+          width: 100
+        },
+        {
+          title: `面试结果`,
+          dataIndex: 'STATUS',
+          key: 'STATUS',
+          width: 100,
+          render: (text, record, index) => {
+            return statusMap[record.STATUS];
+          }
+        },
+        {
+          title: `面试地址`,
+          dataIndex: 'INTERVIEW_ADDRESS',
+          key: 'INTERVIEW_ADDRESS',
+          width: 100
+        },
+        {
+          title: `备注`,
+          dataIndex: 'REMARK',
+          key: 'REMARK',
+          width: 100
+        },
+        {
+          title: `操作`,
+          dataIndex: 'OPERATION',
+          key: 'OPERATION',
+          width: 120,
+          fixed: 'right',
+          render: (text, record, index) => {
+            return (
+              <div>
+                {record.STATUS === 0 && <a>安排面试</a>}
+                {record.STATUS === 1 && [<a key={1}>机考面试</a>,
+                <Divider key={2} type='vertical' />,
+                <a key={3}>取消</a>]}
+              </div>
+            );
+          }
         },
     ],
       1: [
@@ -168,6 +237,13 @@ export default class Calendar extends React.Component {
           width: 100,
           dataIndex: 'NAME',
           key: 'NAME',
+        },
+        {
+          title: '招聘职位',
+          width: 100,
+          dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
+          key: 'TECHNOLOGY_DIRECTION_CODE',
+          render: (text, record, index) => record.TECHNOLOGY_DIRECTION_NAME
         },
         {
           title: '需求方',
@@ -197,21 +273,52 @@ export default class Calendar extends React.Component {
         {
           title: '核定级别',
           dataIndex: 'RANK_LEVEL_CODE',
-          key: '7',
+          key: 'RANK_LEVEL_CODE',
           width: 150,
-        }
-    ],
+          render: (text, record, index) => record.RANK_LEVEL_NAME
+        },
+        {
+          title: `备注`,
+          dataIndex: 'REMARK',
+          key: 'REMARK',
+          width: 100
+        },
+        {
+          title: `操作`,
+          dataIndex: 'OPERATION',
+          key: 'OPERATION',
+          width: 100,
+          fixed: 'right',
+          render: (text, record, index) => {
+            return (
+              <div>
+                {record.STATUS === 0 && <a>安排机考</a> }
+                {record.STATUS === 1 && [<a key={1}>机考结果</a>,
+                  <Divider key={2} type='vertical' />,
+                  <a key={3}>取消</a>]}
+              </div>
+            );
+          }
+        },
+      ],
       2: [
         {
           title: '姓名',
           width: 100,
-          dataIndex: 'NAME',
-          key: 'NAME',
+          dataIndex: 'INTERVIEWEE',
+          key: 'INTERVIEWEE',
+        },
+        {
+          title: '应聘职位',
+          width: 100,
+          dataIndex: 'TECHNOLOGY_DIRECTION_CODE',
+          key: 'TECHNOLOGY_DIRECTION_CODE',
+          render: (text, record, index) => record.TECHNOLOGY_DIRECTION_NAME
         },
         {
           title: '需求方',
           width: 100,
-          dataIndex: 'NEED_ORGANIZATION',
+          dataIndex: 'NEED_ORGANIZATION_CODE',
           key: 'NEED_ORGANIZATION_CODE',
           render: (text, record, index) => record.NEED_ORGANIZATION_NAME
         },
@@ -229,14 +336,14 @@ export default class Calendar extends React.Component {
         },
         {
           title: '约定入场时间',
-          dataIndex: 'APPINT_ENTRANCE_TIME',
-          key: 'APPINT_ENTRANCE_TIME',
+          dataIndex: 'APPOINTMENT_INTERVIEWER_TIME',
+          key: 'APPOINTMENT_INTERVIEWER_TIME',
           width: 150
         },
         {
           title: '实际入场时间',
-          dataIndex: 'ACTUAL_ENTRANCE_TIME',
-          key: 'ACTUAL_ENTRANCE_TIME',
+          dataIndex: 'ACTUAL_INTERVIEWER_TIME',
+          key: 'ACTUAL_INTERVIEWER_TIME',
           width: 150
         },
         {
@@ -244,7 +351,31 @@ export default class Calendar extends React.Component {
           dataIndex: 'RANK_LEVEL_CODE',
           key: 'RANK_LEVEL_CODE',
           width: 150,
-        }
+          render: (text, record, index) => record.RANK_LEVEL_NAME
+        },
+        {
+          title: `备注`,
+          dataIndex: 'REMARK',
+          key: 'REMARK',
+          width: 100
+        },
+        {
+          title: `操作`,
+          dataIndex: 'OPERATION',
+          key: 'OPERATION',
+          width: 100,
+          fixed: 'right',
+          render: (text, record, index) => {
+            return (
+              <div>
+                {record.STATUS === 0 && <a>安排入场</a>}
+                {record.STATUS === 1 && [<a key={1}>入场结果</a>,
+                  <Divider key={2} type='vertical' />,
+                  <a key={3}>取消</a>]}
+              </div>
+            );
+          }
+        },
     ],
     };
     // console.log('datarender', data);
@@ -263,9 +394,21 @@ export default class Calendar extends React.Component {
         key: '2',
         tab: ' 入场 ',
     }];
+
+    const radioList = [{
+        value: '',
+        text: '全部'
+      }, {
+        value: 0,
+        text: '未安排'
+      }, {
+        value: 1,
+        text: '已安排'
+      }, {
+        value: 2,
+        text: '未通过'
+      }]
     const contentList = (step) => ([
-      <Button type='primary' onClick={() => this.handleAction(step)} key={`${step}_button`}>{`安排${steps[step]}`}</Button>,
-      <Button onClick={() => this.handleAction(3)} style={{marginLeft: '16px'}} key={`${step}_delete`}>取消日程</Button>,
       <Table
         rowSelection={rowSelection}
         className={styles.table}
@@ -293,34 +436,60 @@ export default class Calendar extends React.Component {
     })
     return (
       <div className={styles.calendar_list}>
-        <AlertInfo>此列表的候选人均已通过客户简历筛选，且在正常流程中，未被淘汰，也还没有成功入场。</AlertInfo>
-        <div className={styles.action_area}>
-          <SearchFilter columns={filterDetail} className={styles.search_filter} />
-          <Modal title={this.state.step === 3 ? `${steps[this.state.step]}` : `安排${steps[this.state.step]}`} visible={this.state.modalVisible}
-            onOk={this.handleOk} onCancel={this.handleCancel} width={800} key={`${this.state.step}_modal`}>
-            <FormInfo
-              onSubmit={this.onSubmit}
-              className='content'
-            >
-              {
-                this.state.notice &&
-                <Alert style={{ marginBottom: 24 }} message={this.state.notice} type='error' showIcon closable />
-              }
-              {
-                Object.keys(Info).map((item, i) => React.createElement(Info[item], {key: `${step}_${i}`, name: item}))
-              }
-            </FormInfo>
-          </Modal>
-        </div>
+        <div style={{ lineHeight: '36px', verticalAlign: 'middle' }}>
+          <RangePicker onChange={(date, dateString) => { this.queryParamChange('RANGE_DATE', dateString); }}
+            style={{ width: '300px', marginRight: '18px' }}
+          />
+          <RadioGroup onChange={(e) => { this.queryParamChange('STATE', e.target.value); }} defaultValue='0' >
+            {
+              radioList.map((item, index) => {
+                if (item.value === 2) {
+                  return '' + step === '0' && <RadioButton key={index} value={item.value}>{item.text}</RadioButton>;
+                }
+                return <RadioButton key={index} value={item.value}>{item.text}</RadioButton>;
+              })
+            }
+          </RadioGroup>
+      </div>
+      <div className={styles.action_area}>
+        {/* <SearchFilter columns={filterDetail} className={styles.search_filter} /> */}
+        <Modal title={this.state.step === 3 ? `${steps[this.state.step]}` : `安排${steps[this.state.step]}`} visible={this.state.modalVisible}
+          onOk={this.handleOk} onCancel={this.handleCancel} width={800} key={`${this.state.step}_modal`}>
+          <FormInfo
+            onSubmit={this.onSubmit}
+            className='content'
+          >
+            {
+              this.state.notice &&
+              <Alert style={{ marginBottom: 24 }} message={this.state.notice} type='error' showIcon closable />
+            }
+            {
+              Object.keys(Info).map((item, i) => React.createElement(Info[item], {key: `${step}_${i}`, name: item}))
+            }
+          </FormInfo>
+        </Modal>
+      </div>
+      <div style={{ position: 'relative' }}>
+        <Search
+          placeholder='快速检索..'
+          onSearch={(value) => { console.log('value', value); this.queryParamChange('QUERY', value); }}
+          style={{
+            position: 'absolute',
+            top: '10px',
+            right: '15px',
+            width: '200px',
+          }}
+        />
         <Card
           className={styles.card}
           tabList={tabList}
-          activeTabKey={this.state.Key}
-          onTabChange={(key) => { this.onTabChange(key, 'Key') }}
+          activeTabKey={this.state.key}
+          onTabChange={(key) => { this.onTabChange(key, 'key') }}
         >
-          { contentList(this.state.Key) }
+          { contentList(this.state.key) }
         </Card>
       </div>
+    </div>
     )
   }
 }
@@ -342,4 +511,3 @@ function generatorParams(data, component, required, placeholder) {
     }
   });
 }
-

@@ -6,6 +6,8 @@ module.exports = app => {
   const Interview = app.model.define('INTERVIEW', {
     ID: { type: INTEGER, unique: true },
     CANDIDATE_ID: INTEGER, // 候选人ID
+    INTERVIEWEE: STRING, // 面试者
+    TECHNOLOGY_DIRECTION_CODE: STRING, // 技术方向_CODE
     INTERVIEWER: STRING, // 面试官／助理
     APPOINTMENT_INTERVIEWER_TIME: DATE, // 预约时间
     ACTUAL_INTERVIEWER_TIME: DATE, // 实际面试时间
@@ -13,7 +15,8 @@ module.exports = app => {
     CUSTOMER_MANAGER: STRING, // 客户经理
     ORGANIZATION_CODE: STRING, // 供应商名称CODE／组织名称CODE
     NEED_ORGANIZATION_CODE: STRING, // 需求方组织CODE
-    STATUS: INTEGER, // 0未安排面试，1已安排面试
+    STATUS: INTEGER, // 0未安排，1已安排，2未通过
+    RECRUIT_TRACKER: STRING, // 招聘跟踪人
     REMARK: STRING, // 备注
   }, {
     createdAt: 'DATE_CREATED',

@@ -18,12 +18,13 @@ module.exports = app => {
     IS_ON_JOB: { type: STRING(10) }, // 是否在职0:否，1:是
     DOMICILE: { type: STRING(100) }, // 地点
     INTERVIEWER_PROCESS_CODE: { type: STRING(20) }, // 目前进度code
+    SUB_STATUS: INTEGER, // 0未安排，1已安排
     INTERVIEWER_STATUS: { type: STRING(20) }, // 状态
     ORGANIZATION_CODE: { type: STRING(50) }, // 供应商code
-    NEED_ORGANIZATION: { type: STRING(50) }, // 需求方code
     INTERVIEWER: { type: STRING(20) }, // 面试官／助理
     INNER_INTERVIEWER_TIME: DATE, // 内面时间
     COMPUTER_EXAME_TIME: DATE, // 机考时间
+    COMPUTER_EXAME_SCORE: { type: STRING(10) }, // 机考成绩
     APPINT_ENTRANCE_TIME: DATE, // 约定入场时间
     ACTUAL_ENTRANCE_TIME: DATE, // 实际入场时间
     CHECK_RANK_LEVEL_CODE: { type: STRING(20) }, // 核定级别code
@@ -89,16 +90,10 @@ module.exports = app => {
     });
   };
 
-  Candidate.queryInitInterview = async function({ ORGANIZATION_CODE }) {
-    return app.model.query('select NAME,NEED_ORGANIZATION_CODE,CUSTOMER_MANAGER,RECRUIT_TRACKER from CANDIDATE where ORGANIZATION_CODE = ? ', { replacements: [ ORGANIZATION_CODE ], type: app.Sequelize.QueryTypes.SELECT });
-  };
-
-  Candidate.queryInitExam = async function({ ORGANIZATION_CODE }) {
-    return app.model.query('select NAME,NEED_ORGANIZATION_CODE,CUSTOMER_MANAGER,RECRUIT_TRACKER,COMPUTER_EXAME_TIME,RANK_LEVEL_CODE from  CANDIDATE where ORGANIZATION_CODE = ? ', { replacements: [ ORGANIZATION_CODE ], type: app.Sequelize.QueryTypes.SELECT });
-  };
-
-  Candidate.queryIn = async function({ ORGANIZATION_CODE }) {
-    return app.model.query('select NAME,NEED_ORGANIZATION_CODE,CUSTOMER_MANAGER,RECRUIT_TRACKER,APPINT_ENTRANCE_TIME,ACTUAL_ENTRANCE_TIME,RANK_LEVEL_CODE from CANDIDATE where ORGANIZATION_CODE = ? ', { replacements: [ ORGANIZATION_CODE ], type: app.Sequelize.QueryTypes.SELECT });
+  Candidate.queryAll = async function(params) {
+    return await this.findAll({
+      where: params,
+    });
   };
 
   Candidate.changeList = function({ IDS, INTERVIEWER_PROCESS_CODE }) {

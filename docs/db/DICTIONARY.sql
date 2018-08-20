@@ -11,7 +11,7 @@
  Target Server Version : 50721
  File Encoding         : utf-8
 
- Date: 07/09/2018 15:52:13 PM
+ Date: 08/15/2018 18:04:43 PM
 */
 
 SET NAMES utf8;
@@ -22,7 +22,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `DICTIONARY`;
 CREATE TABLE `DICTIONARY` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `ID` int(11) NOT NULL COMMENT '主键',
   `TYPE` varchar(50) DEFAULT NULL COMMENT '类型code',
   `CODE` varchar(50) DEFAULT NULL COMMENT '编码',
   `VALUE` varchar(100) CHARACTER SET utf8 DEFAULT NULL COMMENT '名称',

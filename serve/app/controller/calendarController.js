@@ -7,23 +7,19 @@ class CalendarController extends Controller {
   async initInterview() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const { ORGANIZATION_CODE } = Object.keys(params).length === 0 ? {} : params;
-    const queryParams = {
-      ORGANIZATION_CODE,
-    };
+    const { ORGANIZATION_CODE, RANGE_DATE, STATE, QUERY } = Object.keys(params).length === 0 ? {} : params;
+    const queryParams = this.calenderQueryHander('STATUS', 'INTERVIEWEE', ORGANIZATION_CODE, RANGE_DATE, STATE, QUERY);
     const calendarResult = await ctx.service.calendarService.initInterview(queryParams);
-
     ctx.body = ReturnJson.success(calendarResult);
   }
 
   async initExam() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const { ORGANIZATION_CODE } = params;
-    const queryParams = {
-      ORGANIZATION_CODE,
-    };
-    ctx.logger.info('calender initExam request data: %j', params);
+    const { ORGANIZATION_CODE, RANGE_DATE, STATE, QUERY } = Object.keys(params).length === 0 ? {} : params;
+    const queryParams = Object.assign({
+      INTERVIEWER_PROCESS_CODE: 'PROCESS_TEST',
+    }, this.calenderQueryHander('SUB_STATUS', 'NAME', ORGANIZATION_CODE, RANGE_DATE, STATE, QUERY));
     const calendarResult = await ctx.service.calendarService.initExam(queryParams);
     ctx.logger.info('calender initExam response data: %j', calendarResult);
 
@@ -33,10 +29,10 @@ class CalendarController extends Controller {
   async initIn() {
     const { ctx } = this;
     const params = ctx.request.body;
-    const { ORGANIZATION_CODE } = params;
-    const queryParams = {
-      ORGANIZATION_CODE,
-    };
+    const { ORGANIZATION_CODE, RANGE_DATE, STATE, QUERY } = Object.keys(params).length === 0 ? {} : params;
+    const queryParams = Object.assign({
+      INTERVIEWER_PROCESS_CODE: 'PROCESS_PASS',
+    }, this.calenderQueryHander('SUB_STATUS', 'NAME', ORGANIZATION_CODE, RANGE_DATE, STATE, QUERY));
     const calendarResult = await ctx.service.calendarService.initIn(queryParams);
     ctx.body = ReturnJson.success(calendarResult);
 
@@ -71,6 +67,28 @@ class CalendarController extends Controller {
     };
     const calendarResult = await ctx.service.calendarService.delete(deleteParams);
     ctx.body = ReturnJson.success(calendarResult);
+  }
+
+  // calenderSearchHander
+  calenderQueryHander(STATUS_FIELD_NAME, QUERY_FIELD, ORGANIZATION_CODE, RANGE_DATE, STATE, QUERY) {
+    const STATES = [ '0', '1', '2' ].indexOf(STATE) !== -1 ? [ STATE ] : [ 0, 1, 2 ];
+    const queryParams = {
+      ORGANIZATION_CODE,
+      [STATUS_FIELD_NAME]: {
+        $in: STATES,
+      },
+      [QUERY_FIELD]: {
+        $like: `%${QUERY ? QUERY : ''}%`,
+      },
+    };
+    if (!!RANGE_DATE && RANGE_DATE.length === 2 && !!RANGE_DATE[0] && !!RANGE_DATE[1]) {
+      Object.assign(queryParams, {
+        DATE_CREATED: {
+          $between: RANGE_DATE,
+        },
+      });
+    }
+    return queryParams;
   }
 }
 module.exports = CalendarController;

@@ -14,14 +14,14 @@ class generateDataController extends Controller {
     const EDUCATION_LEVEL_CODES = [ 'LESS_JUNIOR', 'JUNIOR', 'BACHELOR', 'MASTER', 'OVER_MASTER' ];
     const RANK_LEVEL_CODES = [ 'LEVEL_ASSISTANT', 'LEVEL_PRIMARY', 'LEVEL_MIDDLE', 'LEVEL_HIGH', 'LEVEL_HIGH' ];
     const INTERVIEWER_STATUSS = [ 'STATUS_NO_NEED', 'STATUS_NO_PASS', 'STATUS_HIGHPAY', 'STATUS_GIVEUP', 'STATUS_DOING' ];
-    const INTERVIEWER_PROCESS_CODES = [ 'PROCESS_NEW', 'PROCESS_FIRST', 'PROCESS_SELF', 'PROCESS_CUSTOME', 'PROCESS_INTERVIEW' ];
+    const INTERVIEWER_PROCESS_CODES = [ 'PROCESS_NEW', 'PROCESS_FIRST', 'PROCESS_TEST', 'PROCESS_PASS', 'PROCESS_OUT' ];
     const ORGANIZATION_CODES = [ 'SUPPLIER_WSHH', 'SUPPLIER_WSHH', 'SUPPLIER_WSHH', 'SUPPLIER_ZR', 'SUPPLIER_FB' ];
     const NEED_ORGANIZATION_CODES = [ 'NEED_ZGPA', 'NEED_ALBB', 'NEED_SPA', 'NEED_ZGPA', 'NEED_ALBB' ];
+    const SUB_STATUSS = [ 0, 1, 0, 0, 1 ];
 
-    for (let i = 1; i <= 500; i++) {
+    for (let i = 1; i <= 200; i++) {
       const random = Math.floor(Math.random() * 4);
       console.log('random: ' + random);
-      insertParams.id = i;
       insertParams.NAME = 'WJQ';
       insertParams.AGE = 28;
       insertParams.TECHNOLOGY_DIRECTION_CODE = TECHNOLOGY_DIRECTION_CODES[random];
@@ -37,18 +37,18 @@ class generateDataController extends Controller {
       insertParams.DOMICILE = '上海市唐镇';
       insertParams.INTERVIEWER_PROCESS_CODE = INTERVIEWER_PROCESS_CODES[random];
       insertParams.INTERVIEWER_STATUS = INTERVIEWER_STATUSS[random];
+      insertParams.SUB_STATUS = SUB_STATUSS[random];
 
       insertParams.ORGANIZATION_CODE = ORGANIZATION_CODES[random];
       insertParams.INTERVIEWER = 'lulu';
       insertParams.INNER_INTERVIEWER_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
-      insertParams.APPOINTMENT_INTERVIEWER_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
       insertParams.ACTUAL_INTERVIEWER_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
 
       insertParams.COMPUTER_EXAME_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
+      insertParams.COMPUTER_EXAME_SCORE = 98;
       insertParams.APPINT_ENTRANCE_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
       insertParams.ACTUAL_ENTRANCE_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
       insertParams.CHECK_RANK_LEVEL_CODE = RANK_LEVEL_CODES[random];
-      insertParams.ACTUAL_INTERVIEWER_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
 
       insertParams.RECOMMEND_TIME = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
       insertParams.RECRUIT_TRACKER = 'xinge';
@@ -73,13 +73,12 @@ class generateDataController extends Controller {
     const JOB_CATEGORY_CODE_NAMES = [ '实习', '兼职', '全职', '全职', '全职' ];
     const JOB_EXPERIENCE_DEMAND_CODES = [ 'NO_LIMIT', 'LESS_1', 'BETWEEN_1_3', 'BETWEEN_3_5', 'BETWEEN_5_10' ];
     const OFFICIAL_ACADEMIC_CODES = [ 'LESS_JUNIOR', 'JUNIOR', 'BACHELOR', 'MASTER', 'OVER_MASTER' ];
-    const POSITION_PROCESS_CODES = [ '0', '0', '1', '1', '0' ];
+    const POSITION_PROCESS_CODES = [ 'PRERECRUITING', 'RECRUITING', 'STOPRECRUIT', 'RECRUITING', 'PRERECRUITING' ];
 
 
-    for (let i = 11; i <= 100; i++) {
+    for (let i = 0; i <= 100; i++) {
       const random = Math.floor(Math.random() * 4);
       console.log('random: ' + random);
-      insertParams.id = i;
       insertParams.TECHNOLOGY_DIRECTION_CODE = TECHNOLOGY_DIRECTION_CODES[random];
       insertParams.NEED_ORGANIZATION_CODE = NEED_ORGANIZATION_CODES[random];
       insertParams.JOB_CATEGORY_CODE = JOB_CATEGORY_CODES[random];
