@@ -1,20 +1,21 @@
 import React from 'react'
 import classNames from 'classnames'
 // import PropTypes from 'prop-types';
+import Menu, {MenuItem} from 'rc-menu';
 import {
   Select,
   Table,
+  Divider,
   Button,
   Icon,
   Dropdown,
 } from 'components'
-import Menu, {
-  MenuItem,
-} from 'rc-menu';
-import SearchFilter from 'component/search-filter'
-import FilterStep from 'component/filter-step'
-import Guid from 'component/guid'
-import Main from 'component/main';
+import {
+  FilterStep,
+  SearchFilter,
+  Guid,
+  Main
+} from 'component'
 import {
   optionsCreate,
   itemCreate
@@ -165,6 +166,9 @@ export default class CandidateHeader extends React.Component {
   }
   handleAdd = () => {
     window.location.href = `${window.location.href}/add`
+  }
+  handleAddMore = () => {
+    window.location.href = `${window.location.href}/add/more`
   }
   handleDelete = (e, id) => {
     console.log('handleDelete', e, id);
@@ -386,9 +390,10 @@ export default class CandidateHeader extends React.Component {
         title: '操作',
         key: 'operation',
         fixed: 'right',
-        width: 100,
+        width: 120,
         render: (text, record, index) => (<div>
           <a href='javascript:;' onClick={(e) => this.handleDelete(e, record.ID)}> 淘汰 </a>
+          <Divider type='vertical' />
           <Dropdown
             trigger={['click']}
             overlay={
@@ -421,7 +426,7 @@ export default class CandidateHeader extends React.Component {
           </Dropdown>
         </div>),
       },
-  ];
+];
     const { selectedRowKeys } = this.state;
     const rowSelection = {
       selectedRowKeys,
@@ -461,7 +466,7 @@ export default class CandidateHeader extends React.Component {
             </Select>
             <div>
               <Button type='primary' onClick={this.handleAdd}>添加候选人</Button>
-              <Button className='ml8'>批量添加</Button>
+              <Button className='ml8' onClick={this.handleAddMore}>批量添加</Button>
               <Button className='ml8' disabled>智能添加</Button>
             </div>
           </div>

@@ -64,7 +64,14 @@ export function getTodayTime() {
 
   return year + '年' + month + '月' + date + '日' + ' ' + week[day - 1]
 }
-
+// 格式化时间函数
+export function dateFormat (date, type) {
+  if (!date) {
+    return ''
+  }
+  type = type || 'YYYY-MM-DD HH:mm:ss'
+  return moment(date).format(type)
+}
 // 将数组对象化
 const objify = (arr, key) => {
   let obj = {}
